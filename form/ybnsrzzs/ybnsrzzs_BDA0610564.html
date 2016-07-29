@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>加油站月份加油信息明细表</title>
+<link href="../../../../css/table.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl">
+<div class="NewTableHead" ng-jprefix="qcs.initData.zzsybnsrsbInitData">
+     <h1>加油站月份加油信息明细表</h1>
+  <li class="dateTxt">税款所属时间:<input type="text"  readonly style="width:120px; height:20px;" ng-model="zzsybnsrsbInitData.sssq.rqQ" class="topInput"> 至 <input type="text"  readonly style="width:120px; height:20px;" ng-model="zzsybnsrsbInitData.sssq.rqZ" class="topInput"></li>
+</div>
+
+
+<div class="NewTableTop" ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_jyzyfjyxxmxb.sbbhead"></div>
+
+
+<div class="NewTableMain" ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_jyzyfjyxxmxb.jyzyfjyxxmxGrid.jyzyfjyxxmxGridlbVO">
+
+
+<table width="100%" border="0" cellspacing="1" cellpadding="0">
+  <tr ng-jprefix="qcs.initData.nsrjbxx">
+    <td class="title01">纳税人识别号</td>
+    <td class="read left"><input  readonly style="border:0;background:transparent; width: 100%; type="text" ng-model="nsrjbxx.nsrsbh"></td>
+    <td class="title01">纳税人名称</td>
+    <td colspan="3" class="read left"><input  readonly style="border:0;background:transparent; width: 100%; type="text"  ng-model="nsrjbxx.nsrmc"></td>
+    </tr>
+  <tr >
+    <td class="title01">法定代表人</td>
+    <td class="read left"><input  readonly type="text"  ng-model="jyzyfjyxxmxGridlbVO[0].fddbr"></td>
+    <td class="title01">联系电话</td>
+    <td colspan="3" class="edit left"><input  type="text"  ng-datatype="digit"   ng-model="jyzyfjyxxmxGridlbVO[0].lxdh"></td>
+    </tr>
+  <tr ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_jyzyfjyxxmxb.sbbhead">
+    <td class="title01">所属月份 </td>
+    <td class="edit left"><input  class="til" type="text" ng-model="sbbhead.ssyf" ></td>
+    <td class="title01">总枪数</td>
+    <td colspan="3" class="edit left"><input  class="til" type="text"   ng-datatype="int"  ng-model="jyzyfjyxxmxGridlbVO[0].zqs" ></td>
+  </tr>
+  <tr>
+    <td align="center" class="title01"><strong>加油枪出厂编号</strong></td>
+    <td align="center" class="title01"><strong>油品型号</strong></td>
+    <td align="center" class="title01"><strong>月累计加油量</strong></td>
+    <td align="center" class="title01"><strong>月累计金额</strong></td>
+    <td align="center" class="title01"><strong>月应纳增值税额</strong></td>
+    <td width="110" align="center" class="title01"><strong>操作</strong></td>
+  </tr>
+  <tr ng-repeat="p in jyzyfjyxxmxGridlbVO track by $index" ng-repeat-init="jyzyfjyxxmxGridlbVO"
+        default-value='{"jyqccbh":"","ypxh":"","yljjyl":0.00,"yljje":0.00,"yynzzse":0.00,"zqs":0.00,"lxdh":0.00,"fddbr":"","tbr":""}'>
+    
+    <td class="edit right" style="display:none"><input  type="text"  ng-model="p.fddbr"  ng-value="p.fddbr=jyzyfjyxxmxGridlbVO[0].fddbr" style="display:none"></td> 
+     <td class="edit right" style="display:none"><input   type="text"  ng-model="p.lxdh"  ng-value="p.lxdh=jyzyfjyxxmxGridlbVO[0].lxdh" style="display:none"></td> 
+      <td class="edit right" style="display:none"><input   type="text"  ng-model="p.zqs"  ng-value="p.zqs=jyzyfjyxxmxGridlbVO[0].zqs" style="display:none"></td> 
+       <td class="edit right" style="display:none"><input   type="text"  ng-model="p.tbr"  ng-value="p.tbr=jyzyfjyxxmxGridlbVO[0].tbr" style="display:none"></td>
+    <td class="edit right"><input  class="til" type="text"  ng-model="p.jyqccbh"></td>
+    <td class="edit right"><input  class="til" type="text"  ng-model="p.ypxh"></td>
+    <td class="edit right"><input   type="text" ng-datatype="number" ng-model="p.yljjyl"></td>
+    <td class="edit right"><input   type="text" ng-datatype="number" ng-model="p.yljje"></td>
+    <td class="edit right"><input   type="text" ng-datatype="number" ng-model="p.yynzzse">
+   <!--  <input  class="til" type="text" style="display:none;" ng-value="p.tbr=zzsybnsrsbInitData.tbr" ng-model="p.tbr"></td> -->
+      <td colspan="6"   align="center" >
+    <div class="sbtnbox"> 
+    
+    <a  class="sbtn sbtn01"  ng-href="#"  ng-click="add()">增加</a>&nbsp;&nbsp;&nbsp;<a class="sbtn sbtn03" ng-if="$index!=0"   ng-href="#"  ng-click="del($index)">删除</a></div></td>
+  </tr>
+  <tr ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_jyzyfjyxxmxb.jyzyfjyxxmxGrid">
+    <td align="center" class="title01"  >合计</td>
+    <td class="back">--</td>
+    <td class="edit right"><input  readonly type="text" ng-datatype="number" ng-model="jyzyfjyxxmxGrid.yljjylHj"></td>
+    <td class="edit right"><input  readonly type="text" ng-datatype="number" ng-model="jyzyfjyxxmxGrid.yljjeHj"></td>
+    <td class="edit right"><input  readonly type="text" ng-datatype="number" ng-model="jyzyfjyxxmxGrid.yynzzseHj"></td>
+    <td class="back">--</td>
+    </tr> 
+  <tr ng-jprefix="qcs.initData.nsrjbxx">
+    <td class="title01">填表人</td>
+    <td class="edit left"><input  type="text"  ng-model="jyzyfjyxxmxGridlbVO[0].tbr"></td>
+    <td class="title01">填表日期</td>
+    <td colspan="3" class="edit left"><input   type="text"  readonly   ng-model="nsrjbxx.tbrq"></td>
+    </tr>
+  <tr ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_jyzyfjyxxmxb.sbbslxxVO">
+    <td class="title01">受理人</td>
+    <td class="edit left"><input  class="til" type="text"  ng-model="sbbslxxVO.slrDm"></td>
+    <td class="title01">受理日期</td>
+    <td colspan="3" class="edit left"><input  class="til" type="text"  readonly ng-model="sbbslxxVO.slrq"></td>
+    </tr>
+  <tr ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_jyzyfjyxxmxb.sbbslxxVO">
+    <td class="title01">受理税务机关</td>
+    <td colspan="5" class="edit left"><input  readonly  type="text" ng-model="sbbslxxVO.slswjgDm"></td>
+    </tr>
+</table>
+</div>
+
+
+
+</div>
+</body>
+</html>

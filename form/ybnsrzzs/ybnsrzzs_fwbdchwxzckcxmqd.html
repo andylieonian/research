@@ -1,0 +1,86 @@
+<!doctype html>
+<html id="ng-app"  xmlns:ng="http://angularjs.org">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" >
+<title>39$服务、不动产和无形资产扣除项目清单</title>
+</head>
+
+<body>
+<div style="width:96%; margin:auto;"  id="viewCtrlId" ng-controller="viewCtrl">
+<ng-codetable url="nf_dm_sb_zzs_pzzldm.json" name="pzzldmCT" node="" dm="root.dm" mc="root.mc"></ng-codetable>
+<ng-codetable url="nf_dm_sb_zzs_ysxwdm.json" name="ysxwdmCT" node="" dm="root.dm" mc="root.mc"></ng-codetable>
+<div class="NewTableHead" ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_fwbdchwxzckcxmqd.sbbhead">
+     <h1>服务、不动产和无形资产扣除项目清单</h1>
+    <li class="dateTxt">税款所属时间:<input name="textfield3" type="text" class="topInput" id="textfield3" value=" " ng-model="sbbhead.skssqq"  readonly> 至<input name="textfield3" type="text" class="topInput" id="textfield3" value=" " ng-model="sbbhead.skssqz" readonly>  </li>
+</div>
+
+<div class="NewTableTop" >
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>纳税人名称（公章）：<span class="textline" ng-bind="sbbhead.nsrmc"></span></td>
+    <td align="right">纳税人识别号：
+      <input name="textfield" type="text" class="topInput" id="textfield" value="" ng-model="sbbhead.nsrsbh"  readonly></td>
+  </tr>
+  <tr>
+    <td>主管税务机关名称：      <span class="textline" ng-bind="formData.qcs.initData.nsrjbxx.zgswskfjmc"></span></td>
+    <td align="right"> 主管税务机关代码：
+      <input name="textfield5" type="text" class="topInput" id="textfield5" value="" ng-model="formData.qcs.initData.nsrjbxx.zgswskfjDm" readonly></td>
+  </tr>
+  <tr>
+    <td>纳税申报日期：      <input type="text" class="topInput" ng-model="formData.qcs.initData.nsrjbxx.tbrq" readonly></td>
+    <td align="right">金额单位：元（列至角分）</td>
+  </tr>
+</table>
+</div>
+
+<div class="NewTableMain" ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_fwbdchwxzckcxmqd.fwbdchwxzckcxmqdGrid.fwbdchwxzckcxmqdGridlb">
+ <table width="100%" border="0" cellpadding="0" cellspacing="1">
+      <tr>
+        <td align="center" class="title01"  width="12.5%"><strong>开票方纳税人识别号</strong></td>
+        <td align="center" class="title01"  width="12.5%"><strong>开票方单位名称</strong></td>
+        <td align="center" class="title01"  width="12.5%"><strong> 凭证种类</strong></td>
+        <td align="center" class="title01"  width="12.5%"><strong> 发票代码 </strong></td>
+        <td align="center" class="title01"  width="12.5%"><strong>发票号码</strong></td>
+        <td align="center" class="title01"  width="12.5%"><strong>应税行为名称 </strong></td>
+        <td align="center" class="title01"  width="12.5%"><strong> 金额</strong></td>
+        <td align="center" class="title01"  width="12.5%"><strong>操作</strong></td>
+      </tr>
+      <tr>
+        <td align="center" class="title01" >1</td>
+        <td align="center" class="title01" >2</td>
+        <td align="center" class="title01" >3</td>
+        <td align="center" class="title01" >4</td>
+        <td align="center" class="title01" >5</td>
+        <td align="center" class="title01">6</td>
+        <td align="center" class="title01">7</td>
+        <td align="center" class="title01">8</td>
+      </tr>
+      <tr ng-repeat="p in fwbdchwxzckcxmqdGridlb track by $index"  ng-repeat-init="fwbdchwxzckcxmqdGridlb"
+                default-value='{"kpfnsrsbh":"","kpfdwmc":"","pzzl":"","fpdm":"","fphm":"","ysxwmc":"","je":0.00}'>
+        <td class="edit right"  ><input jflag="1" ng-model="p.kpfnsrsbh"  type="text" ></td>
+        <td class="edit right" ><input jflag="1"  ng-model="p.kpfdwmc"   type="text" ></td>
+        <td class="edit right" ><select ng-model="p.pzzl" ng-options="key as value for (key,value) in CT.pzzldmCT"><option value=""></option></td>
+        <td class="edit right" ><input jflag="1"  ng-model="p.fpdm"   type="text" ></td>
+        <td class="edit right" ><input jflag="1"  ng-model="p.fphm"   type="text" ></td>
+        <td class="edit right" ><select ng-model="p.ysxwmc" ng-options="key as value for (key,value) in CT.ysxwdmCT"><option value=""></option></td>
+        <td class="edit right" ><input jflag="1"  ng-model="p.je"   type="text" ng-datatype="number" ></td>
+        <td align="center" ><div class="sbtnbox"><a class="sbtn sbtn01" ng-href="#" ng-click="add()">增加</a>&nbsp;&nbsp;&nbsp;<a class="sbtn sbtn03" ng-if="$index!=0" ng-href="#" ng-click="del($index)">删除</a></div> </td>
+      </tr>
+
+      <tr ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_fwbdchwxzckcxmqd.fwbdchwxzckcxmqdGrid">
+        <td align="center" class="title01" >合计</td>
+        <td class="read mid"  align="center" >--</td>
+        <td class="read mid" align="center" >--</td>
+        <td class="read mid" align="center" ><input  type="text"  value="--" readonly jflag="1""></td>
+        <td class="read mid" align="center" >--</td>
+        <td class="read mid" align="center" >--</td>
+        <td class="read right" ><input jflag="1" ng-datatype="number" ng-model="fwbdchwxzckcxmqdGrid.jeHj"   type="text"  readonly></td>
+  	     <td class="read mid" align="center" >--</td>
+        </tr>
+        <tr ng-render-finish=""></tr>
+    </table>
+</div>
+ </div>
+</body>
+</html>

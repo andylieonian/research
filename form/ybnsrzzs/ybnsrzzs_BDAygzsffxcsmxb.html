@@ -1,0 +1,135 @@
+<!doctype html>
+<html id="ng-app"  xmlns:ng="http://angularjs.org">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" >
+<title>17$营改增税负分析测算明细表</title>
+</head>
+
+<body>
+<div style="width:96%; margin:auto;"id="viewCtrlId" ng-controller="viewCtrl">
+<ng-codetable url="sffxmxb_sl_zsl.json" name="ysxmCT" node="" dm="root.dm" mc="root.mc"></ng-codetable>
+<div  ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_ygzsffxcsmxb.ygzsffxcsmxbGrid"></div>
+<div class="NewTableHead"  ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_ygzsffxcsmxb.sbbhead">
+     <h1>营改增税负分析测算明细表</h1>
+    <li class="dateTxt">税款所属时间:<input type="text" class="topInput"  ng-model="sbbhead.skssqq"  readonly> 至<input type="text" class="topInput"  ng-model="sbbhead.skssqz"  readonly> </li>
+</div>
+
+<div class="NewTableTop" ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_ygzsffxcsmxb.sbbhead">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" >
+  <tr>
+    <td>纳税人名称（公章）：<span class="textline" ng-bind="sbbhead.nsrmc"></span> </td>
+  </tr>
+  <tr ng-jprefix="qcs.initData.zzsybnsrsbInitData">
+    <td align="right">金额单位：元至角分</td>
+  </tr>
+</table>
+</div>
+
+<div class="NewTableMain" ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_ygzsffxcsmxb.ygzsffxcsmxbGrid.ygzsffxcsmxbGridlbVO">
+<table width="1900" border="0" cellpadding="0" cellspacing="1">
+ 
+  <tr>
+    <td colspan="3" rowspan="3" align="center" class="title01" >项目及栏次</td>
+    <td colspan="7" align="center" class="title01" >增值税</td>
+    <td colspan="7" align="center" class="title01" >营业税</td>
+     <td   rowspan="3" align="center" class="title01"></td>
+  </tr>
+  <tr>
+    <td width="80"  rowspan="2" align="center" class="title01" >不含税销售额</td>
+    <td width="220" rowspan="2" align="center" class="title01" >销项(应纳)税额</td>
+    <td width="80" rowspan="2" align="center" class="title01" >价税合计</td>
+    <td rowspan="2" align="center" class="title01" >服务、不动产和无形资产扣除项目本期实际扣除金额</td>
+    <td width="151" colspan="2" align="center" class="title01">扣除后</td>
+    <td rowspan="2" align="center" class="title01" >增值税应纳税额（测算）</td>
+    <td width="360" colspan="5" align="center" class="title01">原营业税税制下服务、不动产和无形资产差额扣除项目</td>
+    <td rowspan="2" align="center" class="title01" >应税营业额</td>
+    <td rowspan="2" align="center" class="title01" >营业税应纳税额</td>
+   
+  </tr>
+  <tr>
+    <td width="80" align="center" class="title01" >含税销售额</td>
+    <td align="center" class="title01" >销项(应纳)税额</td>
+    <td width="120" align="center" class="title01" >期初余额</td>
+    <td width="70" align="center" class="title01" >本期发生额</td>
+    <td align="center" class="title01" >本期应扣除金额</td>
+    <td align="center" class="title01" >本期实际扣除金额</td>
+    <td align="center" class="title01" >期末余额</td>
+    
+  </tr>
+  <tr>
+    <td align="center" class="title01"   width="5%" >应税项目代码及名称</td>
+    <td align="center" class="title01"   width="5%" >增值税税率或征收率</td>
+    <td align="center" class="title01"  width="5%" >营业税税率</td>
+    <td align="center" class="title01" >1 </td>
+    <td align="center" class="title01" >2=1×增值税税率或征收率</td>
+    <td align="center" class="title01" >3=1+2</td>
+    <td align="center" class="title01" >4 </td>
+    <td align="center" class="title01" >5=3-4</td>
+    <td align="center" class="title01" >6=5÷(100%+增值税税率或征收率)×增值税税率或征收率</td>
+    <td align="center" class="title01" >7 </td>
+    <td align="center" class="title01" >8 </td>
+    <td align="center" class="title01" >9 </td>
+    <td align="center" class="title01" >10=8+9</td>
+    <td align="center" class="title01" >11（11≤3且11≤10）</td>
+    <td align="center" class="title01" >12=10-11</td>
+    <td align="center" class="title01" >13=3-11</td>
+    <td align="center" class="title01" >14=13×营业税税率</td>
+    <td align="center" width="110" class="title01" >操作</td>
+  </tr>
+  <tr>
+    <td align="center" class="title01" >合计</td>
+    <td class="read mid" align="center" >
+      --
+    </td>
+    <td class="read mid" align="center" >
+      --
+    </td>
+    <td class="read right"><input ng-datatype="number" ng-model="ygzsffxcsmxbGrid.zzsbhsxseHj" type="text" readonly></td>
+    <td class="read right"><input ng-datatype="number" ng-model="ygzsffxcsmxbGrid.zzsxxynseHj" type="text" readonly></td>
+    <td class="read right"><input ng-datatype="number" ng-model="ygzsffxcsmxbGrid.zzsjshjHj" type="text" readonly></td>
+    <td class="read right"><input ng-datatype="number" ng-model="ygzsffxcsmxbGrid.zzsbqsjkcjeHj" type="text" readonly></td>
+    <td class="read right"><input ng-datatype="number" ng-model="ygzsffxcsmxbGrid.zzskchhsxseHj" type="text" readonly></td>
+    <td class="read right"><input ng-datatype="number" ng-model="ygzsffxcsmxbGrid.zzskchxxynseHj" type="text" readonly></td>
+    <td class="read right"><input ng-datatype="number" ng-model="ygzsffxcsmxbGrid.zzsynseHj" type="text" readonly></td>
+    <td class="read right"><input ng-datatype="number" ng-model="ygzsffxcsmxbGrid.yysqcyeHj" type="text" readonly></td>
+    <td class="read right"><input ng-datatype="number" ng-model="ygzsffxcsmxbGrid.yysbqfseHj" type="text" readonly></td>
+    <td class="read right"><input ng-datatype="number" ng-model="ygzsffxcsmxbGrid.yysbqykcjeHj" type="text" readonly></td>
+    <td class="read right"><input ng-datatype="number" ng-model="ygzsffxcsmxbGrid.yysbqsjkcjeHj" type="text" readonly></td>
+    <td class="read right"><input ng-datatype="number" ng-model="ygzsffxcsmxbGrid.yysqmyeHj" type="text" readonly></td>
+    <td class="read right"><input ng-datatype="number" ng-model="ygzsffxcsmxbGrid.yysysyyeHj" type="text" readonly></td>
+    <td class="read right"><input ng-datatype="number" ng-model="ygzsffxcsmxbGrid.yysynseHj" type="text" readonly></td>
+    <td align="center" class="title01" ></td>
+   </tr>
+
+  <tr ng-repeat="p in ygzsffxcsmxbGridlbVO track by $index" ng-repeat-init="ygzsffxcsmxbGridlbVO"
+                default-value=' {"ewbhxh": 0,"hmc": "","ysxmdmjmc": "","yysbqfse": 0,"yysbqsjkcje": 0,"yysbqykcje": 0,"yysqcye": 0,"yysqmye": 0,"yyssl": 0,"yysynse": 0,"yysysyye": 0,"zzsbhsxse": 0,"zzsbqsjkcje": 0,"zzsjshj": 0,"zzskchhsxse": 0,"zzskchxxynse": 0,"zzsslhzsl": 0,"zzsxxynse": 0 ,"zzsynse":0}'>
+    <td class="edit right" >
+    <select ng-model="p.ysxmdmjmc" ng-options="key as key+'|'+value.mc for (key,value) in CT.ysxmCT" ng-selected="key==p.ysxmdmjmc"><option value=""></option></select></td>
+    <td class="read right" style="display: none;"><input ng-model="p.hmc" type="text" ng-value="p.hmc=CT.ysxmCT[p.ysxmdmjmc].mc"></td>
+    <td class="edit right"><select ng-model="p.zzsslhzsl" ng-options="value as value  for (key,value) in CT.ysxmCT[p.ysxmdmjmc].zzs" ng-selected="key==p.zzsslhzsl"><option value=""></option></select></td>
+    <td class="edit right"><select ng-model="p.yyssl" ng-options="value  as value for (key,value) in CT.ysxmCT[p.ysxmdmjmc].yys" ng-selected="key==p.yyssl"><option value=""></option></select></td>
+    <td class="edit right"><input ng-datatype="number" ng-model="p.zzsbhsxse" type="text"></td>
+    <td class="read right"><input ng-datatype="number" ng-model="p.zzsxxynse" type="text" readonly></td>
+    <td class="read right"><input ng-datatype="number" ng-model="p.zzsjshj" type="text" readonly></td>
+    <td class="edit right"><input ng-datatype="number" ng-model="p.zzsbqsjkcje" type="text"></td>
+    <td class="read right"><input ng-datatype="number" ng-model="p.zzskchhsxse" type="text" readonly></td>
+    <td class="read right"><input ng-datatype="number" ng-model="p.zzskchxxynse" type="text" readonly></td>
+    <td class="read right"><input ng-datatype="number" ng-model="p.zzsynse" type="text" readonly></td>
+    <td class="edit right"><input ng-datatype="number" ng-model="p.yysqcye" type="text"></td>
+    <td class="edit right"><input ng-datatype="number" ng-model="p.yysbqfse" type="text"></td>
+    <td class="read right"><input ng-datatype="number" ng-model="p.yysbqykcje" type="text" readonly></td>
+    <td class="edit right"><input ng-datatype="number" ng-model="p.yysbqsjkcje" type="text"></td>
+    <td class="read right"><input ng-datatype="number" ng-model="p.yysqmye" type="text" readonly></td>
+    <td class="read right"><input ng-datatype="number" ng-model="p.yysysyye" type="text" readonly></td>
+    <td class="read right"><input ng-datatype="number" ng-model="p.yysynse" type="text" readonly></td>
+    <td align="center" ><div class="sbtnbox"><a class="sbtn sbtn01" ng-href="#" ng-click="add()">增加</a>&nbsp;&nbsp;&nbsp;<a class="sbtn sbtn03" ng-if="$index!=0" ng-href="#" ng-click="del($index)">删除</a></div></td>
+    </tr>
+    <tr ng-render-finish=""></tr>
+</table>
+</div>
+ 
+
+</div>
+</body>
+</html>

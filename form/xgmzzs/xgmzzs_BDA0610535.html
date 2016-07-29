@@ -1,0 +1,174 @@
+<!doctype html>
+<html id="ng-app"  xmlns:ng="http://angularjs.org">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" >
+<title>电力企业增值税销项税额和进项税额传递单</title>
+</head>
+
+<body>
+<div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl">
+<div class="NewTableHead" ng-jprefix="qcs.initData.zzsxgmsbInitData.sssq">
+     <h1>电力企业增值税销项税额和进项税额传递单</h1>
+    <li class="dateTxt">税款所属期:
+    	<input name="textfield3" type="text" class="topInput" id="textfield3"  ng-model="sssq.rqQ" > 
+    	至
+    	<input name="textfield3" type="text" class="topInput" id="textfield3"  ng-model="sssq.rqZ">  
+    </li>
+</div>
+
+<div class="NewTableTop">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" ng-jprefix="qcs.initData.zzsxgmsbInitData">
+  <tr>
+    <td>填表日期：<span class="textline" ng-bind="zzsxgmsbInitData.sbrq"></span>
+    <td align="right">单位：千瓦、元</td>
+  </tr>
+</table>
+</div>
+
+<div class="NewTableMain">
+  <table width="100%" border="0" cellspacing="1" cellpadding="0" >
+    <tr>
+      <td colspan="3" ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.dlqyzzsxxsehjxsecdd">纳税人识别号:<input name="textfield32" type="text" class="topInput" id="textfield32" value=" " ng-model="dlqyzzsxxsehjxsecdd.nsrsbh" ></td>
+      <td>所隶属电力集团：</td>
+      <td colspan="2"class="edit right" ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.dlqyzzsxxsehjxsecdd.skzsForm"><input datatype="string" ng-model="skzsForm.slsdljt" name="textfield" type="text" ></td>
+    </tr>
+    <tr ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.dlqyzzsxxsehjxsecdd">
+      <td colspan="2">纳税人名称:<input name="textfield32" type="text" class="topInput" id="textfield32" value=" " ng-model="dlqyzzsxxsehjxsecdd.nsrmc" ></td>
+      <td align="center">法定代表人姓名：</td>
+      <td><input name="textfield33" type="text" class="topInput" id="textfield33" value=" " ng-model="dlqyzzsxxsehjxsecdd.fddbrmc" ></td>
+      <td colspan="2">经营地址:<input name="textfield33" type="text" class="topInput" id="textfield33" value=" " ng-model="dlqyzzsxxsehjxsecdd.jydz" ></td>
+    </tr>
+    <tr>
+      <td width="30%" ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.dlqyzzsxxsehjxsecdd">开户银行：<input name="textfield33" type="text" class="topInput" id="textfield33" value=" " ng-model="dlqyzzsxxsehjxsecdd.khyh" ></td>
+      <td width="30%" ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.dlqyzzsxxsehjxsecdd">开户银行账号:<input name="textfield33" type="text" class="topInput" id="textfield33" value=" " ng-model="dlqyzzsxxsehjxsecdd.khyhzh" ></td>
+      <td align="center">企业类型：</td>
+      <td class="edit right" ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.dlqyzzsxxsehjxsecdd.skzsForm"><input datatype="string" ng-model="skzsForm.qylxbz" name="textfield" type="text" ></td>      
+      <td colspan="2" ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.dlqyzzsxxsehjxsecdd">电话号码:<input name="textfield33" type="text" class="topInput" id="textfield33" value=" " ng-model="dlqyzzsxxsehjxsecdd.dhhm" ></td>
+    </tr>
+    </table>
+    <table width="100%" border="0" cellspacing="1" cellpadding="0"  class = "zzssyyxgmnsrySbSbbdxxVO.dlqyzzsxxsehjxsecdd.xxGrid">
+    <tr>
+      <td colspan="6" align="center" class="title01"><strong>销项</strong></td>
+    </tr>
+    <tr>
+      <td rowspan="2" align="center" class="title01">销售电量（上网电量）</td>
+      <td rowspan="2" align="center" class="title01">电价</td>
+      <td rowspan="2" align="center" class="title01">售电收入</td>
+      <td colspan="2" align="center" class="title01">价外费用</td>
+      <td rowspan="2" align="center" class="title01">定额税率或预征率</td>
+    </tr>
+    <tr>
+      <td align="center" class="title01">其中不征税的价外费用</td>
+      <td align="center" class="title01">应税价外费用</td>
+    </tr>
+    <tr>
+      <td align="center" class="title01">1</td>
+      <td align="center" class="title01">2</td>
+      <td align="center" class="title01">3=1*2</td>
+      <td align="center" class="title01">4</td>
+      <td align="center" class="title01">5</td>
+      <td align="center" class="title01">6</td>
+    </tr>
+    <tr ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.dlqyzzsxxsehjxsecdd.xxGrid.xxGridlb">
+      <td class="edit right"><input ng-datatype="number" ng-model="xxGridlb[0].xsdl" name="textfield" type="text"  ></td>
+      <td class="edit right"><input ng-datatype="number" ng-model="xxGridlb[0].dj2" name="textfield" type="text"  ></td>
+      <td class="read right"><input ng-datatype="number" ng-model="xxGridlb[0].sdsr" name="textfield" type="text"   readonly></td>
+      <td class="edit right"><input ng-datatype="number" ng-model="xxGridlb[0].bzsdjwfy" name="textfield" type="text"  ></td>
+      <td class="edit right"><input ng-datatype="number" ng-model="xxGridlb[0].ysjwfy" name="textfield" type="text"  ></td>
+      <td class="edit right"><input ng-datatype="number" ng-model="xxGridlb[0].deslhyzl" name="textfield" type="text"  value="0.00%"></td>
+      </tr>
+     </table>
+    <table width="100%" border="0" cellspacing="1" cellpadding="0" class = "zzssyyxgmnsrySbSbbdxxVO.dlqyzzsxxsehjxsecdd.jxGrid">
+    <tr>
+      <td colspan="6" align="center" class="title01"><strong>进项</strong></td>
+    </tr>
+    <tr>
+      <td align="center" class="title01">本期发生进项</td>
+      <td align="center" class="title01">免税货物用</td>
+      <td align="center" class="title01">非正常损失</td>
+      <td align="center" class="title01">折让</td>
+      <td colspan="2" align="center" class="title01">本期实际抵扣进项</td>
+    </tr>
+    <tr>
+      <td align="center" class="title01">7</td>
+      <td align="center" class="title01">8</td>
+      <td align="center" class="title01">9</td>
+      <td align="center" class="title01">10</td>
+      <td colspan="2" align="center" class="title01">11＝7-8-9-10</td>
+    </tr>
+    <tr ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.dlqyzzsxxsehjxsecdd.jxGrid.jxGridlb">
+      <td class="edit right"><input ng-datatype="number" ng-model="jxGridlb[0].bqfsjx" name="textfield" type="text"  ></td>
+      <td class="edit right"><input ng-datatype="number" ng-model="jxGridlb[0].mshwyjxse" name="textfield" type="text"  ></td>
+      <td class="edit right"><input ng-datatype="number" ng-model="jxGridlb[0].fzcssjxse" name="textfield" type="text"  ></td>
+      <td class="edit right"><input ng-datatype="number" ng-model="jxGridlb[0].zrjxse" name="textfield" type="text"  ></td>
+      <td colspan="2" class="read right"><input ng-datatype="number" ng-model="jxGridlb[0].bqsjdkjxse" name="textfield" type="text"   readonly></td>
+    </tr>
+    </table>
+    <table width="100%" border="0" cellspacing="1" cellpadding="0" >
+    <tr>
+      <td colspan="6" align="center" class="title01"><strong>税款征收</strong></td>
+    </tr>
+    <tr>
+      <td align="center" class="title01">本期应缴增值税</td>
+      <td colspan="2" align="center" class="title01">本期已交增值税（含查补税款）</td>
+      <td align="center" class="title01">本期欠缴增值税</td>
+      <td colspan="2" align="center" class="title01">本年累计缴纳增值税</td>
+    </tr>
+    <tr ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.dlqyzzsxxsehjxsecdd.skzsForm">
+      <td class="edit right"><input ng-datatype="number" ng-model="skzsForm.bqyjzzs1" name="textfield" type="text"  ></td>
+      <td colspan="2" class="edit right"><input ng-datatype="number" ng-model="skzsForm.bqyjzzshcbsk" name="textfield" type="text"  ></td>
+      <td class="read right"><input ng-datatype="number" ng-model="skzsForm.bqqjzzs" name="textfield" type="text"   readonly></td>
+      <td colspan="2" class="edit right"><input ng-datatype="number" ng-model="skzsForm.bnljjnzzs" name="textfield" type="text"  ></td>
+    </tr>
+  </table>
+</div>
+
+<div class="NewTableFoot">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+      <td colspan="6"></td>
+      </tr>
+    <tr>
+      <td width="15%">报送单位确认</td>
+      <td>　</td>
+      <td width="15%">主管税务机关确认</td>
+      <td>　</td>
+      <td width="15%">市级税务机关确认</td>
+      <td>　</td>
+    </tr>
+    <tr>
+      <td>　</td>
+      <td>　</td>
+      <td>主管税务机关签章</td>
+      <td>　</td>
+      <td>主管税务机关签章</td>
+      <td>　</td>
+    </tr>
+    <tr>
+      <td colspan="2" width="15%">单位签章</td>
+      <td>主管税务人员签字：</td>
+      <td>　</td>
+      <td>　</td>
+      <td>　</td>
+    </tr>
+    <tr>
+      <td colspan="2" width="15%">审核税务人员签字：</td>
+      <td colspan="2" width="15%">　</td>
+      <td>审核税务人员签字：</td>
+      <td>　</td>
+    </tr>
+    <tr>
+      <td colspan="6"></td>
+    </tr>
+    <tr>
+      <td colspan="6">注：1、发电企业本表由电厂（站、机组）填写，供电企业县（区）级供电企业能核算售电收入的，由县（区）级供电企业填写，市级核算售电收入的，由市级供电企业填写；</td>
+      </tr>
+      <tr>
+      <td colspan="6"> 　　2、本表在申报期内，随同申报表一同报送至主管税务机关，税务机关审核完毕后，按隶属关系报送上一级汇总审核，并报送至相应税务机关审核盖章后，继续上报。</td>
+      </tr>
+  </table>
+</div>
+</div>
+</body>
+</html>

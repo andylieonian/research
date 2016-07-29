@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>加油站月销售油品汇总表</title>
+<link href="../../../../css/table.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="width:1700px;">
+<div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl">
+<div class="NewTableHead" ng-jprefix="zzsybsbSbbdxxVO.zzsybnsrsb_jyzyxsyphzb">
+     <h1>加油站月销售油品汇总表</h1>
+
+</div>
+
+
+<div class="NewTableTop">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <td align="right">单位：升、元</td>
+            </tr>
+          </table>
+</div>
+
+
+<div class="NewTableMain" ng-jprefix="qcs.initData.nsrjbxx">
+<table border="0" cellpadding="0" cellspacing="1" class="jyzhzb">
+ 
+    <tbody>
+      <tr>
+        <td colspan="17" align="center" class="title01"> <strong>加油站月销售油品汇总表纳税人信息</strong></td>
+        
+      </tr>
+      <tr ng-jprefix="qcs.initData.zzsybnsrsbInitData">
+        <td align="center" class="title01">法定代表人 <strong> </strong></td>
+        <td colspan="2" align="center" class="read left" > 
+          <input  readonly style="border:0;background:transparent; width: 100%; type="text"  ng-model="nsrjbxx.frxm">
+        </td>
+        <td align="center" class="title01" >联系电话</td>
+        <td  colspan="2" align="center" class="edit left"><input  type="text" style="border:0;background:transparent; width: 100%; height:100%;"  ng-model="dhhm"></td>
+        <td align="center" class="title01">填表人</td>
+        <td colspan="2" align="center" class="edit left"><input   type="text" style="border:0;background:transparent; width: 100%; height:100%;" ng-model="tbr"></td>
+        <td align="center" class="title01">填表日期</td>
+        <td colspan="2" align="center" class="read left"><input  readonly style="border:0;background:transparent; width: 100%; type="text" ng-model="zzsybnsrsbInitData.sbrq"></td>
+        <td align="center" class="title01">受理税务机关</td>
+        <td colspan="4" align="center" class="read left"><input  readonly style="border:0;background:transparent; width: 100%; type="text"  ng-model="nsrjbxx.swjgDm"></td>
+        </tr>
+      <tr ng-jprefix="zzsybsbSbbdxxVO.zzsybnsrsb_jyzyxsyphzb.jyzyxsyphzbGrid.jyzyxsyphzbGridlbVO">
+        <td colspan="17" align="center" class="title01"> <strong>加油站月销售油品汇总表</strong></td>
+        
+      </tr>
+      <tr>
+        <td colspan="2" align="center" class="title01">出油数量</td>
+        <td colspan="8" align="center" class="title01">应 扣 除 油 量</td>
+        <td colspan="2" align="center" class="title01">应税销售数量</td>
+        <td colspan="5" align="center" class="title01">销 售 金 额</td>
+        
+      </tr>
+      <tr>
+        <td rowspan="2" align="center" class="title01">本月数</td>
+        <td rowspan="2" align="center" class="title01">累计数</td>
+        <td colspan="4" align="center" class="title01">本月数</td>
+        <td colspan="4" align="center" class="title01">累计数</td>
+        <td rowspan="2" align="center" class="title01">本月数</td>
+        <td rowspan="2" align="center" class="title01">累计数</td>
+        <td colspan="2" align="center" class="title01">通过加油机</td>
+        <td colspan="3" align="center" class="title01">不通过加油机</td>
+      </tr>
+      <tr>
+        <td align="center" class="title01">自用</td>
+        <td align="center" class="title01">倒库</td>
+        <td align="center" class="title01">代储</td>
+        <td align="center" class="title01">检测</td>
+        <td align="center" class="title01">自用</td>
+        <td align="center" class="title01">倒库</td>
+        <td align="center" class="title01">代储</td>
+        <td align="center" class="title01">检测</td>
+        <td align="center" class="title01">本月数</td>
+        <td align="center" class="title01">累计数</td>
+        <td align="center" class="title01">本月数</td>
+        <td align="center" class="title01">累计数</td>
+        <td width="100" align="center" class="title01"><strong>操作</strong></td> 
+        
+      </tr>
+      <tr  ng-repeat="p in jyzyxsyphzbGridlbVO track by $index" ng-repeat-init="jyzyxsyphzbGridlbVO"
+        default-value='{"cyslBys":0.00,"cyslLjs":0.00,"ykcylZyBys":0.00,"ykcylDkBys":0.00,"ykcylDcBys":0.00,"ykcylJcBys":0.00,"ykcylZyLjs":0.00,"ykcylDkLjs":0.00,"ykcylDcLjs":0.00,"ykcylJcLjs":0.00,"ysxsslBys":0.00,"ysxsslLjs":0.00,"xsjeTgjyjBys":0.00,"xsjeTgjyjLjs":0.00,"xsjeBtgjyjBys":0.00,"xsjeBtgjyjLjs":0.00}'>
+        <td class="edit right">
+          <input   type="text" ng-datatype="number" ng-model="p.cyslBys">
+        </td>
+        <td class="edit right">
+          <input   type="text" ng-datatype="number" ng-model="p.cyslLjs">
+        </td>
+        <td class="edit right">
+          <input   type="text" ng-datatype="number" ng-model="p.ykcylZyBys">
+        </td>
+        <td class="edit right">
+          <input   type="text" ng-datatype="number" ng-model="p.ykcylDkBys">
+        </td>
+        <td class="edit right">
+          <input   type="text" ng-datatype="number" ng-model="p.ykcylDcBys">
+        </td>
+        <td class="edit right">
+          <input   type="text" ng-datatype="number" ng-model="p.ykcylJcBys">
+        </td>
+        <td class="edit right">
+          <input   type="text" ng-datatype="number" ng-model="p.ykcylZyLjs">
+        </td>
+        <td class="edit right">
+          <input   type="text" ng-datatype="number" ng-model="p.ykcylDkLjs">
+        </td>
+        <td class="edit right">
+          <input   type="text" ng-datatype="number" ng-model="p.ykcylDcLjs">
+        </td>
+        <td class="edit right">
+          <input   type="text" ng-datatype="number" ng-model="p.ykcylJcLjs">
+        </td>
+        <td class="edit right">
+          <input   type="text" ng-datatype="number" ng-model="p.ysxsslBys">
+        </td>
+        <td class="edit right">
+          <input   type="text" ng-datatype="number" ng-model="p.ysxsslLjs">
+        </td>
+        <td class="edit right">
+          <input   type="text" ng-datatype="number" ng-model="p.xsjeTgjyjBys">
+        </td>
+        <td class="edit right">
+          <input   type="text" ng-datatype="number" ng-model="p.xsjeTgjyjLjs">
+        </td>
+        <td class="edit right">
+          <input   type="text" ng-datatype="number" ng-model="p.xsjeBtgjyjBys">
+        </td>
+        <td class="edit right"><input   type="text" ng-datatype="number" ng-model="p.xsjeBtgjyjLjs"></td>
+         <td  align="center" >	
+         <div class="sbtnbox"> 
+    <a  class="sbtn sbtn01"  ng-href="#"  ng-click="add()">增加</a>&nbsp;&nbsp;&nbsp;<a class="sbtn sbtn03" ng-if="$index!=0"   ng-href="#"  ng-click="del($index)">删除</a></div></td>
+    
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+</div>
+</body>
+</html>

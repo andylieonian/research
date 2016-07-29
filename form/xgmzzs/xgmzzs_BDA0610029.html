@@ -1,0 +1,64 @@
+<!doctype html>
+<html id="ng-app"  xmlns:ng="http://angularjs.org">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" >
+<title>机动车辆经销企业销售明细表</title>
+</head>
+<body>
+<div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl">
+<div class="NewTableHead"  ng-jprefix="qcs.initData.zzsxgmsbInitData.sssq">
+     <h1>机动车辆经销企业销售明细表</h1>
+    <li class="dateTxt">税款所属期:
+         <input type="text" readonly="true" style="width:100px; height:20px;" ng-model="sssq.rqQ" class="topInput">    
+    		至
+    	 <input type="text" readonly="true" style="width:100px; height:20px;" ng-model="sssq.rqZ" class="topInput"> 
+    </li>
+</div>
+<div class="NewTableTop">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" ng-jprefix="qcs.initData.nsrjbxx">
+  <tr>
+    <td>纳税人识别号：
+    <span class="textline" ng-bind="nsrjbxx.nsrsbh"></span>     
+    </td>
+    <td align="right"></td>
+  </tr>
+  <tr>
+    <td>纳税人名称：
+    <span class="textline" ng-bind="nsrjbxx.nsrmc"></span>    
+     </td>
+    <td align="right">金额单位：元（列至角分）</td>
+  </tr>
+</table>
+</div>
+
+<div class="NewTableMain" ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.jdclscqyxsmxb.jdcljxqyxsmxbGrid.jdclscqyxsmxbGridlb">
+  <table width="100%" border="0" cellspacing="1" cellpadding="0">
+    <tr>
+      <td rowspan="2" align="center" class="title01"><strong>销售对象名称</strong></td>
+      <td rowspan="2" align="center" class="title01"><strong>购货方纳税人识别号</strong></td>
+      <td colspan="3" align="center" class="title01"><strong>销售情况</strong></td>
+    </tr>
+    <tr>
+      <td align="center" class="title01"><strong>厂牌型号</strong></td>
+      <td align="center" class="title01"><strong>车辆识别代码（车架号码）</strong></td>
+      <td align="center" class="title01"><strong>销售价格</strong></td>
+    </tr>
+    <tr ng-repeat="p in jdclscqyxsmxbGridlb track by $index" ng-repeat-init="jdclscqyxsmxbGridlb">
+      <td class="edit right"><input ng-datatype="string" ng-model="p.xsdxmc" type="text"></td>
+      <td class="edit right"><input ng-datatype="string" ng-model="p.ghfnsrrbh" type="text"></td>
+      <td class="edit right"><input ng-datatype="string" ng-model="p.cpxh1" type="text"></td>
+      <td class="edit right"><input ng-datatype="string" ng-model="p.clsbdm" type="text"></td>
+      <td class="edit right"><input ng-datatype="number" ng-model="p.xsjg" type="text"></td>
+      </tr>
+    <tr ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.jdclscqyxsmxb.jdcljxqyxsmxbGrid">
+      <td colspan="2" align="center" class="title01">合计</td>
+      <td class="read right"><input type="text" value="--" readonly></td>
+      <td class="read right"><input type="text" value="--" readonly></td>
+      <td class="read right"><input ng-datatype="number" ng-model="jdcljxqyxsmxbGrid.xsjghj" type="text" readonly></td>
+    </tr>
+  </table>
+</div>
+</div>
+</body>
+</html>

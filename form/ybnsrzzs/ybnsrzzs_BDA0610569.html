@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=EDGE">
+<title>13$代扣代缴税收通用缴款书抵扣清单</title>
+</head>
+
+<body>
+<div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl" >
+<div class="NewTableHead" ng-jprefix="zzsybsbSbbdxxVO.zzsybnsrsb_dkdjsstyjksdkqd.sbbhead">
+     <h1>代扣代缴税收通用缴款书抵扣清单</h1>
+  <li class="dateTxt">税款所属时间:<input type="text" class="topInput" style="width:120px; " readonly ng-model="sbbhead.skssqq"> 至 <input type="text" class="topInput" style="width:120px; " readonly ng-model="sbbhead.skssqz"></li>
+</div>
+
+
+<div class="NewTableTop" ng-jprefix="zzsybsbSbbdxxVO.zzsybnsrsb_dkdjsstyjksdkqd.sbbhead">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>纳税人名称： 
+      <span class="textline" ng-bind="sbbhead.nsrmc"></span>
+     </td>
+    <td align="right">纳税人识别号：
+      <input type="text" ng-datatype="string" jflag="1" readonly style="width:224px;" ng-model="sbbhead.nsrsbh" class="topInput" /></td>
+  </tr>
+<tr ng-jprefix="qcs.initData.nsrjbxx">
+    <td>主管税务机关名称：
+      <span class="textline" ng-bind="nsrjbxx.zgswskfjmc"></span>
+    <td align="right">主管纳税机关代码：
+      <input type="text"  jflag="1" readonly style="width:200px;" ng-model ="nsrjbxx.zgswskfjDm" class="topInput" /></td>
+  </tr>
+  <tr>
+    <td ng-jprefix="qcs.initData.zzsybnsrsbInitData">纳税申报日期：
+      <input type="text"  jflag="1" readonly style="width:100px;" ng-model ="zzsybnsrsbInitData.sbrq" class="topInput" /></td>
+    <td align="right">金额单位：元（列至角分）</td>
+  </tr>
+</table>
+</div>
+
+
+<div class="NewTableMain" ng-jprefix="zzsybsbSbbdxxVO.zzsybnsrsb_dkdjsstyjksdkqd.dkdjsstyjksdkqdGrid.dkdjsstyjksdkqdGridlb">
+  <table width="100%" border="0" cellpadding="0" cellspacing="1" >
+    <colgroup class="c1">
+      </colgroup>
+    <colgroup class="c1">
+      </colgroup>
+    <colgroup class="c1">
+      </colgroup>
+    <colgroup class="c1">
+      </colgroup>
+    <colgroup class="c1">
+      </colgroup>
+    <colgroup class="c1">
+      </colgroup>
+      <tr>
+        <td align="center" class="title01"><strong>扣缴人纳税人识别号</strong></td>
+        <td align="center" class="title01"><strong>扣缴人名称</strong></td>
+        <td align="center" class="title01"><strong>征收机关名称</strong></td>
+        <td align="center" class="title01"><strong>代扣代缴项目</strong></td>
+        <td align="center" class="title01"><strong>代扣代缴凭证编号</strong></td>
+        <td align="center" class="title01"><strong>税额</strong></td>
+        <td align="center" class="title01"><strong>操作</strong></td>
+      </tr>
+      <tr ng-repeat="p in dkdjsstyjksdkqdGridlb track by $index" ng-repeat-init="dkdjsstyjksdkqdGridlb"
+                default-value='{"kjrnsrsbh":"","kjrmc":"","zsjgmc":"","dkdjxm":"","dkdjpzbh":"","se":0.00}'>
+        <td class="edit left">
+          <input jflag="1"  type="text"  ng-model="p.kjrnsrsbh">
+        </td>
+        <td class="edit left">
+          <input jflag="1"  type="text"  ng-model="p.kjrmc">
+        </td>
+        <td class="edit left">
+          <input jflag="1"  type="text" ng-model="p.zsjgmc">
+        </td>
+        <td class="edit left">
+          <input jflag="1"  type="text"  ng-model="p.dkdjxm">
+        </td>
+        <td class="edit left"><input jflag="1"  type="text" ng-model="p.dkdjpzbh"></td>
+        <td class="edit right"><input jflag="1" class="tir" type="text" ng-datatype="number" ng-model="p.se"></td>
+          <td align="center" ><div class="sbtnbox"><a class="sbtn sbtn01" ng-href="#" ng-click="add()">增加</a>&nbsp;&nbsp;&nbsp;<a class="sbtn sbtn03" ng-if="$index!=0" ng-href="#" ng-click="del($index)">删除</a></div></td>
+      </tr>
+      <tr ng-jprefix="zzsybsbSbbdxxVO.zzsybnsrsb_dkdjsstyjksdkqd.dkdjsstyjksdkqdGrid">
+        <td align="center" class="title01">合计</td>
+        <td class="back">--</td>
+        <td class="back">--</td>
+        <td class="back">--</td>
+        <td class="back">--</td>
+        <td class="read right"><input jflag="1" class="tir" readonly type="text" ng-datatype="number" ng-model="dkdjsstyjksdkqdGrid.seHj"></td>
+        <td class="back">--</td>
+      </tr>
+      <tr ng-render-finish=""></tr>
+  </table>
+</div>
+</div>
+</body>
+</html>

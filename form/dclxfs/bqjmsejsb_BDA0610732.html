@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>本期减（免）税额计算表</title>
+</head>
+
+<body>
+<div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl"  >
+<div class="NewTableHead" ng-jprefix="xfssbSbbdxxVO.xfsDcsb.xfssb7.sbbhead">
+     <h1>本期减（免）税额计算表</h1>
+     <li class="dateTxt">税款所属期:<input name="textfield3" type="text" class="topInput" id="textfield3"  ng-model="sbbhead.skssqq" readonly> 
+     至<input name="textfield3" type="text" class="topInput" 
+     id="textfield3" value=" " ng-model="sbbhead.skssqz" readonly>  </li>
+</div>
+
+
+<div class="NewTableTop">`
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>纳税人名称（公章）：<input type="text" class="topInput" value="" ng-model="sbbhead.nsrmc" readonly> </td>
+        <td colspan="2" align="right">纳税人识别号：<input name="textfield3" type="text" class="topInput" id="textfield3" value=" " ng-model="sbbhead.nsrsbh" readonly>  </td>
+      </tr>
+      <tr>
+        <td>填表日期：<input name="textfield3" type="text" class="topInput" id="textfield3" value=" " ng-model="sbbhead.sbrq1" readonly> </td>
+        <td align="right">计量单位：只</td>
+        <td align="right">金额单位：元（列至角分）</td>
+      </tr>
+    </table>
+  </div>
+
+<div class="NewTableMain"  ng-jprefix="xfssbSbbdxxVO.xfsDcsb.xfssb7_fb1.bqjmsejsbdcGrid">
+  <table width="100%" border="0" cellspacing="1" cellpadding="0">
+    <tr>
+      <td align="center" class="title01"><strong>应税消费品名称</strong></td>
+      <td align="center" class="title01"><strong>本期减（免）数量</strong></td>
+      <td align="center" class="title01"><strong>本期减（免）销售额</strong></td>
+      <td align="center" class="title01"><strong>适用税率</strong></td>
+      <td align="center" class="title01"><strong>本期减（免）税额</strong></td>
+    </tr>
+    <tr>
+      <td class="title01">无汞原电池</td>
+      <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[0].bqjmsl" name="textfield" type="text" id="textfield" value="0.00"></td>
+      <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[0].bqjmxse" name="textfield" type="text" id="textfield" value="0.00"></td>
+      <td class="edit right"><input type="text" value="4%" jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[0].sysl" name="textfield" readonly></td>
+      <td class="edit right"><input type="text" value="0.0" jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[0].bqjmse" name="textfield" readonly></td>
+    </tr>
+    <tr>
+      <td class="title01">金属氢化物镍蓄电池</td>
+      <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[1].bqjmsl" name="textfield" type="text" id="textfield" value="0.00"></td>
+      <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[1].bqjmxse" name="textfield" type="text" id="textfield" value="0.00"></td>
+      <td class="edit right"><input type="text" value="4%" jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[1].sysl" name="textfield" readonly></td>
+      <td class="edit right"><input type="text" value="0.0" jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[1].bqjmse" name="textfield" readonly></td>
+    </tr>
+    <tr>
+      <td class="title01">锂原电池</td>
+      <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[2].bqjmsl" name="textfield" type="text" id="textfield" value="0.00"></td>
+      <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[2].bqjmxse" name="textfield" type="text" id="textfield" value="0.00"></td>
+      <td class="edit right"><input type="text" value="4%" jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[2].sysl" name="textfield" readonly></td>
+      <td class="edit right"><input type="text" value="0.0" jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[2].bqjmse" name="textfield" readonly></td>
+    </tr>
+    <tr>
+      <td class="title01">锂离子蓄电池</td>
+      <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[3].bqjmsl" name="textfield" type="text" id="textfield" value="0.00"></td>
+      <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[3].bqjmxse" name="textfield" type="text" id="textfield" value="0.00"></td>
+      <td class="edit right"><input type="text" value="4%" jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[3].sysl" name="textfield" readonly></td>
+      <td class="edit right"><input type="text" value="0.0" jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[3].bqjmse" name="textfield" readonly></td>
+    </tr>
+    <tr>
+      <td class="title01">全钒液流电池</td>
+     <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[4].bqjmsl" name="textfield" type="text" id="textfield" value="0.00"></td>
+      <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[4].bqjmxse" name="textfield" type="text" id="textfield" value="0.00"></td>
+      <td class="edit right"><input type="text" value="4%" jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[4].sysl" name="textfield" readonly></td>
+      <td class="edit right"><input type="text" value="0.0" jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[4].bqjmse" name="textfield" readonly></td>
+    </tr>
+    <tr>
+      <td class="title01">燃料电池</td>
+      <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[5].bqjmsl" name="textfield" type="text" id="textfield" value="0.00"></td>
+      <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[5].bqjmxse" name="textfield" type="text" id="textfield" value="0.00"></td>
+      <td class="edit right"><input type="text" value="4%" jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[5].sysl" name="textfield" readonly></td>
+      <td class="edit right"><input type="text" value="0.0" jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[5].bqjmse" name="textfield" readonly></td>
+    </tr>
+    <tr>
+      <td class="title01">太阳能电池</td>
+      <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[6].bqjmsl" name="textfield" type="text" id="textfield" value="0.00"></td>
+      <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[6].bqjmxse" name="textfield" type="text" id="textfield" value="0.00"></td>
+      <td class="edit right"><input type="text" value="4%" jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[6].sysl" name="textfield" readonly></td>
+      <td class="edit right"><input type="text" value="0.0" jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsejsbdcGridlb[6].bqjmse" name="textfield" readonly></td>
+    </tr>
+    <tr>
+      <td class="title01">合计</td>
+      <td class="edit right"><input type="text" value="0.0" jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmslhj" name="textfield" readonly>
+    </td>
+      <td class="edit right"><input type="text" value="0.0" jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmxsehj" name="textfield" readonly>
+    </td>
+      <td class="read mid"><input type="text" value="— —" jflag="1" name="textfield" readonly></td>
+      <td class="edit right"><input type="text" value="0.0" jflag="1" ng-datatype="number" ng-model="bqjmsejsbdcGrid.bqjmsehj" name="textfield" readonly>
+    </td>
+    </tr>
+  </table>
+</div>
+
+
+
+</div>
+</body>
+</html>

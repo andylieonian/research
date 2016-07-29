@@ -1,0 +1,331 @@
+{
+	"jmxxGrid": {
+		"jmxxGridlb": []
+	},
+	"qcs": {
+		"formContent": {
+			"xfs_hznsqyxfsfpb": {
+				"hznsqyxfsfpbForm": "                ",
+				"hznsqyxfsfpbGrid": {
+					"hznsqyxfsfpbGridlbVO": [
+						{
+							"fzjgdjxh": "10114408000130979898",
+							"fzjgmc": "湛江丹福珠宝有限公司城市广场分公司",
+							"fzjgnsrsbh": "440803076666562"
+						}, {
+							"fzjgdjxh": "10114408000131145944",
+							"fzjgmc": "湛江丹福珠宝有限公司霞山国贸分公司",
+							"fzjgnsrsbh": "44080307666660X"
+						}
+					]
+				},
+				"sbbhead": "",
+				"slxx": {
+					"slrDm": "",
+					"slrq": "",
+					"slswjgDm": ""
+				}
+			},
+			"xfsfjssb": {
+				"fjsxxGrid": {}
+			}
+		},
+		"initData": {
+			"hdxx": {
+				"dqdehd": {
+					"djxh": "",
+					"hdse": "",
+					"hdzxqq": "",
+					"hdzxqz": "",
+					"nsqxDm": "",
+					"sjzxqx": "",
+					"sl": "",
+					"ynsjye": "",
+					"zgswskfjDm": "",
+					"zspmDm": "",
+					"zsxmDm": ""
+				},
+				"qtszhd": [
+					{
+						"desl": 0,
+						"djxh": "",
+						"hdjsyjje": 0,
+						"hdjsyjxm": "",
+						"hdqxq": "",
+						"hdqxz": "",
+						"hdse": 0,
+						"jldwDm": "01",
+						"nsqxDm": "",
+						"sjgsd": "",
+						"sl": 0.11,
+						"tbrq": "",
+						"xmbm": "",
+						"zgswskfjDm": "",
+						"zspmDm": "0126",
+						"zspmMc": "卷烟（商业批发,从价计算）",
+						"zsxmDm": "031"
+					}, {
+						"desl": 50,
+						"djxh": "",
+						"hdjsyjje": 0,
+						"hdjsyjxm": "",
+						"hdqxq": "",
+						"hdqxz": "",
+						"hdse": 0,
+						"jldwDm": "01",
+						"nsqxDm": "",
+						"sjgsd": "",
+						"sl": 0,
+						"tbrq": "",
+						"xmbm": "",
+						"zgswskfjDm": "",
+						"zspmDm": "0127",
+						"zspmMc": "卷烟（商业批发，从量计算）",
+						"zsxmDm": "031"
+					}
+				]
+			},
+			"nsrjbxx": {
+				"cyrs": "20",
+				"dhhm": "",
+				"djrq": "2012-04-10",
+				"djxh": "10114408000131215593",
+				"djzclxDm": "173",
+				"djzclxMc": "私营有限责任公司",
+				"dkdjbz": "N",
+				"ejzzfl": "",
+				"fddbrsfzjhm": "440882199101140020",
+				"fddbrsfzjlxmc": "居民身份证",
+				"fddbrsfzjzldm": "201",
+				"frxm": "谢萍萍",
+				"gdghlxDm": "3",
+				"gdslxDm": "1",
+				"hsfs": "11",
+				"hyDm": "5146",
+				"hydm": "5146",
+				"hymc": "首饰、工艺品及收藏品批发",
+				"jdxzDm": "440802952",
+				"jdxzmc": "赤坎市直",
+				"jydz": "湛江市赤坎区中山一路2号（湛江世贸大厦）第一层24号商场第10号铺",
+				"jyfw": "",
+				"khzh": "22222222222255555555",
+				"lrrDm": "14408000037",
+				"lsgxDm": "40",
+				"lsgxMc": "市、地区",
+				"nsrdzxlh": "",
+				"nsrmc": "湛江丹福珠宝有限公司",
+				"nsrsbh": "440801594011638",
+				"nsrztDm": "03",
+				"qylx": "",
+				"qywz": "",
+				"qyyx": "",
+				"sbsxDm1": "11",
+				"scjydlxdh": "236060811",
+				"sjgsdq": "14408010000",
+				"slr": "24400dzbst0",
+				"ssglyDm": "14408010053",
+				"sshy": "首饰、工艺品及收藏品批发",
+				"swdjlxDm": "1",
+				"swjgDm": "14408010000",
+				"swjgMc": "湛江市国家税务局直属税务分局",
+				"sykjzd": "201",
+				"tbrq": "2016-07-21",
+				"wtdzbz": "N",
+				"xzqhdm": "440802",
+				"xzqhmc": "赤坎区",
+				"yb": "524000",
+				"yhMc": "中国银行",
+				"yhxxGrid": {
+					"yhxxGridlb": [
+						{
+							"yhhbDm": "102",
+							"yhhbMc": "中国工商银行",
+							"yhyywdDm": "102440800066",
+							"yhyywdMc": "中国工商银行股份有限公司湛江人民大道南支行",
+							"yhzh": "2015025409020131711",
+							"zhmc": "湛江丹福珠宝有限公司"
+						}, {
+							"yhhbDm": "103",
+							"yhhbMc": "中国农业银行",
+							"yhyywdDm": "103440800059",
+							"yhyywdMc": "中国农业银行股份有限公司徐闻县松园支行",
+							"yhzh": "1111111115555555555",
+							"zhmc": "湛江丹福珠宝有限公司"
+						}, {
+							"yhhbDm": "104",
+							"yhhbMc": "中国银行",
+							"yhyywdDm": "104440800007",
+							"yhyywdMc": "中国银行股份有限公司湛江寸金路支行",
+							"yhzh": "22222222222255555555",
+							"zhmc": "湛江丹福珠宝有限公司"
+						}
+					]
+				},
+				"yjzzfl": "",
+				"zcdz": "湛江市赤坎区中山一路2号（湛江世贸大厦）第一层24号商场第10号铺",
+				"zczbze": "5000000",
+				"zgswjDm": "14408010000",
+				"zgswskfjDm": "14408010000",
+				"zgswskfjmc": "湛江市国家税务局直属税务分局",
+				"zzjgDm": "594011638",
+				"zzjglxDm": "1",
+				"zzsqylxDm": "1"
+			},
+			"xfsJysbInitData": {
+				"bqjnQqYnse": 110,
+				"bqyj": 10,
+				"cqwjse": 10,
+				"djxh": "10114408000131215593",
+				"hznsqyZjgbz": "Y",
+				"sbqx": "ceshi",
+				"sbrq": "2016-07-21",
+				"sbzlcode": "0",
+				"sbzlmc": "",
+				"sfyfjs": "",
+				"sssq": {
+					"rqQ": "2016-05-01",
+					"rqZ": "2016-05-31"
+				},
+				"yjs": 0
+			},
+			"yhxx": {
+				"jmxxGrid": {},
+				"yjjmxx": {
+					"jmfsDm": "06",
+					"yjfsDm": "11"
+				},
+				"yjxxGrid": {}
+			}
+		}
+	},
+	"sbSBbcTjqtxxVO": {
+		"djxh": "10114408000131215593",
+		"hyDm": "",
+		"jdxzDm": "",
+		"qzdbz": "",
+		"scenceCs": "4",
+		"xzqhszDm": "",
+		"zgswskfjDm": "",
+		"zxbztzsuuid": ""
+	},
+	"sbxxGrid": {
+		"sbxxGridlb": []
+	},
+	"xfssbSbbdxxVO": {
+		"xfsYlpfsb": {
+			"xfssb2": {
+				"jyxsslhj":0,
+				"jyxsehj":0,
+				"jyynsehj":0,
+				"sbbhead": {
+					"nsrmc": "湛江丹福珠宝有限公司",
+					"nsrsbh": "440801594011638",
+					"sbrq1": "2016-07-21",
+					"sbsxDm1": "11",
+					"skssqq": "2016-05-01",
+					"skssqz": "2016-05-31"
+				},
+				"sbsjxxForm2": {
+					"bqjnqqynse": 0,
+					"bqybtse": 0,
+					"bqyjse": 0,
+					"qcwjse": 0,
+					"qmwjse": 0,
+					"xfssbblxDm": ""
+				},
+				"sbsjxxGrid2": {
+					"sbsjxxGridlb": [
+						{
+							"ewbhxh": 1,
+							"sl1": 0.11,
+							"xse": 0,
+							"xssl": 0,
+							"ynse": 0,
+							"zspmDm": "101020106"
+						}, {
+							"ewbhxh": 2,
+							"sl1": 50,
+							"xse": 0,
+							"xssl": 0,
+							"ynse": 0,
+							"zspmDm": "101020109"
+						}
+					]
+				},
+				"slxxForm": {
+					"cwfzr": "",
+					"jbr": "",
+					"lxdh": "",
+					"sqr": "",
+					"swdlrdz": "",
+					"swdlrmc": ""
+				}
+			},
+			"xfssb2_fb1": {
+				"jypfqyyfxsmxqdGrid": {
+					"jypfqyyfxsmxqdGridlb": [
+						{
+							"bz": "",
+							"bzsptm": "",
+							"ewbhxh": 0,
+							"jylbDm1": "",
+							"jylxDm1": "",
+							"phgg": "",
+							"xse": 0,
+							"xsjg": 0,
+							"xssl": 0
+						}
+					]
+				}
+			},
+			"xfssb2_fb2": {
+				"fzjgGrid": {
+					"fzjgGridlb": [
+						{
+							"bhznsqynsrmc": "湛江丹福珠宝有限公司城市广场分公司",
+							"bhznsqynsrsbh": "440803076666562",
+							"bhzrdjxh": "10114408000130979898",
+							"ewbhxh": 1,
+							"fzjgfpbl": 0,
+							"fzjgfpse": 0,
+							"fzjgxssr": 0
+						}, {
+							"bhznsqynsrmc": "湛江丹福珠宝有限公司霞山国贸分公司",
+							"bhznsqynsrsbh": "44080307666660X",
+							"bhzrdjxh": "10114408000131145944",
+							"ewbhxh": 0,
+							"fzjgfpbl": 0,
+							"fzjgfpse": 0,
+							"fzjgxssr": 0
+						}
+					]
+				},
+				"zjgForm": {
+					"bsdw": "",
+					"bsrymc": "",
+					"dhhm": "",
+					"fddbrxm": "谢萍萍",
+					"khyh": "",
+					"lxdh": "236060811",
+					"slrq": "",
+					"slry": "",
+					"ybtse": 0,
+					"yhzh": "",
+					"yydz": "湛江市赤坎区中山一路2号（湛江世贸大厦）第一层24号商场第10号铺",
+					"zfjgxsehj": 0,
+					"zgswjgmc": "湛江市国家税务局直属税务分局",
+					"zgswjgshyj": "",
+					"zjgfpbl": 0,
+					"zjgfpse": 0,
+					"zjgnsrmc": "湛江丹福珠宝有限公司",
+					"zjgnsrsbh": "440801594011638",
+					"zjgxssr": 0
+				}
+			}
+		},
+		"xfssbblxDm": "02"
+	},
+	"yjxxGrid": {
+		"yjxxGridlb": []
+	}
+}

@@ -1,0 +1,187 @@
+<!doctype html>
+<html id="ng-app"  xmlns:ng="http://angularjs.org">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=EDGE">
+<title>卷烟批发企业月份销售明细清单</title>
+
+</head>
+
+<body>
+<ng-codetable url="../xgmzzs/nf_dm_sb_zzs_pzzldm.json" name="msxzdmCT" node="" dm="root.dm" mc="root.mc"></ng-codetable>
+<ng-codetable url="../xgmzzs/nf_dm_sb_zzs_pzzldm.json" name="pzzldmCT" node="" dm="root.dm" mc="root.mc"></ng-codetable>
+<div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl"  ng-jprefix="xfssbSbbdxxVO.xfsYlpfsb.xfssb2_fb1.jypfqyyfxsmxqdGrid" >
+<div class="NewTableHead"   >
+     <h1>卷烟批发企业月份销售明细清单</h1>
+    <li class="dateTxt">税款所属期:<input type="text" class="topInput" ng-model="jypfqyyfxsmxqdGrid.skssqq"  readonly> 至<input type="text" class="topInput" ng-model="jypfqyyfxsmxqdGrid.skssqz" readonly>  </li>
+</div>
+
+
+<div class="NewTableTop" >
+<table width="100%" border="0" cellspacing="0" cellpadding="0"   >
+  <tr>
+    <td>纳税人名称（公章）：<input style="width: 160px;" type="text" class="topInput"  ng-model="jypfqyyfxsmxqdGrid.nsrmc" readonly> </td>
+    <td align="right">纳税人识别号：<input type="text" class="topInput" ng-model="jypfqyyfxsmxqdGrid.nsrsbh" readonly> </td>
+  </tr>
+  <tr>
+    <td>填表日期：<input type="text" class="topInput" ng-model="jypfqyyfxsmxqdGrid.tbrq"  readonly> </td>
+    <td align="right">&nbsp;</td>
+  </tr>
+</table>
+</div>
+
+<div class="NewTableMain"  ng-jprefix="xfssbSbbdxxVO.xfsYlpfsb.xfssb2_fb1.jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb"  >
+<table width="100%" border="0" cellspacing="1" cellpadding="0"    >
+  <tr>
+   <td align="center" class="title01"   ><strong>序号</strong></td>
+    <td align="center" class="title01"><strong>卷烟条包装商品条码</strong></td>
+    <td align="center" class="title01"><strong>卷烟牌号规格</strong></td>
+    <td align="center" class="title01"><strong>卷烟类别</strong></td>
+    <td align="center" class="title01"><strong>卷烟类型</strong></td>
+    <td align="center" class="title01"><strong>销售价格（元/条）</strong></td>
+    <td align="center" class="title01"><strong>销售数量（万支）</strong></td>
+    <td align="center" class="title01"><strong>销售额</strong></td>
+    <td align="center" class="title01"><strong>备注<br>
+    </strong></td>
+    <td   align="center" class="title01">操作</td>
+    </tr>
+  
+  <tr    ng-repeat="p in jypfqyyfxsmxqdGridlb  track by $index" ng-repeat-init="jypfqyyfxsmxqdGridlb" 
+      default-value='{"bzsptm":"","phgg":"","jylbDm1":"","jylxDm1":"","xsjg":"","xssl":0,"xse":0,"bz":"" }'>
+    <td class="edit mid"  ng-bind="p.ewbhxh=$index+1"></td>
+    <td class="edit mid"><input   ng-model="p.bzsptm"  type="text" ></td>
+    <td class="edit mid"><input    ng-model="p.phgg" type="text"></td>
+    <td class="edit mid"><select ng-model="p.jylbDm1" ng-options="key as value for (key,value) in CT.msxzdmCT"><option value=""></option></select></td>
+    <td class="edit mid"><select ng-model="p.jylxDm1" ng-options="key as value for (key,value) in CT.pzzldmCT"><option value=""></option></select> </td>
+    <td class="edit right"><input  ng-datatype="number" ng-model="p.xsjg"  type="text" ></td>
+    <td class="edit right"><input    ng-datatype="number{4}" ng-model="p.xssl" type="text"></td>
+    <td class="read right"><input  type="text" value="0.00" readonly  ng-datatype="number" ng-model="p.xse"></td>
+    <td class="edit mid"><input    ng-model="p.bz" type="text" ></td>
+    <td  align="center" >   
+	      <div class="sbtnbox">     
+		    <a class="sbtn sbtn01"  ng-href="#"  ng-click="add()">增加</a>&nbsp;&nbsp;&nbsp;
+		    <a class="sbtn sbtn03" ng-if="$index!=0"   ng-href="#"  ng-click="del($index)">删除</a>
+	      </div>
+	</td>
+    </tr>
+    
+    <!--  
+  <tr>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.bzsptm"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.phgg"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.jylbDm1"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.jylxDm1"  type="text" ></td>
+    <td class="edit right"><input  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xsjg"  type="text"  value="0.00"></td>
+    <td class="edit right"><input  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xssl"  type="text"  value="0"></td>
+    <td class="read right"><input  type="text"  value="0.00" readonly  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xse"></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.bz"  type="text" ></td>
+    </tr>
+  <tr>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.bzsptm"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.phgg"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.jylbDm1"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.jylxDm1"  type="text" ></td>
+    <td class="edit right"><input  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xsjg"  type="text"  value="0.00"></td>
+    <td class="edit right"><input  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xssl"  type="text"  value="0"></td>
+    <td class="read right"><input  type="text"  value="0.00" readonly  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xse"></td>
+    <td class="edit mid"><input  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.bz"  type="text" ></td>
+    </tr>
+  <tr>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.bzsptm"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.phgg"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.jylbDm1"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.jylxDm1"  type="text" ></td>
+    <td class="edit right"><input  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xsjg"  type="text"  value="0.00"></td>
+    <td class="edit right"><input  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xssl"  type="text"  value="0"></td>
+    <td class="read right"><input  type="text"  value="0.00" readonly  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xse"></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.bz"  type="text" ></td>
+    </tr>
+  <tr>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.bzsptm"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.phgg"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.jylbDm1"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.jylxDm1"  type="text" ></td>
+    <td class="edit right"><input  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xsjg"  type="text"  value="0.00"></td>
+    <td class="edit right"><input  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xssl"  type="text"  value="0"></td>
+    <td class="read right"><input  type="text"  value="0.00" readonly  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xse"></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.bz"  type="text" ></td>
+    </tr>
+  <tr>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.bzsptm"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.phgg"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.jylbDm1"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.jylxDm1"  type="text" ></td>
+    <td class="edit right"><input  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xsjg"  type="text"  value="0.00"></td>
+    <td class="edit right"><input  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xssl"  type="text"  value="0"></td>
+    <td class="read right"><input  type="text"  value="0.00" readonly  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xse"></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.bz"  type="text" ></td>
+    </tr>
+  <tr>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.bzsptm"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.phgg"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.jylbDm1"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.jylxDm1"  type="text" ></td>
+    <td class="edit right"><input  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xsjg"  type="text"  value="0.00"></td>
+    <td class="edit right"><input  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xssl" name="textfield10" type="text" id="textfield10" value="0"></td>
+    <td class="read right"><input  type="text"  value="0.00" readonly  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xse"></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.bz"  type="text" ></td>
+    </tr>
+  <tr>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.bzsptm"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.phgg"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.jylbDm1"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.jylxDm1"  type="text" ></td>
+    <td class="edit right"><input  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xsjg"  type="text"  value="0.00"></td>
+    <td class="edit right"><input  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xssl" name="textfield11" type="text" id="textfield11" value="0"></td>
+    <td class="read right"><input  type="text"  value="0.00" readonly  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xse"></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.bz"  type="text" ></td>
+    </tr>
+  <tr>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.bzsptm"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.phgg"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.jylbDm1"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.jylxDm1"  type="text" ></td>
+    <td class="edit right"><input  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xsjg"  type="text"  value="0.00"></td>
+    <td class="edit right"><input  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xssl" name="textfield12" type="text" id="textfield12" value="0"></td>
+    <td class="read right"><input  type="text"  value="0.00" readonly  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xse"></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.bz"  type="text" ></td>
+    </tr>
+  <tr>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.bzsptm"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.phgg"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.jylbDm1"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.jylxDm1"  type="text" ></td>
+    <td class="edit right"><input  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xsjg"  type="text"  value="0.00"></td>
+    <td class="edit right"><input  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xssl" name="textfield13" type="text" id="textfield13" value="0"></td>
+    <td class="read right"><input  type="text"  value="0.00" readonly  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xse"></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.bz"  type="text" ></td>
+    </tr>
+  <tr>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.bzsptm"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.phgg"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.jylbDm1"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.jylxDm1"  type="text" ></td>
+    <td class="edit right"><input  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xsjg"  type="text"  value="0.00"></td>
+    <td class="edit right"><input  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xssl" name="textfield14" type="text" id="textfield14" value="0"></td>
+    <td class="read right"><input  type="text"  value="0.00" readonly  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xse"></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.bz"  type="text" ></td>
+  </tr>
+  <tr>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.bzsptm"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.phgg"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.jylbDm1"  type="text" ></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.jylxDm1"  type="text" ></td>
+    <td class="edit right"><input  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xsjg"  type="text"  value="0.00"></td>
+    <td class="edit right"><input  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xssl" name="textfield15" type="text" id="textfield15" value="0"></td>
+    <td class="read right"><input  type="text"  value="0.00" readonly  ng-datatype="number" ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.xse"></td>
+    <td class="edit mid"><input   ng-model="jypfqyyfxsmxqdGrid.jypfqyyfxsmxqdGridlb.bz"  type="text" ></td>
+  </tr>
+  -->
+</table>
+</div>
+
+
+
+</div>
+</body>
+</html>

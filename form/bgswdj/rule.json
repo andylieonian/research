@@ -1,0 +1,24 @@
+[
+  	{
+	"id":"3",
+	"type":"02",
+	"desc":"",
+	"formula":"$..bgdjmxGridlb[#].pzjgmc!='11111'",
+	"tips":"请填写批准机关名称"
+  	},
+  	{
+	"id":"4",
+	"type":"02",
+	"desc":"",
+	"formula":"$..bgdjmxGridlb[#].pzwj!=1111",
+	"tips":"请填写批准文件"
+  	},
+  	{
+    "id": 5,
+    "type": "03",
+    "desc": "测试控制：【主表】控制规则, 如果第一行第一列大于10000, 就设置第一行第二列readonly，且变色",
+    "formula": "$..bgdjmxGridlb[0].pzjgmc==''",
+    "target": "$..bgdjmxGridlb[0].pzwj:readonly; $..bgdjmxGridlb[0].pzwj:background-color=#808080; $..bgdjmxGridlb[0].pzwj:font-weight=bold;",
+    "tips": ""
+  	}
+]

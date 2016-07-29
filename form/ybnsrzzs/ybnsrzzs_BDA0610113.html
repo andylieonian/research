@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>成品油购销存情况明细表</title>
+
+</head>
+
+<body   style="width:1700px;">
+<div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl">
+<div class="NewTableHead" ng-jprefix="qcs.initData.zzsybnsrsbInitData">
+     <h1>成品油购销存情况明细表</h1>
+    <li class="dateTxt">税款所属时间:<input type="text"   readonly style="width:100px;" ng-model="zzsybnsrsbInitData.sssq.rqQ" class="topInput"> 至 <input type="text" datatype="date"  readonly style="width:100px;" ng-model="zzsybnsrsbInitData.sssq.rqZ" class="topInput"></li>
+</div>
+<div class="NewTableTop" ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_cpygxcqkmxb.sbbheadVO">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>纳税人名称（公章）： 
+      <input type="text"   readonly style="width:200px;" ng-model="sbbheadVO.nsrmc" class="topInput" />
+     </td>
+    <td align="right">纳税人识别号：
+      <input type="text"  readonly style="width:200px;" ng-model="sbbheadVO.nsrsbh" class="topInput" /></td>
+  </tr>
+  <tr >
+    <td>填表日期： 
+      <input type="text"  readonly style="width:200px;" ng-model="sbbheadVO.tbrq" class="topInput" />
+     </td>
+    <td align="right">单位：吨、元</td>
+  </tr>
+</table>
+</div>
+
+
+<div class="NewTableMain" ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_cpygxcqkmxb.cpygxcqkmxbGrid.cpygxcqkmxbGridlbVO" >
+ <table width="100%" border="0" cellpadding="0" cellspacing="1" class="cpygxcqkmxb">
+ 
+  <tbody>
+  	<tr>
+	    <td rowspan="4" align="center" class="title01"><strong>油品型号</strong></td>
+	    <td colspan="4" align="center" class="title01"><strong>期初库存</strong></td>
+	    <td colspan="4" align="center" class="title01"><strong>本期入库</strong></td>
+	    <td colspan="6" align="center" class="title01"><strong>本期出库</strong></td>
+	    <td colspan="4" align="center" class="title01"><strong>期末库存</strong></td>
+	    <td rowspan="5" width="100" align="center" class="title01"><strong>操作</strong></td>
+    </tr>
+   <tr>
+    <td colspan="2" rowspan="2" align="center" class="title01">数量</td>
+    <td colspan="2" rowspan="2" align="center" class="title01">金额</td>
+    <td colspan="2" rowspan="2" align="center" class="title01">数量</td>
+    <td colspan="2" rowspan="2" align="center" class="title01">金额</td>   
+    <td colspan="2" align="center" class="title01">应税部分</td>
+    <td colspan="4" align="center" class="title01">非应税部分</td>
+    <td colspan="2" rowspan="2" align="center" class="title01">数量</td>
+    <td colspan="2" rowspan="2" align="center" class="title01">金额</td>
+    </tr>
+  <tr>
+    <td align="center" class="title01">数量</td>
+    <td align="center" class="title01">金额</td>
+    <td colspan="2" align="center" class="title01">数量</td>
+    <td colspan="2" align="center" class="title01">金额</td>
+    </tr>
+  <tr>
+    <td align="center" class="title01">自购</td>
+    <td align="center" class="title01">代储</td>
+    <td align="center" class="title01">自购</td>
+    <td align="center" class="title01">代储</td>
+    <td align="center" class="title01">自购</td>
+    <td align="center" class="title01">代储</td>
+    <td align="center" class="title01">自购</td>
+    <td align="center" class="title01">代储</td>
+    <td align="center" class="title01"></td>
+    <td align="center" class="title01"></td>
+    <td align="center" class="title01">自购</td>
+    <td align="center" class="title01">代储</td>
+    <td align="center" class="title01">自购</td>
+    <td align="center" class="title01">代储</td>
+    <td align="center" class="title01">自购</td>
+    <td align="center" class="title01">代储</td>
+    <td align="center" class="title01">自购</td>
+    <td align="center" class="title01">代储</td>
+  </tr>
+  <tr>
+    <td align="center" class="title01"></td>
+    <td align="center" class="title01">1</td>
+    <td align="center" class="title01">2</td>
+    <td align="center" class="title01">3</td>
+    <td align="center" class="title01">4</td>
+    <td align="center" class="title01">5</td>
+    <td align="center" class="title01">6</td>
+    <td align="center" class="title01">7</td>
+    <td align="center" class="title01">8</td>
+    <td align="center" class="title01">9</td>
+    <td align="center" class="title01">10</td>
+    <td align="center" class="title01">11</td>
+    <td align="center" class="title01">12</td>
+    <td align="center" class="title01">13</td>
+    <td align="center" class="title01">14</td>
+    <td align="center" class="title01">15</td>
+    <td align="center" class="title01">16</td>
+    <td align="center" class="title01">17</td>
+    <td align="center" class="title01">18</td>
+  </tr>
+   <tr  ng-repeat="p in cpygxcqkmxbGridlbVO track by $index" ng-repeat-init="cpygxcqkmxbGridlbVO"
+        default-value='{"ypxh":"","qckcZgsl":0.00,"qckcDcsl":0.00,"qckcZgje":0.00,"qckcDcje":0.00,"bqrkZgsl":0.00,"bqrkDcsl":0.00,"bqrkZgje":0.00,"bqrkDcje":0.00,"bqckYsbfsl":0.00,"bqckYsbfje":0.00,"bqckFysbfZysl":0.00,"bqckFysbfDcsl":0.00,"bqckFysbfZyje":0.00,"bqckFysbfDcje":0.00,"qmkcZgsl":0.00,"qmkcDcsl":0.00,"qmkcZgje":0.00,"qmkcDcje":0.00}'> 
+    <td class="edit right"><input class="til" type="text"  ng-model="p.ypxh"></td>
+    <td class="edit right"><input type="text" ng-datatype="number"  ng-model="p.qckcZgsl"></td>
+    <td class="edit right"><input type="text" ng-datatype="number"  ng-model="p.qckcDcsl"></td>
+    <td class="edit right"><input type="text" ng-datatype="number"  ng-model="p.qckcZgje"></td>
+    <td class="read right" align="center">--</td>
+    <td class="edit right"><input type="text" ng-datatype="number"  ng-model="p.bqrkZgsl"></td>
+    <td class="edit right"><input type="text" ng-datatype="number" ng-model="p.bqrkDcsl"></td>
+    <td class="edit right"><input type="text" ng-datatype="number" ng-model="p.bqrkZgje"></td>
+    <td class="read right"  align="center">--</td>
+    <td class="edit right"><input type="text" ng-datatype="number" ng-model="p.bqckYsbfsl"></td>
+    <td class="edit right"><input type="text" ng-datatype="number" ng-model="p.bqckYsbfje"></td>
+    <td class="edit right"><input type="text" ng-datatype="number" ng-model="p.bqckFysbfZysl"></td>
+    <td class="edit right"><input type="text" ng-datatype="number" ng-model="p.bqckFysbfDcsl"></td>
+    <td class="edit right"><input type="text"  ng-datatype="number" ng-model="p.bqckFysbfZyje"></td>
+    <td class="read right"  align="center">--</td>
+    <td class="read right"><input type="text"  readonly ng-datatype="number"  ng-model="p.qmkcZgsl"></td>
+    <td class="read right"><input type="text"  readonly  ng-datatype="number" ng-model="p.qmkcDcsl"></td>
+    <td class="read right"><input type="text"  ng-datatype="number"  readonly ng-model="p.qmkcZgje"></td>
+    <td class="read right" align="center">--</td> 
+    <td  align="center" >
+    <div class="sbtnbox"> 
+    <a  class="sbtn sbtn01"  ng-href="#"  ng-click="add()">增加</a>&nbsp;&nbsp;&nbsp;<a class="sbtn sbtn03" ng-if="$index!=0"   ng-href="#"  ng-click="del($index)">删除</a></div></td>
+ 
+  </tr>
+  <tr ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_cpygxcqkmxb.cpygxcqkmxbGrid">
+    <td align="center" class="title01">合计</td>
+    <td class="back">- -</td>
+    <td class="back">- -</td>
+    <td class="read right"><input type="text"    ng-datatype="number"  readonly ng-model="cpygxcqkmxbGrid.qckcZgjehj"></td>
+    <td class="back">- -</td>
+    <td class="back">- -</td>
+    <td class="back">- -</td>
+    <td class="read right"><input type="text"    ng-datatype="number"  readonly ng-model="cpygxcqkmxbGrid.bqrkZgjehj"></td>
+    <td class="back">- -</td>
+    <td class="back">- -</td>
+    <td class="read right"><input type="text"   ng-datatype="number"  readonly ng-model="cpygxcqkmxbGrid.bqckYsbfjehj"></td>
+    <td class="back">- -</td>
+    <td class="back">- -</td>
+    <td class="read right"><input type="text"  ng-datatype="number"   readonly ng-model="cpygxcqkmxbGrid.bqckFysbfZyjehj"></td>
+    <td class="back">- -</td>
+    <td class="back">- -</td>
+    <td class="back">- -</td>
+    <td class="read right"><input type="text"   ng-datatype="number"  readonly ng-model="cpygxcqkmxbGrid.qmkcZgjehj"></td>
+    <td class="back">- -</td>
+    <td class="back">- -</td>
+  </tr>
+</tbody></table>
+</div>
+
+ 
+
+
+</div>
+</body>
+</html>

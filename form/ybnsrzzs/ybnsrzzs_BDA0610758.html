@@ -1,0 +1,176 @@
+<!doctype html>
+<html id="ng-app"  xmlns:ng="http://angularjs.org">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" >
+<title>35$增值税减免税申报明细表</title>
+</head>
+
+<body>
+<div style="width:96%; margin:auto;"  id="viewCtrlId" ng-controller="viewCtrl">
+<ng-codetable url="nf_dm_sb_zzs_jsxzdm.json" name="jsxzdmCT" node="" dm="root.dm" mc="root.mc"></ng-codetable>
+<ng-codetable url="nf_dm_sb_zzs_msxzdm.json" name="msxzdmCT" node="" dm="root.dm" mc="root.mc"></ng-codetable>
+<ng-codetable url="dm_zzs_sysl.json" name="syslCT" node="" dm="root.dm" mc="root.mc"></ng-codetable>
+<div class="NewTableHead"   ng-jprefix="qcs.initData.zzsybnsrsbInitData">
+     <h1>增值税减免税申报明细表</h1>
+ 
+    <li class="dateTxt">税款所属时间:<input name="textfield3" type="text" class="topInput" id="textfield3" value=" "   ng-model="zzsybnsrsbInitData.sssq.rqQ"   readonly> 至<input name="textfield3" type="text" class="topInput" id="textfield3" value=" "   ng-model="zzsybnsrsbInitData.sssq.rqZ" readonly>  </li>
+</div>
+
+<div class="NewTableTop"  ng-jprefix="qcs.initData.nsrjbxx">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>纳税人名称（公章）：
+     <span class="textline" ng-bind="nsrjbxx.nsrmc"></span></td>
+    <td align="right">金额单位：元至角分</td>
+    </tr>
+</table>
+</div>
+
+<div class="NewTableMain">
+<div ng-jprefix="zzsybsbSbbdxxVO.zzsjmssbmxb.zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO">
+  <table width="100%" border="0" cellpadding="0" cellspacing="1" >
+ 
+    <tr>
+      <td colspan="8" align="center" class="title01"><strong>一、减税项目</strong></td>
+      </tr>
+    <tr align="center">
+      <td   width="25%" rowspan="2" align="center" class="title01">减税性质代码及名称</td>
+      <td  rowspan="2" align="center" class="title01">栏次</td>
+      <td   width="10%"   align="center" class="title01">期初余额</td>
+      <td width="10%"  align="center" class="title01">本期发生额</td>
+      <td width="10%"  align="center" class="title01">本期应抵减税额</td>
+      <td  width="15%"  align="center" class="title01">本期实际抵减税额</td>
+      <td  width="15%"  align="center" class="title01">期末余额</td>
+      <td  rowspan="3" width="110" align="center" class="title01">操作</td>
+      </tr>
+    <tr>
+      <td align="center" class="title01">1</td>
+      <td align="center" class="title01">2</td>
+      <td align="center" class="title01">3=1+2</td>
+      <td align="center" class="title01">4≤3</td>
+      <td  align="center" class="title01">5=3-4</td>
+      </tr>
+    <tr ng-jprefix="zzsybsbSbbdxxVO.zzsjmssbmxb.zzsjmssbmxbjsxmGrid">
+      <td align="center" class="title01">合计</td>
+      <td align="center" class="title01"></td>
+      <td class="read right"> <input  ng-datatype="number"   ng-model="zzsjmssbmxbjsxmGrid.qcyeHj"    type="text"    readonly></td>
+      <td class="read right"> <input  ng-datatype="number"   ng-model="zzsjmssbmxbjsxmGrid.bqfseHj"    type="text"    readonly></td>
+      <td class="read right"> <input  ng-datatype="number"   ng-model="zzsjmssbmxbjsxmGrid.bqydjseHj"    type="text"    readonly></td>
+      <td class="read right"> <input  ng-datatype="number"   ng-model="zzsjmssbmxbjsxmGrid.bqsjdjseHj"    type="text"    readonly></td>
+      <td  class="read right"> <input  ng-datatype="number"   ng-model="zzsjmssbmxbjsxmGrid.qmyeHj"    type="text"    readonly></td>
+      </tr>
+      
+       <tr ng-repeat="p in zzsjmssbmxbjsxmGridlbVO track by $index" ng-repeat-init="zzsjmssbmxbjsxmGridlbVO"
+        default-value='{"ewbhxh":"","hmc":"","qcye":0.00,"bqfse":0.00,"bqydjse":0.00,"bqsjdjse":0.00,"qmye":0.00}'
+        >
+      <td><select ng-model="p.hmc" ng-options="key as value for (key,value) in CT.jsxzdmCT"><option value=""></option></select></td>
+      <td align="center" class="title01" ng-bind="p.ewbhxh=$index+1"></td>
+      <td class="edit right"><input  ng-datatype="number"   ng-model="p.qcye"  type="text" ></td>
+      <td class="edit right"><input  ng-datatype="number"   ng-model="p.bqfse"    type="text"   ></td>
+      <td class="read right"><input  ng-datatype="number"   ng-model="p.bqydjse"    type="text"   readonly></td>
+      <td class="edit right"><input  ng-datatype="number"   ng-model="p.bqsjdjse"    type="text"   ></td>
+      <td  class="read right"><input  ng-datatype="number"   ng-model="p.qmye"    type="text"   readonly></td>
+      <td   align="center" >
+    
+    <div class="sbtnbox"> 
+    
+    <a  class="sbtn sbtn01"  ng-href="#"  ng-click="add()">增加</a>&nbsp;&nbsp;&nbsp;<a class="sbtn sbtn03" ng-if="$index!=0"   ng-href="#"  ng-click="del($index)">删除</a></div></td>
+       </tr>
+      
+  
+      </table>
+</div>
+<div ng-jprefix="zzsybsbSbbdxxVO.zzsjmssbmxb.zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO">
+      <table width="100%" border="0" cellpadding="0" cellspacing="1"  >
+    <tr align="center">
+      <td colspan="10" class="title01"><strong>二、免税项目</strong></td>
+    </tr>
+    <tr>
+      <td width="25%"  rowspan="2" align="center" class="title01">免税性质代码及名称</td>
+      <td  rowspan="2" align="center" class="title01">栏次</td>
+      <td width="10%" align="center" class="title01">免征增值税项目<br>
+        销售额</td>
+      <td width="10%" align="center" class="title01">免税销售额扣除项目<br>
+        本期实际扣除金额</td>
+      <td width="10%" align="center" class="title01">扣除后免税销售额</td>
+      <td width="10%" align="center" class="title01">免税销售额<br>
+        对应的进项税额</td>
+      <td width="10%"  rowspan="2" align="center" class="title01">适用税率</td>
+      <td width="10%"  align="center" class="title01">免税额</td>
+      <td width="110" rowspan="5"  align="center" class="title01">操作</td>
+        </tr>
+     
+    <tr>
+      <td align="center" class="title01">1</td>
+      <td align="center" class="title01">2</td>
+      <td align="center" class="title01">3=1-2</td>
+      <td align="center" class="title01">4</td>
+      <td width="10%" align="center" class="title01">5</td>
+      </tr>
+    <tr ng-jprefix="zzsybsbSbbdxxVO.zzsjmssbmxb.zzsjmssbmxbmsxmGrid">
+      <td align="center" class="title01">合计</td>
+      <td align="center" class="title01"></td>
+      <td class="read right">
+        <input  ng-datatype="number"    ng-model="zzsjmssbmxbmsxmGrid.mzzzsxmxseZhj"     type="text"    readonly>
+      </td>
+      <td class="read right">
+        <input  ng-datatype="number"   ng-model="zzsjmssbmxbmsxmGrid.bqsjkcjeHj"    type="text"    readonly>
+      </td>
+      <td class="read right">
+        <input  ng-datatype="number"   ng-model="zzsjmssbmxbmsxmGrid.kchmsxseHj"    type="text"    readonly>
+      </td>
+      <td class="read right">
+        <input  ng-datatype="number"   ng-model="zzsjmssbmxbmsxmGrid.msxsedyjxseHj"    type="text"    readonly>
+      </td>
+      <td width="10%" class="read mid" align="center" >--</td>
+      <td class="read right"><input  ng-datatype="number"   ng-model="zzsjmssbmxbmsxmGrid.mseHj"    type="text"    readonly></td>
+      </tr>
+      <tr ng-jprefix="zzsybsbSbbdxxVO.zzsjmssbmxb.zzsjmssbmxbmsxmGrid">
+      <td  class="title01">出口免税</td>
+      <td align="center" class="title01"></td>
+      <td class="edit right"><input  ng-datatype="number"    ng-model="zzsjmssbmxbmsxmGrid.ckmzzzsxmxse"     type="text"></td>
+      <td class="read mid" align="center" >--</td>
+      <td class="read mid" align="center" >--</td>
+      <td class="read mid" align="center" >--</td>
+      <td width="10%" class="read mid" align="center" >--</td>
+      <td width="10%" class="read mid" align="center" >--</td>
+      </tr>
+    <tr ng-jprefix="zzsybsbSbbdxxVO.zzsjmssbmxb.zzsjmssbmxbmsxmGrid">
+      <td  class="title01">            其中：跨境服务</td>
+      <td align="center" class="title01"></td>
+      <td class="edit right"><input  ng-datatype="number"   ng-model="zzsjmssbmxbmsxmGrid.kjmzzzsxmxse"    type="text"   ></td>
+      <td class="read mid" align="center" >--</td>
+      <td class="read mid" align="center" >--</td>
+      <td class="read mid" align="center" >--</td>
+      <td width="10%" class="read mid" align="center" >--</td>
+      <td width="10%" class="read mid" align="center" >--</td>
+      </tr>
+   <tr  ng-repeat="p in zzsjmssbmxbmsxmGridlbVO track by $index"  ng-repeat-init="zzsjmssbmxbmsxmGridlbVO"
+         default-value='{"ewbhxh":"","hmc":"","mzzzsxmxse":0.00,"bqsjkcje":0.00,"kchmsxse":0.00,"msxsedyjxse":0.00,"mse":0.00}'>
+     <td ><select ng-model="p.hmc" ng-options="key as value for (key,value) in CT.msxzdmCT"><option value=""></option></select></td>
+     <td align="center" class="title01" ng-bind="p.ewbhxh=$index+1"></td>
+     <td class="edit right"  ><input type="text" ng-datatype="number"   ng-model="p.mzzzsxmxse"></td>
+     <td class="edit right"  ><input type="text" ng-datatype="number"   ng-model="p.bqsjkcje"></td>
+     <td class="read right" ><input readonly type="text" ng-datatype="number"   ng-model="p.kchmsxse"></td>
+     <td class="edit right"  ><input type="text" ng-datatype="number"   ng-model="p.msxsedyjxse"  ></td>
+     <td width="10%" class="read mid">
+       <select ng-model="p.sysl" ng-options="value as key for (key,value) in CT.syslCT"><option value=""></option></select>
+       </td>
+     <td width="10%" class="read right"><input  readonly type="text" ng-datatype="number"  ng-model="p.mse"  ></td>
+     <td align="center" >
+  <div class="sbtnbox"> 
+     <a class="sbtn sbtn01" ng-href="#"  ng-click="add()">增加</a>&nbsp;&nbsp;&nbsp;<a class="sbtn sbtn03" ng-if="$index!=0"   ng-href="#"  ng-click="del($index)">删除</a>
+     </div>
+     </td>
+   </tr>
+     <tr ng-render-finish=""></tr>
+      </table>
+  
+</div>
+
+</div>
+ 
+</div>
+</body>
+</html>

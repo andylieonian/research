@@ -1,0 +1,90 @@
+<!doctype html>
+<html id="ng-app"  xmlns:ng="http://angularjs.org">
+<head>
+<meta charset="utf-8">
+<title>15$海关完税凭证抵扣联数据采集申请单</title>
+<!-- <link href="../../../css/table.css" rel="stylesheet" type="text/css">
+<script src="../../../js/ecm-taglib/My97DatePicker/WdatePicker.js" type="text/javascript"></script> -->
+</head>
+
+<body>
+<div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl"  >
+ <ng-codetable url="nf_dm_sb_zzs_rzjgdm.json" name="rzjgdmCT" node="" dm="root.dm" mc="root.mc"></ng-codetable>
+  <div class="NewTableHead"   ng-jprefix="zzsybsbSbbdxxVO.hgwspzdklsjcjb.sbbhead">
+    <h1>海关完税凭证抵扣联数据采集申请单</h1>
+</div>
+
+   <div class="NewTableTop">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>纳税人名称
+：          <span class="textline" ng-bind="sbbhead.nsrmc"></span> </td>
+        <td colspan="2">纳税人识别号：          <input  type="text" class="topInput" ng-model="sbbhead.nsrsbh" readonly>  </td>
+      </tr>
+      <tr  ng-jprefix="qcs.initData.nsrjbxx">
+        <td>主管税务机关名称：
+          <span class="textline" ng-bind="nsrjbxx.zgswskfjmc"></span></td>
+        <td colspan="2">主管税务机关代码
+：
+          <input type="text" class="topInput"  ng-model="nsrjbxx.zgswskfjDm" readonly></td>
+      </tr>
+      <tr>
+        <td ng-jprefix="qcs.initData.zzsybnsrsbInitData">纳税申报日期
+：
+          <input type="text" class="topInput" ng-model ="zzsybnsrsbInitData.sbrq" readonly></td>
+        <td ng-jprefix="zzsybsbSbbdxxVO.hgwspzdklsjcjb.sbbhead"><span class="dateTxt"> 税款所属时间：
+            <input type="text" class="topInput" ng-model="sbbhead.skssqq" readonly>
+至
+<input type="text" class="topInput" ng-model=sbbhead.skssqz readonly>
+        </span></td>
+        <td align="right">金额单位：元（列至角分）
+</td>
+      </tr>
+    </table>
+  </div>
+  <div class="NewTableMain"  ng-jprefix="zzsybsbSbbdxxVO.hgwspzdklsjcjb.hgwspzdklsjGrid.hgwspzdklsjGridlbVO">
+   <table width="100%" border="0" cellpadding="0" cellspacing="1" >
+  <tr>
+    <td class="title01" align="center"  width="5%"><strong>序号</strong></td>
+    <td class="title01" align="center"><strong>专用缴款书号</strong></td>
+    <td class="title01" align="center"><strong>进口口岸代码</strong></td>
+    <td class="title01" align="center"><strong>填发日期</strong></td>
+    <td class="title01" align="center"><strong>税额</strong></td>
+    <td class="title01" align="center"><strong>认证结果</strong></td>
+      <td class="title01" align="center"><strong>操作</strong></td>
+  </tr>
+  <tr  ng-repeat="p in hgwspzdklsjGridlbVO track by $index"  ng-repeat-init="hgwspzdklsjGridlbVO"
+         default-value='{"ewbhxh":"0","hgwspzhm":"","jkkaDm":"","tfrq":"","se":0,"rzjg":""}'>
+    <td  class="read mid"><div align="center"><input jflag="1"   ng-value="$index+1"></div></td>
+    <td class="edit right"><input jflag="1"    ng-model ="p.hgwspzhm"    type="text"    ></td>
+     <td class="edit right"><input jflag="1"    ng-model ="p.jkkaDm"    type="text"    ></td>
+     <td class="edit left"><input type="text" class="laydate-icon topInput"  ng-laydate="{}" ng-model ="p.tfrq"  readonly style="width: 99%; padding-right: 0; padding-left: 0; height: 100%;"></td>
+     <td class="edit right" width="100px"><input jflag="1"  ng-datatype ="number"  ng-model ="p.se"    type="text"  ></td>
+     <td class="edit right"><select ng-model="p.rzjg" ng-options="key as value for (key,value) in CT.rzjgdmCT"><option value=""></option></td>
+	<td align="center" ><div class="sbtnbox"><a class="sbtn sbtn01" ng-href="#" ng-click="add()">增加</a>&nbsp;&nbsp;&nbsp;<a class="sbtn sbtn03" ng-if="$index!=0" ng-href="#" ng-click="del($index)">删除</a></div></td>
+  </tr>
+
+  <tr ng-jprefix="zzsybsbSbbdxxVO.hgwspzdklsjcjb.hgwspzdklsjGrid">
+    <td class="title01"><div align="center">合计</div></td>
+     <td  class="read mid" align="center" >--</td>
+     <td class="read mid" align="center" >-- </td>
+     <td class="read mid" align="center">--</td>
+     <td class="read right">
+       <input    type="text"   value="0.00" readonly jflag="1"  ng-datatype ="number"  ng-model ="hgwspzdklsjGrid.seHj">
+     </td>
+     <td class="read mid" align="center"> --</td>
+     <td class="read mid" align="center"> -- </td>
+  </tr>
+</table>
+  </div>
+  <div class="NewTableFoot">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td align="center">说明：	1、专用缴款书号码、填发日期、税款金额：按照《海关代征增值税专用缴款书》票面内容填写；<td><tr>
+<tr><td align="center">2、进口口岸代码：按照《进口货物报关单》票面内容填写。　　　　　　　　　　　　&nbsp;&nbsp;</td></tr>	
+</td>
+    <tr ng-render-finish=""></tr>
+</table>
+</div>
+</div>
+</body>
+</html>

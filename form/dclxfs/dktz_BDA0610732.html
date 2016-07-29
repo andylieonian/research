@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>电池、涂料税款抵扣台账</title>
+
+</head>
+
+<body>
+<div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl"  >
+<div class="NewTableHead" ng-jprefix="xfssbSbbdxxVO.xfsDcsb.xfssb7_fb4">
+     <h1>电池、涂料税款抵扣台账</h1>
+     <li class="dateTxt">（适用于委托加工从价定率征收的电池、涂料纳税人）<br /> 					
+</li>
+</div>
+
+<div class="NewTableTop">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+    <td>纳税人名称（公章）：
+      <input type="text" class="topInput" id="textfield2" value="方欣科技有限公司" ng-model="xfssbSbbdxxVO.xfsDcsb.xfssb7.sbbhead.nsrmc" readonly></td>
+    <td colspan="2" align="right">纳税人识别号：
+      <input name="textfield2" type="text" class="topInput" id="textfield2" value="44093984848373" ng-model="xfssbSbbdxxVO.xfsDcsb.xfssb7.sbbhead.nsrsbh" readonly></td>
+  </tr>
+  <tr>
+    <td>填表日期：
+      <input name="textfield2" type="text" class="topInput" id="textfield2" value="2008年06月01日" ng-model="xfssbSbbdxxVO.xfsDcsb.xfssb7.sbbhead.sbrq1" readonly></td>
+    <td align="right">计量单位：只</td>
+    <td align="right">单位：吨、元</td>
+  </tr>
+</table>
+</div>
+
+<div class="NewTableMain">
+  <table class="xfssbSbbdxxVO.xfsDcsb.xfssb7_fb4.dctlskdktzGrid" width="100%" border="0" cellspacing="1" cellpadding="0">
+    <tr>
+      <td rowspan="3" align="center" class="title01">日期（_月_日）06月</td>
+      <td rowspan="3" align="center" class="title01">摘要</td>
+      <td rowspan="3" align="center" class="title01">抵扣凭证种类</td>
+      <td rowspan="3" align="center" class="title01">抵扣凭证号码</td>
+      <td rowspan="3" align="center" class="title01">抵扣凭证开具日期</td>
+      <td colspan="4" align="center" class="title01">数量</td>
+      <td rowspan="3" align="center" class="title01">消费税税率</td>
+      <td colspan="3" align="center" class="title01">已纳税额</td>
+    </tr>
+    <tr>
+      <td rowspan="2" align="center" class="title01">委托加工收回</td>
+      <td colspan="2" align="center" class="title01">领用</td>
+      <td rowspan="2" align="center" class="title01">库存</td>
+      <td rowspan="2" align="center" class="title01">委托加工收回</td>
+      <td rowspan="2" align="center" class="title01">抵扣领用</td>
+      <td rowspan="2" align="center" class="title01">库存</td>
+    </tr>
+    <tr>
+      <td align="center" class="title01">抵扣领用</td>
+      <td align="center" class="title01">其他领用</td>
+    </tr>
+    <tr>
+      <td align="center" class="title01">1</td>
+      <td align="center" class="title01">2</td>
+      <td align="center" class="title01">3</td>
+      <td align="center" class="title01">4</td>
+      <td align="center" class="title01">5</td>
+      <td align="center" class="title01">6</td>
+      <td align="center" class="title01">7</td>
+      <td align="center" class="title01">8</td>
+      <td align="center" class="title01">9</td>
+      <td align="center" class="title01">10</td>
+      <td align="center" class="title01">11＝6×10</td>
+      <td align="center" class="title01">12＝7×10</td>
+      <td align="center" class="title01">13=9×10</td>
+    </tr>
+    <tr group="3">
+      <td class="edit right"><input jflag="1"  ng-model="dctlskdktzGrid.dctlskdktzGridlb.ywfsrq" name="textfield" type="text" id="textfield"></td>
+      <td class="edit right"><input jflag="1" name="textfield" type="text" id="textfield" value="期初库存"></td>
+      <td class="read right"><input type="text" value="代扣代收税款凭证" jflag="1" ng-datatype="string" ng-model="" name="textfield" readonly></td>
+      <td class="edit right"><input jflag="1" ng-model="dctlskdktzGrid.dctlskdktzGridlb.fphm" name="textfield" type="text" id="textfield"></td>
+      <td class="edit right"><input jflag="1"  ng-model="dctlskdktzGrid.dctlskdktzGridlb.kjrq" name="textfield" type="text" id="textfield"></td>
+      <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="dctlskdktzGrid.dctlskdktzGridlb.wtjgshje" name="textfield" type="text" id="textfield" value="0.00"></td>
+      <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="dctlskdktzGrid.dctlskdktzGridlb.dklyje" name="textfield" type="text" id="textfield" value="0.00"></td>
+      <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="dctlskdktzGrid.dctlskdktzGridlb.qtlyje" name="textfield" type="text" id="textfield" value="0.00"></td>
+      <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="dctlskdktzGrid.dctlskdktzGridlb.qmkcje" name="textfield" type="text" id="textfield" value="0.00"></td>
+      <td class="read right"><input type="text" value="0.0" jflag="1" ng-datatype="number" ng-model="dctlskdktzGridlb.sl1" name="textfield" readonly></td>
+      <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="dctlskdktzGrid.dctlskdktzGridlb.wtjgshynse" name="textfield" type="text" id="textfield" value="0.00"></td>
+      <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="dctlskdktzGrid.dctlskdktzGridlb.dklyynse" name="textfield" type="text" id="textfield" value="0.00"></td>
+      <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="dctlskdktzGrid.dctlskdktzGridlb.qckcynse" name="textfield" type="text" id="textfield" value="0.00"></td>
+    </tr>
+    <tr>
+      <td class="read right"><input type="text" value="合计" jflag="1" name="textfield" readonly></td>
+      <td class="read right"><input type="text" value="本月购进合计" jflag="1" name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1" name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1" name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1"  name="textfield" readonly></td>
+      <td class="read right"><input type="text" value="0.0" jflag="1" ng-datatype="number" ng-model="dctlskdktzGrid.wtjgshjebylyhj" name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1" name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1"  name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1"  name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1"  name="textfield" readonly></td>
+      <td class="read right"><input type="text" value="0.0" jflag="1" ng-datatype="number" ng-model="dctlskdktzGrid.wtjgshynsebygjhj" name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1" name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1"  name="textfield" readonly></td>
+    </tr>
+    <tr>
+      <td class="read right"><input type="text" value="" jflag="1" name="textfield" readonly></td>
+      <td class="read right"><input type="text" value="本月领用合计" jflag="1" name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1" name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1"  name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1" name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1" name="textfield" readonly></td>
+      <td class="read right"><input type="text" value="0.0" jflag="1" ng-datatype="number" ng-model="dctlskdktzGrid.dklyjebylyhj" name="textfield" readonly></td>
+      <td class="read right"><input type="text" value="0.0" jflag="1" ng-datatype="number" ng-model="dctlskdktzGrid.qtlyjebylyhj" name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1" name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1" name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1"  name="textfield" readonly></td>
+      <td class="read right"><input type="text" value="0.0" jflag="1" ng-datatype="number" ng-model="dctlskdktzGrid.dklyynsebylyhj" name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1" name="textfield" readonly></td>
+    </tr>
+    <tr>
+      <td class="read right"><input type="text" value="" jflag="1" name="textfield" readonly></td>
+      <td class="read right"><input type="text" value="期末库存" jflag="1" name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1" name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1" name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1" name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1"  name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1" name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1" name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1" ng-datatype="number" ng-model="dctlskdktzGrid.qmkcjehj" name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1" name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1"  name="textfield" readonly></td>
+      <td class="read mid"><input type="text" value="— —" jflag="1"  name="textfield" readonly></td>
+      <td class="read right"><input type="text" value="0.0" jflag="1" ng-datatype="number" ng-model="dctlskdktzGrid.qmkcynsehj" name="textfield" readonly></td>
+    </tr>
+  </table>
+</div>
+
+
+
+</div>
+</body>
+</html>

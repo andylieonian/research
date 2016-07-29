@@ -1,0 +1,207 @@
+{
+  "qcs": {
+    "formContent": {
+      "zzsyjnsywbw": {
+        "zzsyjnssb": {
+          "nsrxxForm": {
+            "syybjsff": "Y"
+          },
+          "yzxmGrid": {
+            "yzxmGridlb": [
+              {
+                "sl1": 0.11,
+                "sl2": 0.03,
+                "syybjsff": "Y",
+                "yzxmDm": "101017100",
+                "yzxmMc": "建筑服务"
+              }, {
+                "sl1": 0.11,
+                "sl2": 0.05,
+                "syybjsff": "Y",
+                "yzxmDm": "101016600",
+                "yzxmMc": "出租不动产"
+              }, {
+                "sl1": 0.11,
+                "sl2": 0.05,
+                "syybjsff": "Y",
+                "yzxmDm": "101017700",
+                "yzxmMc": "销售不动产"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "initData": {
+      "nsrjbxx": {
+        "cyrs": "5",
+        "dhhm": "13686133014",
+        "djrq": "2010-03-26",
+        "djxh": "10114419000130596908",
+        "djzclxDm": "159",
+        "djzclxMc": "其他有限责任公司",
+        "dkdjbz": "N",
+        "ejzzfl": "",
+        "fddbrsfzjhm": "430523198205274338",
+        "fddbrsfzjlxmc": "居民身份证",
+        "fddbrsfzjzldm": "201",
+        "frxm": "蒋海军",
+        "gdghlxDm": "1",
+        "gdslxDm": "1",
+        "hsfs": "11",
+        "hyDm": "5172",
+        "hydm": "5172",
+        "hymc": "汽车批发",
+        "jdxzDm": "441900015",
+        "jdxzmc": "黄江镇",
+        "jydz": "东莞市黄江镇华南塑胶城B区162号",
+        "jyfw": "",
+        "khzh": "160010190010024269",
+        "lrrDm": "14419005584",
+        "lsgxDm": "72",
+        "lsgxMc": "村委会",
+        "nsrdzxlh": "",
+        "nsrmc": "东莞市江和化工原料有限公司",
+        "nsrsbh": "441900551725761",
+        "nsrztDm": "03",
+        "qylx": "",
+        "qywz": "",
+        "qyyx": "",
+        "sbsxDm1": "11",
+        "scjydlxdh": "82025883/13686133014",
+        "sjgsdq": "14419150000",
+        "slr": "24400dzbst0",
+        "ssglyDm": "14419005784",
+        "sshy": "汽车批发",
+        "swdjlxDm": "1",
+        "swjgDm": "14419150000",
+        "swjgMc": "东莞市国家税务局黄江税务分局",
+        "sykjzd": "102",
+        "tbrq": "2016-07-15",
+        "wtdzbz": "N",
+        "xzqhdm": "441900",
+        "xzqhmc": "东莞市",
+        "yb": "523750",
+        "yhMc": "农村商业银行",
+        "yhxxGrid": {
+          "yhxxGridlb": [
+            {
+              "yhhbDm": "314",
+              "yhhbMc": "农村商业银行",
+              "yhyywdDm": "314441900276",
+              "yhyywdMc": "东莞农村商业银行股份有限公司黄江支行",
+              "yhzh": "160010190010024269",
+              "zhmc": "东莞市江和化工原料有限公司"
+            }, {
+              "yhhbDm": "314",
+              "yhhbMc": "农村商业银行",
+              "yhyywdDm": "314441900276",
+              "yhyywdMc": "东莞农村商业银行股份有限公司黄江支行",
+              "yhzh": "160010190010024269",
+              "zhmc": "东莞市江和化工原料有限公司"
+            }
+          ]
+        },
+        "yjzzfl": "",
+        "zcdz": "东莞市黄江镇华南塑胶城B区162号",
+        "zczbze": "300000",
+        "zgswjDm": "14419150000",
+        "zgswskfjDm": "14419150000",
+        "zgswskfjmc": "东莞市国家税务局黄江税务分局",
+        "zzjgDm": "551725761",
+        "zzjglxDm": "1",
+        "zzsqylxDm": "2"
+      },
+      "zzsyjsbInitData": {
+        "oneh": "Y",
+        "onesl": 0.11,
+        "onesl2": 0.03,
+        "sbrq": "2016-07-15",
+        "sssq": {
+          "rqQ": "2016-06-01",
+          "rqZ": "2016-06-30"
+        },
+        "threeh": "Y",
+        "threesl": 0.11,
+        "threesl2": 0.05,
+        "twoh": "Y",
+        "twosl": 0.11,
+        "twosl2": 0.05,
+        "yzxmGrid1": {
+          "yzxmGridlb": [
+            {
+              "syybjsff": "Y",
+              "yzl": 0.02,
+              "yzxmDm": "101017100",
+              "yzxmMc": "建筑服务"
+            }, {
+              "syybjsff": "Y",
+              "yzl": 0.03,
+              "yzxmDm": "101016600",
+              "yzxmMc": "出租不动产"
+            }, {
+              "syybjsff": "Y",
+              "yzl": 0.03,
+              "yzxmDm": "101017700",
+              "yzxmMc": "销售不动产"
+            }, {
+              "syybjsff": "Y",
+              "yzl": 0.05,
+              "yzxmDm": "101017700",
+              "yzxmMc": "销售不动产"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "zzsyjnssbSaveVO": {
+    "nsrxxVO": {
+      "djxh": "",
+      "skssqq": "",
+      "skssqz": "",
+      "syybjsff": "",
+      "xmbh": "",
+      "xmdz": "",
+      "xmmc": "",
+      "ybrbz": ""
+    },
+    "slxxVO": {
+      "dlrdz": "",
+      "dlrxm": "",
+      "slr": "",
+      "slrq": "",
+      "slswjg": "",
+      "zxsb": ""
+    },
+    "yzxmGridVO": {
+      "yzxmItemVO": [
+        {
+          "kcje": 0,
+          "rdzsuuid": "",
+          "sl1": 0,
+          "xse": 0,
+          "yzl": 0,
+          "yzse": 0,
+          "yzxmDm": "101017100"
+        }, {
+          "kcje": 0,
+          "rdzsuuid": "",
+          "sl1": 0,
+          "xse": 0,
+          "yzl": 0,
+          "yzse": 0,
+          "yzxmDm": "101017700"
+        }, {
+          "kcje": 0,
+          "rdzsuuid": "",
+          "sl1": 0,
+          "xse": 0,
+          "yzl": 0,
+          "yzse": 0,
+          "yzxmDm": "101016600"
+        }
+      ]
+    }
+  }
+}

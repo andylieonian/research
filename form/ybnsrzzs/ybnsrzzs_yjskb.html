@@ -1,0 +1,132 @@
+<!doctype html>
+<html id="ng-app"  xmlns:ng="http://angularjs.org">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" >
+<title>38$增值税预缴税款表</title>
+</head>
+
+<body>
+<div style="width:96%; margin:auto;"id="zzsyjnssbSaveVO">
+<div class="NewTableHead">
+     <h1>增值税预缴税款表</h1>
+     <li style="font-size:12px;">  根据国家税收法律法规及增值税相关规定制定本表。纳税人不论有无销售额，均应按税务机关核定的纳税期限填写本表，并向当地税务机关申报。</li>
+    <li class="dateTxt">税款所属时间:<input type="text" class="topInput" jpath="nsrxxVO.skssqq" readonly> 至<input type="text" class="topInput" jpath="nsrxxVO.skssqz" readonly>  </li>
+</div>
+
+<div class="NewTableTop">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>纳税人名称（公章）：
+      <input type="text" class="topInput" jpath="nsrxxVO.nsrmc" readonly> </td>
+    <td align="right">纳税人识别号：<input type="text" class="topInput" jpath="nsrxxVO.nsrsbh" readonly> </td>
+  </tr>
+  <tr>
+    <td>是否适用一般计税方法：
+      <input name="radio" type="radio" id="radio" value="radio" checked>
+      是 <input type="radio" name="radio" id="radio" value="radio">
+      否</td>
+    <td align="right">金额单位：元至角分</td>
+  </tr>
+</table>
+</div>
+
+<div class="NewTableMain">
+  <table width="100%" border="0" cellpadding="0" cellspacing="1">
+ 
+    <tr>
+      <td colspan="2" align="center" class="title01">项目编号</td>
+      <td class="edit left"><input jflag="1"  jpath="nsrxxVO.xmbh" type="text" value=" "></td>
+      <td align="center" class="title01">项目名称</td>
+      <td colspan="2" class="edit left"><input jflag="1"  jpath="nsrxxVO.xmmc" type="text" value=" "></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center" class="title01">项目地址</td>
+      <td colspan="4" class="edit left"><input jflag="1"  jpath="nsrxxVO.xmdz" type="text" value=" "></td>
+    </tr>
+    <tr>
+      <td colspan="2" rowspan="2" align="center" class="title01">预征项目和栏次</td>
+      <td align="center" class="title01">销售额</td>
+      <td align="center" class="title01" >扣除金额</td>
+      <td align="center" class="title01">预征率</td>
+      <td align="center" class="title01"> 预征税额</td>
+    </tr>
+    <tr >
+      <td align="center" class="title01">1</td>
+      <td align="center" class="title01">2</td>
+      <td align="center" class="title01">3</td>
+      <td align="center" class="title01">4</td>
+    </tr>
+    <tr>
+      <td align="center" class="title01">建筑服务</td>
+      <td class="title01" >1</td>
+      <td class="edit right" > <input jflag="1"  jpath="yzxmGridVO.yzxmItemVO[0].xse" type="text" value="0.00"></td>
+      <td class="edit right" ><input jflag="1"  jpath="yzxmGridVO.yzxmItemVO[0].kcje" type="text" value="0.00"></td>
+      <td class="edit right" ><input jflag="1"  jpath="yzxmGridVO.yzxmItemVO[0].yzl" type="text" value="0.00"></td>
+      <td class="edit right" ><input jflag="1"  jpath="yzxmGridVO.yzxmItemVO[0].yzse" type="text" value="0.00"></td>
+      </tr>
+    <tr>
+      <td align="center" class="title01">销售不动产</td>
+      <td class="title01" >2</td>
+      <td class="edit right" ><input jflag="1"  jpath="yzxmGridVO.yzxmItemVO[1].xse" type="text" value="0.00"></td>
+      <td class="edit right" ><input jflag="1"  jpath="yzxmGridVO.yzxmItemVO[1].kcje" type="text" value="0.00"></td>
+      <td class="edit right" ><input jflag="1"  jpath="yzxmGridVO.yzxmItemVO[1].yzl" type="text" value="0.00"></td>
+      <td class="edit right" ><input jflag="1"  jpath="yzxmGridVO.yzxmItemVO[1].yzse" type="text" value="0.00"></td>
+      </tr>
+    <tr>
+      <td align="center" class="title01" >出租不动产</td>
+      <td class="title01" >3</td>
+      <td class="edit right" ><input jflag="1"  jpath="yzxmGridVO.yzxmItemVO[2].xse" type="text" value="0.00"></td>
+      <td class="edit right" ><input jflag="1"  jpath="yzxmGridVO.yzxmItemVO[2].kcje" type="text" value="0.00"></td>
+      <td class="edit right" ><input jflag="1"  jpath="yzxmGridVO.yzxmItemVO[2].yzl" type="text" value="0.00"></td>
+      <td class="edit right" ><input jflag="1"  jpath="yzxmGridVO.yzxmItemVO[2].yzse" type="text" value="0.00"></td>
+      </tr>
+    <tr>
+      <td class="title01" >　</td>
+      <td class="title01" >4</td>
+      <td class="edit right" ><input jflag="1"  jpath="yzxmGridVO.yzxmItemVO[3].xse" type="text" value="0.00"></td>
+      <td class="edit right" ><input jflag="1"  jpath="yzxmGridVO.yzxmItemVO[3].kcje" type="text" value="0.00"></td>
+      <td class="edit right" ><input jflag="1"  jpath="yzxmGridVO.yzxmItemVO[3].yzl" type="text" value="0.00"></td>
+      <td class="edit right" ><input jflag="1"  jpath="yzxmGridVO.yzxmItemVO[3].yzse" type="text" value="0.00"></td>
+      </tr>
+    <tr>
+      <td class="title01" >　</td>
+      <td class="title01" >5</td>
+      <td class="edit right" ><input jflag="1"  jpath="yzxmGridVO.yzxmItemVO[4].xse" type="text" value="0.00"></td>
+      <td class="edit right" ><input jflag="1"  jpath="yzxmGridVO.yzxmItemVO[4].kcje" type="text" value="0.00"></td>
+      <td class="edit right" ><input jflag="1"  jpath="yzxmGridVO.yzxmItemVO[4].yzl" type="text" value="0.00"></td>
+      <td class="edit right" ><input jflag="1"  jpath="yzxmGridVO.yzxmItemVO[4].yzse" type="text" value="0.00"></td>
+      </tr>
+    <tr>
+      <td align="center" class="title01" >合计</td>
+      <td class="title01" >6</td>
+      <td class="edit right" ><input jflag="1"  jpath="yzxmGridVO.yzxmItemVO.xsehj" type="text" value="0.00"></td>
+      <td class="edit right" ><input jflag="1"  jpath="yzxmGridVO.yzxmItemVO.kcjehj" type="text" value="0.00"></td>
+      <td class="edit right" ><input jflag="1"  jpath="yzxmGridVO.yzxmItemVO.yzlhj" type="text" value="0.00"></td>
+      <td class="edit right" ><input jflag="1"  jpath="yzxmGridVO.yzxmItemVO.yzsehj" type="text" value="0.00"></td>
+      </tr>
+    <tr ng-render-finish="">
+      <td colspan="3"><div class="statement">
+            <h2>申报人声明</h2>
+            <div class="text">此纳税申报表是根据国家税收法律的规定填报的，我确定它是真实的、可靠的、完整的。<br/>
+              纳税人（签章）：
+                <input class="topInput" type="text"
+					style="width: 100px;" readonly datatype="date"  jflag="1" /><br/><br/>
+            </div>
+        </div></td>
+      <td colspan="3"><div class="statement">
+        <div class="text" style=" text-align:center">（如果你已委托代理人申报，请填写）</div>
+        <h2>授权声明</h2>
+        <div class="text">为代理一切税务事宜，现授权 <input type="text" class="topInput"
+					style="width: 200px; text-align:center;" value="(地址)" readonly datatype="date"  jflag="1" />为本纳税人的代理
+          申报人，任何与本申报表有关的往来文件，都可寄予此人。<br/>
+          授权人签章：<input class="topInput" type="text"
+					style="width: 100px;" readonly datatype="date"  jflag="1" />
+          </div>
+      </div></td>
+      </tr>
+  </table>
+</div>
+</div>
+</body>
+</html>

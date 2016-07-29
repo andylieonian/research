@@ -1,0 +1,247 @@
+<!doctype html>
+<html id="ng-app"  xmlns:ng="http://angularjs.org">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" >
+<title>37$本期抵扣进项税额结构明细表</title>
+</head>
+
+<body>
+<div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl" >
+<div class="NewTableHead"  ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_bqdkjxsejgmxb.sbbhead">
+     <h1>本期抵扣进项税额结构明细表</h1>
+    <li class="dateTxt">税款所属时间:<input   type="text" class="topInput"     ng-model="sbbhead.skssqq"  readonly> 至<input   type="text" class="topInput"     ng-model="sbbhead.skssqz"  readonly>  </li>
+</div>
+
+<div class="NewTableTop"  ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_bqdkjxsejgmxb.sbbhead">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>纳税人名称（公章）：<span class="textline" ng-bind="sbbhead.nsrmc"></span></td>
+    <td align="right">金额单位：元至角分</td>
+  </tr>
+</table>
+</div>
+
+<div class="NewTableMain"  ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_bqdkjxsejgmxb.bqdkjxsejgmxbGrid.bqdkjxsejgmxbGridlbVO">
+<table width="100%" border="0" cellpadding="0" cellspacing="1">
+ 
+  <tr>
+    <td align="center" class="title01" width="30%"  ><strong>项目</strong></td>
+    <td align="center" class="title01"  width="20%"><strong>栏次</strong></td>
+    <td align="center" class="title01"  width="25%"><strong>金额</strong></td>
+    <td align="center" class="title01"  width="25%"><strong>税额</strong></td>
+  </tr>
+  <tr>
+    <td align="center" class="title01">合计</td>
+    <td class="title01" >1=2+4+5+11+16+18+27+29+30</td>
+    <td class="read right">
+      <input jflag="1" ng-datatype="number"  ng-model="bqdkjxsejgmxbGridlbVO[0].je"    type="text"   readonly>
+    </td>
+    <td class="read right">
+      <input jflag="1" ng-datatype=" number" ng-model="bqdkjxsejgmxbGridlbVO[0].se"  type="text"    readonly>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4" class="title01"><strong>一、按税率或征收率归集（不包括购建不动产、通行费）的进项</strong></td>
+  </tr>
+  <tr>
+    <td class="title01">17%税率的进项</td>
+    <td align="center" class="title01">2</td>
+    <td class="edit right">
+      <input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[1].je"  type="text"    >
+    </td>
+    <td class="edit right">
+      <input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[1].se"   type="text"     >
+    </td>
+  </tr>
+  <tr>
+    <td class="title01">  其中：有形动产租赁的进项</td>
+    <td align="center" class="title01">3</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number"  ng-model="bqdkjxsejgmxbGridlbVO[2].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[2].se"   type="text"     ></td>
+    </tr>
+  <tr>
+    <td class="title01">13%税率的进项</td>
+    <td align="center" class="title01">4</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[3].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[3].se"   type="text"     ></td>
+    </tr>
+  <tr>
+    <td class="title01">11%税率的进项</td>
+    <td align="center" class="title01">5</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[4].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[4].se"   type="text"     ></td>
+    </tr>
+  <tr>
+    <td class="title01">  其中：运输服务的进项</td>
+    <td align="center" class="title01">6</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[5].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[5].se"   type="text"     ></td>
+    </tr>
+  <tr>
+    <td class="title01">         &nbsp;  电信服务的进项</td>
+    <td align="center" class="title01">7</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[6].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[6].se"   type="text"     ></td>
+    </tr>
+  <tr>
+    <td class="title01">         &nbsp;  建筑安装服务的进项</td>
+    <td align="center" class="title01">8</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[7].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[7].se"   type="text"     ></td>
+    </tr>
+  <tr>
+    <td class="title01">         &nbsp;  不动产租赁服务的进项</td>
+    <td align="center" class="title01">9</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[8].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[8].se"   type="text"     ></td>
+    </tr>
+  <tr>
+    <td class="title01">         &nbsp;  受让土地使用权的进项</td>
+    <td align="center" class="title01">10</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[9].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[9].se"   type="text"     ></td>
+    </tr>
+  <tr>
+    <td class="title01">6%税率的进项</td>
+    <td align="center" class="title01">11</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[10].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[10].se"   type="text"     ></td>
+    </tr>
+  <tr>
+    <td class="title01">  其中：电信服务的进项</td>
+    <td align="center" class="title01">12</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[11].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[11].se"   type="text"     ></td>
+    </tr>
+  <tr>
+    <td class="title01">        &nbsp; &nbsp;&nbsp;金融保险服务的进项</td>
+    <td align="center" class="title01">13</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[12].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[12].se"   type="text"     ></td>
+    </tr>
+  <tr>
+    <td class="title01">        &nbsp; &nbsp;&nbsp;生活服务的进项</td>
+    <td align="center" class="title01">14</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[13].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[13].se"   type="text"     ></td>
+    </tr>
+  <tr>
+    <td class="title01">        &nbsp; &nbsp;&nbsp;取得无形资产的进项</td>
+    <td align="center" class="title01">15</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[14].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[14].se"   type="text"     ></td>
+    </tr>
+  <tr>
+    <td class="title01">5%征收率的进项</td>
+    <td align="center" class="title01">16</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[15].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[15].se"   type="text"     ></td>
+    </tr>
+  <tr>
+    <td class="title01">  其中：不动产租赁服务的进项</td>
+    <td align="center" class="title01">17</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[16].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[16].se"   type="text"     ></td>
+    </tr>
+  <tr>
+    <td class="title01">3%征收率的进项</td>
+    <td align="center" class="title01">18</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[17].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[17].se"   type="text"     ></td>
+    </tr>
+  <tr>
+    <td class="title01">  其中：货物及加工、修理修配劳务的进项</td>
+    <td align="center" class="title01">19</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[18].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[18].se"   type="text"     ></td>
+    </tr>
+  <tr>
+    <td class="title01">        &nbsp; &nbsp;&nbsp;运输服务的进项</td>
+    <td align="center" class="title01">20</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[19].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[19].se"   type="text"     ></td>
+    </tr>
+  <tr>
+    <td class="title01">        &nbsp; &nbsp;&nbsp;电信服务的进项</td>
+    <td align="center" class="title01">21</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[20].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[20].se"   type="text"     ></td>
+    </tr>
+  <tr>
+    <td class="title01">        &nbsp; &nbsp;&nbsp;建筑安装服务的进项</td>
+    <td align="center" class="title01">22</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[21].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[21].se"   type="text"     ></td>
+    </tr>
+  <tr>
+    <td class="title01">        &nbsp; &nbsp;&nbsp;金融保险服务的进项</td>
+    <td align="center" class="title01">23</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[22].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[22].se"   type="text"     ></td>
+    </tr>
+  <tr>
+    <td class="title01">        &nbsp; &nbsp;&nbsp;有形动产租赁服务的进项</td>
+    <td align="center" class="title01">24</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[23].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[23].se"   type="text"     ></td>
+    </tr>
+  <tr>
+    <td class="title01">        &nbsp; &nbsp;&nbsp;生活服务的进项</td>
+    <td align="center" class="title01">25</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[24].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[24].se"   type="text"     ></td>
+    </tr>
+  <tr>
+    <td class="title01">        &nbsp; &nbsp;&nbsp;取得无形资产的进项</td>
+    <td align="center" class="title01">26</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[25].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[25].se"   type="text"     ></td>
+    </tr>
+  <tr>
+    <td class="title01">减按1.5%征收率的进项</td>
+    <td align="center" class="title01">27</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[26].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[26].se"   type="text"     ></td>
+    </tr>
+  <tr>
+    <td class="title01">　</td>
+    <td align="center" class="title01">28</td>
+    <td class="read right"><input jflag="1"  type="text"     readonly></td>
+    <td class="read right"><input jflag="1"    type="text"      readonly></td>
+    </tr>
+  <tr>
+    <td colspan="4" class="title01"><strong>二、按抵扣项目归集的进项</strong></td>
+  </tr>
+  <tr>
+    <td class="title01">用于购建不动产并一次性抵扣的进项</td>
+    <td align="center" class="title01">29</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[28].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[28].se"   type="text"     ></td>
+    </tr>
+  <tr>
+    <td class="title01">通行费的进项</td>
+    <td align="center" class="title01">30</td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[29].je"  type="text"    ></td>
+    <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdkjxsejgmxbGridlbVO[29].se"   type="text"     ></td>
+    </tr>
+    
+    <tr>
+    <td class="title01"></td>
+    <td align="center" class="title01">31</td>
+    <td class="read right" ><input jflag="1"     type="text"     readonly></td>
+    <td class="read right" ><input jflag="1"       type="text"      readonly></td>
+    </tr>
+     <tr ng-render-finish="">
+    <td class="title01"></td>
+    <td align="center" class="title01">32</td>
+    <td class="read right"  ><input jflag="1"     type="text"     readonly></td>
+    <td class="read right"    ><input jflag="1"   type="text"      readonly></td>
+    </tr>
+</table>
+</div>
+ 
+
+</div>
+</body>
+</html>

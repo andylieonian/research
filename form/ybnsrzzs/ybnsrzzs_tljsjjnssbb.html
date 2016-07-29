@@ -1,0 +1,73 @@
+<!doctype html>
+<html id="ng-app"  xmlns:ng="http://angularjs.org">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" >
+<title>36$铁路建设基金纳税申报表</title>
+</head>
+
+<body>
+<div style="width:96%; margin:auto;">
+<div class="NewTableHead">
+     <h1>铁路建设基金纳税申报表</h1>
+ 
+    <li class="dateTxt">税款所属时间:<input type="text" class="topInput" value=" "  readonly> 至<input type="text" class="topInput" value=" " jpath="" readonly>  </li>
+</div>
+
+<div class="NewTableTop">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>纳税人名称（公章）：
+        <input type="text" class="topInput" value="" jpath="" readonly></td>
+      <td align="right">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>填表日期：
+        <input type="text" class="topInput" id="textfield5" value=" "  readonly></td>
+      <td align="right">金额单位：元至角分</td>
+    </tr>
+  </table>
+</div>
+
+<div class="NewTableMain">
+  <table width="100%" border="0" cellpadding="0" cellspacing="1">
+ 
+    <tr>
+      <td  align="center" class="title01"><strong>项目</strong></td>
+      <td  align="center" class="title01"><strong>当期申报数</strong></td>
+      <td  align="center" class="title01"><strong>本年申报累计</strong></td>
+    </tr>
+    <tr>
+      <td align="center" class="title01">合计</td>
+      <td class="edit right">
+        <input jflag="1"  type="text" value="0.00">
+      </td>
+      <td class="edit right">
+        <input jflag="1"  type="text" value="0.00"></td>
+    </tr>
+    <tr>
+      <td class="title01">铁路建设基金销售额</td>
+      <td class="edit right"><input jflag="1"  type="text" value="0.00"></td>
+      <td class="edit right"><input jflag="1"  type="text" value="0.00"></td>
+      </tr>
+    <tr>
+      <td class="title01">铁路建设基金应纳税额</td>
+      <td class="edit right"><input jflag="1"  type="text" value="0.00"></td>
+      <td class="edit right"><input jflag="1"  type="text" value="0.00"></td>
+      </tr>
+  </table>
+</div>
+   <div class="NewTableFoot" ng-render-finish="">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center">受理人（签章）：  <input class="topInput" type="text"
+					style=" text-align:center;width: 100px;" readonly datatype="date"  jflag="1" />  &nbsp; &nbsp;  受理日期：
+      <input class="topInput" type="text"
+					style=" text-align:center;width: 100px;" readonly datatype="date"  jflag="1" />&nbsp; &nbsp;  受理税务机关（章）：<input class="topInput" type="text"
+					style=" text-align:center;width: 100px;" readonly datatype="date"  jflag="1" /> </td>
+  </tr>
+</table>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>变更税务登记表</title>
+
+<script type="text/javascript" src="../../res/js/swsx/bgswdj/bgswdj.js">	
+   		
+</script>
+
+<!-- select2 -->
+<link rel="stylesheet" href="../../res/js/lib/select2/select2.css" />
+<link rel="stylesheet" href="../../res/js/lib/select2/select2-bootstrap.css" />
+<script type="text/javascript">	
+   		
+</script>
+</head>
+<body>
+
+<ng-codetable url="bgxm.json" name="bgxmCT"></ng-codetable>
+<ng-codetable url="hsfs.json" name="hsfsCT"></ng-codetable>
+<ng-codetable url="kjzd.json" name="kjzdCT"></ng-codetable>
+
+<div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl">
+<div class="NewTableHead">
+	<h1>变更税务登记表</h1>
+</div>
+
+<div class="NewTableTop">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" ng-jprefix="taxML.initData.nsrjbxx">
+		<tr>
+      		<td colspan="1" align="right" class="title01"><strong> 纳税人名称:</strong></td>
+      		<td colspan="5" align="left"><input class="topInput" ng-model="nsrjbxx.nsrmc" type="text" readonly></td>
+      		<td colspan="2" align="right" class="title01"><strong> 纳税人识别号:</strong></td>
+      		<td colspan="4" align="left"><input class="topInput" ng-model="nsrjbxx.nsrsbh" type="text" readonly></td>
+    	</tr>
+	</table>
+</div>
+<div class="NewTableMain">
+<table width="100%" border="0" cellspacing="1" cellpadding="0" ng-jprefix="taxML.formContent.root.body.bgswdjb.bgdjmxGrid.bgdjmxGridlb" ng-controller="bgswdjCtrl">
+    <tr>
+      <td colspan="7" align="center" class="title01"><strong>变更登记事项</strong></td>
+    </tr>
+    <tr align="center">
+      <td class="title01" width="5%"><strong>序号</strong></td>
+      <td class="title01" width="18%"><strong>变更项目</strong></td>
+      <td class="title01" width="15%"><strong>变更前内容</strong></td>
+      <td class="title01" width="17%" ><strong>变更后内容</strong></td>
+      <td class="title01" width="15%"><strong>批准机关名称</strong></td>
+      <td class="title01" width="15%"><strong>批准文件</strong></td>
+      <td class="title01" width="13%" ><strong>操作</strong></td>
+    </tr>
+    <tr align="center" ng-repeat="item in bgdjmxGridlb track by $index" ng-repeat-init="bgdjmxGridlb">
+      <td class="title01" ng-bind="$index+1"></td>
+      <td>
+      <select ng-model="item.bgxmDm" ng-options="key as value.mc for (key,value) in CT.bgxmCT" ng-change="item.bgqnr=selectBgxm(CT.bgxmCT[item.bgxmDm].posx, 'taxML.initData.nsrjbxx.', CT.bgxmCT.[item.bgxmDm]);item.bghnr=''" ng-repeat-verify="bgxmDm"></select>
+      <!-- <input select2 ng-model="d" select2-model="dS2" config="config1" select2-config="testAJAX" config-url="select2.json" class="form-control" type="text"/> -->
+      <p ng-value="item.bgxm=CT.bgxmCT[item.bgxmDm].mc"></p>
+      </td>
+      <td class="read mid"><input type="text" ng-model="item.bgqnr" ng-show-content="12px" readonly></td>
+      <td ng-if="CT.bgxmCT[item.bgxmDm].kjlxdm=='1'" class="edit left">
+      <input id="testif" type="text" ng-model="item.bghnr" ng-repeat-verify="bgxmDm;bghnr"></td>
+      <td ng-if="CT.bgxmCT[item.bgxmDm].kjlxdm=='2'||CT.bgxmCT[item.bgxmDm].kjlxdm=='3'">
+      <select ng-model="item.bghdm" ng-repeat-verify="bgxmDm;bghnr" ng-options="key as value.mc for (key,value) in CT.bgxmCT[item.bgxmDm].options"  ng-select-query class="form-control" ></select>
+      <!--<select ng-if="CT.bgxmCT[item.bgxmDm].mc=='核算方式'" ng-model="item.bghdm" ng-options="key as value.mc for (key,value) in CT.bgxmCT[item.bgxmDm].options" ng-select-query class="form-control"></select>
+      <select ng-if="CT.bgxmCT[item.bgxmDm].mc=='适用会计制度'" ng-model="item.bghdm" ng-options="key as value.mc for (key,value) in CT.kjzdCT" ng-select-query class="form-control"/> -->
+      <p ng-value="item.bghnr=CT.bgxmCT[item.bgxmDm].options[item.bghdm].mc"></p>
+      </td>
+      <td ng-if="CT.bgxmCT[item.bgxmDm].kjlxdm=='4'" class="edit left">
+      <input id="date{{$index + 1}}" type="text" ng-model="item.bghnr" ng-repeat-verify="bgxmDm;bghnr" ng-laydate="{}" placeholder="请选择日期">
+      </td>
+      <td ng-if="CT.bgxmCT[item.bgxmDm].kjlxdm=='5'" class="edit left">
+      <input type="text" ng-model="item.bghnr" ng-repeat-verify="bgxmDm;bghnr" ng-select-address p="p" c="c" a="a" d="d" placeholder="请选择所在地" />      
+      </td>
+      <td class="edit left" ng-model="item.pzjgmc"><input type="text" ng-model="item.pzjgmc" ng-show-content="12px" ng-repeat-verify></td>
+      <td class="edit left" ng-model="item.pzwj"><input type="text" ng-model="item.pzwj" ></td>
+      <td align="center" >
+  		<div class="sbtnbox"> 
+     		<a class="sbtn sbtn01" ng-href="#"  ng-click="add()">增加</a>&nbsp;&nbsp;&nbsp;<a class="sbtn sbtn03" ng-if="$index!=0"   ng-href="#"  ng-click="del($index)">删除</a>
+     	</div>
+      </td>
+    </tr>
+    <tr align="center" ng-jprefix="taxML.initData.nsrjbxx">
+      <td colspan="2" class="title01"> 办税人姓名</td>
+      <td colspan="1" class="edit left"><input ng-model="nsrjbxx.bsrxm" type="text" ng-repeat-verify></td>
+      <td colspan="2" class="title01"> 申请日期</td>
+      <td colspan="2" class="edit left">
+      <input type="text" id="tbrq" ng-laydate="{}" ng-model="nsrjbxx.tbrq">
+      </td>
+    </tr>
+  </table>
+</div>
+</div>
+</body>
+</html>

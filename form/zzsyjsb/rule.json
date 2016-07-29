@@ -1,0 +1,196 @@
+[{
+  "id": "06100101040100001",
+  "type": "10",
+  "desc": "",
+  "formula": "$.zzsyjnssbSaveVO.nsrxxVO.skssqq=$..zzsyjsbInitData.sssq.rqQ",
+  "tips": ""
+},{
+  "id": "06100101040100002",
+  "type": "10",
+  "desc": "",
+  "formula": "$.zzsyjnssbSaveVO.nsrxxVO.skssqz=$..zzsyjsbInitData.sssq.rqZ",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101040100000",
+  "type": "10",
+  "desc": "",
+  "formula": "$.zzsyjnssbSaveVO.nsrxxVO.djxh=$..nsrjbxx.djxh",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101040100006",
+  "type": "10",
+  "desc": "",
+  "formula": "$..nsrxxVO.syybjsff=$..formContent.zzsyjnsywbw.zzsyjnssb.nsrxxForm.syybjsff",
+  "target": "",
+  "tips": ""
+},{
+  "id": "13",
+  "type": "10",
+  "desc": "",
+  "formula": "$..slxxVO.zxsb='Y'",
+  "target": "",
+  "tips": ""
+},{
+  "id": "14",
+  "type": "10",
+  "desc": "",
+  "formula": "$..slxxVO.slrq=$..nsrjbxx.tbrq",
+  "target": "",
+  "tips": ""
+},{
+  "id": "16",
+  "type": "10",
+  "desc": "",
+  "formula": "$..slxxVO.slswjg=$..nsrjbxx.swjgDm",
+  "target": "",
+  "tips": ""
+},{
+  "id": "17",
+  "type": "10",
+  "desc": "",
+  "formula": "$..slxxVO.slr=$..nsrjbxx.swjgDm",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06",
+  "type": "11",
+  "desc": "",
+  "formula": "$.zzsyjnssbSaveVO.yzxmGridVO.yzseHj=$..yzxmItemVO[0].yzse+$..yzxmItemVO[1].yzse+$..yzxmItemVO[2].yzse",
+  "target": "",
+  "tips": ""
+},{
+  "id": "04",
+  "type": "11",
+  "desc": "",
+  "formula": "$.zzsyjnssbSaveVO.yzxmGridVO.xseHj=$..yzxmItemVO[0].xse+$..yzxmItemVO[1].xse+$..yzxmItemVO[2].xse",
+  "target": "",
+  "tips": ""
+},{
+  "id": "05",
+  "type": "11",
+  "desc": "",
+  "formula": "$.zzsyjnssbSaveVO.yzxmGridVO.kcjeHj=$..yzxmItemVO[0].kcje+$..yzxmItemVO[1].kcje+$..yzxmItemVO[2].kcje",
+  "target": "",
+  "tips": ""
+},{
+  "id": "10",
+  "type": "11",
+  "desc": "",
+  "formula": "$..yzxmItemVO[0].sl1=IF($..nsrxxVO.syybjsff==$..formContent.zzsyjnsywbw.zzsyjnssb.nsrxxForm.syybjsff,$..zzsyjsbInitData.onesl,$..zzsyjsbInitData.onesl2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "11",
+  "type": "11",
+  "desc": "",
+  "formula": "$..yzxmItemVO[1].sl1=IF($..nsrxxVO.syybjsff==$..formContent.zzsyjnsywbw.zzsyjnssb.nsrxxForm.syybjsff,$..zzsyjsbInitData.twosl,$..zzsyjsbInitData.twosl2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "12",
+  "type": "11",
+  "desc": "",
+  "formula": "$..yzxmItemVO[2].sl1=IF($..nsrxxVO.syybjsff==$..formContent.zzsyjnsywbw.zzsyjnssb.nsrxxForm.syybjsff,$..zzsyjsbInitData.threesl,$..zzsyjsbInitData.threesl2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101040100008",
+  "type": "01",
+  "desc": "",
+  "formula": "$..yzxmItemVO[0].yzse=ROUND(($..yzxmItemVO[0].xse-$..yzxmItemVO[0].kcje)/(1+$..yzxmItemVO[0].sl1)*$..yzxmItemVO[0].yzl,2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101040100012",
+  "type": "01",
+  "desc": "",
+  "formula": "$..yzxmItemVO[1].yzse=ROUND(($..yzxmItemVO[1].xse-$..yzxmItemVO[1].kcje)/(1+$..yzxmItemVO[1].sl1)*$..yzxmItemVO[1].yzl,2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101040100017",
+  "type": "01",
+  "desc": "",
+  "formula": "$..yzxmItemVO[2].yzse=ROUND(($..yzxmItemVO[2].xse-$..yzxmItemVO[2].kcje)/(1+$..yzxmItemVO[2].sl1)*$..yzxmItemVO[2].yzl,2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101040100009",
+  "type": "02",
+  "desc": "",
+  "formula": "$..yzxmItemVO[0].yzse>=0",
+  "target": "",
+  "tips": "[预征税额]不能为负！"
+},{
+  "id": "06100101040100013",
+  "type": "02",
+  "desc": "",
+  "formula": "$..yzxmItemVO[1].yzse>=0",
+  "target": "",
+  "tips": "[预征税额]不能为负！"
+},{
+  "id": "06100101040100018",
+  "type": "02",
+  "desc": "",
+  "formula": "$..yzxmItemVO[2].yzse>=0",
+  "target": "",
+  "tips": "[预征税额]不能为负！"
+},{
+  "id": "06100101040100019",
+  "type": "02",
+  "desc": "",
+  "formula": "$..yzseHj>=0",
+  "target": "",
+  "tips": "[预征税额合计]应大于零！"
+},{
+  "id": "06100101040100005",
+  "type": "02",
+  "desc": "",
+  "formula": "$..nsrxxVO.syybjsff!=''",
+  "target": "",
+  "tips": "请选择[是否适用一般计税方法]！"
+},{
+  "id": "06100101040100016",
+  "type": "02",
+  "desc": "",
+  "formula": "IF($..nsrjbxx.djzclxDm=='410'||$..nsrjbxx.djzclxDm=='411'||$..nsrjbxx.djzclxDm=='412'||$..nsrjbxx.djzclxDm=='413',true,IF($..nsrxxVO.syybjsff=='N',$..yzxmItemVO[2].yzl!=0.015 ,true))",
+  "target": "",
+  "tips": "当前纳税人登记注册类型不为个体工商户，当“是否一般计税方法为否”时，出租不动产的预征率不允许选择：0.015"
+},{
+  "id": "18",
+  "type": "13",
+  "desc": "",
+  "formula": "$..zzsyjsbInitData.oneh=='N'",
+  "target": "$..yzxmItemVO[0].xse:readonly;$..yzxmItemVO[0].xse:background-color=#f1edee;$..yzxmItemVO[0].kcje:readonly;$..yzxmItemVO[0].kcje:background-color=#f1edee;$..yzxmItemVO[0].yzl:disabled;$..yzxmItemVO[0].yzl:background-color=#f1edee;",
+  "tips": ""
+},{
+  "id": "19",
+  "type": "13",
+  "desc": "",
+  "formula": "$..zzsyjsbInitData.twoh=='N'",
+  "target": "$..yzxmItemVO[1].xse:readonly;$..yzxmItemVO[1].xse:background-color=#f1edee;$..yzxmItemVO[1].kcje:readonly;$..yzxmItemVO[1].kcje:background-color=#f1edee;$..yzxmItemVO[1].yzl:disable;$..yzxmItemVO[1].yzl:background-color=#f1edee;",
+  "tips": ""
+},{
+  "id": "21",
+  "type": "13",
+  "desc": "",
+  "formula": "$..zzsyjsbInitData.threeh=='N'",
+  "target": "$..yzxmItemVO[2].xse:readonly;$..yzxmItemVO[2].xse:background-color=#f1edee;$..yzxmItemVO[2].kcje:readonly;$..yzxmItemVO[2].kcje:background-color=#f1edee;$..yzxmItemVO[2].yzl:disable;$..yzxmItemVO[2].yzl:background-color=#f1edee;",
+  "tips": ""
+},{
+  "id": "06100101040100010",
+  "type": "02",
+  "desc": "",
+  "formula": "$..yzxmItemVO[1].kcje==0",
+  "target": "",
+  "tips": "只有申报“建筑服务”时，允许填写扣除金额"
+},{
+  "id": "06100101040100014",
+  "type": "02",
+  "desc": "",
+  "formula": "$..yzxmItemVO[2].kcje==0",
+  "target": "",
+  "tips": "只有申报“建筑服务”时，允许填写扣除金额"
+}]

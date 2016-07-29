@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>09$成品油购销存数量明细表</title>
+<link href="../../../../css/table.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div style="width:96%; margin:auto;"id="viewCtrlId" ng-controller="viewCtrl" >
+<div class="NewTableHead" ng-jprefix="qcs.initData.zzsybnsrsbInitData">
+     <h1>成品油购销存数量明细表</h1>
+    <li class="dateTxt">税款所属时间:<input type="text"  readonly style="width:100px; " ng-model="zzsybnsrsbInitData.sssq.rqQ" class="topInput"> 至 <input type="text"   readonly style="width:100px; " ng-model="zzsybnsrsbInitData.sssq.rqZ" class="topInput"></li>
+</div>
+
+
+<div class="NewTableTop" ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_cpygxcslmxb.sbbHead" >
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>纳税人名称（公章）： 
+      <input type="text"  readonly style="width:200px; " ng-model="sbbHead.nsrmc" class="topInput" />
+     </td>
+    <td align="right">纳税人识别号：
+      <input type="text"  readonly style="width:200px; " ng-model="sbbHead.nsrsbh" class="topInput" /></td>
+  </tr>
+  <tr>
+    <td ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_cpygxcslmxb.sbbHead" >填表日期： 
+      <input type="text"   readonly style="width:200px; " ng-model="sbbHead.tbrq" class="topInput" />
+     </td>
+    <td align="right">&nbsp;</td>
+  </tr>
+</table>
+</div>
+
+
+<div class="NewTableMain"  ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_cpygxcslmxb.cpygxcslmxbGrid.cpygxcslmxbGridlbVO">
+
+ <table width="100%" border="0" cellpadding="0" cellspacing="1" class="cpygxcslmxb">
+	<colgroup class="c1"></colgroup>
+	<colgroup class="c2"></colgroup>
+	<colgroup class="c3"></colgroup>
+	<colgroup class="c4"></colgroup>
+	<colgroup class="c5"></colgroup>
+	<colgroup class="c6"></colgroup>
+  <tbody><tr>
+    <td rowspan="2" align="center" class="title01"><strong>油量型号</strong></td>
+    <td rowspan="2" align="center" class="title01"><strong>期初库存量</strong></td>
+    <td rowspan="2" align="center" class="title01"><strong>本期购进量</strong></td>
+    <td colspan="2" align="center" class="title01"><strong>本期出库量</strong></td>
+    <td rowspan="2" align="center" class="title01"><strong>期末库存量</strong></td>
+      <td colspan="2" rowspan="2"  class="title01"  style="width:16%"></td> 
+  </tr>
+  <tr>
+    <td align="center" class="title01">应税销售量</td>
+    <td align="center" class="title01">应扣除数量</td>
+    </tr>
+  <tr>
+    <td align="center" class="title01">- - - - - -</td>
+    <td align="center" class="title01">1</td>
+    <td align="center" class="title01">2</td>
+    <td align="center" class="title01">3</td>
+    <td align="center" class="title01">4</td>
+    <td align="center" class="title01">5=1+2-3-4</td>
+    <td align="center" class="title01">操作</td>
+  </tr>
+  <tr ng-repeat="p in cpygxcslmxbGridlbVO track by $index" ng-repeat-init="cpygxcslmxbGridlbVO"
+        default-value='{"ylxh":"","qckcl":0.00,"bqgjl":0.00,"bqcklYsxsl":0.00,"bqcklYkcsl":0.00,"qmkcl":0.00}'>
+    <td class="edit right"><input class="til" type="text"   ng-model="p.ylxh"></td>
+    <td class="edit right"><input type="text" ng-datatype="number"  ng-model="p.qckcl"></td>
+    <td class="edit right"><input type="text" ng-datatype="number"  ng-model="p.bqgjl"></td>
+    <td class="edit right"><input type="text" ng-datatype="number"  ng-model="p.bqcklYsxsl"></td>
+    <td class="edit right"><input type="text" ng-datatype="number"  ng-model="p.bqcklYkcsl"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  readonly ng-model="p.qmkcl"></td>
+     <td  align="center" >
+    <div class="sbtnbox"> 
+    <a  class="sbtn sbtn01"  ng-href="#"  ng-click="add()">增加</a>&nbsp;&nbsp;&nbsp;<a class="sbtn sbtn03" ng-if="$index!=0"   ng-href="#"  ng-click="del($index)">删除</a></div></td> 
+  </tr>
+   <!--  <tr>
+    <td class=	><input class="til" type="text"   ng-model="mx.ylxh"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  ng-model="mx.qckcl"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  ng-model="mx.bqgjl"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  ng-model="mx.bqcklYsxsl"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  ng-model="mx.bqcklYkcsl"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  readonly ng-model="mx.qmkcl"></td>
+  </tr>  
+ 
+    <tr>
+    <td class="read right"><input class="til" type="text"   ng-model="mx.ylxh"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  ng-model="mx.qckcl"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  ng-model="mx.bqgjl"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  ng-model="mx.bqcklYsxsl"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  ng-model="mx.bqcklYkcsl"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  readonly ng-model="mx.qmkcl"></td>
+  </tr>    
+ 
+    <tr>
+    <td class="read right"><input class="til" type="text"   ng-model="mx.ylxh"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  ng-model="mx.qckcl"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  ng-model="mx.bqgjl"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  ng-model="mx.bqcklYsxsl"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  ng-model="mx.bqcklYkcsl"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  readonly ng-model="mx.qmkcl"></td>
+  </tr>   
+  
+    <tr>
+    <td class="read right"><input class="til" type="text"   ng-model="mx.ylxh"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  ng-model="mx.qckcl"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  ng-model="mx.bqgjl"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  ng-model="mx.bqcklYsxsl"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  ng-model="mx.bqcklYkcsl"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  readonly ng-model="mx.qmkcl"></td>
+  </tr>   
+ 
+    <tr>
+    <td class="read right"><input class="til" type="text"   ng-model="mx.ylxh"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  ng-model="mx.qckcl"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  ng-model="mx.bqgjl"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  ng-model="mx.bqcklYsxsl"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  ng-model="mx.bqcklYkcsl"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  readonly ng-model="mx.qmkcl"></td>
+  </tr>   
+ 
+
+    <tr>
+    <td class="read right"><input class="til" type="text"   ng-model="mx.ylxh"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  ng-model="mx.qckcl"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  ng-model="mx.bqgjl"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  ng-model="mx.bqcklYsxsl"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  ng-model="mx.bqcklYkcsl"></td>
+    <td class="read right"><input type="text" ng-datatype="number"  readonly ng-model="mx.qmkcl"></td>
+  </tr>   -->
+  </tbody></table>
+</div>
+
+ 
+
+
+</div>
+</body>
+</html>

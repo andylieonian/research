@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>本期减（免）税额明细表</title>
+</head>
+
+<body>
+<div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl"  >
+<ng-codetable model="qcs.initData.hdxx.qtszhd" name="zspmCT" node="" dm="zspmDm" mc="zspmMc"></ng-codetable>
+<ng-codetable url="jmxz.json" name="jmxzCT" node="" dm="root.dm" mc="root.mc"></ng-codetable>
+<ng-codetable url="jmxmmc.json" name="jmxmmcCT" node="" dm="root.dm" mc="root.mc"></ng-codetable>
+<div class="NewTableHead" ng-jprefix="xfssbSbbdxxVO.xfsDcsb.xfssb7.sbbhead">
+     <h1>本期减（免）税额明细表</h1>
+     <li class="dateTxt">税款所属期:<input  type="text" class="topInput"   ng-model="sbbhead.skssqq" readonly> 
+     至<input  type="text" class="topInput" 
+     value=" " ng-model="sbbhead.skssqz" readonly>  </li>
+</div>
+
+
+<div class="NewTableTop">`
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>纳税人名称（公章）：<input type="text" class="topInput" value="" ng-model="sbbhead.nsrmc" readonly> </td>
+        <td colspan="2" align="right">纳税人识别号：<input  type="text" class="topInput"  value=" " ng-model="sbbhead.nsrsbh" readonly>  </td>
+      </tr>
+      <tr>
+        <td>填表日期：<input  type="text" class="topInput"  value=" " ng-model="sbbhead.sbrq1" readonly> </td>
+        <td align="right">计量单位：只</td>
+        <td align="right">金额单位：元（列至角分）</td>
+      </tr>
+    </table>
+  </div>
+
+		<div class="NewTableMain"  ng-jprefix="xfssbSbbdxxVO.xfsDcsb.xfssb7_fb3.bqjmsemxbGrid.bqjmsemxbGridlb">
+			<table id="xfssb7_fb3" class="xfssbSbbdxxVO.xfsDcsb.xfssb7_fb3" width="100%" border="0" cellspacing="1" cellpadding="0">
+				<tr>
+					<td align="center" class="title01"><strong>应税消费品名称</strong></td>
+					<td align="center" class="title01"><strong>减（免）性质 代码</strong></td>
+					<td align="center" class="title01"><strong>减（免）项目名称</strong></td>
+					<td align="center" class="title01"><strong>减（免）金额</strong></td>
+					<td align="center" class="title01"><strong>适用税率
+							（从价定率）</strong></td>
+					<td align="center" class="title01"><strong>减（免）数量</strong></td>
+					<td align="center" class="title01"><strong>适用税率
+							（从量定额）</strong></td>
+					<td align="center" class="title01"><strong>减（免）税额</strong></td>
+					<td align="center" rowspan="2"  width="110" class="title01" >操作</td>
+				</tr>
+				<tr>
+					<td align="center" class="title01">1</td>
+					<td align="center" class="title01">2</td>
+					<td align="center" class="title01">3</td>
+					<td align="center" class="title01">4</td>
+					<td align="center" class="title01">5</td>
+					<td align="center" class="title01">6</td>
+					<td align="center" class="title01">7</td>
+					<td align="center" class="title01">8＝4×5＋6×7</td>
+				</tr>
+				<tr ng-repeat="p in bqjmsemxbGridlb track by $index" ng-repeat-init="bqjmsemxbGridlb"
+                default-value=' {"zspmDm":"","ssjmxzDm":"","swsxDm":"","bqjmxse":"0.00","blsl":"0.00","bqjmsl":"0.00","desl1":"0.00","bqjmse":"0.00"}'>
+				
+					<td class="edit right">
+						<select ng-model="p.zspmDm"  ng-options="key as key+'|'+value.zspmMc for (key,value) in CT.zspmCT"   ng-selected="key==p.zspmDm"><option value=""></option></select>
+					
+					<input type="hidden" ng-bind="$index+1">
+					  
+					</td>
+					<td class="edit mid">
+						<select ng-model="p.ssjmxzDm"   ng-options="key as key+'|'+value.mc for (key,value) in CT.jmxzCT"   ng-selected="key==p.ssjmxzDm"><option value=""></option></select>
+					</td>
+					<td class="edit mid">
+						<select  ng-model="p.swsxDm" ng-options="key as key+'|'+value for (key,value) in CT.jmxmmcCT" ng-value="p.swsxDm=CT.jmxzCT[p.ssjmxzDm].jmxm" ng-selected="key==p.swsxDm"><option value=""></option></select>
+					</td>
+					<td class="edit right"><input  ng-datatype="number" ng-model="p.bqjmxse"  type="text"  value="0.00" delRowSet="true" ></td>
+					<td class="read right"><input  ng-datatype="number" ng-model="p.blsl" ng-value="p.blsl=CT.zspmCT[p.zspmDm].sl" type="text" readonly></td>
+					<td class="edit right"><input  ng-datatype="number" ng-model="p.bqjmsl"  type="text"  value="0.00"></td>
+					<td class="read right"><input  ng-datatype="number" ng-model="p.desl1" ng-value="p.desl1=CT.zspmCT[p.zspmDm].desl" type="text"  readonly></td>
+					<td class="read right"><input  ng-datatype="number" ng-model="p.bqjmse"   type="text"  value="0.00" readonly></td>
+					<td align="center" ><div class="sbtnbox"><a class="sbtn sbtn01" ng-href="#" ng-click="add()">增加</a>&nbsp;&nbsp;&nbsp;
+					 <a class="sbtn sbtn03" ng-if="$index!=0" ng-href="#" ng-click="del($index)">删除</a></div></td>
+					
+				</tr>
+				<tr>
+					<td align="center" class="title01">合计</td>
+					<td class="read mid"><input   type="text"  value="— —" readonly></td>
+					<td class="read mid"><input   type="text"  value="— —" readonly></td>
+					<td class="read mid"><input   type="text"  value="— —" readonly></td>
+					<td class="read mid"><input   type="text"  value="— —" readonly></td>
+					<td class="read mid"><input   type="text"  value="— —" readonly></td>
+					<td class="read mid"><input   type="text"  value="— —" readonly></td>
+					<td class="read right"><input  ng-datatype="number" ng-model="bqjmsemxbGrid.jmsehj"   type="text"  value="0.00" readonly></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+
+
+
+	</div>
+</body>
+</html>
+

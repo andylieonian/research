@@ -1,0 +1,133 @@
+<!doctype html>
+<html id="ng-app"  xmlns:ng="http://angularjs.org">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" >
+<title>00$增值税预缴税款表</title>
+
+</head>
+
+<body>
+<div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl">
+<ng-codetable url="cs_sb_yzl.json" name="yzlCT" node="" dm="" mc=""></ng-codetable>
+<div class="NewTableHead"  ng-jprefix="zzsyjnssbSaveVO.nsrxxVO">
+     <h1>增值税预缴税款表</h1>
+    
+    <li class="dateTxt">税款所属时间:<input  type="text" class="laydate-icon topInput" ng-laydate="{}" ng-model ="nsrxxVO.skssqq"> 至<input  type="text" class="topInput"      ng-model ="nsrxxVO.skssqz" readonly>  </li>
+</div>
+
+<div class="NewTableTop"  ng-jprefix="zzsyjnssbSaveVO.nsrxxVO">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr ng-jprefix="qcs.initData.nsrjbxx">
+    <td>纳税人识别号：
+      <input   type="text" class="topInput" ng-model="nsrjbxx.nsrsbh" readonly></td>
+    <td align="right">是否适用一般计税方法：
+      <input type="radio" value="Y" ng-model="nsrxxVO.syybjsff">
+是
+<input type="radio" value="N" ng-model="nsrxxVO.syybjsff" >
+否</td>
+  </tr>
+  <tr ng-jprefix="qcs.initData.nsrjbxx">
+    <td>纳税人名称（公章）：
+      <span class="textline" ng-bind="nsrjbxx.nsrmc"></span></td>
+     <!--  <input name="textfield6" type="text" class="topInput" id="textfield6"       ng-model="nsrjbxx.nsrmc" readonly></td> -->
+    <td align="right">金额单位：元（列至角分）</td>
+  </tr>
+</table>
+</div>
+
+<div class="NewTableMain"  ng-jprefix="zzsyjnssbSaveVO.yzxmGridVO.yzxmItemVO">
+  <table width="100%" border="0" cellpadding="0" cellspacing="1">
+    <tr ng-jprefix="zzsyjnssbSaveVO.nsrxxVO">
+      <td colspan="2" align="center" class="title01">项目编号</td>
+      <td width="300" ><input   style="border:0;background:transparent;	width :100%"  ng-model ="nsrxxVO.xmbh"    type="text"    ></td>
+      <td align="center" class="title01">项目名称</td>
+      <td colspan="2" ><input  style="border:0;background:transparent;	width :100%"  ng-model ="nsrxxVO.xmmc"    type="text"    ></td>
+    </tr>
+    <tr ng-jprefix="zzsyjnssbSaveVO.nsrxxVO">
+      <td colspan="2" align="center" class="title01">项目地址</td>
+      <td colspan="4" ><input    style="border:0;background:transparent;	width :100%"  ng-model ="nsrxxVO.xmdz"  type="text"   ></td>
+    </tr>
+    <tr>
+      <td colspan="2" rowspan="2" align="center" class="title01"  style="width: 20%; " >预征项目和栏次</td>
+      <td align="center" class="title01"  style="width: 20%; ">销售额</td>
+      <td align="center" class="title01"  style="width: 20%; ">扣除金额</td>
+      <td align="center" class="title01"  style="width: 20%; ">预征率</td>
+      <td align="center" class="title01"  style="width: 20%; "> 预征税额</td>
+    </tr>
+    <tr >
+      <td align="center" class="title01">1</td>
+      <td align="center" class="title01">2</td>
+      <td align="center" class="title01">3</td>
+      <td align="center" class="title01">4</td>
+    </tr>
+    <tr>
+      <td align="center" class="title01">建筑服务</td>
+      <td align="center" class="title01" >1</td>
+      <td class="edit right" > <input ng-datatype="number"   ng-model ="yzxmItemVO[0].xse"  type="text"   ></td>
+      <td class="edit right" ><input ng-datatype="number"   ng-model ="yzxmItemVO[0].kcje"  type="text"   ></td>
+      <td class="edit right" ><select  ng-model ="yzxmItemVO[0].yzl"  ng-options="value as value  for (key,value) in CT.yzlCT[nsrxxVO.syybjsff][yzxmItemVO[0].yzxmDm].opt" ng-selected="yzxmItemVO[0].yzl"><option value=""></option></select></td>
+      <td class="read right" ><input ng-datatype="number"   ng-model ="yzxmItemVO[0].yzse"  type="text"   readonly ></td>
+      </tr>
+    <tr>
+      <td align="center" class="title01">销售不动产</td>
+      <td align="center" class="title01" >2</td>
+      <td class="edit right" ><input ng-datatype="number"   ng-model ="yzxmItemVO[1].xse"  type="text"   ></td>
+      <td class="edit right" ><input ng-datatype="number"   ng-model ="yzxmItemVO[1].kcje"  type="text"   ></td>
+       <td class="edit right" ><select  ng-model ="yzxmItemVO[1].yzl"  ng-options="value as value  for (key,value) in CT.yzlCT[nsrxxVO.syybjsff][yzxmItemVO[1].yzxmDm].opt" ng-selected="yzxmItemVO[1].yzl"><option value=""></option></select></td>
+      <td class="read right" ><input ng-datatype="number"   ng-model ="yzxmItemVO[1].yzse"  type="text"   readonly></td>
+      </tr>
+    <tr>
+      <td align="center" class="title01" >出租不动产</td>
+      <td align="center" class="title01" >3</td>
+      <td class="edit right" ><input ng-datatype="number"   ng-model ="yzxmItemVO[2].xse"  type="text"   ></td>
+      <td class="edit right" ><input ng-datatype="number"   ng-model ="yzxmItemVO[2].kcje"  type="text"   ></td>
+      <td class="edit right" ><select  ng-model ="yzxmItemVO[2].yzl"  ng-options="value as value  for (key,value) in CT.yzlCT[nsrxxVO.syybjsff][yzxmItemVO[2].yzxmDm].opt" ng-selected="yzxmItemVO[2].yzl"><option value=""></option></select></td>
+      <td class="read right" ><input ng-datatype="number"   ng-model ="yzxmItemVO[2].yzse"  type="text"    readonly></td>
+    </tr>
+    <tr>
+      <td align="center" class="title01" >&nbsp;</td>
+      <td align="center" class="title01" >4</td>
+      <td class="read right" ><input  type="text"   readonly ></td>
+      <td class="read right" ><input type="text"    readonly></td>
+      <td class="read right" ><input "  type="text"    readonly></td>
+      <td class="read right" ><input  type="text"    readonly></td>
+      </tr>
+    <tr>
+      <td align="center" class="title01" >&nbsp;</td>
+      <td align="center" class="title01" >5</td>
+      <td class="read right" ><input   type="text"    readonly></td>
+      <td class="read right" ><input   type="text"    readonly></td>
+      <td class="read right" ><input   type="text"    readonly></td>
+      <td class="read right" ><input  type="text"    readonly></td>
+      </tr>
+    <tr  ng-jprefix="zzsyjnssbSaveVO.yzxmGridVO">
+      <td align="center" class="title01" >合计</td>
+      <td align="center" class="title01" >6</td>
+      <td class="read right" ><input ng-datatype="number"   type="text"   ng-model="yzxmGridVO.xseHj"   readonly></td>
+      <td class="read right" ><input ng-datatype="number"   type="text"   ng-model="yzxmGridVO.kcjeHj"  readonly></td>
+      <td  class="read mid"   align="center"  >--</td>
+      <td class="read right" ><input ng-datatype="number"   type="text"   ng-model="yzxmGridVO.yzseHj" readonly></td>
+      </tr>
+    <tr ng-render-finish="">
+      <td align="center" class="title01">授<br>权<br>声<br>明<br></td>
+      <td colspan="2" valign="top" style=" padding:10px;"><p>&nbsp;&nbsp;&nbsp;&nbsp;如果你已委托代理人填报，请填写下列资料：</p><div class="text">&nbsp;&nbsp;&nbsp;&nbsp;为代理一切税务事宜，现授权(地址) <input name="text" type="text" class="topInput"
+					style="width: 200px; text-align:center;"    readonly  />为本纳税人的代理申报人，任何与本表有关的往来文件，都可寄予此人。<br/>
+        授权人签字：
+        <input class="topInput" name="text" type="text"
+					style="width: 100px;" readonly  /> 
+        </div>
+        <p>&nbsp; </p></td>
+      <td align="center" class="title01">填<br>表<br>人<br>申<br>明</td>
+      <td colspan="2" style=" padding:10px;"><div class="text">以上内容是真实的、可靠的、完整的。<br/>
+        纳税人签字：
+        <input class="topInput" name="text" type="text"
+					style="width: 100px;" readonly  /><br/><br/>
+        </div></td>
+    </tr>
+  </table>
+</div>
+ 
+</div>
+</body>
+</html>

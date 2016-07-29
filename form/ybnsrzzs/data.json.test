@@ -1,0 +1,1373 @@
+{
+  "zzsybsbSbbdxxVO": {
+    "bbh": "",
+    "zzssyyybnsr_zb": {
+      "sbbhead": {
+        "nsrmc": "测试纳税人",
+        "nsrsbh": "44190009752941X",
+        "skssqq": "2016-03-01",
+        "skssqz": "2016-03-31",
+        "sbrq1": "2016-05-04",
+        "sbsxDm1": ""
+      },
+      "zbGrid": {
+        "zbGridlbVO": [
+          {
+            "ewblxh": "1",
+            "lmc": "一般项目本月数",
+            "asysljsxse": 41000,
+            "yshwxse": 40000,
+            "yslwxse": 39000,
+            "syslNsjctzxse": 38000,
+            "ajybfjsxse": 37000,
+            "jybfNsjctzxse": 36000,
+            "mdtbfckxse": 35000,
+            "msxse": 34000,
+            "mshwxse": 33000,
+            "mslwxse": 32000,
+            "xxse": 31000,
+            "jxse": 30000,
+            "sqldse": 29000,
+            "jxsezc": 28000,
+            "mdtytse": 27000,
+            "syslNsjcybjse": 26000,
+            "ydksehj": 25000,
+            "sjdkse": 24000,
+            "ynse": 23000,
+            "qmldse": 22000,
+            "jybfYnse": 21000,
+            "jybfNsjcybjse": 20000,
+            "ynsejze": 19000,
+            "ynsehj": 18000,
+            "qcwjse": 17000,
+            "ssckkjzyjkstse": 16000,
+            "bqyjse": 15000,
+            "fcyjse": 14000,
+            "ckkjzyjksyjse": 13000,
+            "bqjnsqynse": 12000,
+            "bqjnqjse": 11000,
+            "qmwjse": 10000,
+            "qmwjseQjse": 9000,
+            "bqybtse": 8000,
+            "jzjtsjtse": 7000,
+            "qcwjcbse": 6000,
+            "bqrkcbse": 5000,
+            "qmwjcbse": 4000,
+            "sqr": 3000,
+            "smrxm": 2000,
+            "slr": 1000
+          },
+          {
+            "ewblxh": "2",
+            "lmc": "一般项目本年累计",
+            "asysljsxse": 0.00,
+            "yshwxse": 0.00,
+            "yslwxse": 0.06,
+            "syslNsjctzxse": 0.00,
+            "ajybfjsxse": 0.00,
+            "jybfNsjctzxse": 0.00,
+            "mdtbfckxse": 0.00,
+            "msxse": 0.00,
+            "mshwxse": 0.00,
+            "mslwxse": 0.00,
+            "xxse": 0.00,
+            "jxse": 0.00,
+            "sqldse": 0.00,
+            "jxsezc": 0.00,
+            "mdtytse": 0.00,
+            "syslNsjcybjse": 0.00,
+            "ydksehj": 0.00,
+            "sjdkse": 0.00,
+            "ynse": 0.00,
+            "qmldse": 0.00,
+            "jybfYnse": 0.00,
+            "jybfNsjcybjse": 0.00,
+            "ynsejze": 0.00,
+            "ynsehj": 0.00,
+            "qcwjse": 0.00,
+            "ssckkjzyjkstse": 0.00,
+            "bqyjse": 0.00,
+            "fcyjse": 0.00,
+            "ckkjzyjksyjse": 0.00,
+            "bqjnsqynse": 0.00,
+            "bqjnqjse": 0.00,
+            "qmwjse": 0.00,
+            "qmwjseQjse": 0.00,
+            "bqybtse": 0.00,
+            "jzjtsjtse": 0.00,
+            "qcwjcbse": 0.00,
+            "bqrkcbse": 0.00,
+            "qmwjcbse": 0.00,
+            "sqr": 0.00,
+            "smrxm": 0.00,
+            "slr": 0.00
+          },
+          {
+            "ewblxh": "3",
+            "lmc": "即征即退项目本月数",
+            "asysljsxse": 0.00,
+            "yshwxse": 0.00,
+            "yslwxse": 0.00,
+            "syslNsjctzxse": 0.00,
+            "ajybfjsxse": 0.00,
+            "jybfNsjctzxse": 0.00,
+            "mdtbfckxse": 0.00,
+            "msxse": 0.00,
+            "mshwxse": 0.00,
+            "mslwxse": 0.00,
+            "xxse": 0.00,
+            "jxse": 0.00,
+            "sqldse": 0.00,
+            "jxsezc": 0.00,
+            "mdtytse": 0.00,
+            "syslNsjcybjse": 0.00,
+            "ydksehj": 0.00,
+            "sjdkse": 0.00,
+            "ynse": 0.00,
+            "qmldse": 0.00,
+            "jybfYnse": 0.00,
+            "jybfNsjcybjse": 0.00,
+            "ynsejze": 0.00,
+            "ynsehj": 0.00,
+            "qcwjse": 0.00,
+            "ssckkjzyjkstse": 0.00,
+            "bqyjse": 0.00,
+            "fcyjse": 0.00,
+            "ckkjzyjksyjse": 0.00,
+            "bqjnsqynse": 0.00,
+            "bqjnqjse": 0.00,
+            "qmwjse": 0.00,
+            "qmwjseQjse": 0.00,
+            "bqybtse": 0.00,
+            "jzjtsjtse": 0.00,
+            "qcwjcbse": 0.00,
+            "bqrkcbse": 0.00,
+            "qmwjcbse": 0.00,
+            "sqr": 0.00,
+            "smrxm": 0.00,
+            "slr": 0.00
+          },
+          {
+            "ewblxh": "4",
+            "lmc": "即征即退项目本年累计",
+            "asysljsxse": 0.00,
+            "yshwxse": 0.00,
+            "yslwxse": 0.00,
+            "syslNsjctzxse": 0.00,
+            "ajybfjsxse": 0.00,
+            "jybfNsjctzxse": 0.00,
+            "mdtbfckxse": 0.00,
+            "msxse": 0.00,
+            "mshwxse": 0.00,
+            "mslwxse": 0.00,
+            "xxse": 0.00,
+            "jxse": 0.00,
+            "sqldse": 0.00,
+            "jxsezc": 0.00,
+            "mdtytse": 0.00,
+            "syslNsjcybjse": 0.00,
+            "ydksehj": 0.00,
+            "sjdkse": 0.00,
+            "ynse": 0.00,
+            "qmldse": 0.00,
+            "jybfYnse": 0.00,
+            "jybfNsjcybjse": 0.00,
+            "ynsejze": 0.00,
+            "ynsehj": 0.00,
+            "qcwjse": 0.00,
+            "ssckkjzyjkstse": 0.00,
+            "bqyjse": 0.00,
+            "fcyjse": 0.00,
+            "ckkjzyjksyjse": 0.00,
+            "bqjnsqynse": 0.00,
+            "bqjnqjse": 0.00,
+            "qmwjse": 0.00,
+            "qmwjseQjse": 0.00,
+            "bqybtse": 0.00,
+            "jzjtsjtse": 0.00,
+            "qcwjcbse": 0.00,
+            "bqrkcbse": 0.00,
+            "qmwjcbse": 0.00,
+            "sqr": 0.00,
+            "smrxm": 0.00,
+            "slr": 0.00
+          }
+        ],
+        "slxxForm": {
+          "sqr": "",
+          "smr": "",
+          "slrq": "",
+          "slr": ""
+        }
+      }
+    },
+    "zzssyyybnsr01_bqxsqkmxb": {
+      "sbbhead": {
+        "nsrmc": "测试纳税人",
+        "nsrsbh": "44190009752941X",
+        "skssqq": "2016-03-01",
+        "skssqz": "2016-03-31",
+        "sbrq1": "2016-05-04"
+      },
+      "bqxsqkmxbGrid": {
+        "bqxsqkmxbGridlbVO": [
+          {
+            "ewbhxh": "1",
+            "hmc": "",
+            "kjskzzszyfpXse": 0,
+            "kjskzzszyfpXxynse": 0,
+            "kjqtfpXse": 0,
+            "kjqtfpXxynse": 0,
+            "wkjfpXse": 0,
+            "wkjfpXxynse": 0,
+            "nsjctzdxse": 0,
+            "nsjctzXxynse": 0,
+            "xse": 0,
+            "hjXxynse": 0,
+            "jshj": 0,
+            "ysfwkcxmbqsjkcje": 0,
+            "kchHsmsxse": 0,
+            "kchXxynse": 0
+          },
+          {
+            "ewbhxh": "2",
+            "hmc": "",
+            "kjskzzszyfpXse": 0,
+            "kjskzzszyfpXxynse": 0,
+            "kjqtfpXse": 0,
+            "kjqtfpXxynse": 0,
+            "wkjfpXse": 0,
+            "wkjfpXxynse": 0,
+            "nsjctzdxse": 0,
+            "nsjctzXxynse": 0,
+            "xse": 0,
+            "hjXxynse": 0,
+            "jshj": 0,
+            "ysfwkcxmbqsjkcje": 0,
+            "kchHsmsxse": 0,
+            "kchXxynse": 0
+          },
+          {
+            "ewbhxh": "3",
+            "hmc": "",
+            "kjskzzszyfpXse": 0,
+            "kjskzzszyfpXxynse": 0,
+            "kjqtfpXse": 0,
+            "kjqtfpXxynse": 0,
+            "wkjfpXse": 0,
+            "wkjfpXxynse": 0,
+            "nsjctzdxse": 0,
+            "nsjctzXxynse": 0,
+            "xse": 0,
+            "hjXxynse": 0,
+            "jshj": 0,
+            "ysfwkcxmbqsjkcje": 0,
+            "kchHsmsxse": 0,
+            "kchXxynse": 0
+          },
+          {
+            "ewbhxh": "4",
+            "hmc": "",
+            "kjskzzszyfpXse": 0,
+            "kjskzzszyfpXxynse": 0,
+            "kjqtfpXse": 0,
+            "kjqtfpXxynse": 0,
+            "wkjfpXse": 0,
+            "wkjfpXxynse": 0,
+            "nsjctzdxse": 0,
+            "nsjctzXxynse": 0,
+            "xse": 0,
+            "hjXxynse": 0,
+            "jshj": 0,
+            "ysfwkcxmbqsjkcje": 0,
+            "kchHsmsxse": 0,
+            "kchXxynse": 0
+          },
+          {
+            "ewbhxh": "5",
+            "hmc": "",
+            "kjskzzszyfpXse": 0,
+            "kjskzzszyfpXxynse": 0,
+            "kjqtfpXse": 0,
+            "kjqtfpXxynse": 0,
+            "wkjfpXse": 0,
+            "wkjfpXxynse": 0,
+            "nsjctzdxse": 0,
+            "nsjctzXxynse": 0,
+            "xse": 0,
+            "hjXxynse": 0,
+            "jshj": 0,
+            "ysfwkcxmbqsjkcje": 0,
+            "kchHsmsxse": 0,
+            "kchXxynse": 0
+          },
+          {
+            "ewbhxh": "6",
+            "hmc": "",
+            "kjskzzszyfpXse": 0,
+            "kjskzzszyfpXxynse": 0,
+            "kjqtfpXse": 0,
+            "kjqtfpXxynse": 0,
+            "wkjfpXse": 0,
+            "wkjfpXxynse": 0,
+            "nsjctzdxse": 0,
+            "nsjctzXxynse": 0,
+            "xse": 0,
+            "hjXxynse": 0,
+            "jshj": 0,
+            "ysfwkcxmbqsjkcje": 0,
+            "kchHsmsxse": 0,
+            "kchXxynse": 0
+          },
+          {
+            "ewbhxh": "7",
+            "hmc": "",
+            "kjskzzszyfpXse": 0,
+            "kjskzzszyfpXxynse": 0,
+            "kjqtfpXse": 0,
+            "kjqtfpXxynse": 0,
+            "wkjfpXse": 0,
+            "wkjfpXxynse": 0,
+            "nsjctzdxse": 0,
+            "nsjctzXxynse": 0,
+            "xse": 0,
+            "hjXxynse": 0,
+            "jshj": 0,
+            "ysfwkcxmbqsjkcje": 0,
+            "kchHsmsxse": 0,
+            "kchXxynse": 0
+          },
+          {
+            "ewbhxh": "8",
+            "hmc": "",
+            "kjskzzszyfpXse": 0,
+            "kjskzzszyfpXxynse": 0,
+            "kjqtfpXse": 0,
+            "kjqtfpXxynse": 0,
+            "wkjfpXse": 0,
+            "wkjfpXxynse": 0,
+            "nsjctzdxse": 0,
+            "nsjctzXxynse": 0,
+            "xse": 0,
+            "hjXxynse": 0,
+            "jshj": 0,
+            "ysfwkcxmbqsjkcje": 0,
+            "kchHsmsxse": 0,
+            "kchXxynse": 0
+          },
+          {
+            "ewbhxh": "9a",
+            "hmc": "",
+            "kjskzzszyfpXse": 0,
+            "kjskzzszyfpXxynse": 0,
+            "kjqtfpXse": 0,
+            "kjqtfpXxynse": 0,
+            "wkjfpXse": 0,
+            "wkjfpXxynse": 0,
+            "nsjctzdxse": 0,
+            "nsjctzXxynse": 0,
+            "xse": 0,
+            "hjXxynse": 0,
+            "jshj": 0,
+            "ysfwkcxmbqsjkcje": 0,
+            "kchHsmsxse": 0,
+            "kchXxynse": 0
+          },
+          {
+            "ewbhxh": "9b",
+            "hmc": "",
+            "kjskzzszyfpXse": 0,
+            "kjskzzszyfpXxynse": 0,
+            "kjqtfpXse": 0,
+            "kjqtfpXxynse": 0,
+            "wkjfpXse": 0,
+            "wkjfpXxynse": 0,
+            "nsjctzdxse": 0,
+            "nsjctzXxynse": 0,
+            "xse": 0,
+            "hjXxynse": 0,
+            "jshj": 0,
+            "ysfwkcxmbqsjkcje": 0,
+            "kchHsmsxse": 0,
+            "kchXxynse": 0
+          },
+          {
+            "ewbhxh": "10",
+            "hmc": "",
+            "kjskzzszyfpXse": 0,
+            "kjskzzszyfpXxynse": 0,
+            "kjqtfpXse": 0,
+            "kjqtfpXxynse": 0,
+            "wkjfpXse": 0,
+            "wkjfpXxynse": 0,
+            "nsjctzdxse": 0,
+            "nsjctzXxynse": 0,
+            "xse": 0,
+            "hjXxynse": 0,
+            "jshj": 0,
+            "ysfwkcxmbqsjkcje": 0,
+            "kchHsmsxse": 0,
+            "kchXxynse": 0
+          },
+          {
+            "ewbhxh": "11",
+            "hmc": "",
+            "kjskzzszyfpXse": 0,
+            "kjskzzszyfpXxynse": 0,
+            "kjqtfpXse": 0,
+            "kjqtfpXxynse": 0,
+            "wkjfpXse": 0,
+            "wkjfpXxynse": 0,
+            "nsjctzdxse": 0,
+            "nsjctzXxynse": 0,
+            "xse": 0,
+            "hjXxynse": 0,
+            "jshj": 0,
+            "ysfwkcxmbqsjkcje": 0,
+            "kchHsmsxse": 0,
+            "kchXxynse": 0
+          },
+          {
+            "ewbhxh": "12",
+            "hmc": "",
+            "kjskzzszyfpXse": 0,
+            "kjskzzszyfpXxynse": 0,
+            "kjqtfpXse": 0,
+            "kjqtfpXxynse": 0,
+            "wkjfpXse": 0,
+            "wkjfpXxynse": 0,
+            "nsjctzdxse": 0,
+            "nsjctzXxynse": 0,
+            "xse": 0,
+            "hjXxynse": 0,
+            "jshj": 0,
+            "ysfwkcxmbqsjkcje": 0,
+            "kchHsmsxse": 0,
+            "kchXxynse": 0
+          },
+          {
+            "ewbhxh": "13a",
+            "hmc": "",
+            "kjskzzszyfpXse": 0,
+            "kjskzzszyfpXxynse": 0,
+            "kjqtfpXse": 0,
+            "kjqtfpXxynse": 0,
+            "wkjfpXse": 0,
+            "wkjfpXxynse": 0,
+            "nsjctzdxse": 0,
+            "nsjctzXxynse": 0,
+            "xse": 0,
+            "hjXxynse": 0,
+            "jshj": 0,
+            "ysfwkcxmbqsjkcje": 0,
+            "kchHsmsxse": 0,
+            "kchXxynse": 0
+          },
+          {
+            "ewbhxh": "13b",
+            "hmc": "",
+            "kjskzzszyfpXse": 0,
+            "kjskzzszyfpXxynse": 0,
+            "kjqtfpXse": 0,
+            "kjqtfpXxynse": 0,
+            "wkjfpXse": 0,
+            "wkjfpXxynse": 0,
+            "nsjctzdxse": 0,
+            "nsjctzXxynse": 0,
+            "xse": 0,
+            "hjXxynse": 0,
+            "jshj": 0,
+            "ysfwkcxmbqsjkcje": 0,
+            "kchHsmsxse": 0,
+            "kchXxynse": 0
+          },
+          {
+            "ewbhxh": "13c",
+            "hmc": "",
+            "kjskzzszyfpXse": 0,
+            "kjskzzszyfpXxynse": 0,
+            "kjqtfpXse": 0,
+            "kjqtfpXxynse": 0,
+            "wkjfpXse": 0,
+            "wkjfpXxynse": 0,
+            "nsjctzdxse": 0,
+            "nsjctzXxynse": 0,
+            "xse": 0,
+            "hjXxynse": 0,
+            "jshj": 0,
+            "ysfwkcxmbqsjkcje": 0,
+            "kchHsmsxse": 0,
+            "kchXxynse": 0
+          },
+          {
+            "ewbhxh": "14",
+            "hmc": "",
+            "kjskzzszyfpXse": 0,
+            "kjskzzszyfpXxynse": 0,
+            "kjqtfpXse": 0,
+            "kjqtfpXxynse": 0,
+            "wkjfpXse": 0,
+            "wkjfpXxynse": 0,
+            "nsjctzdxse": 0,
+            "nsjctzXxynse": 0,
+            "xse": 0,
+            "hjXxynse": 0,
+            "jshj": 0,
+            "ysfwkcxmbqsjkcje": 0,
+            "kchHsmsxse": 0,
+            "kchXxynse": 0
+          },
+          {
+            "ewbhxh": "15",
+            "hmc": "",
+            "kjskzzszyfpXse": 0,
+            "kjskzzszyfpXxynse": 0,
+            "kjqtfpXse": 0,
+            "kjqtfpXxynse": 0,
+            "wkjfpXse": 0,
+            "wkjfpXxynse": 0,
+            "nsjctzdxse": 0,
+            "nsjctzXxynse": 0,
+            "xse": 0,
+            "hjXxynse": 0,
+            "jshj": 0,
+            "ysfwkcxmbqsjkcje": 0,
+            "kchHsmsxse": 0,
+            "kchXxynse": 0
+          },
+          {
+            "ewbhxh": "16",
+            "hmc": "",
+            "kjskzzszyfpXse": 0,
+            "kjskzzszyfpXxynse": 0,
+            "kjqtfpXse": 0,
+            "kjqtfpXxynse": 0,
+            "wkjfpXse": 0,
+            "wkjfpXxynse": 0,
+            "nsjctzdxse": 0,
+            "nsjctzXxynse": 0,
+            "xse": 0,
+            "hjXxynse": 0,
+            "jshj": 0,
+            "ysfwkcxmbqsjkcje": 0,
+            "kchHsmsxse": 0,
+            "kchXxynse": 0
+          },
+          {
+            "ewbhxh": "17",
+            "hmc": "",
+            "kjskzzszyfpXse": 0,
+            "kjskzzszyfpXxynse": 0,
+            "kjqtfpXse": 0,
+            "kjqtfpXxynse": 0,
+            "wkjfpXse": 0,
+            "wkjfpXxynse": 0,
+            "nsjctzdxse": 0,
+            "nsjctzXxynse": 0,
+            "xse": 0,
+            "hjXxynse": 0,
+            "jshj": 0,
+            "ysfwkcxmbqsjkcje": 0,
+            "kchHsmsxse": 0,
+            "kchXxynse": 0
+          },
+          {
+            "ewbhxh": "18",
+            "hmc": "",
+            "kjskzzszyfpXse": 0,
+            "kjskzzszyfpXxynse": 0,
+            "kjqtfpXse": 0,
+            "kjqtfpXxynse": 0,
+            "wkjfpXse": 0,
+            "wkjfpXxynse": 0,
+            "nsjctzdxse": 0,
+            "nsjctzXxynse": 0,
+            "xse": 0,
+            "hjXxynse": 0,
+            "jshj": 0,
+            "ysfwkcxmbqsjkcje": 0,
+            "kchHsmsxse": 0,
+            "kchXxynse": 0
+          },
+          {
+            "ewbhxh": "19",
+            "hmc": "",
+            "kjskzzszyfpXse": 0,
+            "kjskzzszyfpXxynse": 0,
+            "kjqtfpXse": 0,
+            "kjqtfpXxynse": 0,
+            "wkjfpXse": 0,
+            "wkjfpXxynse": 0,
+            "nsjctzdxse": 0,
+            "nsjctzXxynse": 0,
+            "xse": 0,
+            "hjXxynse": 0,
+            "jshj": 0,
+            "ysfwkcxmbqsjkcje": 0,
+            "kchHsmsxse": 0,
+            "kchXxynse": 0
+          }
+        ]
+      }
+    },
+    "zzssyyybnsr02_bqjxsemxb": {
+      "sbbhead": {
+        "nsrmc": "测试纳税人",
+        "nsrsbh": "44190009752941X",
+        "skssqq": "2016-03-01",
+        "skssqz": "2016-03-31",
+        "sbrq1": "2016-05-04"
+      },
+      "bqjxsemxbGrid": {
+        "bqjxsemxbGridlbVO": [
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": "（一）认证相符的增值税专用发票",
+            "xmmc": "（一）认证相符的增值税专用发票",
+            "lc": "1",
+            "fs": 1,
+            "je": 1,
+            "se": 1
+          }
+        ]
+      }
+    },
+    "zzssyyybnsr03_ysfwkcxmmx": {
+      "sbbhead": {
+        "bsr": "",
+        "hyDm": "5199",
+        "jdxzDm": "441900015",
+        "nsrmc": "测试纳税人",
+        "nsrsbh": "44190009752941X",
+        "sbrq1": "2016-05-04",
+        "sbsxDm1": "",
+        "skssqq": "2016-03-01",
+        "skssqz": "2016-03-31",
+        "xzqhszDm": "",
+        "zgswskfjDm": "14419150000"
+      },
+      "ysfwkcxmmxGrid": {
+        "ysfwkcxmmxGridlbVO": [
+          {
+            "msxse": 1,
+            "qcye": 1,
+            "bqfse": 1,
+            "bqykcje": 1,
+            "bqsjkcje": 1,
+            "qmye": 1
+          },
+          {
+            "msxse": 0,
+            "qcye": 0,
+            "bqfse": 0,
+            "bqykcje": 0,
+            "bqsjkcje": 0,
+            "qmye": 0
+          },
+          {
+            "msxse": 3,
+            "qcye": 3,
+            "bqfse": 3,
+            "bqykcje": 3,
+            "bqsjkcje": 3,
+            "qmye": 3
+          },
+          {
+            "msxse": 0,
+            "qcye": 0,
+            "bqfse": 0,
+            "bqykcje": 0,
+            "bqsjkcje": 0,
+            "qmye": 0
+          },
+          {
+            "msxse": 0,
+            "qcye": 0,
+            "bqfse": 0,
+            "bqykcje": 0,
+            "bqsjkcje": 0,
+            "qmye": 0
+          },
+          {
+            "msxse": 0,
+            "qcye": 0,
+            "bqfse": 0,
+            "bqykcje": 0,
+            "bqsjkcje": 0,
+            "qmye": 0
+          },
+          {
+            "msxse": 0,
+            "qcye": 0,
+            "bqfse": 0,
+            "bqykcje": 0,
+            "bqsjkcje": 0,
+            "qmye": 0
+          },
+          {
+            "msxse": 0,
+            "qcye": 0,
+            "bqfse": 0,
+            "bqykcje": 0,
+            "bqsjkcje": 0,
+            "qmye": 0
+          }
+        ]
+      }
+    },
+    "zzssyyybnsr04_bqjxsemxb": {
+      "sbbhead": {
+        "nsrmc": "测试纳税人",
+        "nsrsbh": "44190009752941X",
+        "skssqq": "2016-03-01",
+        "skssqz": "2016-03-31",
+        "sbrq1": "2016-05-04"
+      },
+      "bqjxsemxbGrid": {
+        "bqjxsemxbGridlbVO": [
+          {
+            "ewbhxh": "1",
+            "hmc": 0,
+            "qcye": 0,
+            "bqydjse": 0,
+            "bqsjdjse": 0,
+            "bqfse": 0,
+            "qmye": 0
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": 0,
+            "qcye": 0,
+            "bqydjse": 0,
+            "bqsjdjse": 0,
+            "bqfse": 0,
+            "qmye": 0
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": 0,
+            "qcye": 0,
+            "bqydjse": 0,
+            "bqsjdjse": 0,
+            "bqfse": 0,
+            "qmye": 0
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": 0,
+            "qcye": 0,
+            "bqydjse": 0,
+            "bqsjdjse": 0,
+            "bqfse": 0,
+            "qmye": 0
+          },
+          {
+            "ewbhxh": "1",
+            "hmc": 0,
+            "qcye": 0,
+            "bqydjse": 0,
+            "bqsjdjse": 0,
+            "bqfse": 0,
+            "qmye": 0
+          }
+        ]
+      }
+    },
+    "zzssyyybnsr05_bdcfqdkjsb": {
+      "sbbhead": {
+        "nsrsbh": "44190009752941X",
+        "nsrmc": "测试纳税人",
+        "skssqq": "2016-03-01",
+        "skssqz": "2016-03-31"
+      },
+      "bdcfqdkjsbGrid": {
+        "bdcfqdkjsbGridlbVO": [
+          {
+            "ewbhxh": "0",
+            "hmc": "",
+            "qcye": "0.01",
+            "bqydjse": 0.02,
+            "bqsjdjse": 0.03,
+            "bqsjdjse1": 0.04,
+            "bqfse": 0.05,
+            "qmye": 0.06
+          },
+          {
+            "ewbhxh": "0",
+            "hmc": "",
+            "qcye": "0.11",
+            "bqydjse": 0.12,
+            "bqsjdjse": 0.13,
+            "bqsjdjse1": 0.14,
+            "bqfse": 0.15,
+            "qmye": 0.16
+          },
+          {
+            "ewbhxh": "0",
+            "hmc": "",
+            "qcye": "0.21",
+            "bqydjse": 0.22,
+            "bqsjdjse": 0.23,
+            "bqsjdjse1": 0.24,
+            "bqfse": 0.25,
+            "qmye": 0.26
+          }
+        ]
+      }
+    },
+    "zzsybnsrsb_gdzcjxsedkqkb": {
+      "sbbhead": {
+        "nsrmc": "测试纳税人",
+        "nsrsbh": "44190009752941X",
+        "skssqq": "2016-03-01",
+        "skssqz": "2016-03-31",
+        "sbrq1": "2016-05-04"
+      },
+      "gdzcjxsedkqkbformVO": [
+        {
+          "hgjkzzszyjksJxselj": 0.00,
+          "zzszyfpJxselj": 0.00,
+          "hgjkzzszyjksJxse": 0.00,
+          "zzszyfpJxse": 0.00
+        },
+        {
+          "hgjkzzszyjksJxselj": 0.00,
+          "zzszyfpJxselj": 0.00,
+          "hgjkzzszyjksJxse": 0.00,
+          "zzszyfpJxse": 0.00
+        }
+      ]
+    },
+    "zzsjmssbmxb": {
+      "sbbhead": {
+        "nsrmc": "测试纳税人",
+        "nsrsbh": "44190009752941X",
+        "skssqq": "2016-03-01",
+        "skssqz": "2016-03-31",
+        "sbrq1": "2016-05-04"
+      },
+      "zzsjmssbmxbjsxmGrid": {
+        "zzsjmssbmxbjsxmGridlbVO": [
+          {
+            "ewbhxh": "",
+            "hmc": "0001011604",
+            "qcye": 0.00,
+            "bqfse": 0.00,
+            "bqydjse": 0.00,
+            "bqsjdjse": 0.00,
+            "qmye": 0.00
+          },
+          {
+            "ewbhxh": "",
+            "hmc": "0001011604",
+            "qcye": 0.00,
+            "bqfse": 0.00,
+            "bqydjse": 0.00,
+            "bqsjdjse": 0.00,
+            "qmye": 0.00
+          },
+          {
+            "ewbhxh": "",
+            "hmc": "0001011604",
+            "qcye": 0.00,
+            "bqfse": 0.00,
+            "bqydjse": 0.00,
+            "bqsjdjse": 0.00,
+            "qmye": 0.00
+          },
+          {
+            "ewbhxh": "",
+            "hmc": "0001011604",
+            "qcye": 0.00,
+            "bqfse": 0.00,
+            "bqydjse": 0.00,
+            "bqsjdjse": 0.00,
+            "qmye": 0.00
+          }
+        ]
+      },
+      "zzsjmssbmxbmsxmGrid": {
+        "zzsjmssbmxbmsxmGridlbVO": [
+          {
+            "ewbhxh": "",
+            "hmc": "0001123402",
+            "mzzzsxmxse": 0.00,
+            "bqsjkcje": 0.00,
+            "kchmsxse": 0.00,
+            "msxsedyjxse": 0.00,
+            "mse": 0.00
+          },
+          {
+            "ewbhxh": "",
+            "hmc": "0001123402",
+            "mzzzsxmxse": 0.00,
+            "bqsjkcje": 0.00,
+            "kchmsxse": 0.00,
+            "msxsedyjxse": 0.00,
+            "mse": 0.00
+          },
+          {
+            "ewbhxh": "",
+            "hmc": "0001123402",
+            "mzzzsxmxse": 0.00,
+            "bqsjkcje": 0.00,
+            "kchmsxse": 0.00,
+            "msxsedyjxse": 0.00,
+            "mse": 0.00
+          },
+          {
+            "ewbhxh": "",
+            "hmc": "0001123402",
+            "mzzzsxmxse": 0.00,
+            "bqsjkcje": 0.00,
+            "kchmsxse": 0.00,
+            "msxsedyjxse": 0.00,
+            "mse": 0.00
+          }
+        ]
+      }
+    },
+    "zzssyyybnsr_bqdkjxsejgmxb": {
+      "sbbhead": {
+        "nsrmc": "测试纳税人",
+        "nsrsbh": "44190009752941X",
+        "skssqq": "2016-03-01",
+        "skssqz": "2016-03-31",
+        "sbrq1": "2016-05-04"
+      },
+      "bqdkjxsejgmxbGrid": {
+        "bqdkjxsejgmxbGridlbVO": [
+          {
+            "ewbhxh": "",
+            "hmc": "17%税率的进项",
+            "je": 0.00,
+            "se": 0.00
+          },
+          {
+            "ewbhxh": "",
+            "hmc": "其中：有形动产租赁的进项",
+            "je": 0.00,
+            "se": 0.00
+          },
+          {
+            "ewbhxh": "",
+            "hmc": "13%税率的进项",
+            "je": 0.00,
+            "se": 0.00
+          },
+          {
+            "ewbhxh": "",
+            "hmc": "11%税率的进项",
+            "je": 0.00,
+            "se": 0.00
+          },
+          {
+            "ewbhxh": "",
+            "hmc": "其中：货物运输服务的进项",
+            "je": 0.00,
+            "se": 0.00
+          },
+          {
+            "ewbhxh": "",
+            "hmc": "建筑安装服务的进项",
+            "je": 0.00,
+            "se": 0.00
+          },
+          {
+            "ewbhxh": "",
+            "hmc": "不动产租赁服务的进项",
+            "je": 0.00,
+            "se": 0.00
+          },
+          {
+            "ewbhxh": "",
+            "hmc": "购入不动产的进项",
+            "je": 0.00,
+            "se": 0.00
+          },
+          {
+            "ewbhxh": "",
+            "hmc": "6%税率的进项",
+            "je": 0.00,
+            "se": 0.00
+          },
+          {
+            "ewbhxh": "",
+            "hmc": "其中：直接收费金融服务的进项",
+            "je": 0.00,
+            "se": 0.00
+          },
+          {
+            "ewbhxh": "",
+            "hmc": "财产保险的进项",
+            "je": 0.00,
+            "se": 0.00
+          },
+          {
+            "ewbhxh": "",
+            "hmc": "",
+            "je": 0.00,
+            "se": 0.00
+          },
+          {
+            "ewbhxh": "",
+            "hmc": "5%征收率的进项",
+            "je": 0.00,
+            "se": 0.00
+          },
+          {
+            "ewbhxh": "",
+            "hmc": "其中：购入不动产的进项",
+            "je": 0.00,
+            "se": 0.00
+          },
+          {
+            "ewbhxh": "",
+            "hmc": "3%征收率的进项",
+            "je": 0.00,
+            "se": 0.00
+          },
+          {
+            "ewbhxh": "",
+            "hmc": "其中：建筑安装服务的进项",
+            "je": 0.00,
+            "se": 0.00
+          },
+          {
+            "ewbhxh": "",
+            "hmc": "1.5%征收率的进项",
+            "je": 0.00,
+            "se": 0.00
+          },
+          {
+            "ewbhxh": "",
+            "hmc": "农产品核定扣除进项",
+            "je": 0.00,
+            "se": 0.00
+          },
+          {
+            "ewbhxh": "",
+            "hmc": "外贸企业进项税额抵扣证明注明的进项",
+            "je": 0.00,
+            "se": 0.00
+          }
+        ]
+      }
+    }
+  }
+}

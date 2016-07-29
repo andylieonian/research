@@ -1,0 +1,58 @@
+<!doctype html>
+<html id="ng-app"  xmlns:ng="http://angularjs.org">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" >
+<title>09$固定资产（不含不动产）进项税额抵扣情况表</title>
+</head>
+
+<body>
+<div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl">
+<div class="NewTableHead" ng-jprefix="zzsybsbSbbdxxVO.zzsybnsrsb_gdzcjxsedkqkb.sbbheadVO">
+     <h1>固定资产（不含不动产）进项税额抵扣情况表</h1>
+ 
+    <li class="dateTxt" style="display:none;">税款所属时间:<input type="text" class="topInput" ng-model="sbbheadVO.skssqq" readonly> 至<input type="text" class="topInput" ng-model="sbbheadVO.skssqz" readonly>  </li>
+</div>
+
+<div class="NewTableTop">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>纳税人名称（公章）： 
+      <span class="textline" ng-bind="sbbheadVO.nsrmc"></span></td>
+      <td ng-jprefix="qcs.initData.zzsybnsrsbInitData">填表日期：
+      <input type="text" class="topInput" id="textfield5" ng-model="zzsybnsrsbInitData.sbrq" readonly></td>
+    <td align="right">金额单位：元至角分</td>
+    </tr>
+</table>
+</div>
+
+<div class="NewTableMain" ng-jprefix="zzsybsbSbbdxxVO.zzsybnsrsb_gdzcjxsedkqkb.gdzcjxsedkqkbformVO">
+  <table width="100%" border="0" cellpadding="0" cellspacing="1">
+  
+    <tr>
+      <td align="center" class="title01" ><strong>项目</strong></td>
+      <td align="center" class="title01" ><strong>当期申报抵扣的固定资产进项税额</strong></td>
+      <td align="center" class="title01" ><strong>申报抵扣的固定资产进项税额累计</strong></td>
+    </tr>
+    <tr>
+      <td class="title01"  align="center">增值税专用发票</td>
+      <td class="edit right"><input jflag="1" ng-datatype="number" type="text" ng-model="gdzcjxsedkqkbformVO.zzszyfpJxse"></td>
+      
+      <td class="edit right"><input jflag="1" ng-datatype="number" type="text" ng-model="gdzcjxsedkqkbformVO.zzszyfpJxselj"></td>
+      </tr>
+    <tr>
+      <td class="title01"  align="center">海关进口增值税专用缴款书</td>
+      <td class="edit right"><input jflag="1" ng-datatype="number" type="text" ng-model="gdzcjxsedkqkbformVO.hgjkzzszyjksJxse"></td>
+
+      <td class="edit right"><input jflag="1" ng-datatype="number" type="text" ng-model="gdzcjxsedkqkbformVO.hgjkzzszyjksJxselj"></td>
+      </tr>
+    <tr ng-render-finish="">
+      <td align="center" class="title01">合        计</td>
+      <td class="read right"><input jflag="1" ng-datatype="number" type="text" ng-model="gdzcjxsedkqkbformVO.dqsbdqdgdzcjxseHj" readonly></td>
+      <td class="read right"><input jflag="1" ng-datatype="number" type="text" ng-model="gdzcjxsedkqkbformVO.sbdqdgdzcjxseLjHj" readonly></td>
+      </tr>
+  </table>
+</div>
+</div>
+</body>
+</html>

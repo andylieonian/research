@@ -1,0 +1,9 @@
+<root><select>
+<option><dm>Y</dm><mc>0.03</mc><pc>101017700_Y</pc></option>
+<option><dm>N</dm><mc>0.03</mc><pc>101017700_N</pc></option>
+<option><dm>Y</dm><mc>0.02</mc><pc>101017100_Y</pc></option>
+<option><dm>N</dm><mc>0.03</mc><pc>101017100_N</pc></option>
+<option><dm>Y</dm><mc>0.03</mc><pc>101016600_Y</pc></option>
+<option><dm>N</dm><mc>0.05</mc><pc>101016600_N</pc></option>
+<option><dm>N</dm><mc>0.015</mc><pc>101016600_N</pc></option>
+</select></root>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html id="ng-app"  xmlns:ng="http://angularjs.org">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" >
+<title>$24农产品核定扣除增值税进项税额计算表（汇总表）</title>
+</head>
+<body>
+<div style="width:96%; margin:auto;"  id="viewCtrlId"  ng-controller="viewCtrl">
+<div class="NewTableHead"    ng-jprefix="zzsybsbSbbdxxVO.zzsybnsrsb_ncphdkczzsjxsejsb.sbbheadVO">
+<h1>农产品核定扣除增值税进项税额计算表（汇总表）</h1>
+ <li class="dateTxt">税款所属时间:<input name="textfield3" type="text" class="topInput" id="textfield3" value=" "   ng-model="sbbheadVO.skssqq"   readonly> 至<input name="textfield3" type="text" class="topInput" id="textfield3" value=" "   ng-model="sbbheadVO.skssqz" readonly>  </li>
+</div>
+<div class="NewTableTop"  ng-jprefix="zzsybsbSbbdxxVO.zzsybnsrsb_ncphdkczzsjxsejsb.sbbheadVO"> 
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+    <td>纳税人识别号：：
+     <span class="textline" ng-bind="sbbheadVO.nsrsbh"></span></td>
+        </tr>
+  <tr>
+    <td>纳税人名称：
+     <span class="textline" ng-bind="sbbheadVO.nsrmc"></span></td>
+      </tr>
+</table>
+</div>
+<div class="NewTableMain"   ng-jprefix="zzsybsbSbbdxxVO.zzsybnsrsb_ncphdkczzsjxsejsb.ncphdkczzsjxsejsbGrid.ncphdkczzsjxsejsbGridlbVO">
+  <table width="100%" border="0" cellpadding="0" cellspacing="1" >
+  	<colgroup class="c1"></colgroup>
+	<colgroup class="c2"></colgroup>
+	<colgroup class="c3"></colgroup>
+	<colgroup class="c4"></colgroup>
+	<colgroup class="c5"></colgroup>
+    <tbody>
+      <tr>
+        <td class="title01" align="center" >序号</td>
+        <td class="title01" colspan="2">核定方法</td>
+        <td class="title01" style="line-height:22px;">当期允许抵扣农产品增值税<br>进项税额（元）</td>
+        <td class="title01" align="center">备注</td>
+      </tr>
+      <tr></tr>
+      <tr>
+        <td rowspan="2" class="title01" align="center" >1</td>
+        <td rowspan="2" class="title01">以购进农产品为原料生产货物</td>
+        <td class="title01">投入产出法</td>
+        <td class="read right"><input readonly="true" type="text"  ng-datatype="number"  ng-model="ncphdkczzsjxsejsbGridlbVO[0].schwTrccfJxse"></td>
+        <td><input type="text" style="border:0;background:transparent;	width: 100%;text-align:left"   ng-model="ncphdkczzsjxsejsbGridlbVO[0].schwTrccfBz"></td>
+      </tr>
+      <tr>
+        <td class="title01">成本法</td>
+        <td class="read right"><input readonly="true" type="text"  ng-datatype="number"  ng-model="ncphdkczzsjxsejsbGridlbVO[0].schwCbfJxse"></td>
+        <td><input type="text"  style="border:0;background:transparent;	width: 100%;text-align:left"  ng-model="ncphdkczzsjxsejsbGridlbVO[0].schwCbfBz"></td>
+      </tr>
+      <tr>
+        <td class="title01" align="center" >2</td>
+        <td colspan="2" class="title01">购进农产品直接销售</td>
+        <td class="read right"><input readonly="true" type="text"  ng-datatype="number"  ng-model="ncphdkczzsjxsejsbGridlbVO[0].zjxsJxse"></td>
+        <td><input style="border:0;background:transparent;	width: 100%;text-align:left"  type="text"  ng-model="ncphdkczzsjxsejsbGridlbVO[0].zjxsBz"></td>
+      </tr>
+      <tr>
+        <td class="title01" align="center" >3</td>
+        <td colspan="2" class="title01">购进农产品用于生产经营且不构成货物实体</td>
+        <td class="read right"><input readonly="true" type="text"  ng-datatype="number"  ng-model="ncphdkczzsjxsejsbGridlbVO[0].scjyJxse"></td>
+        <td><input    style="border:0;background:transparent;	width: 100%;text-align:left" type="text"  ng-model="ncphdkczzsjxsejsbGridlbVO[0].scjyBz"></td>
+      </tr>
+      <tr>
+        <td colspan="3" class="title01" align="center">合      计</td>
+        <td class="read right"><input readonly="true" type="text"  ng-datatype="number"  ng-model="ncphdkczzsjxsejsbGridlbVO[0].seHj"></td>
+        <td class="read right" align="center" >--</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+</body>
+</html>

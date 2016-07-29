@@ -1,0 +1,83 @@
+<!doctype html>
+<html id="ng-app"  xmlns:ng="http://angularjs.org">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=EDGE">
+<title>本期减（免）税额明细表</title>
+
+</head>
+
+<body>
+<div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl">
+<div class="NewTableHead">
+     <h1>本期减（免）税额明细表</h1>
+     <li class="dateTxt">税款所属期:<input  type="text" class="topInput"  ng-model="xfssbSbbdxxVO.xfsYlpfsb.xfssb2.sbbhead.skssqq" > 至<input  type="text" class="topInput"  ng-model="xfssbSbbdxxVO.xfsYlpfsb.xfssb2.sbbhead.skssqz">  </li>
+</div>
+
+
+<div class="NewTableTop">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>纳税人名称（公章）：<input style="width: 160px;"  type="text" class="topInput" ng-model="xfssbSbbdxxVO.xfsYlpfsb.xfssb2.sbbhead.narmc"> </td>
+    <td align="right">纳税人识别号：<input  type="text" class="topInput"  value=" " ng-model="xfssbSbbdxxVO.xfsYlpfsb.xfssb2.sbbhead.nsrsbh"> </td>
+  </tr>
+  <tr>
+    <td>填表日期：<input type="text" class="topInput"  ng-model="xfssbSbbdxxVO.xfsYlpfsb.xfssb2.sbbhead.sbrq1" > </td>
+    <td align="right">计量单位：升；金额单位：元（列至角分）</td>
+  </tr>
+</table>
+</div>
+
+<div class="NewTableMain">
+<table width="100%" border="0" cellspacing="1" cellpadding="0">
+  <tr>
+    <td align="center" class="title01"><strong>应税消费品名称</strong></td>
+    <td align="center" class="title01"><strong>减（免）性质
+代码</strong></td>
+    <td align="center" class="title01"><strong>减（免）项目名称</strong></td>
+    <td align="center" class="title01"><strong>减（免）金额</strong></td>
+    <td align="center" class="title01"><strong>适用税率
+（从价定率）</strong></td>
+    <td align="center" class="title01"><strong>减（免）数量</strong></td>
+    <td align="center" class="title01"><strong>适用税率
+（从量定额）</strong></td>
+    <td align="center" class="title01"><strong>减（免）税额</strong></td>
+  </tr>
+  <tr>
+    <td align="center" class="title01">1</td>
+    <td align="center" class="title01">2</td>
+    <td align="center" class="title01">3</td>
+    <td align="center" class="title01">4</td>
+    <td align="center" class="title01">5</td>
+    <td align="center" class="title01">6</td>
+    <td align="center" class="title01">7</td>
+    <td align="center" class="title01">8＝4×5＋6×7</td>
+  </tr>
+  <tr>
+    <td class="read left"><input  datatype="number"   type="text"  readonly></td>
+    <td class="edit mid"><input  datatype="number"   type="text" ></td>
+    <td class="edit mid"><input  datatype="number"   type="text" ></td>
+    <td class="edit right"><input  datatype="number"   type="text"  value="0.00" delRowSet="true" ></td>
+    <td class="read right"><input  datatype="number"   type="text"  value="0.00" readonly></td>
+    <td class="edit right"><input  datatype="number"   type="text"  value="0.00"></td>
+    <td class="read right"><input  datatype="number"   type="text"  value="0.00" readonly></td>
+    <td class="read right"><input  datatype="number"   type="text"  value="0.00" readonly></td>
+    </tr>
+  <tr>
+    <td align="center" class="title01">合计</td>
+    <td class="read mid"><input  datatype="number"   type="text"  value="--" readonly></td>
+    <td class="read mid"><input  datatype="number"   type="text"  value="--" readonly></td>
+    <td class="read mid"><input  datatype="number"   type="text"  value="--" readonly></td>
+    <td class="read mid"><input  datatype="number"   type="text"  value="--" readonly></td>
+    <td class="read mid"><input  datatype="number"   type="text"  value="--" readonly></td>
+    <td class="read mid"><input  datatype="number"   type="text"  value="--" readonly></td>
+    <td class="read right"><input  datatype="number"   type="text"  value="0.00" readonly></td>
+    </tr>
+</table>
+</div>
+
+
+
+</div>
+</body>
+</html>

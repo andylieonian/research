@@ -1,0 +1,8 @@
+   原表名				修正名
+本期减（免）税额明细表		bqjmsemx_BDA0610017.html
+附加税（费）申报信息		fjsfsb_BDA0610017.html
+汇总纳税企业消费税分配表	hznsqy_BDA0610017.html
+卷烟批发企业月份销售明细清单	jypfqyyfxsmx_BDA0610017.html
+卷烟消费税纳税申报表（批发）	jypfxfsnssb_BDA0610017.html
+
+

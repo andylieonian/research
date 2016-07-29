@@ -1,0 +1,13 @@
+	原表名				修正名
+
+本期减（免）税额计算表.html	bqjmsejsb_BDA0610732.html
+本期减（免）税额明细表.html	bqjmsemxb_BDA0610732.html
+代收代缴.html			dsdj_BDA0610732.html
+抵扣台账.html			dktz_BDA0610732.html
+电池类主表.html			dclzb_BDA0610732.html
+附加税申报信息.html		fjssbxx_BDA0610732.html
+汇总纳税企业消费税分配表.html	hznsqyxfsfpb_BDA0610732.html
+
+
+
+

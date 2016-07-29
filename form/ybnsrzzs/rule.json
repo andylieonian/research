@@ -1,0 +1,4827 @@
+[{
+  "id": "06100101010110001",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_zb.sbbhead.skssqq=$..zzsybnsrsbInitData.sssq.rqQ",
+  "tips": ""
+},{
+  "id": "06100101010110002",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_zb.sbbhead.skssqz=$..zzsybnsrsbInitData.sssq.rqZ",
+  "tips": ""
+},{
+  "id": "06100101010110003",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_zb.sbbhead.nsrmc=$..nsrjbxx.nsrmc",
+  "tips": ""
+},{
+  "id": "06100101010110004",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_zb.sbbhead.nsrsbh=$..nsrjbxx.nsrsbh",
+  "tips": ""
+},{
+  "id": "06100101010110013",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_zb.sbbhead.sbsxDm1=$..nsrjbxx.sbsxDm1",
+  "tips": ""
+},{
+  "id": "06100101010110014",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_zb.sbbhead.sbrq1=$..zzsybnsrsbInitData.sbrq",
+  "tips": ""
+},{
+  "id": "06100101010110015",
+  "type": "10",
+  "desc": "自动带出，不可修改，带出的值为：上期留抵税额按规定须挂账的纳税人，试点实施之日的税款所属期填写'0'；以后各期按上期申报表第20栏'期末留抵税额''一般项目'列'本月数'填写；其他纳税人，本栏'一般项目'列'本月数'：按上期申报表第20栏'期末留抵税额''一般项目'列'本月数'填写；",
+  "formula": "$..zbGridlbVO[0].sqldse=$..zzsybnsrsbInitData.sqldYbhw",
+  "tips": ""
+},{
+  "id": "06100101010110017",
+  "type": "10",
+  "desc": "自动带出，不可修改。带出的值等于按上一税款所属期申报表第32栏'期末未缴税额（多缴为负数）''本月数'填写。",
+  "formula": "$..zbGridlbVO[0].qcwjse=$..zzsybnsrsbInitData.qcwjse.ybhwjlwBys",
+  "tips": ""
+},{
+  "id": "06100101010110018",
+  "type": "10",
+  "desc": "自动带出，可修改，默认带出纳税人本期上缴上期应缴未缴的增值税款",
+  "formula": "$..zbGridlbVO[0].bqjnsqynse=$..zzsybnsrsbInitData.bqjnsqynse.ybhwjlwBys",
+  "tips": ""
+},{
+  "id": "06100101010110019",
+  "type": "10",
+  "desc": "1自动带出，可修改带出的值为：纳税人前一申报期的'期末未缴查补税额本月数'",
+  "formula": "$..zbGridlbVO[0].qcwjcbse=$..zzsybnsrsbInitData.qcwjcbse.ybhwjlwBys",
+  "tips": ""
+},{
+  "id": "06100101010110020",
+  "type": "10",
+  "desc": "自动带出，不可修改。带出的值为：上年度最后一个税款所属期申报表第32栏'期末未缴税额（多缴为负数）''本年累计'填写。",
+  "formula": "$..zbGridlbVO[1].qcwjse=$..zzsybnsrsbInitData.qcwjse.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010110021",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zbGridlbVO[1].ssckkjzyjkstse=$..zzsybnsrsbInitData.ssckkjzyjkstse.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010110022",
+  "type": "10",
+  "desc": "自动带出，不可修改。带出的值为：上年度末'期末未缴查补税额本年累计数'",
+  "formula": "$..zbGridlbVO[1].qcwjcbse=$..zzsybnsrsbInitData.qcwjcbse.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101013510001",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_bqdkjxsejgmxb.sbbhead.skssqq=$..zzsybnsrsbInitData.sssq.rqQ",
+  "tips": ""
+},{
+  "id": "06100101013510002",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_bqdkjxsejgmxb.sbbhead.skssqz=$..zzsybnsrsbInitData.sssq.rqZ",
+  "tips": ""
+},{
+  "id": "06100101013510003",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_bqdkjxsejgmxb.sbbhead.nsrmc=$..nsrjbxx.nsrmc",
+  "tips": ""
+},{
+  "id": "06100101013510004",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_bqdkjxsejgmxb.sbbhead.nsrsbh=$..nsrjbxx.nsrsbh",
+  "tips": ""
+},{
+  "id": "06100101010310001",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.sbbhead.nsrsbh=$..nsrjbxx.nsrsbh",
+  "tips": ""
+},{
+  "id": "06100101010310002",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.sbbhead.nsrmc=$..nsrjbxx.nsrmc",
+  "tips": ""
+},{
+  "id": "06100101010310003",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.sbbhead.skssqq=$..zzsybnsrsbInitData.sssq.rqQ",
+  "tips": ""
+},{
+  "id": "06100101010310004",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.sbbhead.skssqz=$..zzsybnsrsbInitData.sssq.rqZ",
+  "tips": ""
+},{
+  "id": "06100101010310005",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.sbbhead.tbrq=$..zzsybnsrsbInitData.sbrq",
+  "tips": ""
+},{
+  "id": "06100101010410001",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr03_ysfwkcxmmx.sbbhead.skssqq=$..zzsybnsrsbInitData.sssq.rqQ",
+  "tips": ""
+},{
+  "id": "06100101010410002",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr03_ysfwkcxmmx.sbbhead.skssqz=$..zzsybnsrsbInitData.sssq.rqZ",
+  "tips": ""
+},{
+  "id": "06100101010410003",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr03_ysfwkcxmmx.sbbhead.nsrmc=$..nsrjbxx.nsrmc",
+  "tips": ""
+},{
+  "id": "06100101010410004",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr03_ysfwkcxmmx.sbbhead.nsrsbh=$..nsrjbxx.nsrsbh",
+  "tips": ""
+},{
+  "id": "06100101010510001",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.sbbhead.skssqq=$..zzsybnsrsbInitData.sssq.rqQ",
+  "tips": ""
+},{
+  "id": "06100101010510002",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.sbbhead.skssqz=$..zzsybnsrsbInitData.sssq.rqZ",
+  "tips": ""
+},{
+  "id": "06100101010510003",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.sbbhead.nsrmc=$..nsrjbxx.nsrmc",
+  "tips": ""
+},{
+  "id": "06100101010510004",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.sbbhead.nsrsbh=$..nsrjbxx.nsrsbh",
+  "tips": ""
+},{
+  "id": "06100101010510005",
+  "type": "10",
+  "desc": "对于本年度第一次申报的，手工录入",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[0].qcye=$..zzsybnsrsbInitData.zzsskxtzysbfyjjswhf.qcye",
+  "tips": ""
+},{
+  "id": "06100101010510006",
+  "type": "10",
+  "desc": "等于期初数表B223格(本期发生额(增值税税控系统专用设备及技术维护费))的值",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[0].bqfse=$..zzsybnsrsbInitData.zzsskxtzysbfyjjswhf.bqfse",
+  "tips": ""
+},{
+  "id": "06100101010510007",
+  "type": "10",
+  "desc": "等于期初数表B228格(本期实际抵缴(增值税税控系统专用设备及技术维护费))的值",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[0].bqsjdjse=$..zzsybnsrsbInitData.zzsskxtzysbfyjjswhf.bqsjdjse",
+  "tips": ""
+},{
+  "id": "06100101010510008",
+  "type": "10",
+  "desc": "等于期初数表B219格(期初余额(分支机构预征缴纳款))的值",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[1].qcye=$..zzsybnsrsbInitData.fzjgyzjnk.qcye",
+  "tips": ""
+},{
+  "id": "06100101010510010",
+  "type": "10",
+  "desc": "等于期初数表B229格(本期实际抵缴(本期实际抵缴(分支机构预征缴纳款))的值",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[1].bqsjdjse=$..zzsybnsrsbInitData.fzjgyzjnk.bqsjdjse",
+  "tips": ""
+},{
+  "id": "06100101010510011",
+  "type": "10",
+  "desc": "等于期初数表B220格(期初余额_建筑服务预征缴纳税款)的值",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[2].qcye=$..zzsybnsrsbInitData.jzfwyzjnk.qcye",
+  "tips": ""
+},{
+  "id": "06100101010510012",
+  "type": "10",
+  "desc": "等于期初数表B225格(本期发生额_建筑服务预征缴纳税款 )的值",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[2].bqfse=$..zzsybnsrsbInitData.jzfwyzjnk.bqfse",
+  "tips": ""
+},{
+  "id": "06100101010510013",
+  "type": "10",
+  "desc": "等于期初数表B230格(本期实际抵缴(本期实际抵缴_建筑服务预征缴纳税款)的值",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[2].bqsjdjse=$..zzsybnsrsbInitData.jzfwyzjnk.bqsjdjse",
+  "tips": ""
+},{
+  "id": "06100101010510014",
+  "type": "10",
+  "desc": "等于期初数表B221格(期初余额_销售不动产预征缴纳税款)的值",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[3].qcye=$..zzsybnsrsbInitData.xsbdcyzjnk.qcye",
+  "tips": ""
+},{
+  "id": "06100101010510015",
+  "type": "10",
+  "desc": "等于期初数表B226格(本期发生额_销售不动产预征缴纳税款 )的值",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[3].bqfse=$..zzsybnsrsbInitData.xsbdcyzjnk.bqfse",
+  "tips": ""
+},{
+  "id": "06100101010510016",
+  "type": "10",
+  "desc": "等于期初数表B231格(本期实际抵缴_销售不动产预征缴纳税款)的值",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[3].bqsjdjse=$..zzsybnsrsbInitData.xsbdcyzjnk.bqsjdjse",
+  "tips": ""
+},{
+  "id": "06100101010510017",
+  "type": "10",
+  "desc": "等于期初数表B222格(期初余额_出租不动产预征缴纳税款)的值",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[4].qcye=$..zzsybnsrsbInitData.czbdcyzjnk.qcye",
+  "tips": ""
+},{
+  "id": "06100101010510018",
+  "type": "10",
+  "desc": "等于期初数表B227格(本期发生额_出租不动产预征缴纳税款)的值",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[4].bqfse=$..zzsybnsrsbInitData.czbdcyzjnk.bqfse",
+  "tips": ""
+},{
+  "id": "06100101010510019",
+  "type": "10",
+  "desc": "等于期初数表B232格(本期实际抵缴_出租不动产预征缴纳税款)的值",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[4].bqsjdjse=$..zzsybnsrsbInitData.czbdcyzjnk.bqsjdjse",
+  "tips": ""
+},{
+  "id": "06100101010610001",
+  "type": "10",
+  "desc": "",
+  "formula": "$.zzsybsbSbbdxxVO.zzssyyybnsr05_bdcfqdkjsb.sbbhead.skssqq=$..zzsybnsrsbInitData.sssq.rqQ",
+  "tips": ""
+},{
+  "id": "06100101010610002",
+  "type": "10",
+  "desc": "",
+  "formula": "$.zzsybsbSbbdxxVO.zzssyyybnsr05_bdcfqdkjsb.sbbhead.skssqz=$..zzsybnsrsbInitData.sssq.rqZ",
+  "tips": ""
+},{
+  "id": "06100101010610003",
+  "type": "10",
+  "desc": "",
+  "formula": "$.zzsybsbSbbdxxVO.zzssyyybnsr05_bdcfqdkjsb.sbbhead.nsrmc=$..nsrjbxx.nsrmc",
+  "tips": ""
+},{
+  "id": "06100101010610004",
+  "type": "10",
+  "desc": "",
+  "formula": "$.zzsybsbSbbdxxVO.zzssyyybnsr05_bdcfqdkjsb.sbbhead.nsrsbh=$..nsrjbxx.nsrsbh",
+  "tips": ""
+},{
+  "id": "06100101010210001",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr01_bqxsqkmxb.sbbhead.nsrsbh=$..nsrjbxx.nsrsbh",
+  "tips": ""
+},{
+  "id": "06100101010210002",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr01_bqxsqkmxb.sbbhead.nsrmc=$..nsrjbxx.nsrmc",
+  "tips": ""
+},{
+  "id": "06100101010210003",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr01_bqxsqkmxb.sbbhead.skssqq=$..zzsybnsrsbInitData.sssq.rqQ",
+  "tips": ""
+},{
+  "id": "06100101010210004",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr01_bqxsqkmxb.sbbhead.skssqz=$..zzsybnsrsbInitData.sssq.rqZ",
+  "tips": ""
+},{
+  "id": "06100101010810001",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzsybnsrsb_gdzcjxsedkqkb.sbbheadVO.nsrsbh=$..nsrjbxx.nsrsbh",
+  "tips": ""
+},{
+  "id": "06100101010810002",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzsybnsrsb_gdzcjxsedkqkb.sbbheadVO.nsrmc=$..nsrjbxx.nsrmc",
+  "tips": ""
+},{
+  "id": "06100101010810003",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzsybnsrsb_gdzcjxsedkqkb.sbbheadVO.skssqq=$..zzsybnsrsbInitData.sssq.rqQ",
+  "tips": ""
+},{
+  "id": "06100101010810004",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzsybnsrsb_gdzcjxsedkqkb.sbbheadVO.skssqz=$..zzsybnsrsbInitData.sssq.rqZ",
+  "tips": ""
+},{
+  "id": "06100101013310001",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzsjmssbmxb.skssqq=$..zzsybnsrsbInitData.sssq.rqQ",
+  "tips": ""
+},{
+  "id": "06100101013310002",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzsjmssbmxb.skssqz=$..zzsybnsrsbInitData.sssq.rqZ",
+  "tips": ""
+},{
+  "id": "06100101013310003",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzsjmssbmxb.nsrmc=$..nsrjbxx.nsrmc",
+  "tips": ""
+},{
+  "id": "06100101013310004",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzsjmssbmxb.nsrsbh=$..nsrjbxx.nsrsbh",
+  "tips": ""
+},{
+  "id": "06100101013310005",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzsjmssbmxb.tbrq=$..zzsybnsrsbInitData.sbrq",
+  "tips": ""
+},{
+  "id": "6100101013610001",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_ygzsffxcsmxb.sbbhead.skssqq=$..zzsybnsrsbInitData.sssq.rqQ",
+  "tips": ""
+},{
+  "id": "6100101013610002",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_ygzsffxcsmxb.sbbhead.skssqz=$..zzsybnsrsbInitData.sssq.rqZ",
+  "tips": ""
+},{
+  "id": "6100101013610003",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_ygzsffxcsmxb.sbbhead.nsrmc=$..nsrjbxx.nsrmc",
+  "tips": ""
+},{
+  "id": "6100101013610004",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_ygzsffxcsmxb.sbbhead.nsrsbh=$..nsrjbxx.nsrsbh",
+  "tips": ""
+},{
+  "id": 0,
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzsjmssbmxbmsxmGrid.ckmzzzsxmxse=0",
+  "tips": ""
+},{
+  "id": "02",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzsjmssbmxbmsxmGrid.kjmzzzsxmxse=0",
+  "tips": ""
+},{
+  "id": "06100101013700001",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_wspzdkjqd.sbbhead.nsrsbh=$..nsrjbxx.nsrsbh",
+  "tips": ""
+},{
+  "id": "06100101013700002",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_wspzdkjqd.sbbhead.nsrmc=$..nsrjbxx.nsrmc",
+  "tips": ""
+},{
+  "id": "06100101013700003",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_wspzdkjqd.sbbhead.skssqq=$..zzsybnsrsbInitData.sssq.rqQ",
+  "tips": ""
+},{
+  "id": "06100101013700004",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_wspzdkjqd.sbbhead.skssqz=$..zzsybnsrsbInitData.sssq.rqZ",
+  "tips": ""
+},{
+  "id": "06100101013800001",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_fwbdchwxzckcxmqd.sbbhead.nsrsbh=$..nsrjbxx.nsrsbh",
+  "tips": ""
+},{
+  "id": "06100101013800002",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_fwbdchwxzckcxmqd.sbbhead.nsrmc=$..nsrjbxx.nsrmc",
+  "tips": ""
+},{
+  "id": "06100101013800003",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_fwbdchwxzckcxmqd.sbbhead.skssqq=$..zzsybnsrsbInitData.sssq.rqQ",
+  "tips": ""
+},{
+  "id": "06100101013800004",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_fwbdchwxzckcxmqd.sbbhead.skssqz=$..zzsybnsrsbInitData.sssq.rqZ",
+  "tips": ""
+},{
+  "id": "06100101010101035",
+  "type": "10",
+  "desc": "自动带出，不可修改。带出的值为：上期留抵税额按规定须挂账的纳税人，试点实施之日的税款所属期按试点实施之日前一个税款所属期的申报表第20栏'期末留抵税额''一般项目'列'本月数'填写；以后各期按上期申报表第20栏'期末留抵税额''一般项目'列'本年累计'填写；其他纳税人，本栏'一般项目'列'本年累计'：填写'0'。",
+  "formula": "$..zbGridlbVO[1].sqldse=$..sqldYbhwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010110023",
+  "type": "10",
+  "desc": "自动带出，不可修改，带出的值为：按上期申报表第20栏“期末留抵税额”“即征即退项目”列“本月数”填写",
+  "formula": "$..zbGridlbVO[2].sqldse=$..sqldJzjt",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101010101085",
+  "type": "10",
+  "desc": "自动带出，不可修改。带出的值为：上年度最后一个税款所属期申报表第32栏'期末未缴税额（多缴为负数）''本年累计'填写。",
+  "formula": "$..zbGridlbVO[3].qcwjse=$..zzsybnsrsbInitData.qcwjse.jzjthwjlwBnlj",
+  "tips": ""
+},{
+  "id": "1463812946219125",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zbGridlbVO[0].ckkjzyjksyjse=$..zzsybnsrsbInitData.ckkjzyjksYjse",
+  "tips": ""
+},{
+  "id": "06100101012600001",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzsybnsrsb_dkdjsstyjksdkqd.sbbhead.nsrsbh=$..nsrjbxx.nsrsbh",
+  "tips": ""
+},{
+  "id": "06100101012600002",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzsybnsrsb_dkdjsstyjksdkqd.sbbhead.nsrmc=$..nsrjbxx.nsrmc",
+  "tips": ""
+},{
+  "id": "06100101012600003",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzsybnsrsb_dkdjsstyjksdkqd.sbbhead.skssqq=$..zzsybnsrsbInitData.sssq.rqQ",
+  "tips": ""
+},{
+  "id": "06100101012600004",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzsybnsrsb_dkdjsstyjksdkqd.sbbhead.skssqz=$..zzsybnsrsbInitData.sssq.rqZ",
+  "tips": ""
+},{
+  "id": "06100101012600012",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzsybnsrsb_dkdjsstyjksdkqd.sbrq=$..zzsybnsrsbInitData.sbrq",
+  "tips": ""
+},{
+  "id": "06100101011800001",
+  "type": "10",
+  "desc": "",
+  "formula": "$..hgwspzdklsjcjb.sbbhead.nsrsbh=$..nsrjbxx.nsrsbh",
+  "tips": ""
+},{
+  "id": "06100101011800002",
+  "type": "10",
+  "desc": "",
+  "formula": "$..hgwspzdklsjcjb.sbbhead.nsrmc=$..nsrjbxx.nsrmc",
+  "tips": ""
+},{
+  "id": "06100101011800003",
+  "type": "10",
+  "desc": "",
+  "formula": "$..hgwspzdklsjcjb.sbbhead.skssqq=$..zzsybnsrsbInitData.sssq.rqQ",
+  "tips": ""
+},{
+  "id": "06100101011800004",
+  "type": "10",
+  "desc": "",
+  "formula": "$..hgwspzdklsjcjb.sbbhead.skssqz=$..zzsybnsrsbInitData.sssq.rqZ",
+  "tips": ""
+},{
+  "id": "06100101011700001",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_zzsysfpdkqd.sbbhead.nsrsbh=$..nsrjbxx.nsrsbh",
+  "tips": ""
+},{
+  "id": "06100101011700002",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_zzsysfpdkqd.sbbhead.nsrmc=$..nsrjbxx.nsrmc",
+  "tips": ""
+},{
+  "id": "06100101011700003",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_zzsysfpdkqd.sbbhead.skssqq=$..zzsybnsrsbInitData.sssq.rqQ",
+  "tips": ""
+},{
+  "id": "06100101011700004",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_zzsysfpdkqd.sbbhead.skssqz=$..zzsybnsrsbInitData.sssq.rqZ",
+  "tips": ""
+},{
+  "id": "06100101012700001",
+  "type": "10",
+  "desc": "",
+  "formula": "$.zzsybsbSbbdxxVO.zzssyyybnsr_hznsqytycdd.sbbhead.nsrsbh=$..nsrjbxx.nsrsbh",
+  "tips": ""
+},{
+  "id": "06100101012700002",
+  "type": "10",
+  "desc": "",
+  "formula": "$.zzsybsbSbbdxxVO.zzssyyybnsr_hznsqytycdd.sbbhead.nsrmc=$..nsrjbxx.nsrmc",
+  "tips": ""
+},{
+  "id": "06100101012700003",
+  "type": "10",
+  "desc": "",
+  "formula": "$.zzsybsbSbbdxxVO.zzssyyybnsr_hznsqytycdd.sbbhead.skssqq=$..zzsybnsrsbInitData.sssq.rqQ",
+  "tips": ""
+},{
+  "id": "06100101012700004",
+  "type": "10",
+  "desc": "",
+  "formula": "$.zzsybsbSbbdxxVO.zzssyyybnsr_hznsqytycdd.sbbhead.skssqz=$..zzsybnsrsbInitData.sssq.rqZ",
+  "tips": ""
+},{
+  "id": "06100101012700015",
+  "type": "10",
+  "desc": "",
+  "formula": "$..hznsqytycddForm.fddbrxm=$..nsrjbxx.frxm",
+  "tips": ""
+},{
+  "id": "06100101012700016",
+  "type": "10",
+  "desc": "",
+  "formula": "$..hznsqytycddForm.lxdh=$..nsrjbxx.scjydlxdh",
+  "tips": ""
+},{
+  "id": "06100101012700017",
+  "type": "10",
+  "desc": "",
+  "formula": "$..hznsqytycddForm.yydz=$..nsrjbxx.jydz",
+  "tips": ""
+},{
+  "id": "06100101012700018",
+  "type": "10",
+  "desc": "",
+  "formula": "$..hznsqytycddForm.khyh=$..nsrjbxx.yhMc",
+  "tips": ""
+},{
+  "id": "06100101012700022",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_hznsqytycdd.slxx.slswjgDm=$..nsrjbxx.zgswskfjmc",
+  "tips": ""
+},{
+  "id": "06100101012800027",
+  "type": "10",
+  "desc": "",
+  "formula": "$..hznsqytycddxxGrid.yzlzj=ROUND(IF($..zzsybnsrsbInitData.yzl!=null&&$..zzsybnsrsbInitData.yzl!=0,$..zzsybnsrsbInitData.yzl,MIN($..szhd[#].sl)),6)",
+  "tips": ""
+},{
+  "id": "061001010128000271",
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqytycddxxGridlbVO[#].yzl=ROUND($..hznsqytycddxxGrid.yzlzj+$..hznsqytycddxxGridlbVO[#].ysxssr-$..hznsqytycddxxGridlbVO[#].ysxssr,6)",
+  "tips": ""
+},{
+  "id": "06100101012800001",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_hznsqyzzsfpb.sbbhead.nsrsbh=$..nsrjbxx.nsrsbh",
+  "tips": ""
+},{
+  "id": "06100101012800002",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_hznsqyzzsfpb.sbbhead.nsrmc=$..nsrjbxx.nsrmc",
+  "tips": ""
+},{
+  "id": "06100101012800003",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_hznsqyzzsfpb.sbbhead.skssqq=$..zzsybnsrsbInitData.sssq.rqQ",
+  "tips": ""
+},{
+  "id": "06100101012800004",
+  "type": "10",
+  "desc": "",
+  "formula": "$..zzssyyybnsr_hznsqyzzsfpb.sbbhead.skssqz=$..zzsybnsrsbInitData.sssq.rqZ",
+  "tips": ""
+},{
+  "id": "06100101012800005",
+  "type": "10",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGridlbVO[#].fzjgnsrsbh=$..fzjgGridlb[#].fzjgnsrsbh",
+  "tips": ""
+},{
+  "id": "06100101012800007",
+  "type": "10",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGridlbVO[#].fzjgmc=$..fzjgGridlb[#].fzjgmc",
+  "tips": ""
+},{
+  "id": "06100101012800070",
+  "type": "10",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGridlbVO[#].fzjgybhwjlwxssr=$..fzjgGridlb[#].fzjgybhwjlwxssr",
+  "tips": ""
+},{
+  "id": "06100101012800071",
+  "type": "10",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGridlbVO[#].fzjgybhwjlwfpbl=$..fzjgGridlb[#].fzjgybhwjlwfpbl",
+  "tips": ""
+},{
+  "id": "06100101012800072",
+  "type": "10",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGridlbVO[#].fzjgybhwjlwfpse=$..fzjgGridlb[#].fzjgybhwjlwfpse",
+  "tips": ""
+},{
+  "id": "06100101012800073",
+  "type": "10",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGridlbVO[#].fzjgybhwjlwjzjtxssr=$..fzjgGridlb[#].fzjgybhwjlwjzjtxssr",
+  "tips": ""
+},{
+  "id": "06100101012800074",
+  "type": "10",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGridlbVO[#].fzjgybhwjlwjzjtfpbl=$..fzjgGridlb[#].fzjgybhwjlwjzjtfpbl",
+  "tips": ""
+},{
+  "id": "06100101012800075",
+  "type": "10",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGridlbVO[#].fzjgybhwjlwjzjtfpse=$..fzjgGridlb[#].fzjgybhwjlwjzjtfpse",
+  "tips": ""
+},{
+  "id": "06100101012800076",
+  "type": "10",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGridlbVO[#].fzjgysfwxssr=$..fzjgGridlb[#].fzjgysfwxssr",
+  "tips": ""
+},{
+  "id": "06100101012800077",
+  "type": "10",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGridlbVO[#].fzjgysfwfpbl=$..fzjgGridlb[#].fzjgysfwfpbl",
+  "tips": ""
+},{
+  "id": "06100101012800078",
+  "type": "10",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGridlbVO[#].fzjgysfwfpse=$..fzjgGridlb[#].fzjgysfwfpse",
+  "tips": ""
+},{
+  "id": "06100101012800079",
+  "type": "10",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGridlbVO[#].fzjgysfwjzjtxssr=$..fzjgGridlb[#].fzjgysfwjzjtxssr",
+  "tips": ""
+},{
+  "id": "06100101012800080",
+  "type": "10",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGridlbVO[#].fzjgysfwjzjtfpbl=$..fzjgGridlb[#].fzjgysfwjzjtfpbl",
+  "tips": ""
+},{
+  "id": "06100101012800081",
+  "type": "10",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGridlbVO[#].fzjgysfwjzjtfpse=$..fzjgGridlb[#].fzjgysfwjzjtfpse",
+  "tips": ""
+},{
+  "id": "06100101012800028",
+  "type": "10",
+  "desc": "",
+  "formula": "$.zzsybsbSbbdxxVO.zzssyyybnsr_hznsqyzzsfpb.hznsqyzzsfpbForm.lxdh=$..nsrjbxx.scjydlxdh",
+  "tips": ""
+},{
+  "id": "06100101012800025",
+  "type": "10",
+  "desc": "",
+  "formula": "$.zzsybsbSbbdxxVO.zzssyyybnsr_hznsqyzzsfpb.hznsqyzzsfpbForm.yydz=$..nsrjbxx.jydz",
+  "tips": ""
+},{
+  "id": "06100101012800029",
+  "type": "10",
+  "desc": "",
+  "formula": "$.zzsybsbSbbdxxVO.zzssyyybnsr_hznsqyzzsfpb.hznsqyzzsfpbForm.zjgnsrsbh=$..nsrjbxx.nsrsbh",
+  "tips": ""
+},{
+  "id": "06100101012800024",
+  "type": "10",
+  "desc": "",
+  "formula": "$.zzsybsbSbbdxxVO.zzssyyybnsr_hznsqyzzsfpb.hznsqyzzsfpbForm.fddbrxm=$..nsrjbxx.frxm",
+  "tips": ""
+},{
+  "id": "06100101012800023",
+  "type": "10",
+  "desc": "",
+  "formula": "$.zzsybsbSbbdxxVO.zzssyyybnsr_hznsqyzzsfpb.hznsqyzzsfpbForm.zjgnsrmc=$..nsrjbxx.nsrmc",
+  "tips": ""
+},{
+  "id": "06100101010310006",
+  "type": "11",
+  "desc": "自动带出本期税务机关审批的上期留抵税额抵减欠税",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[20].se=IF($..sjlybz=='01',$..zzsybnsrsbInitData.sqldsedjqs,$..zzsybnsrsbInitData.JXSEZC_SQLDDJ)",
+  "tips": ""
+},{
+  "id": "06100101010310007",
+  "type": "11",
+  "desc": "自动带出本期税务机关审批的上期留抵税额退税",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[21].se=IF($..sjlybz=='01',$..zzsybnsrsbInitData.sqldsets,$..zzsybnsrsbInitData.JXSEZC_SQLDTS)",
+  "tips": ""
+},{
+  "id": "06100101010601002",
+  "type": "11",
+  "desc": "",
+  "formula": "$.zzsybsbSbbdxxVO.zzssyyybnsr05_bdcfqdkjsb.bdcfqdkjsbGrid.bdcfqdkjsbGridlbVO[0].qcye=$..zzsybnsrsbInitData.fb5qcye",
+  "tips": ""
+},{
+  "id": "06100101010101018",
+  "type": "11",
+  "desc": "自动带出，不可修改，带出的值为分期预缴税款、延期申报预收税款、代开发票缴纳税款、异地缴纳营业税款地税通过房产交易申报和通用申报预缴的税款、附表四第2行第4列、第3行第4列、第4行第4列、第5行第4列之和与其他预收税款之和。",
+  "formula": "$..zbGridlbVO[0].fcyjse=$..zzsybnsrsbInitData.ybhwjlwYjsBys+$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[1].bqsjdjse+$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[2].bqsjdjse+$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[3].bqsjdjse+$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[4].bqsjdjse",
+  "tips": ""
+},{
+  "id": "06100101010101023",
+  "type": "11",
+  "desc": "带出的值为申报年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[1].asysljsxse=$..zbGridlbVO[0].asysljsxse+$..zzsybnsrsbInitData.asyslzshwjlwxxe.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101024",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为申报年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[1].yshwxse=$..zbGridlbVO[0].yshwxse+$..zzsybnsrsbInitData.yshwxse.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101025",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为申报年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[1].yslwxse=$..zbGridlbVO[0].yslwxse+$..zzsybnsrsbInitData.yslwxse.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101026",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为申报年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[1].syslNsjctzxse=$..zbGridlbVO[0].syslNsjctzxse+$..zzsybnsrsbInitData.nsjctzdxse.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101027",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为申报年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[1].ajybfjsxse=$..zbGridlbVO[0].ajybfjsxse+$..zzsybnsrsbInitData.ajyzsbfzshwxse.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101028",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为申报年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[1].jybfNsjctzxse=$..zbGridlbVO[0].jybfNsjctzxse+$..zzsybnsrsbInitData.qznsjctzdxse.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101029",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为申报年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[1].mdtbfckxse=$..zbGridlbVO[0].mdtbfckxse+$..zzsybnsrsbInitData.mdtbfckhwxse.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101030",
+  "type": "11",
+  "desc": "自动带出，可修改。带出的值为申报年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[1].msxse=$..zbGridlbVO[0].msxse+$..zzsybnsrsbInitData.mshwjlwxse.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101031",
+  "type": "11",
+  "desc": "自动带出，可修改。带出的值为申报年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[1].mshwxse=$..zbGridlbVO[0].mshwxse+$..zzsybnsrsbInitData.mshwxse.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101032",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为申报年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[1].mslwxse=$..zbGridlbVO[0].mslwxse+$..zzsybnsrsbInitData.mslwxse.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101033",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[1].xxse=$..zbGridlbVO[0].xxse+$..zzsybnsrsbInitData.xxse.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101034",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[1].jxse=$..zbGridlbVO[0].jxse+$..zzsybnsrsbInitData.jxse.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101036",
+  "type": "11",
+  "desc": "",
+  "formula": "$..zbGridlbVO[1].jxsezc=$..zbGridlbVO[0].jxsezc+$..zzsybnsrsbInitData.jxsezc.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101037",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[1].mdtytse=$..zbGridlbVO[0].mdtytse+$..zzsybnsrsbInitData.mdthwytse.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101038",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[1].syslNsjcybjse=$..zbGridlbVO[0].syslNsjcybjse+$..zzsybnsrsbInitData.asysljsdnsjcybjse.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101040",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[1].ynse=$..zbGridlbVO[0].ynse+$..zzsybnsrsbInitData.ynse.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101042",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[1].jybfYnse=$..zbGridlbVO[0].jybfYnse+$..zzsybnsrsbInitData.jyzsbfjsdynse.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101043",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[1].jybfNsjcybjse=$..zbGridlbVO[0].jybfNsjcybjse+$..zzsybnsrsbInitData.ajyzsbfjsdnsjcybjse.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101044",
+  "type": "11",
+  "desc": "",
+  "formula": "$..zbGridlbVO[1].ynsejze=$..zbGridlbVO[0].ynsejze+$..zzsybnsrsbInitData.ynsejze.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101045",
+  "type": "11",
+  "desc": "",
+  "formula": "$..zbGridlbVO[1].ynsehj=$..zbGridlbVO[0].ynsehj+$..zzsybnsrsbInitData.ynsehj.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101046",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为年度内各月数之和=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[1].bqyjse=$..zbGridlbVO[0].bqyjse+$..zzsybnsrsbInitData.bqyjse.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101047",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[1].bqjnsqynse=$..zbGridlbVO[0].bqjnsqynse+$..zzsybnsrsbInitData.bqjnsqynse.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101048",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[1].bqjnqjse=$..zbGridlbVO[0].bqjnqjse+$..zzsybnsrsbInitData.bqjnqjse.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101050",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[1].bqrkcbse=$..zbGridlbVO[0].bqrkcbse+$..zzsybnsrsbInitData.bqrkcbse.ybhwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101064",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为：按上一税款所属期申报表第32栏'期末未缴税额（多缴为负数）''本月数'填写。",
+  "formula": "$..zbGridlbVO[2].qcwjse=$..zzsybnsrsbInitData.qcwjse.jzjthwjlwBys",
+  "tips": ""
+},{
+  "id": "06100101010101066",
+  "type": "11",
+  "desc": "omni表单：=增值税纳税申报表_0!AK38+系统!C148",
+  "formula": "$..zbGridlbVO[2].fcyjse=$..zzsybnsrsbInitData.fcyjse.jzjthwjlwBys+$..zzsybnsrsbInitData.jzjthwjlwYjsBys",
+  "tips": ""
+},{
+  "id": "06100101010101067",
+  "type": "11",
+  "desc": "1.自动带出，可修改2.默认带出纳税人本期上缴上期应缴未缴的增值税款",
+  "formula": "$..zbGridlbVO[2].bqjnsqynse=$..zzsybnsrsbInitData.bqjnsqynse.jzjthwjlwBys",
+  "tips": ""
+},{
+  "id": "06100101010101071",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[3].asysljsxse=$..zbGridlbVO[2].asysljsxse+$..zzsybnsrsbInitData.asyslzshwjlwxxe.jzjthwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101072",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为申报年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[3].yshwxse=$..zbGridlbVO[2].yshwxse+$..zzsybnsrsbInitData.yshwxse.jzjthwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101073",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为申报年度内各月数之和（含申报属期）",
+  "formula": "$..zbGridlbVO[3].yslwxse=$..zbGridlbVO[2].yslwxse+$..zzsybnsrsbInitData.yslwxse.jzjthwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101074",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为申报年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[3].syslNsjctzxse=$..zbGridlbVO[2].syslNsjctzxse+$..zzsybnsrsbInitData.nsjctzdxse.jzjthwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101075",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为申报年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[3].ajybfjsxse=$..zbGridlbVO[2].ajybfjsxse+$..zzsybnsrsbInitData.ajyzsbfzshwxse.jzjthwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101076",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为申报年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[3].jybfNsjctzxse=$..zbGridlbVO[2].jybfNsjctzxse+$..zzsybnsrsbInitData.qznsjctzdxse.jzjthwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101077",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[3].xxse=$..zbGridlbVO[2].xxse+$..zzsybnsrsbInitData.xxse.jzjthwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101078",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[3].jxse=$..zbGridlbVO[2].jxse+$..zzsybnsrsbInitData.jxse.jzjthwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101079",
+  "type": "11",
+  "desc": "",
+  "formula": "$..zbGridlbVO[3].jxsezc=$..zbGridlbVO[2].jxsezc+$..zzsybnsrsbInitData.jxsezc.jzjthwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101080",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[3].sjdkse=$..zbGridlbVO[2].sjdkse+$..zzsybnsrsbInitData.sjdkse.jzjthwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101081",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[3].ynse=$..zbGridlbVO[2].ynse+$..zzsybnsrsbInitData.ynse.jzjthwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101082",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[3].jybfYnse=$..zbGridlbVO[2].jybfYnse+$..zzsybnsrsbInitData.jyzsbfjsdynse.jzjthwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101083",
+  "type": "11",
+  "desc": "",
+  "formula": "$..zbGridlbVO[3].ynsejze=$..zbGridlbVO[2].ynsejze+$..zzsybnsrsbInitData.ynsejze.jzjthwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101084",
+  "type": "11",
+  "desc": "",
+  "formula": "$..zbGridlbVO[3].ynsehj=$..zbGridlbVO[2].ynsehj+$..zzsybnsrsbInitData.ynsehj.jzjthwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101086",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为年度内各月数之和=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[3].bqyjse=$..zbGridlbVO[2].bqyjse+$..zzsybnsrsbInitData.bqyjse.jzjthwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101087",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[3].bqjnsqynse=$..zbGridlbVO[2].bqjnsqynse+$..zzsybnsrsbInitData.bqjnsqynse.jzjthwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101088",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[3].bqjnqjse=$..zbGridlbVO[2].bqjnqjse+$..zzsybnsrsbInitData.bqjnqjse.jzjthwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010101089",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出值为：'本月数'",
+  "formula": "$..zbGridlbVO[3].qmwjse=$..zbGridlbVO[2].qmwjse",
+  "tips": ""
+},{
+  "id": "06100101010101090",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为年度内各月数之和（含申报属期）=本月数+本年累计期初数",
+  "formula": "$..zbGridlbVO[3].jzjtsjtse=$..zbGridlbVO[2].jzjtsjtse+$..zzsybnsrsbInitData.jzjtsjtse.jzjthwjlwBnlj",
+  "tips": ""
+},{
+  "id": "06100101010510009",
+  "type": "11",
+  "desc": "取期初数表B224格(本期发生额(分支机构预征缴纳款) )与B145格（一般货物及劳务分次预缴税额本月数）的最大值",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[1].bqfse=MAX($..zzsybnsrsbInitData.fzjgyzjnk.bqfse,$..zzsybnsrsbInitData.fcyjse.ybhwjlwBys)",
+  "tips": ""
+},{
+  "id": "06100101010601001",
+  "type": "11",
+  "desc": "",
+  "formula": "$.zzsybsbSbbdxxVO.zzssyyybnsr05_bdcfqdkjsb.bdcfqdkjsbGrid.bdcfqdkjsbGridlbVO[0].qmye=$.zzsybsbSbbdxxVO.zzssyyybnsr05_bdcfqdkjsb.bdcfqdkjsbGrid.bdcfqdkjsbGridlbVO[0].qcye+$.zzsybsbSbbdxxVO.zzssyyybnsr05_bdcfqdkjsb.bdcfqdkjsbGrid.bdcfqdkjsbGridlbVO[0].bqfse-$.zzsybsbSbbdxxVO.zzssyyybnsr05_bdcfqdkjsb.bdcfqdkjsbGrid.bdcfqdkjsbGridlbVO[0].bqydjse+$.zzsybsbSbbdxxVO.zzssyyybnsr05_bdcfqdkjsb.bdcfqdkjsbGrid.bdcfqdkjsbGridlbVO[0].bqsjdjse-$.zzsybsbSbbdxxVO.zzssyyybnsr05_bdcfqdkjsb.bdcfqdkjsbGrid.bdcfqdkjsbGridlbVO[0].bqsjdjse1",
+  "tips": ""
+},{
+  "id": "06100101010201090",
+  "type": "11",
+  "desc": "当纳税人为实行汇总计算缴纳增值税的分支机构试点纳税人时，为必录项。1.自动带出，不可修改。带出的值为：营业税改征增值税的纳税人，应税服务有扣除项目的，按《附列资料（三）》第5列对应各行次数据填写；应税服务无扣除项目的，本列填写'0'。2.　其他纳税人不填写",
+  "formula": "$..bqxsqkmxbGridlbVO[13].ysfwkcxmbqsjkcje=IF($..zzsybnsrsbInitData.hzqyBz='Y',0,$..zzssyyybnsr03_ysfwkcxmmx.ysfwkcxmmxGrid.ysfwkcxmmxGridlbVO[0].bqsjkcje+$..zzssyyybnsr03_ysfwkcxmmx.ysfwkcxmmxGrid.ysfwkcxmmxGridlbVO[1].bqsjkcje+$..zzssyyybnsr03_ysfwkcxmmx.ysfwkcxmmxGrid.ysfwkcxmmxGridlbVO[2].bqsjkcje+$..zzssyyybnsr03_ysfwkcxmmx.ysfwkcxmmxGrid.ysfwkcxmmxGridlbVO[3].bqsjkcje+$..zzssyyybnsr03_ysfwkcxmmx.ysfwkcxmmxGrid.ysfwkcxmmxGridlbVO[4].bqsjkcje+$..zzssyyybnsr03_ysfwkcxmmx.ysfwkcxmmxGrid.ysfwkcxmmxGridlbVO[5].bqsjkcje+$..zzssyyybnsr03_ysfwkcxmmx.ysfwkcxmmxGrid.ysfwkcxmmxGridlbVO[6].bqsjkcje+$..zzssyyybnsr03_ysfwkcxmmx.ysfwkcxmmxGrid.ysfwkcxmmxGridlbVO[7].bqsjkcje)",
+  "tips": ""
+},{
+  "id": "06100101010201092",
+  "type": "11",
+  "desc": "当纳税人为实行汇总计算缴纳增值税的分支机构试点纳税人时，为必录项。自动带出，不可修改，带出的值为＝适用a预征率%的扣除后含税（免税）销售额/(1+预征率)×预征率'；当金额大于0，且预征率为1%时，如有预算科目101010401目'改征增值税'，预算级次为'地方'税种登记信息的，金额计入该科目，用于后续税票开具和会计记账",
+  "formula": "$..bqxsqkmxbGridlbVO[13].kchXxynse=ROUND(IF($..bqxsqkmxbGridlbVO[13].ysfwkcxmbqsjkcje==0,$..bqxsqkmxbGridlbVO[13].hjXxynse,IF( $..zzsybnsrsbInitData.bhzqyBz=='N',IF($..zzsybnsrsbInitData.hzqyBz=='Y',$..bqxsqkmxbGridlbVO[13].kchHsmsxse/(1+$..zzsybnsrsbInitData.bhzqyYzl)*$..zzsybnsrsbInitData.bhzqyYzl),0),$..bqxsqkmxbGridlbVO[13].kchHsmsxse/(1+$..zzsybnsrsbInitData.yzl)*$..zzsybnsrsbInitData.yzl),2)",
+  "tips": ""
+},{
+  "id": "06100101010201099",
+  "type": "11",
+  "desc": "纳税人为实行汇总计算缴纳增值税的分支机构试点纳税人时，为必录项。1.自动带出，不可修改。带出的值为：营业税改征增值税的纳税人，应税服务有扣除项目的，按《附列资料（三）》第5列对应各行次数据填写；应税服务无扣除项目的，本列填写'0'。2.　其他纳税人不填写",
+  "formula": "$..bqxsqkmxbGridlbVO[14].ysfwkcxmbqsjkcje=IF($..zzsybnsrsbInitData.hzqyBz='Y',0,$..zzssyyybnsr03_ysfwkcxmmx.ysfwkcxmmxGrid.ysfwkcxmmxGridlbVO[0].bqsjkcje+$..zzssyyybnsr03_ysfwkcxmmx.ysfwkcxmmxGrid.ysfwkcxmmxGridlbVO[1].bqsjkcje+$..zzssyyybnsr03_ysfwkcxmmx.ysfwkcxmmxGrid.ysfwkcxmmxGridlbVO[2].bqsjkcje+$..zzssyyybnsr03_ysfwkcxmmx.ysfwkcxmmxGrid.ysfwkcxmmxGridlbVO[3].bqsjkcje+$..zzssyyybnsr03_ysfwkcxmmx.ysfwkcxmmxGrid.ysfwkcxmmxGridlbVO[4].bqsjkcje+$..zzssyyybnsr03_ysfwkcxmmx.ysfwkcxmmxGrid.ysfwkcxmmxGridlbVO[5].bqsjkcje+$..zzssyyybnsr03_ysfwkcxmmx.ysfwkcxmmxGrid.ysfwkcxmmxGridlbVO[6].bqsjkcje+$..zzssyyybnsr03_ysfwkcxmmx.ysfwkcxmmxGrid.ysfwkcxmmxGridlbVO[7].bqsjkcje-$..bqxsqkmxbGridlbVO[12].ysfwkcxmbqsjkcje)",
+  "tips": ""
+},{
+  "id": "06100101010201101",
+  "type": "11",
+  "desc": "当纳税人为实行汇总计算缴纳增值税的分支机构试点纳税人时，为必录项。自动带出，不可修改，带出的值为＝适用a预征率%的扣除后含税（免税）销售额/(1+预征率)×预征率'；当金额大于0，预征率为1%时，如有预算科目101010402目'中国铁路总公司改征增值税待分配收入',预算级次为'中央'税种登记信息的，金额计入该科目，用于后续税票开具和会计记账",
+  "formula": "$..bqxsqkmxbGridlbVO[14].kchXxynse=ROUND(IF($..bqxsqkmxbGridlbVO[14].ysfwkcxmbqsjkcje==0,$..bqxsqkmxbGridlbVO[14].hjXxynse,IF($..zzsybnsrsbInitData.gzZzsTlzgs=='Y',$..bqxsqkmxbGridlbVO[14].kchHsmsxse/(1+$..zzsybnsrsbInitData.gzZzsTlzgsYzl)*$..zzsybnsrsbInitData.gzZzsTlzgsYzl,0)),2)",
+  "tips": ""
+},{
+  "id": "06100101010201108",
+  "type": "11",
+  "desc": "当纳税人为合资铁路试点纳税人时，为必录项。1.自动带出，不可修改。带出的值为：营业税改征增值税的纳税人，应税服务有扣除项目的，按《附列资料（三）》第5列对应各行次数据填写；应税服务无扣除项目的，本列填写'0'。2.　其他纳税人不填写。",
+  "formula": "$..bqxsqkmxbGridlbVO[15].ysfwkcxmbqsjkcje=IF($..zzsybnsrsbInitData.hzqyBz='Y',0,$..zzssyyybnsr03_ysfwkcxmmx.ysfwkcxmmxGrid.ysfwkcxmmxGridlbVO[6].bqsjkcje)",
+  "tips": ""
+},{
+  "id": "06100101010201110",
+  "type": "11",
+  "desc": "当纳税人为合资铁路试点纳税人时，为必录项。自动带出，不可修改，带出的值为＝适用a预征率%的扣除后含税（免税）销售额/(1+预征率)×预征率'；当金额大于0，系统应自动生成《跨省合资铁路企业增值税税款分解表》作为税收会计税款核算的应征科目原始凭证",
+  "formula": "$..bqxsqkmxbGridlbVO[15].kchXxynse=ROUND(IF($..bqxsqkmxbGridlbVO[15].ysfwkcxmbqsjkcje==0,$..bqxsqkmxbGridlbVO[15].hjXxynse,IF($..zzsybnsrsbInitData.kshztlzcdnsr=='Y',$..bqxsqkmxbGridlbVO[15].kchHsmsxse/(1+$..zzsybnsrsbInitData.kshztlzcdnsrYzl)*$..zzsybnsrsbInitData.kshztlzcdnsrYzl),0),2)",
+  "tips": ""
+},{
+  "id": "06100101010801001",
+  "type": "11",
+  "desc": "",
+  "formula": "$..gdzcjxsedkqkbformVO.zzszyfpJxselj=$..gdzcjxsedkqkbformVO.zzszyfpJxse+$..zzsybnsrsbInitData.fplj",
+  "tips": ""
+},{
+  "id": "06100101010801002",
+  "type": "11",
+  "desc": "",
+  "formula": "$..gdzcjxsedkqkbformVO.hgjkzzszyjksJxselj=$..gdzcjxsedkqkbformVO.hgjkzzszyjksJxse+$..zzsybnsrsbInitData.jkslj",
+  "tips": ""
+},{
+  "id": "06100101010801003",
+  "type": "11",
+  "desc": "增值税专用发票当期申报抵扣的固定资产进项税额+海关进口增值税专用缴款书当期申报抵扣的固定资产进项税额",
+  "formula": "$..gdzcjxsedkqkbformVO.dqsbdqdgdzcjxseHj=$..gdzcjxsedkqkbformVO.zzszyfpJxse+$..gdzcjxsedkqkbformVO.hgjkzzszyjksJxse",
+  "tips": ""
+},{
+  "id": "06100101013301001",
+  "type": "11",
+  "desc": "等于每一个'减税性质代码及名称'的所有'期初余额'之和。",
+  "formula": "$..zzsjmssbmxbjsxmGrid.qcyeHj=SUM($..zzsjmssbmxbjsxmGridlbVO[*].qcye)",
+  "tips": ""
+},{
+  "id": "06100101013301002",
+  "type": "11",
+  "desc": "等于每一个'减税性质代码及名称'的所有'本期发生额'之和。",
+  "formula": "$..zzsjmssbmxbjsxmGrid.bqfseHj=SUM($..zzsjmssbmxbjsxmGridlbVO[*].bqfse)",
+  "tips": ""
+},{
+  "id": "06100101013301003",
+  "type": "11",
+  "desc": "等于每一个'减税性质代码及名称'的所有'本期应抵减税额'之和。",
+  "formula": "$..zzsjmssbmxbjsxmGrid.bqydjseHj=SUM($..zzsjmssbmxbjsxmGridlbVO[*].bqydjse)",
+  "tips": ""
+},{
+  "id": "06100101013301004",
+  "type": "11",
+  "desc": "等于每一个'减税性质代码及名称'的所有'本期实际抵减税额'之和。",
+  "formula": "$..zzsjmssbmxbjsxmGrid.bqsjdjseHj=SUM($..zzsjmssbmxbjsxmGridlbVO[*].bqsjdjse)",
+  "tips": ""
+},{
+  "id": "06100101013301005",
+  "type": "11",
+  "desc": "等于每一个'减税性质代码及名称'的所有'期末余额'之和。",
+  "formula": "$..zzsjmssbmxbjsxmGrid.qmyeHj=SUM($..zzsjmssbmxbjsxmGridlbVO[*].qmye)",
+  "tips": ""
+},{
+  "id": "06100101013301008",
+  "type": "11",
+  "desc": "等于所有'免税性质代码及名称'的免征增值税项目销售额之和",
+  "formula": "$..zzsjmssbmxbmsxmGrid.mzzzsxmxseHj=SUM($..zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO[*].mzzzsxmxse)",
+  "tips": ""
+},{
+  "id": "06100101013301014",
+  "type": "11",
+  "desc": "",
+  "formula": "$..zzsjmssbmxbmsxmGrid.mzzzsxmxseZhj=$..zzsjmssbmxbmsxmGrid.mzzzsxmxseHj+$..zzsjmssbmxbmsxmGrid.ckmzzzsxmxse",
+  "tips": ""
+},{
+  "id": "06100101013301009",
+  "type": "11",
+  "desc": "等于所有新增的'免税性质代码及名称'的本期实际扣除金额之和",
+  "formula": "$..zzsjmssbmxbmsxmGrid.bqsjkcjeHj=SUM($..zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO[*].bqsjkcje)",
+  "tips": ""
+},{
+  "id": "06100101013301010",
+  "type": "11",
+  "desc": "等于所有新增的'免税性质代码及名称'的扣除后免税销售额之和",
+  "formula": "$..zzsjmssbmxbmsxmGrid.kchmsxseHj=SUM($..zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO[*].kchmsxse)",
+  "tips": ""
+},{
+  "id": "06100101013301011",
+  "type": "11",
+  "desc": "等于所有新增的'免税性质代码及名称'的免税销售额对应的进项税额之和",
+  "formula": "$..zzsjmssbmxbmsxmGrid.msxsedyjxseHj=SUM($..zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO[*].msxsedyjxse)",
+  "tips": ""
+},{
+  "id": "06100101013301012",
+  "type": "11",
+  "desc": "等于所有新增的'免税性质代码及名称'的免税额之和",
+  "formula": "$..zzsjmssbmxbmsxmGrid.mseHj=SUM($..zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO[*].mse)",
+  "tips": ""
+},{
+  "id": "06100101013601001",
+  "type": "11",
+  "desc": "",
+  "formula": "$..ygzsffxcsmxbGrid.zzsbhsxseHj=SUM($..ygzsffxcsmxbGridlbVO[*].zzsbhsxse)",
+  "tips": ""
+},{
+  "id": "06100101013601002",
+  "type": "11",
+  "desc": "",
+  "formula": "$..ygzsffxcsmxbGrid.zzsxxynseHj=SUM($..ygzsffxcsmxbGridlbVO[*].zzsxxynse)",
+  "tips": ""
+},{
+  "id": "06100101013601003",
+  "type": "11",
+  "desc": "",
+  "formula": "$..ygzsffxcsmxbGrid.zzsjshjHj=ROUND(SUM($..ygzsffxcsmxbGridlbVO[*].zzsjshj),2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101013601004",
+  "type": "11",
+  "desc": "",
+  "formula": "$..ygzsffxcsmxbGrid.zzsbqsjkcjeHj=SUM($..ygzsffxcsmxbGridlbVO[*].zzsbqsjkcje)",
+  "tips": ""
+},{
+  "id": "06100101013601005",
+  "type": "11",
+  "desc": "",
+  "formula": "$..ygzsffxcsmxbGrid.zzskchhsxseHj=SUM($..ygzsffxcsmxbGridlbVO[*].zzskchhsxse)",
+  "tips": ""
+},{
+  "id": "06100101013601006",
+  "type": "11",
+  "desc": "",
+  "formula": "$..ygzsffxcsmxbGrid.zzskchxxynseHj=SUM($..ygzsffxcsmxbGridlbVO[*].zzskchxxynse)",
+  "tips": ""
+},{
+  "id": "06100101013601007",
+  "type": "11",
+  "desc": "",
+  "formula": "$..ygzsffxcsmxbGrid.zzsynseHj=SUM($..ygzsffxcsmxbGridlbVO[*].zzsynse)",
+  "tips": ""
+},{
+  "id": "06100101013601008",
+  "type": "11",
+  "desc": "",
+  "formula": "$..ygzsffxcsmxbGrid.yysqcyeHj=SUM($..ygzsffxcsmxbGridlbVO[*].yysqcye)",
+  "tips": ""
+},{
+  "id": "06100101013601009",
+  "type": "11",
+  "desc": "",
+  "formula": "$..ygzsffxcsmxbGrid.yysbqfseHj=SUM($..ygzsffxcsmxbGridlbVO[*].yysbqfse)",
+  "tips": ""
+},{
+  "id": "06100101013601010",
+  "type": "11",
+  "desc": "",
+  "formula": "$..ygzsffxcsmxbGrid.yysbqykcjeHj=SUM($..ygzsffxcsmxbGridlbVO[*].yysbqykcje)",
+  "tips": ""
+},{
+  "id": "06100101013601011",
+  "type": "11",
+  "desc": "",
+  "formula": "$..ygzsffxcsmxbGrid.yysbqsjkcjeHj=SUM($..ygzsffxcsmxbGridlbVO[*].yysbqsjkcje)",
+  "tips": ""
+},{
+  "id": "06100101013601012",
+  "type": "11",
+  "desc": "",
+  "formula": "$..ygzsffxcsmxbGrid.yysqmyeHj=SUM($..ygzsffxcsmxbGridlbVO[*].yysqmye)",
+  "tips": ""
+},{
+  "id": "06100101013601013",
+  "type": "11",
+  "desc": "",
+  "formula": "$..ygzsffxcsmxbGrid.yysysyyeHj=SUM($..ygzsffxcsmxbGridlbVO[*].yysysyye)",
+  "tips": ""
+},{
+  "id": "06100101013601014",
+  "type": "11",
+  "desc": "",
+  "formula": "$..ygzsffxcsmxbGrid.yysynseHj=SUM($..ygzsffxcsmxbGridlbVO[*].yysynse)",
+  "tips": ""
+},{
+  "id": "06100101013700005",
+  "type": "11",
+  "desc": "为'代扣代缴税额'列各栏次之和",
+  "formula": "$..wspzdkjqddkdjGrid.seHj=SUM($..wspzdkjqddkdjGridlb[*].se)",
+  "tips": ""
+},{
+  "id": "06100101013700007",
+  "type": "11",
+  "desc": "为'预征缴纳税款'列各栏次之和",
+  "formula": "$..wspzdkjqdyzjnskGrid.seHj=SUM($..wspzdkjqdyzjnskGridlb[*].se)",
+  "tips": ""
+},{
+  "id": "06100101013800005",
+  "type": "11",
+  "desc": "为'金额'列各栏次之和",
+  "formula": "$..fwbdchwxzckcxmqdGrid.jeHj=SUM($..fwbdchwxzckcxmqdGridlb[*].je)",
+  "tips": ""
+},{
+  "id": "06100101010411001",
+  "type": "11",
+  "desc": "等于期初数表B201的值（应税服务扣除项目17税率的有形动产租赁服务累计）",
+  "formula": "$..ysfwkcxmmxGridlbVO[0].qcye=$..zzsybnsrsbInitData.ysfwkcxm17sldyxdczlfwlj",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101010411002",
+  "type": "11",
+  "desc": "等于期初数表B202的值（应税服务扣除项目11税率的应税服务累计）",
+  "formula": "$..ysfwkcxmmxGridlbVO[1].qcye=$..zzsybnsrsbInitData.ysfwkcxm11sldysfwlj",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101010411003",
+  "type": "11",
+  "desc": "等于期初数表B204的值（应税服务扣除项目6税率的不含金融应税服务累计）",
+  "formula": "$..ysfwkcxmmxGridlbVO[2].qcye=$..zzsybnsrsbInitData.ysfwkcxm6bhjrsldysfwlj",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101010411004",
+  "type": "11",
+  "desc": "等于期初数表B205的值（应税服务扣除项目6税率的金融应税服务累计）",
+  "formula": "$..ysfwkcxmmxGridlbVO[3].qcye=$..zzsybnsrsbInitData.ysfwkcxm6jrsldysfwlj",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101010411005",
+  "type": "11",
+  "desc": "等于期初数表B206的值（应税服务扣除项目5税率的应税服务累计）",
+  "formula": "$..ysfwkcxmmxGridlbVO[4].qcye=$..zzsybnsrsbInitData.ysfwkcxm5sldysfwlj",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101010411006",
+  "type": "11",
+  "desc": "等于期初数表B207的值（应税服务扣除项目3征收率的应税服务累计）",
+  "formula": "$..ysfwkcxmmxGridlbVO[5].qcye=$..zzsybnsrsbInitData.ysfwkcxm3zsldysfwlj",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101010411007",
+  "type": "11",
+  "desc": "等于期初数表B208的值（应税服务扣除项目免抵退税的应税服务累计）",
+  "formula": "$..ysfwkcxmmxGridlbVO[6].qcye=$..zzsybnsrsbInitData.ysfwkcxmmdtsdysfwlj",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101010411008",
+  "type": "11",
+  "desc": "等于期初数表B209的值（应税服务扣除项目免税的应税服务累计）",
+  "formula": "$..ysfwkcxmmxGridlbVO[7].qcye=$..zzsybnsrsbInitData.ysfwkcxmmsdysfwlj",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101010301001",
+  "type": "11",
+  "desc": "第1栏=第2栏+第3栏",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[0].fs=$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[1].fs+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[2].fs",
+  "tips": ""
+},{
+  "id": "06100101010301002",
+  "type": "11",
+  "desc": "第1栏=第2栏+第3栏",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[0].je=$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[1].je+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[2].je",
+  "tips": ""
+},{
+  "id": "06100101010301003",
+  "type": "11",
+  "desc": "第1栏=第2栏+第3栏",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[0].se=$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[1].se+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[2].se",
+  "tips": ""
+},{
+  "id": "06100101010301004",
+  "type": "11",
+  "desc": "申报期内为辅导期一般纳税人的不可以录入；非铺导期的一般纳税人本栏数＝第35栏-第26栏",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[1].fs=IF($..zzsybnsrsbInitData.rdzg=='1',$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[34].fs-$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[25].fs,0)",
+  "tips": ""
+},{
+  "id": "06100101010301005",
+  "type": "11",
+  "desc": "申报期内为辅导期一般纳税人的不可以录入；非铺导期的一般纳税人本栏数＝第35栏-第26栏",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[1].je=IF($..zzsybnsrsbInitData.rdzg=='1',$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[34].je-$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[25].je,0)",
+  "tips": ""
+},{
+  "id": "06100101010301006",
+  "type": "11",
+  "desc": "申报期内为辅导期一般纳税人的不可以录入；非铺导期的一般纳税人本栏数＝第35栏-第26栏",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[1].se=IF($..zzsybnsrsbInitData.rdzg=='1',$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[34].se-$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[25].se,0)",
+  "tips": ""
+},{
+  "id": "06100101010301007",
+  "type": "11",
+  "desc": "第4栏=第5栏+第6栏+第7栏+第8栏",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[3].fs=$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[4].fs+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[5].fs+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[6].fs+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[7].fs",
+  "tips": ""
+},{
+  "id": "06100101010301008",
+  "type": "11",
+  "desc": "第4栏=第5栏+第6栏+第7栏+第8栏",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[3].je=$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[4].je+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[5].je+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[6].je+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[7].je",
+  "tips": ""
+},{
+  "id": "06100101010301009",
+  "type": "11",
+  "desc": "第4栏=第5栏+第6栏+第7栏+第8栏",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[3].se=$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[4].se+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[5].se+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[6].se+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[7].se",
+  "tips": ""
+},{
+  "id": "06100101010301010",
+  "type": "11",
+  "desc": "等于附表五第二列合计税额",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[8].se=SUM($.zzsybsbSbbdxxVO.zzssyyybnsr05_bdcfqdkjsb.bdcfqdkjsbGrid.bdcfqdkjsbGridlbVO[*].bqfse)",
+  "tips": ""
+},{
+  "id": "06100101010301012",
+  "type": "11",
+  "desc": "应等于《附列资料（五）》第3列'本期可抵扣不动产进项税额'",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[9].se=SUM($.zzsybsbSbbdxxVO.zzssyyybnsr05_bdcfqdkjsb.bdcfqdkjsbGrid.bdcfqdkjsbGridlbVO[*].bqydjse)",
+  "tips": ""
+},{
+  "id": "06100101010301013",
+  "type": "11",
+  "desc": "第12栏=第1栏+第4栏-第9栏+第10栏+第11栏",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[11].fs=$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[0].fs+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[3].fs-$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[8].fs+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[9].fs+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[10].fs",
+  "tips": ""
+},{
+  "id": "06100101010301014",
+  "type": "11",
+  "desc": "第12栏=第1栏+第4栏-第9栏+第10栏+第11栏",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[11].je=$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[0].je+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[3].je-$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[8].je+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[9].je+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[10].je",
+  "tips": ""
+},{
+  "id": "06100101010301015",
+  "type": "11",
+  "desc": "",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[11].se=$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[0].se+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[3].se-$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[8].se+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[9].se+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[10].se",
+  "tips": ""
+},{
+  "id": "06100101010301115",
+  "type": "11",
+  "desc": "第13栏等于第14栏至第23栏之和",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[12].se=$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[13].se+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[14].se+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[15].se+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[16].se+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[17].se+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[18].se+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[19].se+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[20].se+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[21].se+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[22].se",
+  "tips": ""
+},{
+  "id": "06100101010301016",
+  "type": "11",
+  "desc": "期初B200",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[17].se=IF($..sjlybz=='01',$..zzsybnsrsbInitData.mdtsbfckhwbddkjxse,$..zzsybnsrsbInitData.JXSEZC_MDTCKBDK)",
+  "tips": ""
+},{
+  "id": "06100101010301017",
+  "type": "11",
+  "desc": "第29栏等于第30栏至第33栏之和。辅导期一般纳税人或外贸出口企业填写。",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[28].fs=$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[29].fs+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[30].fs+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[31].fs+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[32].fs",
+  "tips": ""
+},{
+  "id": "06100101010301018",
+  "type": "11",
+  "desc": "第29栏等于第30栏至第33栏之和。辅导期一般纳税人或外贸出口企业填写。",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[28].je=$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[29].je+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[30].je+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[31].je+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[32].je",
+  "tips": ""
+},{
+  "id": "06100101010301019",
+  "type": "11",
+  "desc": "第29栏等于第30栏至第33栏之和。辅导期一般纳税人或外贸出口企业填写。",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[28].se=$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[29].se+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[30].se+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[31].se+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[32].se",
+  "tips": ""
+},{
+  "id": "06100101010201005",
+  "type": "11",
+  "desc": "本项＝第1列＋第3列＋第5列＋第7列",
+  "formula": "$..bqxsqkmxbGridlbVO[0].xse=$..bqxsqkmxbGridlbVO[0].kjskzzszyfpXse+$..bqxsqkmxbGridlbVO[0].kjqtfpXse+$..bqxsqkmxbGridlbVO[0].wkjfpXse+$..bqxsqkmxbGridlbVO[0].nsjctzdxse",
+  "tips": ""
+},{
+  "id": "06100101010201006",
+  "type": "11",
+  "desc": "本项＝本表第2列＋第4列＋第6列＋第8列",
+  "formula": "$..bqxsqkmxbGridlbVO[0].hjXxynse=$..bqxsqkmxbGridlbVO[0].kjskzzszyfpXxynse+$..bqxsqkmxbGridlbVO[0].kjqtfpXxynse+$..bqxsqkmxbGridlbVO[0].wkjfpXxynse+$..bqxsqkmxbGridlbVO[0].nsjctzXxynse",
+  "tips": ""
+},{
+  "id": "06100101010201011",
+  "type": "11",
+  "desc": "本项＝第1列＋第3列＋第5列＋第7列",
+  "formula": "$..bqxsqkmxbGridlbVO[1].xse=$..bqxsqkmxbGridlbVO[1].kjskzzszyfpXse+$..bqxsqkmxbGridlbVO[1].kjqtfpXse+$..bqxsqkmxbGridlbVO[1].wkjfpXse+$..bqxsqkmxbGridlbVO[1].nsjctzdxse",
+  "tips": ""
+},{
+  "id": "06100101010201012",
+  "type": "11",
+  "desc": "本项＝本表第2列＋第4列＋第6列＋第8列",
+  "formula": "$..bqxsqkmxbGridlbVO[1].hjXxynse=$..bqxsqkmxbGridlbVO[1].kjskzzszyfpXxynse+$..bqxsqkmxbGridlbVO[1].kjqtfpXxynse+$..bqxsqkmxbGridlbVO[1].wkjfpXxynse+$..bqxsqkmxbGridlbVO[1].nsjctzXxynse",
+  "tips": ""
+},{
+  "id": "06100101010201013",
+  "type": "11",
+  "desc": "本项=第9列＋第10列",
+  "formula": "$..bqxsqkmxbGridlbVO[1].jshj=$..bqxsqkmxbGridlbVO[1].xse+$..bqxsqkmxbGridlbVO[1].hjXxynse",
+  "tips": ""
+},{
+  "id": "06100101010201014",
+  "type": "11",
+  "desc": "1.营业税改征增值税的纳税人，应税服务有扣除项目的，按《附列资料（三）》第5列对应各行次数据填写；应税服务无扣除项目的，本列填写'0'。2.其他纳税人不填写。Omni描述：增值税纳税申报表附列资料（三）_营改增'!H9",
+  "formula": "$..bqxsqkmxbGridlbVO[1].ysfwkcxmbqsjkcje=$..zzssyyybnsr03_ysfwkcxmmx.ysfwkcxmmxGrid.ysfwkcxmmxGridlbVO[0].bqsjkcje",
+  "tips": ""
+},{
+  "id": "06100101010201015",
+  "type": "11",
+  "desc": "带出的值为：营业税改征增值税的纳税人，发生应税服务的，本列各行次＝第11列对应各行次-第12列对应各行次；其他纳税人不填写",
+  "formula": "$..bqxsqkmxbGridlbVO[1].kchHsmsxse=$..bqxsqkmxbGridlbVO[1].jshj-$..bqxsqkmxbGridlbVO[1].ysfwkcxmbqsjkcje",
+  "tips": ""
+},{
+  "id": "06100101010201016",
+  "type": "11",
+  "desc": "带出的值为：营业税改征增值税的纳税人发生应税服务，采用一般计税方法的，本列各行次＝第13列÷(100%+对应行次税率)×对应行次税率；当本表第12列对应栏次数值为0时，本列各行次直接等于第10列数据。2.其他纳税人不填写",
+  "formula": "$..bqxsqkmxbGridlbVO[1].kchXxynse=ROUND(IF($..bqxsqkmxbGridlbVO[1].ysfwkcxmbqsjkcje!=0,$..bqxsqkmxbGridlbVO[1].kchHsmsxse/1.17*0.17,$..bqxsqkmxbGridlbVO[1].hjXxynse),2)",
+  "tips": "第2栏的第14列必须等于第10列"
+},{
+  "id": "06100101010201021",
+  "type": "11",
+  "desc": "本项＝第1列＋第3列＋第5列＋第7列",
+  "formula": "$..bqxsqkmxbGridlbVO[2].xse=$..bqxsqkmxbGridlbVO[2].kjskzzszyfpXse+$..bqxsqkmxbGridlbVO[2].kjqtfpXse+$..bqxsqkmxbGridlbVO[2].wkjfpXse+$..bqxsqkmxbGridlbVO[2].nsjctzdxse",
+  "tips": ""
+},{
+  "id": "06100101010201022",
+  "type": "11",
+  "desc": "本项＝本表第2列＋第4列＋第6列＋第8列",
+  "formula": "$..bqxsqkmxbGridlbVO[2].hjXxynse=$..bqxsqkmxbGridlbVO[2].kjskzzszyfpXxynse+$..bqxsqkmxbGridlbVO[2].kjqtfpXxynse+$..bqxsqkmxbGridlbVO[2].wkjfpXxynse+$..bqxsqkmxbGridlbVO[2].nsjctzXxynse",
+  "tips": ""
+},{
+  "id": "06100101010201027",
+  "type": "11",
+  "desc": "本项＝第1列＋第3列＋第5列＋第7列",
+  "formula": "$..bqxsqkmxbGridlbVO[3].xse=$..bqxsqkmxbGridlbVO[3].kjskzzszyfpXse+$..bqxsqkmxbGridlbVO[3].kjqtfpXse+$..bqxsqkmxbGridlbVO[3].wkjfpXse+$..bqxsqkmxbGridlbVO[3].nsjctzdxse",
+  "tips": ""
+},{
+  "id": "06100101010201028",
+  "type": "11",
+  "desc": "本项＝本表第2列＋第4列＋第6列＋第8列",
+  "formula": "$..bqxsqkmxbGridlbVO[3].hjXxynse=$..bqxsqkmxbGridlbVO[3].kjskzzszyfpXxynse+$..bqxsqkmxbGridlbVO[3].kjqtfpXxynse+$..bqxsqkmxbGridlbVO[3].wkjfpXxynse+$..bqxsqkmxbGridlbVO[3].nsjctzXxynse",
+  "tips": ""
+},{
+  "id": "06100101010201029",
+  "type": "11",
+  "desc": "本项=第9列＋第10列",
+  "formula": "$..bqxsqkmxbGridlbVO[3].jshj=$..bqxsqkmxbGridlbVO[3].xse+$..bqxsqkmxbGridlbVO[3].hjXxynse",
+  "tips": ""
+},{
+  "id": "06100101010201030",
+  "type": "11",
+  "desc": "此项目为营改增纳税人填写，其他纳税人不填写omni描述：'增值税纳税申报表附列资料（三）_营改增'!H10",
+  "formula": "$..bqxsqkmxbGridlbVO[3].ysfwkcxmbqsjkcje=$..zzssyyybnsr03_ysfwkcxmmx.ysfwkcxmmxGrid.ysfwkcxmmxGridlbVO[1].bqsjkcje",
+  "tips": ""
+},{
+  "id": "06100101010201031",
+  "type": "11",
+  "desc": "带出的值为：营业税改征增值税的纳税人，发生应税服务的，本列各行次＝第11列对应各行次-第12列对应各行次；其他纳税人不填写",
+  "formula": "$..bqxsqkmxbGridlbVO[3].kchHsmsxse=$..bqxsqkmxbGridlbVO[3].jshj-$..bqxsqkmxbGridlbVO[3].ysfwkcxmbqsjkcje",
+  "tips": ""
+},{
+  "id": "06100101010201032",
+  "type": "11",
+  "desc": "带出的值为：营业税改征增值税的纳税人发生应税服务，采用一般计税方法的，本列各行次＝第13列÷(100%+对应行次税率)×对应行次税率；当本表第12列对应栏次数值为0时，本列各行次直接等于第10列数据。2.其他纳税人不填写",
+  "formula": "$..bqxsqkmxbGridlbVO[3].kchXxynse=ROUND(IF($..bqxsqkmxbGridlbVO[3].ysfwkcxmbqsjkcje!=0,$..bqxsqkmxbGridlbVO[3].kchHsmsxse/(1+0.11)*0.11,$..bqxsqkmxbGridlbVO[3].hjXxynse),2)",
+  "tips": "第4栏的第14列必须等于第10列"
+},{
+  "id": "06100101010201037",
+  "type": "11",
+  "desc": "本项＝第1列＋第3列＋第5列＋第7列",
+  "formula": "$..bqxsqkmxbGridlbVO[4].xse=$..bqxsqkmxbGridlbVO[4].kjskzzszyfpXse+$..bqxsqkmxbGridlbVO[4].kjqtfpXse+$..bqxsqkmxbGridlbVO[4].wkjfpXse+$..bqxsqkmxbGridlbVO[4].nsjctzdxse",
+  "tips": ""
+},{
+  "id": "06100101010201038",
+  "type": "11",
+  "desc": "本项＝本表第2列＋第4列＋第6列＋第8列",
+  "formula": "$..bqxsqkmxbGridlbVO[4].hjXxynse=$..bqxsqkmxbGridlbVO[4].kjskzzszyfpXxynse+$..bqxsqkmxbGridlbVO[4].kjqtfpXxynse+$..bqxsqkmxbGridlbVO[4].wkjfpXxynse+$..bqxsqkmxbGridlbVO[4].nsjctzXxynse",
+  "tips": ""
+},{
+  "id": "06100101010201039",
+  "type": "11",
+  "desc": "1、本项=第9列＋第10列。2、同时等于《附列资料三（服务、不动产和无形资产扣除项目明细）》'6%税率的项目（不含金融商品转让）的本期服务、不动产和无形资产价税合计额（免税销售额）'与'6%税率的金融商品转让项目的本期服务、不动产和无形资产价税合计额（免税销售额）'之和",
+  "formula": "$..bqxsqkmxbGridlbVO[4].jshj=$..bqxsqkmxbGridlbVO[4].xse+$..bqxsqkmxbGridlbVO[4].hjXxynse",
+  "tips": ""
+},{
+  "id": "06100101010201040",
+  "type": "11",
+  "desc": "此项目为营改增纳税人填写，其他纳税人不填写",
+  "formula": "$..bqxsqkmxbGridlbVO[4].ysfwkcxmbqsjkcje=$..zzssyyybnsr03_ysfwkcxmmx.ysfwkcxmmxGrid.ysfwkcxmmxGridlbVO[2].bqsjkcje+$..zzssyyybnsr03_ysfwkcxmmx.ysfwkcxmmxGrid.ysfwkcxmmxGridlbVO[3].bqsjkcje",
+  "tips": ""
+},{
+  "id": "06100101010201041",
+  "type": "11",
+  "desc": "带出的值为：营业税改征增值税的纳税人，发生应税服务的，本列各行次＝第11列对应各行次-第12列对应各行次。其他纳税人不填写",
+  "formula": "$..bqxsqkmxbGridlbVO[4].kchHsmsxse=$..bqxsqkmxbGridlbVO[4].jshj-$..bqxsqkmxbGridlbVO[4].ysfwkcxmbqsjkcje",
+  "tips": ""
+},{
+  "id": "06100101010201042",
+  "type": "11",
+  "desc": "带出的值为：营业税改征增值税的纳税人发生应税服务，采用一般计税方法的，本列各行次＝第13列÷(100%+对应行次税率)×对应行次税率；当本表第12列对应栏次数值为0时，本列各行次直接等于第10列数据。2.其他纳税人不填写",
+  "formula": "$..bqxsqkmxbGridlbVO[4].kchXxynse=ROUND(IF($..bqxsqkmxbGridlbVO[4].ysfwkcxmbqsjkcje!=0,$..bqxsqkmxbGridlbVO[4].kchHsmsxse/(1+0.06)*0.06,$..bqxsqkmxbGridlbVO[4].hjXxynse),2)",
+  "tips": ""
+},{
+  "id": "06100101010201043",
+  "type": "11",
+  "desc": "本项=第9列＋第10列",
+  "formula": "$..bqxsqkmxbGridlbVO[6].jshj=$..bqxsqkmxbGridlbVO[6].xse+$..bqxsqkmxbGridlbVO[6].hjXxynse",
+  "tips": ""
+},{
+  "id": "06100101010201044",
+  "type": "11",
+  "desc": "带出的值为：营业税改征增值税的纳税人，发生应税服务的，本列各行次＝第11列对应各行次-第12列对应各行次。其他纳税人不填写",
+  "formula": "$..bqxsqkmxbGridlbVO[6].kchHsmsxse=$..bqxsqkmxbGridlbVO[6].jshj-$..bqxsqkmxbGridlbVO[6].ysfwkcxmbqsjkcje",
+  "tips": ""
+},{
+  "id": "06100101010201045",
+  "type": "11",
+  "desc": "应税服务有扣除项目的，按扣除之后的销项税额填写；应税服务无扣除项目的，按本行第10列填写。该栏不按第14列所列公式计算，应按照税法规定据实填写。3.  本项数值应小于等于本表第2、4、5行第14列之和",
+  "formula": "$..bqxsqkmxbGridlbVO[6].kchXxynse=ROUND((IF($..bqxsqkmxbGridlbVO[4].ysfwkcxmbqsjkcje!=0,IF(($..bqxsqkmxbGridlbVO[6].xse+$..bqxsqkmxbGridlbVO[6].hjXxynse)!=0,$..bqxsqkmxbGridlbVO[6].kchHsmsxse*$..bqxsqkmxbGridlbVO[6].hjXxynse/($..bqxsqkmxbGridlbVO[6].xse+$..bqxsqkmxbGridlbVO[6].hjXxynse),0),$..bqxsqkmxbGridlbVO[6].hjXxynse)),2)",
+  "tips": ""
+},{
+  "id": "06100101010201049",
+  "type": "11",
+  "desc": "本项＝第1列＋第3列＋第5列＋第7列",
+  "formula": "$..bqxsqkmxbGridlbVO[7].xse=$..bqxsqkmxbGridlbVO[7].kjskzzszyfpXse+$..bqxsqkmxbGridlbVO[7].kjqtfpXse+$..bqxsqkmxbGridlbVO[7].wkjfpXse+$..bqxsqkmxbGridlbVO[7].nsjctzdxse",
+  "tips": ""
+},{
+  "id": "06100101010201050",
+  "type": "11",
+  "desc": "本项＝本表第2列＋第4列＋第6列＋第8列",
+  "formula": "$..bqxsqkmxbGridlbVO[7].hjXxynse=$..bqxsqkmxbGridlbVO[7].kjskzzszyfpXxynse+$..bqxsqkmxbGridlbVO[7].kjqtfpXxynse+$..bqxsqkmxbGridlbVO[7].wkjfpXxynse+$..bqxsqkmxbGridlbVO[7].nsjctzXxynse",
+  "tips": ""
+},{
+  "id": "06100101010201054",
+  "type": "11",
+  "desc": "本项＝第1列＋第3列＋第5列＋第7列",
+  "formula": "$..bqxsqkmxbGridlbVO[8].xse=$..bqxsqkmxbGridlbVO[8].kjskzzszyfpXse+$..bqxsqkmxbGridlbVO[8].kjqtfpXse+$..bqxsqkmxbGridlbVO[8].wkjfpXse+$..bqxsqkmxbGridlbVO[8].nsjctzdxse",
+  "tips": "本列数据必须大于等于0"
+},{
+  "id": "06100101010201055",
+  "type": "11",
+  "desc": "本项＝本表第2列＋第4列＋第6列＋第8列",
+  "formula": "$..bqxsqkmxbGridlbVO[8].hjXxynse=$..bqxsqkmxbGridlbVO[8].kjskzzszyfpXxynse+$..bqxsqkmxbGridlbVO[8].kjqtfpXxynse+$..bqxsqkmxbGridlbVO[8].wkjfpXxynse+$..bqxsqkmxbGridlbVO[8].nsjctzXxynse",
+  "tips": ""
+},{
+  "id": "06100101010201059",
+  "type": "11",
+  "desc": "本项＝第1列＋第3列＋第5列＋第7列",
+  "formula": "$..bqxsqkmxbGridlbVO[9].xse=$..bqxsqkmxbGridlbVO[9].kjskzzszyfpXse+$..bqxsqkmxbGridlbVO[9].kjqtfpXse+$..bqxsqkmxbGridlbVO[9].wkjfpXse+$..bqxsqkmxbGridlbVO[9].nsjctzdxse",
+  "tips": ""
+},{
+  "id": "06100101010201060",
+  "type": "11",
+  "desc": "本项＝本表第2列＋第4列＋第6列＋第8列",
+  "formula": "$..bqxsqkmxbGridlbVO[9].hjXxynse=$..bqxsqkmxbGridlbVO[9].kjskzzszyfpXxynse+$..bqxsqkmxbGridlbVO[9].kjqtfpXxynse+$..bqxsqkmxbGridlbVO[9].wkjfpXxynse+$..bqxsqkmxbGridlbVO[9].nsjctzXxynse",
+  "tips": ""
+},{
+  "id": "06100101010201061",
+  "type": "11",
+  "desc": "本项=本表第9列＋第10列",
+  "formula": "$..bqxsqkmxbGridlbVO[9].jshj=$..bqxsqkmxbGridlbVO[9].xse+$..bqxsqkmxbGridlbVO[9].hjXxynse",
+  "tips": ""
+},{
+  "id": "06100101010201062",
+  "type": "11",
+  "desc": "1.营业税改征增值税的纳税人，应税服务有扣除项目的，按《附列资料（三）》第5列对应各行次数据填写；应税服务无扣除项目的，本列填写'0'。2.其他纳税人不填写",
+  "formula": "$..bqxsqkmxbGridlbVO[9].ysfwkcxmbqsjkcje=$..zzssyyybnsr03_ysfwkcxmmx.ysfwkcxmmxGrid.ysfwkcxmmxGridlbVO[4].bqsjkcje",
+  "tips": ""
+},{
+  "id": "06100101010201063",
+  "type": "11",
+  "desc": "带出的值为：营业税改征增值税的纳税人，发生应税服务的，本列各行次＝第11列对应各行次-第12列对应各行次；其他纳税人不填写",
+  "formula": "$..bqxsqkmxbGridlbVO[9].kchHsmsxse=$..bqxsqkmxbGridlbVO[9].jshj-$..bqxsqkmxbGridlbVO[9].ysfwkcxmbqsjkcje",
+  "tips": ""
+},{
+  "id": "06100101010201064",
+  "type": "11",
+  "desc": "带出的值为：营业税改征增值税的纳税人发生应税服务，采用一般计税方法的，本列各行次＝第13列÷(100%+对应行次税率)×对应行次税率；当本表第12列对应栏次数值为0时，本列各行次直接等于第10列数据。2.其他纳税人不填写",
+  "formula": "$..bqxsqkmxbGridlbVO[9].kchXxynse=ROUND(IF($..bqxsqkmxbGridlbVO[9].ysfwkcxmbqsjkcje!=0,$..bqxsqkmxbGridlbVO[9].kchHsmsxse/(1+0.05)*0.05,$..bqxsqkmxbGridlbVO[9].hjXxynse),2)",
+  "tips": ""
+},{
+  "id": "06100101010201068",
+  "type": "11",
+  "desc": "本项＝第1列＋第3列＋第5列＋第7列",
+  "formula": "$..bqxsqkmxbGridlbVO[10].xse=$..bqxsqkmxbGridlbVO[10].kjskzzszyfpXse+$..bqxsqkmxbGridlbVO[10].kjqtfpXse+$..bqxsqkmxbGridlbVO[10].wkjfpXse+$..bqxsqkmxbGridlbVO[10].nsjctzdxse",
+  "tips": ""
+},{
+  "id": "06100101010201069",
+  "type": "11",
+  "desc": "本项＝本表第2列＋第4列＋第6列＋第8列",
+  "formula": "$..bqxsqkmxbGridlbVO[10].hjXxynse=$..bqxsqkmxbGridlbVO[10].kjskzzszyfpXxynse+$..bqxsqkmxbGridlbVO[10].kjqtfpXxynse+$..bqxsqkmxbGridlbVO[10].wkjfpXxynse+$..bqxsqkmxbGridlbVO[10].nsjctzXxynse",
+  "tips": ""
+},{
+  "id": "06100101010201073",
+  "type": "11",
+  "desc": "本项＝第1列＋第3列＋第5列＋第7列",
+  "formula": "$..bqxsqkmxbGridlbVO[11].xse=$..bqxsqkmxbGridlbVO[11].kjskzzszyfpXse+$..bqxsqkmxbGridlbVO[11].kjqtfpXse+$..bqxsqkmxbGridlbVO[11].wkjfpXse+$..bqxsqkmxbGridlbVO[11].nsjctzdxse",
+  "tips": ""
+},{
+  "id": "06100101010201074",
+  "type": "11",
+  "desc": "本项＝本表第2列＋第4列＋第6列＋第8列",
+  "formula": "$..bqxsqkmxbGridlbVO[11].hjXxynse=$..bqxsqkmxbGridlbVO[11].kjskzzszyfpXxynse+$..bqxsqkmxbGridlbVO[11].kjqtfpXxynse+$..bqxsqkmxbGridlbVO[11].wkjfpXxynse+$..bqxsqkmxbGridlbVO[11].nsjctzXxynse",
+  "tips": ""
+},{
+  "id": "06100101010201078",
+  "type": "11",
+  "desc": "本项＝第1列＋第3列＋第5列＋第7列",
+  "formula": "$..bqxsqkmxbGridlbVO[12].xse=$..bqxsqkmxbGridlbVO[12].kjskzzszyfpXse+$..bqxsqkmxbGridlbVO[12].kjqtfpXse+$..bqxsqkmxbGridlbVO[12].wkjfpXse+$..bqxsqkmxbGridlbVO[12].nsjctzdxse",
+  "tips": ""
+},{
+  "id": "06100101010201079",
+  "type": "11",
+  "desc": "本项＝本表第2列＋第4列＋第6列＋第8列",
+  "formula": "$..bqxsqkmxbGridlbVO[12].hjXxynse=$..bqxsqkmxbGridlbVO[12].kjskzzszyfpXxynse+$..bqxsqkmxbGridlbVO[12].kjqtfpXxynse+$..bqxsqkmxbGridlbVO[12].wkjfpXxynse+$..bqxsqkmxbGridlbVO[12].nsjctzXxynse",
+  "tips": ""
+},{
+  "id": "06100101010201080",
+  "type": "11",
+  "desc": "本项=本表第9列＋第10列",
+  "formula": "$..bqxsqkmxbGridlbVO[12].jshj=$..bqxsqkmxbGridlbVO[12].xse+$..bqxsqkmxbGridlbVO[12].hjXxynse",
+  "tips": ""
+},{
+  "id": "06100101010201081",
+  "type": "11",
+  "desc": "此项目为营改增纳税人填写，其他纳税人不填写",
+  "formula": "$..bqxsqkmxbGridlbVO[12].ysfwkcxmbqsjkcje=$..zzssyyybnsr03_ysfwkcxmmx.ysfwkcxmmxGrid.ysfwkcxmmxGridlbVO[5].bqsjkcje",
+  "tips": ""
+},{
+  "id": "06100101010201082",
+  "type": "11",
+  "desc": "带出的值为：营业税改征增值税的纳税人，发生应税服务的，本列各行次＝第11列对应各行次-第12列对应各行次。2其他纳税人不填写",
+  "formula": "$..bqxsqkmxbGridlbVO[12].kchHsmsxse=$..bqxsqkmxbGridlbVO[12].jshj-$..bqxsqkmxbGridlbVO[12].ysfwkcxmbqsjkcje",
+  "tips": ""
+},{
+  "id": "06100101010201083",
+  "type": "11",
+  "desc": "带出的值为：营业税改征增值税的纳税人发生应税服务，采用简易计税方法的，本列各行次＝第13列÷(100%+对应行次征收率)×对应行次征收率；当本表第12列对应栏次数值为0时，本列各行次直接等于第10列数据2.　其他纳税人不填写",
+  "formula": "$..bqxsqkmxbGridlbVO[12].kchXxynse=ROUND(IF($..bqxsqkmxbGridlbVO[12].ysfwkcxmbqsjkcje!=0,$..bqxsqkmxbGridlbVO[12].kchHsmsxse/(1+0.03)*0.03,$..bqxsqkmxbGridlbVO[12].hjXxynse),2)",
+  "tips": ""
+},{
+  "id": "06100101010201087",
+  "type": "11",
+  "desc": "本项＝第1列＋第3列＋第5列＋第7列",
+  "formula": "$..bqxsqkmxbGridlbVO[13].xse=$..bqxsqkmxbGridlbVO[13].kjskzzszyfpXse+$..bqxsqkmxbGridlbVO[13].kjqtfpXse+$..bqxsqkmxbGridlbVO[13].wkjfpXse+$..bqxsqkmxbGridlbVO[13].nsjctzdxse",
+  "tips": ""
+},{
+  "id": "06100101010201088",
+  "type": "11",
+  "desc": "本项＝本表第2列＋第4列＋第6列＋第8列",
+  "formula": "$..bqxsqkmxbGridlbVO[13].hjXxynse=$..bqxsqkmxbGridlbVO[13].kjskzzszyfpXxynse+$..bqxsqkmxbGridlbVO[13].kjqtfpXxynse+$..bqxsqkmxbGridlbVO[13].wkjfpXxynse+$..bqxsqkmxbGridlbVO[13].nsjctzXxynse",
+  "tips": ""
+},{
+  "id": "06100101010201089",
+  "type": "11",
+  "desc": "当纳税人为实行汇总计算缴纳增值税的分支机构试点纳税人时，为必录项。自动带出，不可修改。带出的值为：等于本表第9列＋第10列",
+  "formula": "$..bqxsqkmxbGridlbVO[13].jshj=$..bqxsqkmxbGridlbVO[13].xse+$..bqxsqkmxbGridlbVO[13].hjXxynse",
+  "tips": ""
+},{
+  "id": "06100101010201091",
+  "type": "11",
+  "desc": "当纳税人为实行汇总计算缴纳增值税的分支机构试点纳税人时，为必录项。1自动带出，不可修改。带出的值为：营业税改征增值税的纳税人，发生应税服务的，本列各行次＝第11列对应各行次-第12列对应各行次。2其他纳税人不填写",
+  "formula": "$..bqxsqkmxbGridlbVO[13].kchHsmsxse=$..bqxsqkmxbGridlbVO[13].jshj-$..bqxsqkmxbGridlbVO[13].ysfwkcxmbqsjkcje",
+  "tips": ""
+},{
+  "id": "06100101010201096",
+  "type": "11",
+  "desc": "当纳税人为实行汇总计算缴纳增值税的分支机构试点纳税人时，为必录项。本项＝第1列＋第3列＋第5列＋第7列",
+  "formula": "$..bqxsqkmxbGridlbVO[14].xse=$..bqxsqkmxbGridlbVO[14].kjskzzszyfpXse+$..bqxsqkmxbGridlbVO[14].kjqtfpXse+$..bqxsqkmxbGridlbVO[14].wkjfpXse+$..bqxsqkmxbGridlbVO[14].nsjctzdxse",
+  "tips": ""
+},{
+  "id": "06100101010201097",
+  "type": "11",
+  "desc": "当纳税人为实行汇总计算缴纳增值税的分支机构试点纳税人时，为必录项。本项＝本表第2列＋第4列＋第6列＋第8列",
+  "formula": "$..bqxsqkmxbGridlbVO[14].hjXxynse=$..bqxsqkmxbGridlbVO[14].kjskzzszyfpXxynse+$..bqxsqkmxbGridlbVO[14].kjqtfpXxynse+$..bqxsqkmxbGridlbVO[14].wkjfpXxynse+$..bqxsqkmxbGridlbVO[14].nsjctzXxynse",
+  "tips": ""
+},{
+  "id": "06100101010201098",
+  "type": "11",
+  "desc": "当纳税人为实行汇总计算缴纳增值税的分支机构试点纳税人时，为必录项。",
+  "formula": "$..bqxsqkmxbGridlbVO[14].jshj=$..bqxsqkmxbGridlbVO[14].xse+$..bqxsqkmxbGridlbVO[14].hjXxynse",
+  "tips": ""
+},{
+  "id": "06100101010201100",
+  "type": "11",
+  "desc": "当纳税人为实行汇总计算缴纳增值税的分支机构试点纳税人时，为必录项。1自动带出，不可修改。带出的值为：营业税改征增值税的纳税人，发生应税服务的，本列各行次＝第11列对应各行次-第12列对应各行次。2其他纳税人不填写",
+  "formula": "$..bqxsqkmxbGridlbVO[14].kchHsmsxse=$..bqxsqkmxbGridlbVO[14].jshj-$..bqxsqkmxbGridlbVO[14].ysfwkcxmbqsjkcje",
+  "tips": ""
+},{
+  "id": "06100101010201105",
+  "type": "11",
+  "desc": "当纳税人为合资铁路试点纳税人时，为必录项。本项＝第1列＋第3列＋第5列＋第7列",
+  "formula": "$..bqxsqkmxbGridlbVO[15].xse=$..bqxsqkmxbGridlbVO[15].kjskzzszyfpXse+$..bqxsqkmxbGridlbVO[15].kjqtfpXse+$..bqxsqkmxbGridlbVO[15].wkjfpXse+$..bqxsqkmxbGridlbVO[15].nsjctzdxse",
+  "tips": ""
+},{
+  "id": "06100101010201106",
+  "type": "11",
+  "desc": "当纳税人为合资铁路试点纳税人时，为必录项。本项＝本表第2列＋第4列＋第6列＋第8列",
+  "formula": "$..bqxsqkmxbGridlbVO[15].hjXxynse=$..bqxsqkmxbGridlbVO[15].kjskzzszyfpXxynse+$..bqxsqkmxbGridlbVO[15].kjqtfpXxynse+$..bqxsqkmxbGridlbVO[15].wkjfpXxynse+$..bqxsqkmxbGridlbVO[15].nsjctzXxynse",
+  "tips": ""
+},{
+  "id": "06100101010201107",
+  "type": "11",
+  "desc": "当纳税人为合资铁路试点纳税人时，为必录项。自动带出，不可修改。带出的值为：等于本表第9列＋第10列",
+  "formula": "$..bqxsqkmxbGridlbVO[15].jshj=$..bqxsqkmxbGridlbVO[15].xse+$..bqxsqkmxbGridlbVO[15].hjXxynse",
+  "tips": ""
+},{
+  "id": "06100101010201109",
+  "type": "11",
+  "desc": "当纳税人为合资铁路试点纳税人时，为必录项。1自动带出，不可修改。带出的值为：营业税改征增值税的纳税人，发生应税服务的，本列各行次＝第11列对应各行次-第12列对应各行次。2其他纳税人不填写",
+  "formula": "$..bqxsqkmxbGridlbVO[15].kchHsmsxse=$..bqxsqkmxbGridlbVO[15].jshj-$..bqxsqkmxbGridlbVO[15].ysfwkcxmbqsjkcje",
+  "tips": ""
+},{
+  "id": "06100101010201111",
+  "type": "11",
+  "desc": "带出的值为：等于本表第9列＋第10列",
+  "formula": "$..bqxsqkmxbGridlbVO[17].jshj=$..bqxsqkmxbGridlbVO[17].xse+$..bqxsqkmxbGridlbVO[17].hjXxynse",
+  "tips": ""
+},{
+  "id": "06100101010201112",
+  "type": "11",
+  "desc": "带出的值为：营业税改征增值税的纳税人，发生应税服务的，本列各行次＝第11列对应各行次-第12列对应各行次。",
+  "formula": "$..bqxsqkmxbGridlbVO[17].kchHsmsxse=$..bqxsqkmxbGridlbVO[17].jshj-$..bqxsqkmxbGridlbVO[17].ysfwkcxmbqsjkcje",
+  "tips": ""
+},{
+  "id": "06100101010201113",
+  "type": "11",
+  "desc": "应税服务有扣除项目的，按扣除之后的销项税额填写；应税服务无扣除项目的，按本行第10列填写。3.  本项数值应小于等于本表第12行第14列。",
+  "formula": "$..bqxsqkmxbGridlbVO[17].kchXxynse=ROUND(IF($..bqxsqkmxbGridlbVO[20].ysfwkcxmbqsjkcje!=0,$..bqxsqkmxbGridlbVO[17].kchHsmsxse*$..bqxsqkmxbGridlbVO[17].hjXxynse/$..bqxsqkmxbGridlbVO[17].jshj,$..bqxsqkmxbGridlbVO[17].hjXxynse),2)",
+  "tips": ""
+},{
+  "id": "06100101010201114",
+  "type": "11",
+  "desc": "本项＝第1列＋第3列＋第5列＋第7列",
+  "formula": "$..bqxsqkmxbGridlbVO[18].xse=$..bqxsqkmxbGridlbVO[18].kjqtfpXse+$..bqxsqkmxbGridlbVO[18].wkjfpXse",
+  "tips": ""
+},{
+  "id": "06100101010201115",
+  "type": "11",
+  "desc": "本项＝第1列＋第3列＋第5列＋第7列",
+  "formula": "$..bqxsqkmxbGridlbVO[19].xse=$..bqxsqkmxbGridlbVO[19].kjqtfpXse+$..bqxsqkmxbGridlbVO[19].wkjfpXse",
+  "tips": ""
+},{
+  "id": "06100101010201116",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为：等于本表第9列＋第10列。",
+  "formula": "$..bqxsqkmxbGridlbVO[19].jshj=$..bqxsqkmxbGridlbVO[19].xse",
+  "tips": ""
+},{
+  "id": "06100101010201117",
+  "type": "11",
+  "desc": "此项目为营改增纳税人填写，其他纳税人不填写。",
+  "formula": "$..bqxsqkmxbGridlbVO[19].ysfwkcxmbqsjkcje=$..zzssyyybnsr03_ysfwkcxmmx.ysfwkcxmmxGrid.ysfwkcxmmxGridlbVO[6].bqsjkcje",
+  "tips": ""
+},{
+  "id": "06100101010201118",
+  "type": "11",
+  "desc": "带出的值为：营业税改征增值税的纳税人，发生应税服务的，本列各行次＝第11列对应各行次-第12列对应各行次。2.其他纳税人不填写",
+  "formula": "$..bqxsqkmxbGridlbVO[19].kchHsmsxse=$..bqxsqkmxbGridlbVO[19].jshj-$..bqxsqkmxbGridlbVO[19].ysfwkcxmbqsjkcje",
+  "tips": ""
+},{
+  "id": "06100101010201119",
+  "type": "11",
+  "desc": "本项＝第1列＋第3列＋第5列＋第7列",
+  "formula": "$..bqxsqkmxbGridlbVO[20].xse=$..bqxsqkmxbGridlbVO[20].kjskzzszyfpXse+$..bqxsqkmxbGridlbVO[20].kjqtfpXse+$..bqxsqkmxbGridlbVO[20].wkjfpXse",
+  "tips": ""
+},{
+  "id": "06100101010201120",
+  "type": "11",
+  "desc": "本项＝第1列＋第3列＋第5列＋第7列",
+  "formula": "$..bqxsqkmxbGridlbVO[21].xse=$..bqxsqkmxbGridlbVO[21].kjqtfpXse+$..bqxsqkmxbGridlbVO[21].wkjfpXse",
+  "tips": ""
+},{
+  "id": "06100101010201121",
+  "type": "11",
+  "desc": "带出的值为：等于本表第9列＋第10列",
+  "formula": "$..bqxsqkmxbGridlbVO[21].jshj=$..bqxsqkmxbGridlbVO[21].xse",
+  "tips": ""
+},{
+  "id": "06100101010201122",
+  "type": "11",
+  "desc": "带出的值为：营业税改征增值税的纳税人，应税服务有扣除项目的，按《附列资料（三）》第5列对应各行次数据填写；应税服务无扣除项目的，本列填写'0'。2.其他纳税人不填写。",
+  "formula": "$..bqxsqkmxbGridlbVO[21].ysfwkcxmbqsjkcje=$..zzssyyybnsr03_ysfwkcxmmx.ysfwkcxmmxGrid.ysfwkcxmmxGridlbVO[7].bqsjkcje",
+  "tips": ""
+},{
+  "id": "06100101010201123",
+  "type": "11",
+  "desc": "带出的值为：营业税改征增值税的纳税人，发生应税服务的，本列各行次＝第11列对应各行次-第12列对应各行次。2.其他纳税人不填写",
+  "formula": "$..bqxsqkmxbGridlbVO[21].kchHsmsxse=$..bqxsqkmxbGridlbVO[21].jshj-$..bqxsqkmxbGridlbVO[21].ysfwkcxmbqsjkcje",
+  "tips": ""
+},{
+  "id": "06100101010101001",
+  "type": "11",
+  "desc": "自动带出，不可修改，带出的值是《附列资料（一）》第9列第1至5行之和-第9列第6、7行之和。",
+  "formula": "$..zbGridlbVO[0].asysljsxse=$..bqxsqkmxbGridlbVO[0].xse+$..bqxsqkmxbGridlbVO[1].xse+$..bqxsqkmxbGridlbVO[2].xse+$..bqxsqkmxbGridlbVO[3].xse+$..bqxsqkmxbGridlbVO[4].xse-$..bqxsqkmxbGridlbVO[5].xse-$..bqxsqkmxbGridlbVO[6].xse",
+  "tips": ""
+},{
+  "id": "06100101010101002",
+  "type": "11",
+  "desc": "自动带出，不可修改，带出的值为《附列资料（一）》第7列第1至5行之和",
+  "formula": "$..zbGridlbVO[0].syslNsjctzxse=$..bqxsqkmxbGridlbVO[0].nsjctzdxse+$..bqxsqkmxbGridlbVO[1].nsjctzdxse+$..bqxsqkmxbGridlbVO[2].nsjctzdxse+$..bqxsqkmxbGridlbVO[3].nsjctzdxse+$..bqxsqkmxbGridlbVO[4].nsjctzdxse",
+  "tips": "主表一般项目第4栏本月数与即征即退项目本月数之和应等于附表1的第一行第七列至第五列第七行之和"
+},{
+  "id": "06100101010101003",
+  "type": "11",
+  "desc": "自动带出，可修改。等于《附列资料（一）》第9列第8至13行之和-第9列第14、15行之和",
+  "formula": "$..zbGridlbVO[0].ajybfjsxse=$..bqxsqkmxbGridlbVO[7].xse+$..bqxsqkmxbGridlbVO[8].xse+$..bqxsqkmxbGridlbVO[9].xse+$..bqxsqkmxbGridlbVO[10].xse+$..bqxsqkmxbGridlbVO[11].xse+$..bqxsqkmxbGridlbVO[12].xse+$..bqxsqkmxbGridlbVO[13].xse+$..bqxsqkmxbGridlbVO[14].xse+$..bqxsqkmxbGridlbVO[15].xse-$..bqxsqkmxbGridlbVO[16].xse-$..bqxsqkmxbGridlbVO[17].xse",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101010101004",
+  "type": "11",
+  "desc": "自动带出，不可修改，带出的值为《附列资料（一）》第9列第16、17行之和。",
+  "formula": "$..zbGridlbVO[0].mdtbfckxse=$..bqxsqkmxbGridlbVO[18].xse+$..bqxsqkmxbGridlbVO[19].xse",
+  "tips": ""
+},{
+  "id": "06100101010101005",
+  "type": "11",
+  "desc": "自动带出，不可修改，带出的值为《附列资料（一）》第9列第18、19行之和。",
+  "formula": "$..zbGridlbVO[0].msxse=$..bqxsqkmxbGridlbVO[20].xse+$..bqxsqkmxbGridlbVO[21].xse",
+  "tips": ""
+},{
+  "id": "06100101010101006",
+  "type": "11",
+  "desc": "自动带出，不可修改，带出的值为《附列资料（一）》（第10列第1、3行之和-10列第6行）+（第14列第2、4、5行之和-14列第7行）",
+  "formula": "$..zbGridlbVO[0].xxse=$..bqxsqkmxbGridlbVO[0].hjXxynse+$..bqxsqkmxbGridlbVO[2].hjXxynse-$..bqxsqkmxbGridlbVO[5].hjXxynse+$..bqxsqkmxbGridlbVO[1].kchXxynse+$..bqxsqkmxbGridlbVO[3].kchXxynse+$..bqxsqkmxbGridlbVO[4].kchXxynse-$..bqxsqkmxbGridlbVO[6].kchXxynse",
+  "tips": ""
+},{
+  "id": "06100101010101007",
+  "type": "11",
+  "desc": "本栏'一般项目'列'本月数'+'即征即退项目'列'本月数'＝《附列资料（二）》第12栏'税额'本栏次涉及辅导期、辅导期刚转正的纳税人，公式一致",
+  "formula": "$..zbGridlbVO[0].jxse=$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[11].se-$.zzsybnsrsbInitData.jzjtFpjxse",
+  "tips": ""
+},{
+  "id": "06100101010101008",
+  "type": "11",
+  "desc": "",
+  "formula": "$..zbGridlbVO[0].jxsezc=$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[12].se-$.zzsybnsrsbInitData.jzjtFpjxsezc",
+  "tips": ""
+},{
+  "id": "06100101010101009",
+  "type": "11",
+  "desc": "自动带出，可修改。本栏'一般项目'列'本月数'=《附列资料（一）》第8列第1至5行之和+《附列资料（二）》第19栏本栏次涉及辅导期、辅导期刚转正纳税人，公式一样",
+  "formula": "$..zbGridlbVO[0].syslNsjcybjse=$..bqxsqkmxbGridlbVO[0].nsjctzXxynse+$..bqxsqkmxbGridlbVO[1].nsjctzXxynse+$..bqxsqkmxbGridlbVO[2].nsjctzXxynse+$..bqxsqkmxbGridlbVO[3].nsjctzXxynse+$..bqxsqkmxbGridlbVO[4].nsjctzXxynse+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[18].se",
+  "tips": ""
+},{
+  "id": "06100101010101010",
+  "type": "11",
+  "desc": "自动计算出，不可修改。带出的值为：等于12栏加13栏减14栏减15栏加16栏",
+  "formula": "$..zbGridlbVO[0].ydksehj=$..zbGridlbVO[0].jxse+$..zbGridlbVO[0].sqldse-$..zbGridlbVO[0].jxsezc-$..zbGridlbVO[0].mdtytse+$..zbGridlbVO[0].syslNsjcybjse",
+  "tips": ""
+},{
+  "id": "06100101010101011",
+  "type": "11",
+  "desc": "自动计算出，不可修改。带出的值为：如17栏小于11栏，则为17，否则为11栏",
+  "formula": "$..zbGridlbVO[0].sjdkse=MIN($..zbGridlbVO[0].xxse,$..zbGridlbVO[0].ydksehj)",
+  "tips": ""
+},{
+  "id": "06100101010101012",
+  "type": "11",
+  "desc": "自动计算出，不可修改。带出的值为：等于第11栏'销项税额''一般项目'列'本月数'-第18栏'实际抵扣税额''一般项目'列'本月数'-第18栏'实际抵扣税额''一般项目'列'本年累计'。",
+  "formula": "$..zbGridlbVO[0].ynse=$..zbGridlbVO[0].xxse-$..zbGridlbVO[0].sjdkse-$..zbGridlbVO[1].sjdkse",
+  "tips": ""
+},{
+  "id": "06100101010101013",
+  "type": "11",
+  "desc": "自动计算出，不可修改。带出的值为：该栏数值等于17栏减18栏",
+  "formula": "$..zbGridlbVO[0].qmldse=$..zbGridlbVO[0].ydksehj-$..zbGridlbVO[0].sjdkse",
+  "tips": ""
+},{
+  "id": "06100101010101014",
+  "type": "11",
+  "desc": "自动带出，可修改，带出的值为《附列资料（一）》（第10列第8、9a、10、11行之和-10列第14行）+（第14列第9b、12行、13行之和-第14列第15行）",
+  "formula": "$..zbGridlbVO[0].jybfYnse=$..bqxsqkmxbGridlbVO[7].hjXxynse+$..bqxsqkmxbGridlbVO[8].hjXxynse+$..bqxsqkmxbGridlbVO[10].hjXxynse+$..bqxsqkmxbGridlbVO[11].hjXxynse-$..bqxsqkmxbGridlbVO[16].hjXxynse+$..bqxsqkmxbGridlbVO[9].kchXxynse+$..bqxsqkmxbGridlbVO[12].kchXxynse+$..bqxsqkmxbGridlbVO[13].kchXxynse+$..bqxsqkmxbGridlbVO[14].kchXxynse+$..bqxsqkmxbGridlbVO[15].kchXxynse-$..bqxsqkmxbGridlbVO[17].kchXxynse",
+  "tips": ""
+},{
+  "id": "06100101010101015",
+  "type": "11",
+  "desc": "",
+  "formula": "$..zbGridlbVO[0].ynsejze=$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[0].bqsjdjse",
+  "tips": ""
+},{
+  "id": "06100101010101016",
+  "type": "11",
+  "desc": "自动计算出，不可修改。带出的值等于19栏加21栏减23栏",
+  "formula": "$..zbGridlbVO[0].ynsehj=$..zbGridlbVO[0].ynse+$..zbGridlbVO[0].jybfYnse-$..zbGridlbVO[0].ynsejze",
+  "tips": "自动计算出，不可修改。带出的值等于19栏加21栏减23栏"
+},{
+  "id": "06100101010101017",
+  "type": "11",
+  "desc": "自动计算出，不可修改。带出的值等于28栏至31栏之和",
+  "formula": "$..zbGridlbVO[0].bqyjse=$..zbGridlbVO[0].fcyjse+$..zbGridlbVO[0].ckkjzyjksyjse+$..zbGridlbVO[0].bqjnsqynse+$..zbGridlbVO[0].bqjnqjse",
+  "tips": ""
+},{
+  "id": "06100101010101020",
+  "type": "11",
+  "desc": "自动计算出，不可修改。带出的值等于24栏至26栏之和减27栏",
+  "formula": "$..zbGridlbVO[0].qmwjse=$..zbGridlbVO[0].ynsehj+$..zbGridlbVO[0].qcwjse+$..zbGridlbVO[0].ssckkjzyjkstse-$..zbGridlbVO[0].bqyjse",
+  "tips": ""
+},{
+  "id": "1463732325482111",
+  "type": "11",
+  "desc": "",
+  "formula": "$..zbGridlbVO[0].qmwjseQjse=MAX(0,$..zbGridlbVO[0].qcwjse+$..zbGridlbVO[0].ssckkjzyjkstse-$..zbGridlbVO[0].bqyjse)",
+  "tips": ""
+},{
+  "id": "06100101010101021",
+  "type": "11",
+  "desc": "自动计算出，不可修改。带出的值等于24栏减28栏减29栏",
+  "formula": "$..zbGridlbVO[0].bqybtse=$..zbGridlbVO[0].ynsehj-$..zbGridlbVO[0].fcyjse-$..zbGridlbVO[0].ckkjzyjksyjse",
+  "tips": ""
+},{
+  "id": "06100101010101022",
+  "type": "11",
+  "desc": "自动计算出，不可修改。计算规则为：等于16栏加22栏加36栏减37栏",
+  "formula": "$..zbGridlbVO[0].qmwjcbse=$..zbGridlbVO[0].syslNsjcybjse+$..zbGridlbVO[0].jybfNsjcybjse+$..zbGridlbVO[0].qcwjcbse-$..zbGridlbVO[0].bqrkcbse",
+  "tips": ""
+},{
+  "id": "06100101010101039",
+  "type": "11",
+  "desc": "自动计算出，不可修改。带出的值为：上期留抵税额按规定须挂账的纳税人，将'货物和劳务挂账留抵税额本期期初余额'与'一般计税方法的一般货物及劳务应纳税额'两个数据相比较，取二者中小的数据；其他纳税人，填写'0'。此格子在omni表单的公式非常复杂",
+  "formula": "$..zbGridlbVO[1].sjdkse=ROUND(IF($..gzyh=1,MIN($..zbGridlbVO[1].sqldse,($..zbGridlbVO[0].xxse-$..zbGridlbVO[0].sjdkse)*(IF($..zbGridlbVO[0].xxse >0 &&$..bqxsqkmxbGridlbVO[0].hjXxynse + $..bqxsqkmxbGridlbVO[2].hjXxynse - $..bqxsqkmxbGridlbVO[5].hjXxynse>0 ,($..bqxsqkmxbGridlbVO[0].hjXxynse + $..bqxsqkmxbGridlbVO[2].hjXxynse - $..bqxsqkmxbGridlbVO[5].hjXxynse)/$..zbGridlbVO[0].xxse,0))),0),2)",
+  "tips": ""
+},{
+  "id": "06100101010101041",
+  "type": "11",
+  "desc": "自动计算出，不可修改。带出的值为：上期留抵税额按规定须挂账的纳税人，等于第13栏'上期留抵税额''一般项目'列'本年累计'-第18栏'实际抵扣税额''一般项目'列'本年累计'；其他纳税人，本栏填写0。",
+  "formula": "$..zbGridlbVO[1].qmldse=IF($..gzyh=1,$..zbGridlbVO[1].sqldse-$..zbGridlbVO[1].sjdkse,0)",
+  "tips": ""
+},{
+  "id": "06100101010101052",
+  "type": "11",
+  "desc": "自动带出，不可修改，带出的值为《附列资料（一）》第9列第6、7行之和。",
+  "formula": "$..zbGridlbVO[2].asysljsxse=$..bqxsqkmxbGridlbVO[5].xse+$..bqxsqkmxbGridlbVO[6].xse",
+  "tips": ""
+},{
+  "id": "06100101010101053",
+  "type": "11",
+  "desc": "自动带出，可修改。等于《附列资料（一）》第9列第14、15行之和。",
+  "formula": "$..zbGridlbVO[2].ajybfjsxse=$..bqxsqkmxbGridlbVO[16].xse+$..bqxsqkmxbGridlbVO[17].xse",
+  "tips": ""
+},{
+  "id": "06100101010101054",
+  "type": "11",
+  "desc": "自动带出，不可修改，带出的值为《附列资料（一）》第10列第6行+第14列第7行。",
+  "formula": "$..zbGridlbVO[2].xxse=$..bqxsqkmxbGridlbVO[5].hjXxynse+$..bqxsqkmxbGridlbVO[6].kchXxynse",
+  "tips": ""
+},{
+  "id": "06100101010101055",
+  "type": "11",
+  "desc": "本栏'一般项目'列'本月数'+'即征即退项目'列'本月数'应等于《附列资料（二）》第12栏'税额'本栏次涉及辅导期、辅导期刚转正的纳税人，公式一致",
+  "formula": "$..zbGridlbVO[2].jxse=$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[11].se-$..zbGridlbVO[0].jxse",
+  "tips": ""
+},{
+  "id": "06100101010101056",
+  "type": "11",
+  "desc": "",
+  "formula": "$..zbGridlbVO[2].jxsezc=$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[12].se-$..zbGridlbVO[0].jxsezc",
+  "tips": ""
+},{
+  "id": "06100101010101057",
+  "type": "11",
+  "desc": "自动计算出，不可修改。带出的值为：等于12栏加13栏减14栏减15栏加16栏",
+  "formula": "$..zbGridlbVO[2].ydksehj=$..zbGridlbVO[2].jxse+$..zbGridlbVO[2].sqldse-$..zbGridlbVO[2].jxsezc-$..zbGridlbVO[2].mdtytse+$..zbGridlbVO[2].syslNsjcybjse",
+  "tips": ""
+},{
+  "id": "06100101010101058",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值为：如17栏小于11栏，则为17，否则为11栏",
+  "formula": "$..zbGridlbVO[2].sjdkse=IF($..zbGridlbVO[2].ydksehj-$..zbGridlbVO[2].xxse<0,$..zbGridlbVO[2].ydksehj,$..zbGridlbVO[2].xxse)",
+  "tips": ""
+},{
+  "id": "06100101010101059",
+  "type": "11",
+  "desc": "自动计算出，不可修改。带出的值为：等于第11栏'销项税额''即征即退项目'列'本月数'-第18栏'实际抵扣税额''即征即退项目'列'本月数'",
+  "formula": "$..zbGridlbVO[2].ynse=$..zbGridlbVO[2].xxse-$..zbGridlbVO[2].sjdkse",
+  "tips": ""
+},{
+  "id": "06100101010101060",
+  "type": "11",
+  "desc": "自动带出，不可修改。带出的值等于17栏减18栏",
+  "formula": "$..zbGridlbVO[2].qmldse=$..zbGridlbVO[2].ydksehj-$..zbGridlbVO[2].sjdkse",
+  "tips": ""
+},{
+  "id": "06100101010101061",
+  "type": "11",
+  "desc": "自动带出，不可修改，带出的值为《附列资料（一）》10列第14行+第14列第15行",
+  "formula": "$..zbGridlbVO[2].jybfYnse=$..bqxsqkmxbGridlbVO[16].hjXxynse+$..bqxsqkmxbGridlbVO[17].kchXxynse",
+  "tips": ""
+},{
+  "id": "06100101010101063",
+  "type": "11",
+  "desc": "",
+  "formula": "$..zbGridlbVO[2].ynsehj=$..zbGridlbVO[2].ynse+$..zbGridlbVO[2].jybfYnse-$..zbGridlbVO[2].ynsejze",
+  "tips": ""
+},{
+  "id": "06100101010101065",
+  "type": "11",
+  "desc": "自动计算出，不可修改。带出的值等于28栏至31栏之和",
+  "formula": "$..zbGridlbVO[2].bqyjse=$..zbGridlbVO[2].fcyjse+$..zbGridlbVO[2].bqjnsqynse+$..zbGridlbVO[2].bqjnqjse",
+  "tips": ""
+},{
+  "id": "06100101010101068",
+  "type": "11",
+  "desc": "自动带出，不可修改。计算规则为：等于24栏至26栏之和减27栏",
+  "formula": "$..zbGridlbVO[2].qmwjse=$..zbGridlbVO[2].ynsehj+$..zbGridlbVO[2].qcwjse-$..zbGridlbVO[2].bqyjse",
+  "tips": ""
+},{
+  "id": "06100101010101069",
+  "type": "11",
+  "desc": "",
+  "formula": "$..zbGridlbVO[2].qmwjseQjse=MAX($..zbGridlbVO[2].qcwjse-$..zbGridlbVO[2].bqyjse,0)",
+  "tips": ""
+},{
+  "id": "06100101010101070",
+  "type": "11",
+  "desc": "自动计算出，不可修改。计算规则为：等于24栏减28栏减29栏",
+  "formula": "$..zbGridlbVO[2].bqybtse=$..zbGridlbVO[2].ynsehj-$..zbGridlbVO[2].fcyjse",
+  "tips": ""
+},{
+  "id": "06100101013501001",
+  "type": "11",
+  "desc": "17%税率的进项_金额+13%税率的进项_金额+11%税率的进项_金额+6%税率的进项_金额+5%征收率的进项_金额+3%征收率的进项_金额+减按1.5%征收率的进项_金额+用于购建不动产并一次性抵扣的进项_金额+通行费的进项_金额",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[0].je=$..bqdkjxsejgmxbGridlbVO[1].je+$..bqdkjxsejgmxbGridlbVO[3].je+$..bqdkjxsejgmxbGridlbVO[4].je+$..bqdkjxsejgmxbGridlbVO[10].je+$..bqdkjxsejgmxbGridlbVO[15].je+$..bqdkjxsejgmxbGridlbVO[17].je+$..bqdkjxsejgmxbGridlbVO[26].je+$..bqdkjxsejgmxbGridlbVO[28].je+$..bqdkjxsejgmxbGridlbVO[29].je",
+  "tips": ""
+},{
+  "id": "06100101013501002",
+  "type": "11",
+  "desc": "等于本表2+4+5+11+16+18+27+29+30列的税额合计",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[0].se=ROUND($..bqdkjxsejgmxbGridlbVO[1].se+$..bqdkjxsejgmxbGridlbVO[3].se+$..bqdkjxsejgmxbGridlbVO[4].se+$..bqdkjxsejgmxbGridlbVO[10].se+$..bqdkjxsejgmxbGridlbVO[15].se+$..bqdkjxsejgmxbGridlbVO[17].se+$..bqdkjxsejgmxbGridlbVO[26].se+$..bqdkjxsejgmxbGridlbVO[28].se+$..bqdkjxsejgmxbGridlbVO[29].se,2)",
+  "tips": ""
+},{
+  "id": "06100101012600005",
+  "type": "11",
+  "desc": "",
+  "formula": "$..dkdjsstyjksdkqdGrid.seHj=SUM($..dkdjsstyjksdkqdGridlb[*].se)",
+  "tips": ""
+},{
+  "id": "06100101011800009",
+  "type": "11",
+  "desc": "",
+  "formula": "$..hgwspzdklsjcjb.hgwspzdklsjGrid.seHj=SUM($..hgwspzdklsjcjb.hgwspzdklsjGrid.hgwspzdklsjGridlbVO[*].se)",
+  "tips": ""
+},{
+  "id": "06100101011800013",
+  "type": "11",
+  "desc": "",
+  "formula": "$..hgwspzdklsjGridlbVO[#].Jybz=IF($..hgwspzdklsjGridlbVO[#].hgwspzhm!=''||$..hgwspzdklsjGridlbVO[#].jkkaDm!=''||$..hgwspzdklsjGridlbVO[#].tfrq!=''||($..hgwspzdklsjGridlbVO[#].rzjg!=''&&$..hgwspzdklsjGridlbVO[#].rzjg!=null)||$..hgwspzdklsjGridlbVO[#].se!=0,1,0)",
+  "tips": ""
+},{
+  "id": "06100101011700058",
+  "type": "11",
+  "desc": "",
+  "formula": "$..glysqd_dkqdGridlbVO[#].Jybz=IF($..glysqd_dkqdGridlbVO[#].fphm!=''||$..glysqd_dkqdGridlbVO[#].kprq!=''||$..glysqd_dkqdGridlbVO[#].ysdwMc!=''||$..glysqd_dkqdGridlbVO[#].ysdwNsrsbh!=''||$..glysqd_dkqdGridlbVO[#].ysdwZgdfswjmc!=''||$..glysqd_dkqdGridlbVO[#].ysdwZgdfswjDm!=''||$..glysqd_dkqdGridlbVO[#].yfje!=0||$..glysqd_dkqdGridlbVO[#].jsdkYfje!=0||$..glysqd_dkqdGridlbVO[#].jsdkdjxse!=0,1,0)",
+  "tips": ""
+},{
+  "id": "06100101011700021",
+  "type": "11",
+  "desc": "",
+  "formula": "$..dkqdGrid.glysqd_yfjeXj=SUM($..dkqdGrid.glysqd_dkqdGridlbVO[*].yfje)",
+  "tips": ""
+},{
+  "id": "06100101011700022",
+  "type": "11",
+  "desc": "",
+  "formula": "$..dkqdGrid.glysqd_jsdkYfjeXj=SUM($..dkqdGrid.glysqd_dkqdGridlbVO[*].jsdkYfje)",
+  "tips": ""
+},{
+  "id": "06100101011700023",
+  "type": "11",
+  "desc": "",
+  "formula": "$..dkqdGrid.glysqd_jsdkdjxseXj=SUM($..dkqdGrid.glysqd_dkqdGridlbVO[*].jsdkdjxse)",
+  "tips": ""
+},{
+  "id": "06100101011700059",
+  "type": "11",
+  "desc": "",
+  "formula": "$..nhysqd_dkqdGridlbVO[#].Jybz=IF($..nhysqd_dkqdGridlbVO[#].fphm!=''||$..nhysqd_dkqdGridlbVO[#].kprq!=''||$..nhysqd_dkqdGridlbVO[#].ysdwMc!=''||$..nhysqd_dkqdGridlbVO[#].ysdwNsrsbh!=''||$..nhysqd_dkqdGridlbVO[#].ysdwZgdfswjmc!=''||$..nhysqd_dkqdGridlbVO[#].ysdwZgdfswjDm!=''||$..nhysqd_dkqdGridlbVO[#].yfje!=0||$..nhysqd_dkqdGridlbVO[#].jsdkYfje!=0||$..nhysqd_dkqdGridlbVO[#].jsdkdjxse!=0,1,0)",
+  "tips": ""
+},{
+  "id": "06100101011700035",
+  "type": "11",
+  "desc": "",
+  "formula": "$..dkqdGrid.nhysqd_yfjeXj=SUM($..dkqdGrid.nhysqd_dkqdGridlbVO[*].yfje)",
+  "tips": ""
+},{
+  "id": "06100101011700036",
+  "type": "11",
+  "desc": "",
+  "formula": "$..dkqdGrid.nhysqd_jsdkYfjeXj=SUM($..dkqdGrid.nhysqd_dkqdGridlbVO[*].jsdkYfje)",
+  "tips": ""
+},{
+  "id": "06100101011700037",
+  "type": "11",
+  "desc": "",
+  "formula": "$..dkqdGrid.nhysqd_jsdkdjxseXj=SUM($..dkqdGrid.nhysqd_dkqdGridlbVO[*].jsdkdjxse)",
+  "tips": ""
+},{
+  "id": "06100101011700038",
+  "type": "11",
+  "desc": "",
+  "formula": "$..dkqdGrid.yfjeHj=$..dkqdGrid.dkqdGridlbVO[0].yfje+$..dkqdGrid.dkqdGridlbVO[1].yfje+$..dkqdGrid.dkqdGridlbVO[2].yfje+$..dkqdGrid.dkqdGridlbVO[3].yfje+$..dkqdGrid.glysqd_yfjeXj+$..dkqdGrid.nhysqd_yfjeXj",
+  "tips": ""
+},{
+  "id": "06100101011700039",
+  "type": "11",
+  "desc": "",
+  "formula": "$..dkqdGrid.jsdkYfjeHj=$..dkqdGrid.dkqdGridlbVO[0].jsdkYfje+$..dkqdGrid.dkqdGridlbVO[1].jsdkYfje+$..dkqdGrid.dkqdGridlbVO[2].jsdkYfje+$..dkqdGrid.dkqdGridlbVO[3].jsdkYfje+$..dkqdGrid.glysqd_jsdkYfjeXj+$..dkqdGrid.nhysqd_jsdkYfjeXj",
+  "tips": ""
+},{
+  "id": "06100101011700040",
+  "type": "11",
+  "desc": "",
+  "formula": "$..dkqdGrid.jsdkdjxseHj=$..dkqdGrid.dkqdGridlbVO[0].jsdkdjxse+$..dkqdGrid.dkqdGridlbVO[1].jsdkdjxse+$..dkqdGrid.dkqdGridlbVO[2].jsdkdjxse+$..dkqdGrid.dkqdGridlbVO[3].jsdkdjxse+$..dkqdGrid.glysqd_jsdkdjxseXj+$..dkqdGrid.nhysqd_jsdkdjxseXj",
+  "tips": ""
+},{
+  "id": "06100101012700005",
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqytycddxxGridlbVO[#].ynse=ROUND($..hznsqytycddxxGridlbVO[#].ysxssr*$..hznsqytycddxxGridlbVO[#].yzl,2)",
+  "tips": ""
+},{
+  "id": "06100101012700030",
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqytycddxxGridlbVO[#].Jybz=IF($..hznsqytycddxxGridlbVO[#].ysxssr!=0||$..hznsqytycddxxGridlbVO[#].fpsk||$..hznsqytycddxxGridlbVO[#].yjsk,1,0)",
+  "tips": ""
+},{
+  "id": "06100101012700008",
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqytycddxxGrid.ysxssrHj=SUM($..hznsqytycddxxGridlbVO[*].ysxssr)",
+  "tips": ""
+},{
+  "id": "06100101012700009",
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqytycddxxGrid.ynseHj=SUM($..hznsqytycddxxGridlbVO[*].ynse)",
+  "tips": ""
+},{
+  "id": "06100101012700010",
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqytycddxxGrid.fpskHj=SUM($..hznsqytycddxxGridlbVO[*].fpsk)",
+  "tips": ""
+},{
+  "id": "06100101012700011",
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqytycddxxGrid.yjskHj=SUM($..hznsqytycddxxGridlbVO[*].yjsk)",
+  "tips": ""
+},{
+  "id": 0,
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqytycddjxGrid.mshwyJxsezcHj=SUM($..hznsqytycddjxGridlbVO[*].mshwyJxsezc)",
+  "tips": ""
+},{
+  "id": 0,
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqytycddjxGrid.fzcssJxsezcHj=SUM($..hznsqytycddjxGridlbVO[*].fzcssJxsezc)",
+  "tips": ""
+},{
+  "id": 0,
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqytycddjxGrid.qtJxsezcHj=SUM($..hznsqytycddjxGridlbVO[*].qtJxsezc)",
+  "tips": ""
+},{
+  "id": 0,
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqytycddjxGrid.xjJxsezcHj=SUM($..hznsqytycddjxGridlbVO[*].xjJxsezc)",
+  "tips": ""
+},{
+  "id": 0,
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqytycddjxGrid.bqsjkceHj=SUM($..hznsqytycddjxGridlbVO[*].bqsjkce)",
+  "tips": ""
+},{
+  "id": "06100101010201084",
+  "type": "01",
+  "desc": "当纳税人为实行汇总计算缴纳增值税的分支机构试点纳税人时，为必录项omni描述：IF(系统!C217='Y',电信企业分支机构增值税汇总纳税信息传递单!C8,0)",
+  "formula": "$..bqxsqkmxbGridlbVO[13].kjskzzszyfpXxynse=ROUND(IF($..zzsybnsrsbInitData.bhzqyBz=='N',IF($..zzsybnsrsbInitData.hzqyBz=='Y',$..bqxsqkmxbGridlbVO[13].kjskzzszyfpXse*$..zzsybnsrsbInitData.yzl,0),$..bqxsqkmxbGridlbVO[13].kjskzzszyfpXse*$..zzsybnsrsbInitData.bhzqyYzl),2)",
+  "tips": ""
+},{
+  "id": "06100101010201085",
+  "type": "01",
+  "desc": "当纳税人为实行汇总计算缴纳增值税的分支机构试点纳税人时，为必录项omni描述：ROUND(H22*系统!G162,2)",
+  "formula": "$..bqxsqkmxbGridlbVO[13].kjqtfpXxynse=ROUND(IF($..zzsybnsrsbInitData.bhzqyBz=='N',IF($..zzsybnsrsbInitData.hzqyBz=='Y',$..bqxsqkmxbGridlbVO[13].kjqtfpXse*$..zzsybnsrsbInitData.yzl,0),$..bqxsqkmxbGridlbVO[13].kjqtfpXse*$..zzsybnsrsbInitData.bhzqyYzl),2)",
+  "tips": ""
+},{
+  "id": "06100101010201086",
+  "type": "01",
+  "desc": "当纳税人为实行汇总计算缴纳增值税的分支机构试点纳税人时，为必录项omni描述：ROUND(J22*系统!G162,2)",
+  "formula": "$..bqxsqkmxbGridlbVO[13].wkjfpXxynse=ROUND(IF($..zzsybnsrsbInitData.bhzqyBz=='N',IF($..zzsybnsrsbInitData.hzqyBz=='Y',$..bqxsqkmxbGridlbVO[13].wkjfpXse*$..zzsybnsrsbInitData.yzl,0),$..bqxsqkmxbGridlbVO[13].wkjfpXse*$..zzsybnsrsbInitData.bhzqyYzl),2)",
+  "tips": ""
+},{
+  "id": "06100101010201093",
+  "type": "01",
+  "desc": "当纳税人为实行汇总计算缴纳增值税的分支机构试点纳税人时，为必录项",
+  "formula": "$..bqxsqkmxbGridlbVO[14].kjskzzszyfpXxynse=ROUND(IF($..zzsybnsrsbInitData.gzZzsTlzgs=='Y',$..bqxsqkmxbGridlbVO[14].kjskzzszyfpXse*$..zzsybnsrsbInitData.gzZzsTlzgsYzl,0),2)",
+  "tips": ""
+},{
+  "id": "06100101010201094",
+  "type": "01",
+  "desc": "当纳税人为实行汇总计算缴纳增值税的分支机构试点纳税人时，为必录项",
+  "formula": "$..bqxsqkmxbGridlbVO[14].kjqtfpXxynse=ROUND(IF($..zzsybnsrsbInitData.gzZzsTlzgs=='Y',$..bqxsqkmxbGridlbVO[14].kjqtfpXse*$..zzsybnsrsbInitData.gzZzsTlzgsYzl,0),2)",
+  "tips": ""
+},{
+  "id": "06100101010201095",
+  "type": "01",
+  "desc": "当纳税人为实行汇总计算缴纳增值税的分支机构试点纳税人时，为必录项omni描述：ROUND(J23*V23,2)",
+  "formula": "$..bqxsqkmxbGridlbVO[14].wkjfpXxynse=ROUND(IF($..zzsybnsrsbInitData.gzZzsTlzgs=='Y',$..bqxsqkmxbGridlbVO[14].wkjfpXse*$..zzsybnsrsbInitData.gzZzsTlzgsYzl,0),2)",
+  "tips": ""
+},{
+  "id": "06100101010201125",
+  "type": "01",
+  "desc": "",
+  "formula": "$..bqxsqkmxbGridlbVO[15].kjskzzszyfpXxynse=ROUND(IF($..zzsybnsrsbInitData.kshztlzcdnsr=='Y',$..bqxsqkmxbGridlbVO[15].kjskzzszyfpXse*$..zzsybnsrsbInitData.kshztlzcdnsrYzl,0),2)",
+  "tips": ""
+},{
+  "id": "06100101010201104",
+  "type": "01",
+  "desc": "当纳税人为合资铁路试点纳税人时，为必录项。omni描述：ROUND(J24*V24,2)",
+  "formula": "$..bqxsqkmxbGridlbVO[15].wkjfpXxynse=ROUND(IF($..zzsybnsrsbInitData.kshztlzcdnsr=='Y',$..bqxsqkmxbGridlbVO[15].wkjfpXse*$..zzsybnsrsbInitData.kshztlzcdnsrYzl,0),2)",
+  "tips": ""
+},{
+  "id": "06100101010201001",
+  "type": "01",
+  "desc": "",
+  "formula": "$..bqxsqkmxbGridlbVO[0].kjskzzszyfpXxynse=ROUND($..bqxsqkmxbGridlbVO[0].kjskzzszyfpXse*0.17,2)",
+  "tips": ""
+},{
+  "id": "06100101010201002",
+  "type": "01",
+  "desc": "开具其他发票_销售额*0.17",
+  "formula": "$..bqxsqkmxbGridlbVO[0].kjqtfpXxynse=ROUND($..bqxsqkmxbGridlbVO[0].kjqtfpXse*0.17,2)",
+  "tips": ""
+},{
+  "id": "06100101010201003",
+  "type": "01",
+  "desc": "未开具发票_销售额*0.17",
+  "formula": "$..bqxsqkmxbGridlbVO[0].wkjfpXxynse=ROUND($..bqxsqkmxbGridlbVO[0].wkjfpXse*0.17,2)",
+  "tips": ""
+},{
+  "id": "06100101010201004",
+  "type": "01",
+  "desc": "纳税检查调整_销售额*0.17",
+  "formula": "$..bqxsqkmxbGridlbVO[0].nsjctzXxynse=ROUND($..bqxsqkmxbGridlbVO[0].nsjctzdxse*0.17,2)",
+  "tips": ""
+},{
+  "id": "06100101010201007",
+  "type": "01",
+  "desc": "开具税控增值税专用发票_销售额*0.17",
+  "formula": "$..bqxsqkmxbGridlbVO[1].kjskzzszyfpXxynse=ROUND($..bqxsqkmxbGridlbVO[1].kjskzzszyfpXse*0.17,2)",
+  "tips": ""
+},{
+  "id": "06100101010201008",
+  "type": "01",
+  "desc": "开具其他发票_销售额*0.17",
+  "formula": "$..bqxsqkmxbGridlbVO[1].kjqtfpXxynse=ROUND($..bqxsqkmxbGridlbVO[1].kjqtfpXse*0.17,2)",
+  "tips": ""
+},{
+  "id": "06100101010201009",
+  "type": "01",
+  "desc": "未开具发票_销售额*0.17",
+  "formula": "$..bqxsqkmxbGridlbVO[1].wkjfpXxynse=ROUND($..bqxsqkmxbGridlbVO[1].wkjfpXse*0.17,2)",
+  "tips": ""
+},{
+  "id": "06100101010201010",
+  "type": "01",
+  "desc": "纳税检查调整_销售额*0.17",
+  "formula": "$..bqxsqkmxbGridlbVO[1].nsjctzXxynse=ROUND($..bqxsqkmxbGridlbVO[1].nsjctzdxse*0.17,2)",
+  "tips": ""
+},{
+  "id": "06100101010201017",
+  "type": "01",
+  "desc": "开具税控增值税专用发票_销售额*0.13",
+  "formula": "$..bqxsqkmxbGridlbVO[2].kjskzzszyfpXxynse=ROUND($..bqxsqkmxbGridlbVO[2].kjskzzszyfpXse*0.13,2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101010201018",
+  "type": "01",
+  "desc": "开具其他发票_销售额*0.13",
+  "formula": "$..bqxsqkmxbGridlbVO[2].kjqtfpXxynse=ROUND($..bqxsqkmxbGridlbVO[2].kjqtfpXse*0.13,2)",
+  "tips": ""
+},{
+  "id": "06100101010201019",
+  "type": "01",
+  "desc": "未开具发票_销售额*0.13",
+  "formula": "$..bqxsqkmxbGridlbVO[2].wkjfpXxynse=ROUND($..bqxsqkmxbGridlbVO[2].wkjfpXse*0.13,2)",
+  "tips": ""
+},{
+  "id": "06100101010201020",
+  "type": "01",
+  "desc": "纳税检查调整_销售额*0.13",
+  "formula": "$..bqxsqkmxbGridlbVO[2].nsjctzXxynse=ROUND($..bqxsqkmxbGridlbVO[2].nsjctzdxse*0.13,2)",
+  "tips": ""
+},{
+  "id": "06100101010201023",
+  "type": "01",
+  "desc": "开具税控增值税专用发票_销售额*0.11",
+  "formula": "$..bqxsqkmxbGridlbVO[3].kjskzzszyfpXxynse=ROUND($..bqxsqkmxbGridlbVO[3].kjskzzszyfpXse*0.11,2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101010201024",
+  "type": "01",
+  "desc": "开具其他发票_销售额*0.11",
+  "formula": "$..bqxsqkmxbGridlbVO[3].kjqtfpXxynse=ROUND($..bqxsqkmxbGridlbVO[3].kjqtfpXse*0.11,2)",
+  "tips": ""
+},{
+  "id": "06100101010201025",
+  "type": "01",
+  "desc": "未开具发票_销售额*0.11",
+  "formula": "$..bqxsqkmxbGridlbVO[3].wkjfpXxynse=ROUND($..bqxsqkmxbGridlbVO[3].wkjfpXse*0.11,2)",
+  "tips": ""
+},{
+  "id": "06100101010201026",
+  "type": "01",
+  "desc": "纳税检查调整_销售额*0.11",
+  "formula": "$..bqxsqkmxbGridlbVO[3].nsjctzXxynse=ROUND($..bqxsqkmxbGridlbVO[3].nsjctzdxse*0.11,2)",
+  "tips": ""
+},{
+  "id": "06100101010201033",
+  "type": "01",
+  "desc": "开具税控增值税专用发票_销售额*0.06",
+  "formula": "$..bqxsqkmxbGridlbVO[4].kjskzzszyfpXxynse=ROUND($..bqxsqkmxbGridlbVO[4].kjskzzszyfpXse*0.06,2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101010201034",
+  "type": "01",
+  "desc": "开具其他发票_销售额*0.06",
+  "formula": "$..bqxsqkmxbGridlbVO[4].kjqtfpXxynse=ROUND($..bqxsqkmxbGridlbVO[4].kjqtfpXse*0.06,2)",
+  "tips": ""
+},{
+  "id": "06100101010201035",
+  "type": "01",
+  "desc": "未开具发票_销售额*0.06",
+  "formula": "$..bqxsqkmxbGridlbVO[4].wkjfpXxynse=ROUND($..bqxsqkmxbGridlbVO[4].wkjfpXse*0.06,2)",
+  "tips": ""
+},{
+  "id": "06100101010201036",
+  "type": "01",
+  "desc": "纳税检查调整_销售额*0.06",
+  "formula": "$..bqxsqkmxbGridlbVO[4].nsjctzXxynse=ROUND($..bqxsqkmxbGridlbVO[4].nsjctzdxse*0.06,2)",
+  "tips": ""
+},{
+  "id": "06100101010201046",
+  "type": "01",
+  "desc": "开具税控增值税专用发票_销售额*0.06",
+  "formula": "$..bqxsqkmxbGridlbVO[7].kjskzzszyfpXxynse=ROUND($..bqxsqkmxbGridlbVO[7].kjskzzszyfpXse*0.06,2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101010201047",
+  "type": "01",
+  "desc": "开具其他发票_销售额*0.06",
+  "formula": "$..bqxsqkmxbGridlbVO[7].kjqtfpXxynse=ROUND($..bqxsqkmxbGridlbVO[7].kjqtfpXse*0.06,2)",
+  "tips": ""
+},{
+  "id": "06100101010201048",
+  "type": "01",
+  "desc": "未开具发票_销售额*0.06",
+  "formula": "$..bqxsqkmxbGridlbVO[7].wkjfpXxynse=ROUND($..bqxsqkmxbGridlbVO[7].wkjfpXse*0.06,2)",
+  "tips": ""
+},{
+  "id": "06100101010201051",
+  "type": "01",
+  "desc": "开具税控增值税专用发票_销售额*0.05",
+  "formula": "$..bqxsqkmxbGridlbVO[8].kjskzzszyfpXxynse=ROUND($..bqxsqkmxbGridlbVO[8].kjskzzszyfpXse*0.05,2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101010201052",
+  "type": "01",
+  "desc": "开具其他发票_销售额*0.05",
+  "formula": "$..bqxsqkmxbGridlbVO[8].kjqtfpXxynse=ROUND($..bqxsqkmxbGridlbVO[8].kjqtfpXse*0.05,2)",
+  "tips": ""
+},{
+  "id": "06100101010201053",
+  "type": "01",
+  "desc": "未开具发票_销售额*0.05",
+  "formula": "$..bqxsqkmxbGridlbVO[8].wkjfpXxynse=ROUND($..bqxsqkmxbGridlbVO[8].wkjfpXse*0.05,2)",
+  "tips": ""
+},{
+  "id": "06100101010201056",
+  "type": "01",
+  "desc": "开具税控增值税专用发票_销售额*0.05",
+  "formula": "$..bqxsqkmxbGridlbVO[9].kjskzzszyfpXxynse=ROUND($..bqxsqkmxbGridlbVO[9].kjskzzszyfpXse*0.05,2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101010201057",
+  "type": "01",
+  "desc": "开具其他发票_销售额*0.05",
+  "formula": "$..bqxsqkmxbGridlbVO[9].kjqtfpXxynse=ROUND($..bqxsqkmxbGridlbVO[9].kjqtfpXse*0.05,2)",
+  "tips": ""
+},{
+  "id": "06100101010201058",
+  "type": "01",
+  "desc": "未开具发票_销售额*0.05",
+  "formula": "$..bqxsqkmxbGridlbVO[9].wkjfpXxynse=ROUND($..bqxsqkmxbGridlbVO[9].wkjfpXse*0.05,2)",
+  "tips": ""
+},{
+  "id": "06100101010201065",
+  "type": "01",
+  "desc": "开具税控增值税专用发票_销售额*0.04",
+  "formula": "$..bqxsqkmxbGridlbVO[10].kjskzzszyfpXxynse=ROUND($..bqxsqkmxbGridlbVO[10].kjskzzszyfpXse*0.04,2)",
+  "tips": ""
+},{
+  "id": "06100101010201066",
+  "type": "01",
+  "desc": "开具其他发票_销售额*0.04",
+  "formula": "$..bqxsqkmxbGridlbVO[10].kjqtfpXxynse=ROUND($..bqxsqkmxbGridlbVO[10].kjqtfpXse*0.04,2)",
+  "tips": ""
+},{
+  "id": "06100101010201067",
+  "type": "01",
+  "desc": "未开具发票_销售额*0.04",
+  "formula": "$..bqxsqkmxbGridlbVO[10].wkjfpXxynse=ROUND($..bqxsqkmxbGridlbVO[10].wkjfpXse*0.04,2)",
+  "tips": ""
+},{
+  "id": "06100101010201070",
+  "type": "01",
+  "desc": "开具税控增值税专用发票_销售额*0.03",
+  "formula": "$..bqxsqkmxbGridlbVO[11].kjskzzszyfpXxynse=ROUND($..bqxsqkmxbGridlbVO[11].kjskzzszyfpXse*0.03,2)",
+  "tips": ""
+},{
+  "id": "06100101010201071",
+  "type": "01",
+  "desc": "开具其他发票_销售额*0.03",
+  "formula": "$..bqxsqkmxbGridlbVO[11].kjqtfpXxynse=ROUND($..bqxsqkmxbGridlbVO[11].kjqtfpXse*0.03,2)",
+  "tips": ""
+},{
+  "id": "06100101010201072",
+  "type": "01",
+  "desc": "未开具发票_销售额*0.03",
+  "formula": "$..bqxsqkmxbGridlbVO[11].wkjfpXxynse=ROUND($..bqxsqkmxbGridlbVO[11].wkjfpXse*0.03,2)",
+  "tips": ""
+},{
+  "id": "06100101010201075",
+  "type": "01",
+  "desc": "开具税控增值税专用发票_销售额*0.03",
+  "formula": "$..bqxsqkmxbGridlbVO[12].kjskzzszyfpXxynse=ROUND($..bqxsqkmxbGridlbVO[12].kjskzzszyfpXse*0.03,2)",
+  "tips": ""
+},{
+  "id": "06100101010201076",
+  "type": "01",
+  "desc": "开具其他发票_销售额*0.03",
+  "formula": "$..bqxsqkmxbGridlbVO[12].kjqtfpXxynse=ROUND($..bqxsqkmxbGridlbVO[12].kjqtfpXse*0.03,2)",
+  "tips": ""
+},{
+  "id": "06100101010201077",
+  "type": "01",
+  "desc": "未开具发票_销售额*0.03",
+  "formula": "$..bqxsqkmxbGridlbVO[12].wkjfpXxynse=ROUND($..bqxsqkmxbGridlbVO[12].wkjfpXse*0.03,2)",
+  "tips": ""
+},{
+  "id": "06100101010110016",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为退税部门审核确认的上期《免抵退税申报汇总表》'当期应退税额'=上期本项'一般项目的本月免、抵、退应退税额'",
+  "formula": "$..zbGridlbVO[0].mdtytse=$..zzsybnsrsbInitData.mdthwytse.ybhwjlwBys",
+  "tips": ""
+},{
+  "id": "1463732325202111",
+  "type": "01",
+  "desc": "",
+  "formula": "$..zbGridlbVO[0].qcwjse=$..zzsybnsrsbInitData.qcwjse.ybhwjlwBys",
+  "tips": ""
+},{
+  "id": "1463812985725125",
+  "type": "01",
+  "desc": "",
+  "formula": "$..zbGridlbVO[0].bqjnsqynse=$..zzsybnsrsbInitData.bqjnsqynse.ybhwjlwBys",
+  "tips": ""
+},{
+  "id": "06100101010101049",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出值为：'本月数'",
+  "formula": "$..zbGridlbVO[1].qmwjse=$..zbGridlbVO[0].qmwjse",
+  "tips": ""
+},{
+  "id": "06100101010101051",
+  "type": "01",
+  "desc": "自动计算出，不可修改。计算规则为：等于本栏的'本月数'。",
+  "formula": "$..zbGridlbVO[1].qmwjcbse=$..zbGridlbVO[0].qmwjcbse",
+  "tips": ""
+},{
+  "id": "06100101010102001",
+  "type": "12",
+  "desc": "",
+  "formula": "ROUND($..zbGridlbVO[0].yshwxse+$..zbGridlbVO[0].yslwxse+$..zbGridlbVO[0].syslNsjctzxse,2)<=$..zbGridlbVO[0].asysljsxse",
+  "tips": "第2、3、4行本月数之和不能大于第1行本月数"
+},{
+  "id": "06100101010102002",
+  "type": "12",
+  "desc": "",
+  "formula": "ROUND($..zbGridlbVO[0].syslNsjctzxse+$..zbGridlbVO[2].syslNsjctzxse,2)==ROUND($..bqxsqkmxbGridlbVO[0].nsjctzdxse+$..bqxsqkmxbGridlbVO[1].nsjctzdxse+$..bqxsqkmxbGridlbVO[2].nsjctzdxse+$..bqxsqkmxbGridlbVO[3].nsjctzdxse+$..bqxsqkmxbGridlbVO[4].nsjctzdxse,2)",
+  "tips": "主表一般项目第4栏“本月数”与即征即退项目“本月数”之和应等于附表1的第一行第七列至第五行第七列之和"
+},{
+  "id": "06100101010102003",
+  "type": "12",
+  "desc": "",
+  "formula": "$..zbGridlbVO[0].ajybfjsxse>=ROUND($..bqxsqkmxbGridlbVO[7].xse+$..bqxsqkmxbGridlbVO[8].xse+$..bqxsqkmxbGridlbVO[9].xse+$..bqxsqkmxbGridlbVO[10].xse+$..bqxsqkmxbGridlbVO[11].xse+$..bqxsqkmxbGridlbVO[12].xse+$..bqxsqkmxbGridlbVO[13].xse+$..bqxsqkmxbGridlbVO[14].xse-$..bqxsqkmxbGridlbVO[16].xse-$..bqxsqkmxbGridlbVO[17].xse,2)",
+  "target": "",
+  "tips": "销售额_按简易办法计税销售额_一般项目_本月数要大于等于《附列资料（一）》第9列第8至13b行之和-第9列第14、15行之和"
+},{
+  "id": "06100101010102005",
+  "type": "12",
+  "desc": "",
+  "formula": "ROUND($..zbGridlbVO[0].jxse+$..zbGridlbVO[2].jxse,2)==$...bqjxsemxbGridlbVO[11].se",
+  "tips": "主表第12行一般项目与即征即退项目本月数之和应等于附表二第12行税额"
+},{
+  "id": "06100101010102006",
+  "type": "02",
+  "desc": "",
+  "formula": "$..zbGridlbVO[0].syslNsjcybjse<=ROUND($..bqxsqkmxbGridlbVO[0].nsjctzXxynse+$..bqxsqkmxbGridlbVO[1].nsjctzXxynse+$..bqxsqkmxbGridlbVO[2].nsjctzXxynse+$..bqxsqkmxbGridlbVO[3].nsjctzXxynse+$..bqxsqkmxbGridlbVO[4].nsjctzXxynse+$...bqjxsemxbGridlbVO[18].se,2)",
+  "tips": "税款计算_按适用税率计算的纳税检查应补缴税额_一般项目_不能大于《附列资料（一）》第8列第1至5行之和+《附列资料（二）》第19栏税额"
+},{
+  "id": "06100101010102007",
+  "type": "02",
+  "desc": "",
+  "formula": "$..zbGridlbVO[0].ynsejze<=ROUND($..zbGridlbVO[0].ynse+$..zbGridlbVO[0].jybfYnse,2)",
+  "tips": "税款计算_应纳税额减征额_一般项目_本月数不能大于第19栏“应纳税额”与第21栏“简易征收办法计算的应纳税额”之和"
+},{
+  "id": "06100101010102008",
+  "type": "02",
+  "desc": "",
+  "formula": "$..zbGridlbVO[0].fcyjse<=ROUND($..zzsybnsrsbInitData.ybhwjlwYjsBys+$..bqjxsemxbGridlbVO[1].bqsjdjse+$..bqjxsemxbGridlbVO[2].bqsjdjse+$..bqjxsemxbGridlbVO[3].bqsjdjse+$..bqjxsemxbGridlbVO[4].bqsjdjse,2)",
+  "target": "",
+  "tips": "录入的预缴税额不能大于{{$..zzsybnsrsbInitData.ybhwjlwYjsBys+$..bqjxsemxbGridlbVO[1].bqsjdjse+$..bqjxsemxbGridlbVO[2].bqsjdjse+$..bqjxsemxbGridlbVO[3].bqsjdjse+$..bqjxsemxbGridlbVO[4].bqsjdjse}}"
+},{
+  "id": "06100101010102009",
+  "type": "12",
+  "desc": "",
+  "formula": "$..zbGridlbVO[1].msxse>=ROUND($..zbGridlbVO[1].mshwxse+$..zbGridlbVO[1].mslwxse,2)",
+  "tips": "第8栏((四)免税货物及劳务销售额)应大于等于第9栏(其中:免税货物销售额)+第10栏(免税劳务销售额)之和"
+},{
+  "id": "06100101010102010",
+  "type": "12",
+  "desc": "",
+  "formula": "ROUND($..zbGridlbVO[2].yshwxse+$..zbGridlbVO[2].yslwxse+$..zbGridlbVO[2].syslNsjctzxse,2)<=$..zbGridlbVO[2].asysljsxse",
+  "tips": "第2、3、4行本月数之和不能大于第1行本月数"
+},{
+  "id": "06100101010102011",
+  "type": "02",
+  "desc": "",
+  "formula": "$..zbGridlbVO[2].ajybfjsxse>=ROUND($..bqxsqkmxbGridlbVO[16].xse+$..bqxsqkmxbGridlbVO[17].xse,2)",
+  "tips": "销售额_按简易办法计税销售额_即征即退项目_本月数要大于等于《附列资料（一）》第9列第14、15行之和"
+},{
+  "id": "06100101010102012",
+  "type": "02",
+  "desc": "",
+  "formula": "$..zbGridlbVO[2].jybfNsjctzxse<=ROUND($..bqxsqkmxbGridlbVO[13].xse+$..bqxsqkmxbGridlbVO[14].xse+$..bqxsqkmxbGridlbVO[15].xse+$..bqxsqkmxbGridlbVO[16].xse,2)",
+  "tips": "销售额_按简易办法计税销售额_纳税检查调整的销售额_即征即退项目_本月数不能大于《附列资料（一）》第9列第13、14行之和"
+},{
+  "id": "06100101010102013",
+  "type": "12",
+  "desc": "",
+  "formula": "ROUND($..zbGridlbVO[0].msxse+$..zbGridlbVO[2].msxse,2)==$..zzsjmssbmxbmsxmGrid.mzzzsxmxseZhj",
+  "target": "",
+  "tips": "主表第8行“本月数”应等于《减免税申报明细表》的免税项目列表的合计行的第1列“免征增值税项目销售额”合计金额 "
+},{
+  "id": "06100101010302001",
+  "type": "02",
+  "desc": "",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[8].fs>=0&&$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[8].fs<=ROUND($..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[0].fs+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[3].fs,2)",
+  "tips": "0≤本项≤本表第1栏+第4栏的“份数”列"
+},{
+  "id": "06100101010302002",
+  "type": "02",
+  "desc": "",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[8].je>=0&&$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[8].je<=ROUND($..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[0].je+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[3].je,2)",
+  "tips": "0≤第9栏 金额≤本表第1栏+第4栏的“金额”列"
+},{
+  "id": "06100101010302003",
+  "type": "02",
+  "desc": "",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[8].se>=0&&$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[8].se<=ROUND($..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[0].se+$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[3].se,2)",
+  "tips": "0≤第9栏 税额≤本表第1栏+第4栏的“税额”列"
+},{
+  "id": "06100101010302004",
+  "type": "02",
+  "desc": "",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[13].se>=0",
+  "tips": "不能为负数"
+},{
+  "id": "06100101010302005",
+  "type": "02",
+  "desc": "",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[14].se>=0",
+  "tips": "不能为负数"
+},{
+  "id": "06100101010302006",
+  "type": "02",
+  "desc": "",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[15].se>=0",
+  "tips": "不能为负数"
+},{
+  "id": "06100101010302007",
+  "type": "02",
+  "desc": "",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[16].se>=0",
+  "tips": "不能为负数"
+},{
+  "id": "06100101010302008",
+  "type": "02",
+  "desc": "",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[17].se>=0",
+  "tips": "不能为负数"
+},{
+  "id": "06100101010302009",
+  "type": "02",
+  "desc": "",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[18].se>=0",
+  "tips": "不能为负数"
+},{
+  "id": "06100101010302010",
+  "type": "02",
+  "desc": "",
+  "formula": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[19].se>=0",
+  "tips": "不能为负数"
+},{
+  "id": "06100101010401001",
+  "type": "01",
+  "desc": "等于'增值税纳税申报表附列资料（一）'中 '17%税率的服务、不动产和无形资产的价税合计'（P9）的值",
+  "formula": "$..ysfwkcxmmxGridlbVO[0].msxse=$..bqxsqkmxbGridlbVO[1].jshj",
+  "tips": ""
+},{
+  "id": "06100101010401002",
+  "type": "01",
+  "desc": "17%税率的项目的 期初余额+本期发生额",
+  "formula": "$..ysfwkcxmmxGridlbVO[0].bqykcje=$..ysfwkcxmmxGridlbVO[0].qcye+$..ysfwkcxmmxGridlbVO[0].bqfse",
+  "tips": ""
+},{
+  "id": "06100101010402001",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..ysfwkcxmmxGridlbVO[0].msxse-$..ysfwkcxmmxGridlbVO[0].bqsjkcje,2)>=0&&ROUND($..ysfwkcxmmxGridlbVO[0].bqykcje-$..ysfwkcxmmxGridlbVO[0].bqsjkcje,2)>=0",
+  "tips": "第5列必须小于等于第1列和第4列"
+},{
+  "id": "06100101010401003",
+  "type": "01",
+  "desc": "17%税率的项目的'本期应扣除金额'（G9）-'本期实际扣除金额'（H9）",
+  "formula": "$..ysfwkcxmmxGridlbVO[0].qmye=$..ysfwkcxmmxGridlbVO[0].bqykcje-$..ysfwkcxmmxGridlbVO[0].bqsjkcje",
+  "tips": ""
+},{
+  "id": "06100101010401004",
+  "type": "01",
+  "desc": "等于'增值税纳税申报表附列资料（一）'中 '11%税率的价税合计'（P11）的值",
+  "formula": "$..ysfwkcxmmxGridlbVO[1].msxse=$..bqxsqkmxbGridlbVO[3].jshj",
+  "tips": ""
+},{
+  "id": "06100101010401005",
+  "type": "01",
+  "desc": "11%税率的项目的 期初余额+本期发生额",
+  "formula": "$..ysfwkcxmmxGridlbVO[1].bqykcje=$..ysfwkcxmmxGridlbVO[1].qcye+$..ysfwkcxmmxGridlbVO[1].bqfse",
+  "tips": ""
+},{
+  "id": "06100101010402002",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..ysfwkcxmmxGridlbVO[1].msxse-$..ysfwkcxmmxGridlbVO[1].bqsjkcje,2)>=0&&ROUND($..ysfwkcxmmxGridlbVO[1].bqykcje-$..ysfwkcxmmxGridlbVO[1].bqsjkcje,2)>=0",
+  "tips": "第5列必须小于等于第1列和第4列"
+},{
+  "id": "06100101010401006",
+  "type": "01",
+  "desc": "11%税率的项目的 '本期应扣除金额'（G10）-'本期实际扣除金额'（H10）",
+  "formula": "$..ysfwkcxmmxGridlbVO[1].qmye=$..ysfwkcxmmxGridlbVO[1].bqykcje-$..ysfwkcxmmxGridlbVO[1].bqsjkcje",
+  "tips": ""
+},{
+  "id": "06100101010401007",
+  "type": "01",
+  "desc": "6%税率的项目（不含金融商品转让）的   期初余额+本期发生额",
+  "formula": "$..ysfwkcxmmxGridlbVO[2].bqykcje=$..ysfwkcxmmxGridlbVO[2].qcye+$..ysfwkcxmmxGridlbVO[2].bqfse",
+  "tips": ""
+},{
+  "id": "06100101010402003",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..ysfwkcxmmxGridlbVO[2].msxse-$..ysfwkcxmmxGridlbVO[2].bqsjkcje,2)>=0&&ROUND($..ysfwkcxmmxGridlbVO[2].bqykcje-$..ysfwkcxmmxGridlbVO[2].bqsjkcje,2)>=0",
+  "tips": "第5列必须小于等于第1列和第4列"
+},{
+  "id": "06100101010401008",
+  "type": "01",
+  "desc": "6%税率的项目（不含金融商品转让）的 '本期应扣除金额'（G11）-'本期实际扣除金额'（H11）",
+  "formula": "$..ysfwkcxmmxGridlbVO[2].qmye=$..ysfwkcxmmxGridlbVO[2].bqykcje-$..ysfwkcxmmxGridlbVO[2].bqsjkcje",
+  "tips": ""
+},{
+  "id": "06100101010401009",
+  "type": "01",
+  "desc": "",
+  "formula": "$..ysfwkcxmmxGridlbVO[3].msxse=$..bqxsqkmxbGridlbVO[4].jshj-$..ysfwkcxmmxGridlbVO[2].msxse",
+  "tips": ""
+},{
+  "id": "06100101010401010",
+  "type": "01",
+  "desc": "6%税率的金融商品转让项目的 期初余额+本期发生额",
+  "formula": "$..ysfwkcxmmxGridlbVO[3].bqykcje=$..ysfwkcxmmxGridlbVO[3].qcye+$..ysfwkcxmmxGridlbVO[3].bqfse",
+  "tips": ""
+},{
+  "id": "06100101010402004",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..ysfwkcxmmxGridlbVO[3].msxse-$..ysfwkcxmmxGridlbVO[3].bqsjkcje,2)>=0&&ROUND($..ysfwkcxmmxGridlbVO[3].bqykcje-$..ysfwkcxmmxGridlbVO[3].bqsjkcje,2)>=0",
+  "tips": "第5列必须小于等于第1列和第4列"
+},{
+  "id": "06100101010401011",
+  "type": "01",
+  "desc": "6%税率的金融商品转让项目的 应税服务扣除项目_本期实际扣除金额+期末余额",
+  "formula": "$..ysfwkcxmmxGridlbVO[3].qmye=$..ysfwkcxmmxGridlbVO[3].bqykcje-$..ysfwkcxmmxGridlbVO[3].bqsjkcje",
+  "tips": ""
+},{
+  "id": "06100101010401012",
+  "type": "01",
+  "desc": "等于'增值税纳税申报表附列资料（一）'中 '5%征收率的服务、不动产和无形资产的价税合计'（P17）的值",
+  "formula": "$..ysfwkcxmmxGridlbVO[4].msxse=$..bqxsqkmxbGridlbVO[9].jshj",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101010401013",
+  "type": "01",
+  "desc": "5%征收率的项目的  期初余额+本期发生额",
+  "formula": "$..ysfwkcxmmxGridlbVO[4].bqykcje=$..ysfwkcxmmxGridlbVO[4].qcye+$..ysfwkcxmmxGridlbVO[4].bqfse",
+  "tips": ""
+},{
+  "id": "06100101010402005",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..ysfwkcxmmxGridlbVO[4].msxse-$..ysfwkcxmmxGridlbVO[4].bqsjkcje,2)>=0&&ROUND($..ysfwkcxmmxGridlbVO[4].bqykcje-$..ysfwkcxmmxGridlbVO[4].bqsjkcje,2)>=0",
+  "tips": "第5列必须小于等于第1列和第4列"
+},{
+  "id": "06100101010401014",
+  "type": "01",
+  "desc": "5%征收率的项目的 '本期应扣除金额'（G14）-'本期实际扣除金额'（H14）",
+  "formula": "$..ysfwkcxmmxGridlbVO[4].qmye=$..ysfwkcxmmxGridlbVO[4].bqykcje-$..ysfwkcxmmxGridlbVO[4].bqsjkcje",
+  "tips": ""
+},{
+  "id": "06100101010401015",
+  "type": "01",
+  "desc": "等于'增值税纳税申报表附列资料（一）'中 '3%征收率的服务、不动产和无形资产的价税合计'（P21）的值",
+  "formula": "$..ysfwkcxmmxGridlbVO[5].msxse=$..bqxsqkmxbGridlbVO[12].jshj",
+  "tips": ""
+},{
+  "id": "06100101010401016",
+  "type": "01",
+  "desc": "3%征收率的项目的 期初余额+本期发生额",
+  "formula": "$..ysfwkcxmmxGridlbVO[5].bqykcje=$..ysfwkcxmmxGridlbVO[5].qcye+$..ysfwkcxmmxGridlbVO[5].bqfse",
+  "tips": ""
+},{
+  "id": "06100101010402006",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..ysfwkcxmmxGridlbVO[5].msxse-$..ysfwkcxmmxGridlbVO[5].bqsjkcje,2)>=0&&ROUND($..ysfwkcxmmxGridlbVO[5].bqykcje-$..ysfwkcxmmxGridlbVO[5].bqsjkcje,2)>=0",
+  "tips": "第5列必须小于等于第1列和第4列"
+},{
+  "id": "06100101010401017",
+  "type": "01",
+  "desc": "3%征收率的项目的 '本期应扣除金额'（G15）-'本期实际扣除金额'（H15）",
+  "formula": "$..ysfwkcxmmxGridlbVO[5].qmye=$..ysfwkcxmmxGridlbVO[5].bqykcje-$..ysfwkcxmmxGridlbVO[5].bqsjkcje",
+  "tips": ""
+},{
+  "id": "06100101010401018",
+  "type": "01",
+  "desc": "等于'增值税纳税申报表附列资料（一）'中 '免抵退税的服务、不动产和无形资产的价税合计'（P28）的值",
+  "formula": "$..ysfwkcxmmxGridlbVO[6].msxse=$..bqxsqkmxbGridlbVO[19].jshj",
+  "tips": ""
+},{
+  "id": "06100101010401019",
+  "type": "01",
+  "desc": "免抵退税的项目的 期初余额+本期发生额",
+  "formula": "$..ysfwkcxmmxGridlbVO[6].bqykcje=$..ysfwkcxmmxGridlbVO[6].qcye+$..ysfwkcxmmxGridlbVO[6].bqfse",
+  "tips": ""
+},{
+  "id": "06100101010402007",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..ysfwkcxmmxGridlbVO[6].msxse-$..ysfwkcxmmxGridlbVO[6].bqsjkcje,2)>=0&&ROUND($..ysfwkcxmmxGridlbVO[6].bqykcje-$..ysfwkcxmmxGridlbVO[6].bqsjkcje,2)>=0",
+  "tips": "第5列必须小于等于第1列和第4列"
+},{
+  "id": "06100101010401020",
+  "type": "01",
+  "desc": "免抵退税的项目的 '本期应扣除金额'（G16）-'本期实际扣除金额'（H16）",
+  "formula": "$..ysfwkcxmmxGridlbVO[6].qmye=ROUND($..ysfwkcxmmxGridlbVO[6].bqykcje-$..ysfwkcxmmxGridlbVO[6].bqsjkcje,2)",
+  "tips": ""
+},{
+  "id": "06100101010401021",
+  "type": "01",
+  "desc": "等于'增值税纳税申报表附列资料（一）'中 '免税的服务、不动产和无形资产的价税合计'（P30）的值",
+  "formula": "$..ysfwkcxmmxGridlbVO[7].msxse=$..bqxsqkmxbGridlbVO[21].jshj",
+  "tips": ""
+},{
+  "id": "06100101010401022",
+  "type": "01",
+  "desc": "免税的项目的 期初余额+本期发生额",
+  "formula": "$..ysfwkcxmmxGridlbVO[7].bqykcje=$..ysfwkcxmmxGridlbVO[7].qcye+$..ysfwkcxmmxGridlbVO[7].bqfse",
+  "tips": ""
+},{
+  "id": "06100101010402008",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..ysfwkcxmmxGridlbVO[7].msxse-$..ysfwkcxmmxGridlbVO[7].bqsjkcje,2)>=0&&ROUND($..ysfwkcxmmxGridlbVO[7].bqykcje-$..ysfwkcxmmxGridlbVO[7].bqsjkcje,2)>=0",
+  "tips": "第5列必须小于等于第1列和第4列"
+},{
+  "id": "06100101010401023",
+  "type": "01",
+  "desc": "免税的项目的 '本期应扣除金额'（G17）-'本期实际扣除金额'（H17）",
+  "formula": "$..ysfwkcxmmxGridlbVO[7].qmye=$..ysfwkcxmmxGridlbVO[7].bqykcje-$..ysfwkcxmmxGridlbVO[7].bqsjkcje",
+  "tips": ""
+},{
+  "id": "06100101010501001",
+  "type": "01",
+  "desc": "行名称_增值税税控系统专用设备费用及技术维护费的  本期发生额+本期应抵减税额",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[0].bqydjse=$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[0].qcye+$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[0].bqfse",
+  "tips": ""
+},{
+  "id": "06100101010502001",
+  "type": "02",
+  "desc": "",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[0].bqsjdjse<=$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[0].bqydjse",
+  "tips": "第4列必须小于等于第3列"
+},{
+  "id": "06100101010501002",
+  "type": "01",
+  "desc": "行名称_增值税税控系统专用设备费用及技术维护费的   本期应抵减税额-本期实际抵减税额",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[0].qmye=$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[0].bqydjse-$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[0].bqsjdjse",
+  "tips": ""
+},{
+  "id": "06100101010502002",
+  "type": "02",
+  "desc": "",
+  "formula": "IF($..sjlybz=='01',$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[1].bqfse<=$..zzsybnsrsbInitData.fcyjse.ybhwjlwBys,true)",
+  "tips": "分支机构预征缴纳税款本期发生额不能大于本期分支机构实际预征缴纳税款。"
+},{
+  "id": "06100101010501003",
+  "type": "01",
+  "desc": "行名称_分支机构预征缴纳税款的  本期发生额+本期应抵减税额",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[1].bqydjse=$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[1].qcye+$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[1].bqfse",
+  "tips": ""
+},{
+  "id": "06100101010502003",
+  "type": "02",
+  "desc": "",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[1].bqsjdjse<=$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[1].bqydjse",
+  "tips": "第4列必须小于等于第3列"
+},{
+  "id": "06100101010501004",
+  "type": "01",
+  "desc": "行名称_分支机构预征缴纳税款的   本期应抵减税额-本期实际抵减税额",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[1].qmye=$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[1].bqydjse-$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[1].bqsjdjse",
+  "tips": ""
+},{
+  "id": "06100101010501005",
+  "type": "01",
+  "desc": "行名称_建筑服务预征缴纳税款的  本期发生额+本期应抵减税额",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[2].bqydjse=$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[2].qcye+$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[2].bqfse",
+  "tips": ""
+},{
+  "id": "06100101010502004",
+  "type": "02",
+  "desc": "",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[2].bqsjdjse<=$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[2].bqydjse",
+  "tips": "第4列必须小于等于第3列"
+},{
+  "id": "06100101010501006",
+  "type": "01",
+  "desc": "行名称_建筑服务预征缴纳税款的   本期应抵减税额-本期实际抵减税额",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[2].qmye=$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[2].bqydjse-$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[2].bqsjdjse",
+  "tips": ""
+},{
+  "id": "06100101010501007",
+  "type": "01",
+  "desc": "行名称_销售不动产预征缴纳税款的  本期发生额+本期应抵减税额",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[3].bqydjse=$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[3].qcye+$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[3].bqfse",
+  "tips": ""
+},{
+  "id": "06100101010502005",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[3].bqsjdjse,2)<=ROUND($..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[3].bqydjse,2)",
+  "tips": "第4列必须小于等于第3列"
+},{
+  "id": "06100101010501008",
+  "type": "01",
+  "desc": "行名称_销售不动产预征缴纳税款的   本期应抵减税额-本期实际抵减税额",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[3].qmye=$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[3].bqydjse-$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[3].bqsjdjse",
+  "tips": ""
+},{
+  "id": "06100101010501009",
+  "type": "01",
+  "desc": "行名称_出租不动产预征缴纳税款的  本期发生额+本期应抵减税额",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[4].bqydjse=$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[4].qcye+$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[4].bqfse",
+  "tips": ""
+},{
+  "id": "06100101010502006",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[4].bqsjdjse,2)<=ROUND($..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[4].bqydjse,2)",
+  "tips": "第4列必须小于等于第3列"
+},{
+  "id": "06100101010501010",
+  "type": "01",
+  "desc": "行名称_出租不动产预征缴纳税款的   本期应抵减税额-本期实际抵减税额",
+  "formula": "$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[4].qmye=$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[4].bqydjse-$..zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[4].bqsjdjse",
+  "tips": ""
+},{
+  "id": "06100101010602001",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($.zzsybsbSbbdxxVO.zzssyyybnsr05_bdcfqdkjsb.bdcfqdkjsbGrid.bdcfqdkjsbGridlbVO[0].qcye+$.zzsybsbSbbdxxVO.zzssyyybnsr05_bdcfqdkjsb.bdcfqdkjsbGrid.bdcfqdkjsbGridlbVO[0].bqfse+$.zzsybsbSbbdxxVO.zzssyyybnsr05_bdcfqdkjsb.bdcfqdkjsbGrid.bdcfqdkjsbGridlbVO[0].bqsjdjse,2)>=ROUND($.zzsybsbSbbdxxVO.zzssyyybnsr05_bdcfqdkjsb.bdcfqdkjsbGrid.bdcfqdkjsbGridlbVO[0].bqydjse,2)",
+  "tips": "第3列应小于等于第1列加第2列加第4列"
+},{
+  "id": "06100101010602002",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($.zzsybsbSbbdxxVO.zzssyyybnsr05_bdcfqdkjsb.bdcfqdkjsbGrid.bdcfqdkjsbGridlbVO[0].qcye+$.zzsybsbSbbdxxVO.zzssyyybnsr05_bdcfqdkjsb.bdcfqdkjsbGrid.bdcfqdkjsbGridlbVO[0].bqsjdjse,2)>=ROUND($.zzsybsbSbbdxxVO.zzssyyybnsr05_bdcfqdkjsb.bdcfqdkjsbGrid.bdcfqdkjsbGridlbVO[0].bqsjdjse1,2)",
+  "tips": "第5列应小于等于第1列加第4列"
+},{
+  "id": "06100101010202001",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..bqxsqkmxbGridlbVO[5].xse,2)<=ROUND($..bqxsqkmxbGridlbVO[0].xse+$..bqxsqkmxbGridlbVO[2].xse,2)",
+  "tips": "一般计税方法计税 即征即退货物及加工修理修配劳务 合计销售额 第6栏 不能大于 第1栏 加 第3栏"
+},{
+  "id": "06100101010202002",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..bqxsqkmxbGridlbVO[5].hjXxynse,2)<=ROUND($..bqxsqkmxbGridlbVO[0].hjXxynse+$..bqxsqkmxbGridlbVO[2].hjXxynse,2)",
+  "tips": "一般计税方法计税 即征即退货物及加工修理修配劳务 合计销项税额 第6栏 不能大于 第1栏 加 第3栏"
+},{
+  "id": "06100101010202003",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..bqxsqkmxbGridlbVO[6].xse,2)<=ROUND($..bqxsqkmxbGridlbVO[1].xse+$..bqxsqkmxbGridlbVO[3].xse+$..bqxsqkmxbGridlbVO[4].xse,2)",
+  "tips": "一般计税方法计税 即征即退服务、不动产和无形资产 合计销售额 第7栏 不能大于 第2栏 加 第4栏 加 第5栏"
+},{
+  "id": "06100101010202004",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..bqxsqkmxbGridlbVO[6].hjXxynse,2)<=ROUND($..bqxsqkmxbGridlbVO[1].hjXxynse+$..bqxsqkmxbGridlbVO[3].hjXxynse+$..bqxsqkmxbGridlbVO[4].hjXxynse,2)",
+  "tips": "一般计税方法计税 即征即退服务、不动产和无形资产 合计销项税额 第7栏 不能大于 第2栏 加 第4栏 加 第5栏"
+},{
+  "id": "06100101010201124",
+  "type": "01",
+  "desc": "",
+  "formula": "$..bqxsqkmxbGridlbVO[15].kjqtfpXxynse=ROUND(IF($..zzsybnsrsbInitData.kshztlzcdnsr=='Y',$..bqxsqkmxbGridlbVO[15].kjqtfpXse*$..zzsybnsrsbInitData.kshztlzcdnsrYzl,0),2)",
+  "tips": ""
+},{
+  "id": "06100101010202005",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..bqxsqkmxbGridlbVO[16].xse,2)<=ROUND($..bqxsqkmxbGridlbVO[7].xse+$..bqxsqkmxbGridlbVO[8].xse+$..bqxsqkmxbGridlbVO[9].xse+$..bqxsqkmxbGridlbVO[10].xse,2)",
+  "tips": "简易计税方法计税 即征即退货物及加工修理修配劳务 合计销售额 第14栏不能大于 第8栏 加 第9a栏 加 第10栏 加 第11栏"
+},{
+  "id": "06100101010202006",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..bqxsqkmxbGridlbVO[16].hjXxynse,2)<=ROUND($..bqxsqkmxbGridlbVO[7].hjXxynse+$..bqxsqkmxbGridlbVO[8].hjXxynse+$..bqxsqkmxbGridlbVO[21].hjXxynse+$..bqxsqkmxbGridlbVO[9].hjXxynse+$..bqxsqkmxbGridlbVO[10].hjXxynse,2)",
+  "tips": "简易计税方法计税 即征即退货物及加工修理修配劳务 合计销项税额 第14栏不能大于 第8栏 加 第9a栏 加 第10栏加 第11栏"
+},{
+  "id": "06100101010802001",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..gdzcjxsedkqkbformVO.zzszyfpJxse,2)>=0.00",
+  "tips": "增值税专用发票_当期申报抵扣的固定资产进项税额不能小于0"
+},{
+  "id": "06100101010802002",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..gdzcjxsedkqkbformVO.hgjkzzszyjksJxse,2)>=0",
+  "tips": "海关进口增值税专用缴款书_当期申报抵扣的固定资产进项税额不能小于0"
+},{
+  "id": "06100101010801004",
+  "type": "01",
+  "desc": "增值税专用发票当期申报抵扣的固定资产进项税额累计+海关进口增值税专用缴款书当期申报抵扣的固定资产进项税额累计",
+  "formula": "$..gdzcjxsedkqkbformVO.sbdqdgdzcjxseLjHj=$..gdzcjxsedkqkbformVO.zzszyfpJxselj+$..gdzcjxsedkqkbformVO.hgjkzzszyjksJxselj",
+  "tips": ""
+},{
+  "id": "06100101013302001001",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..zzsjmssbmxbjsxmGridlbVO[#].qcye,2)>=0",
+  "tips": "期初余额不能小于零"
+},{
+  "id": "06100101013302001002",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..zzsjmssbmxbjsxmGridlbVO[#].qcye,2)>0&&$..zzsjmssbmxbjsxmGridlbVO[#].hmc!=''||0>=ROUND($..zzsjmssbmxbjsxmGridlbVO[#].qcye,2)",
+  "target": "",
+  "tips": "期初余额大于零时，减税性质代码及名称不能为空"
+},{
+  "id": "06100101013302002001",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..zzsjmssbmxbjsxmGridlbVO[#].bqfse,2)>=0",
+  "tips": "本期发生额不能小于零"
+},{
+  "id": "06100101013302002002",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..zzsjmssbmxbjsxmGridlbVO[#].bqfse,2)>0&&$..zzsjmssbmxbjsxmGridlbVO[#].hmc!=''||0>=ROUND($..zzsjmssbmxbjsxmGridlbVO[#].bqfse,2)",
+  "target": "",
+  "tips": "本期发生额大于零时，减税性质代码及名称不能为空"
+},{
+  "id": "06100101013301006",
+  "type": "01",
+  "desc": "",
+  "formula": "$..zzsjmssbmxbjsxmGridlbVO[#].bqydjse=ROUND($..zzsjmssbmxbjsxmGridlbVO[#].qcye+$..zzsjmssbmxbjsxmGridlbVO[#].bqfse,2)",
+  "tips": ""
+},{
+  "id": "06100101013302003001",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..zzsjmssbmxbjsxmGridlbVO[#].bqydjse,2)>=0",
+  "tips": "本期应抵减税额不能小于零"
+},{
+  "id": "06100101013302003002",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..zzsjmssbmxbjsxmGridlbVO[#].bqydjse,2)>0&&$..zzsjmssbmxbjsxmGridlbVO[#].hmc!=''||0>=ROUND($..zzsjmssbmxbjsxmGridlbVO[#].bqydjse,2)",
+  "target": "",
+  "tips": "本期应抵减税额大于零时，减税性质代码及名称不能为空"
+},{
+  "id": "06100101013302004001",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..zzsjmssbmxbjsxmGridlbVO[#].bqsjdjse,2)<=ROUND($..zzsjmssbmxbjsxmGridlbVO[#].bqydjse,2)&&ROUND($..zzsjmssbmxbjsxmGridlbVO[#].bqsjdjse,2)>=0",
+  "tips": "本期实际抵减税额不能小于零且不能大于本期应抵减税额"
+},{
+  "id": "06100101013302004002",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..zzsjmssbmxbjsxmGridlbVO[#].bqsjdjse,2)>0&&$..zzsjmssbmxbjsxmGridlbVO[#].hmc!=''||0>=ROUND($..zzsjmssbmxbjsxmGridlbVO[#].bqsjdjse,2)",
+  "target": "",
+  "tips": "本期实际抵减税额大于零时，减税性质代码及名称不能为空"
+},{
+  "id": "06100101013301007",
+  "type": "01",
+  "desc": "",
+  "formula": "$..zzsjmssbmxbjsxmGridlbVO[#].qmye=ROUND($..zzsjmssbmxbjsxmGridlbVO[#].bqydjse-$..zzsjmssbmxbjsxmGridlbVO[#].bqsjdjse,2)",
+  "tips": ""
+},{
+  "id": "06100101013302005001",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..zzsjmssbmxbmsxmGrid.ckmzzzsxmxse,2)>=0",
+  "tips": "出口免税 的 免征增值税项目销售额不能小于零"
+},{
+  "id": "06100101013302005002",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..zzsjmssbmxbmsxmGrid.kjmzzzsxmxse,2)>=0",
+  "tips": "跨境服务 的 免征增值税项目销售额不能小于零"
+},{
+  "id": "06100101013302006001",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO[#].mzzzsxmxse,2)>=0",
+  "tips": "免征增值税项目销售额不能小于零"
+},{
+  "id": "06100101013302006002",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO[#].mzzzsxmxse,2)>0&&$..zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO[#].hmc!=''||0>=ROUND($..zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO[#].mzzzsxmxse,2)",
+  "target": "",
+  "tips": "免征增值税项目销售额大于零时，免税性质代码及名称不能为空。"
+},{
+  "id": "06100101013302007001",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO[#].bqsjkcje,2)>=0",
+  "tips": "免税销售额扣除项目本期实际扣除金额不能小于零"
+},{
+  "id": "06100101013302007002",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO[#].bqsjkcje,2)>0&&$..zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO[#].hmc!=''||0>=ROUND($..zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO[#].bqsjkcje,2)",
+  "target": "",
+  "tips": "免税销售额扣除项目本期实际扣除金额大于零时，免税性质代码及名称不能为空"
+},{
+  "id": "06100101013301013",
+  "type": "01",
+  "desc": "",
+  "formula": "$..zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO[#].kchmsxse=ROUND($..zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO[#].mzzzsxmxse-$..zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO[#].bqsjkcje,2)",
+  "tips": ""
+},{
+  "id": "06100101013302008001",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO[#].kchmsxse,2)>=0",
+  "tips": "扣除后免税销售额不能小于零"
+},{
+  "id": "06100101013302008002",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO[#].kchmsxse,2)>0&&$..zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO[#].hmc!=''||0>=ROUND($..zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO[#].kchmsxse,2)",
+  "target": "",
+  "tips": "扣除后免税销售额大于零时，免税性质代码及名称不能为空。"
+},{
+  "id": "06100101013302009001",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO[#].msxsedyjxse,2)>=0",
+  "tips": "免税销售额对应的进项税额不能小于零"
+},{
+  "id": "06100101013302009002",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO[#].msxsedyjxse,2)>0&&$..zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO[#].hmc!=''||0>=ROUND($..zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO[#].msxsedyjxse,2)",
+  "target": "",
+  "tips": "免税销售额对应的进项税额大于零时，免税性质代码及名称不能为空。"
+},{
+  "id": "06100101013601017",
+  "type": "01",
+  "desc": "",
+  "formula": "$..ygzsffxcsmxbGridlbVO[#].zzsxxynse=ROUND($..ygzsffxcsmxbGridlbVO[#].zzsbhsxse*$..ygzsffxcsmxbGridlbVO[#].zzsslhzsl,2)",
+  "tips": ""
+},{
+  "id": "06100101013601018",
+  "type": "01",
+  "desc": "",
+  "formula": "$..ygzsffxcsmxbGridlbVO[#].zzsjshj=ROUND($..ygzsffxcsmxbGridlbVO[#].zzsbhsxse+$..ygzsffxcsmxbGridlbVO[#].zzsxxynse,2)",
+  "tips": ""
+},{
+  "id": "06100101013601019",
+  "type": "01",
+  "desc": "",
+  "formula": "$..ygzsffxcsmxbGridlbVO[#].zzskchhsxse=ROUND($..ygzsffxcsmxbGridlbVO[#].zzsjshj-$..ygzsffxcsmxbGridlbVO[#].zzsbqsjkcje,2)",
+  "tips": ""
+},{
+  "id": "06100101013601020",
+  "type": "01",
+  "desc": "",
+  "formula": "$..ygzsffxcsmxbGridlbVO[#].zzskchxxynse=ROUND($..ygzsffxcsmxbGridlbVO[#].zzskchhsxse/(1+$..ygzsffxcsmxbGridlbVO[#].zzsslhzsl)*$..ygzsffxcsmxbGridlbVO[#].zzsslhzsl,2)",
+  "tips": ""
+},{
+  "id": "06100101013601021",
+  "type": "01",
+  "desc": "",
+  "formula": "$..ygzsffxcsmxbGridlbVO[#].yysbqykcje=ROUND($..ygzsffxcsmxbGridlbVO[#].yysqcye+$..ygzsffxcsmxbGridlbVO[#].yysbqfse,2)",
+  "tips": ""
+},{
+  "id": "06100101013602003",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..ygzsffxcsmxbGridlbVO[#].yysbqsjkcje-$..ygzsffxcsmxbGridlbVO[#].zzsjshj,2)<=0&&ROUND($..ygzsffxcsmxbGridlbVO[#].yysbqsjkcje-$..ygzsffxcsmxbGridlbVO[#].yysbqykcje,2)<=0",
+  "tips": "11≤3且11≤10）"
+},{
+  "id": "06100101013601022",
+  "type": "01",
+  "desc": "",
+  "formula": "$..ygzsffxcsmxbGridlbVO[#].yysqmye=ROUND($..ygzsffxcsmxbGridlbVO[#].yysbqykcje-$..ygzsffxcsmxbGridlbVO[#].yysbqsjkcje,2)",
+  "tips": ""
+},{
+  "id": "06100101013601024",
+  "type": "01",
+  "desc": "",
+  "formula": "$..ygzsffxcsmxbGridlbVO[#].yysysyye=ROUND($..ygzsffxcsmxbGridlbVO[#].zzsjshj-$..ygzsffxcsmxbGridlbVO[#].yysbqsjkcje,2)",
+  "tips": ""
+},{
+  "id": "06100101013601023",
+  "type": "01",
+  "desc": "",
+  "formula": "$..ygzsffxcsmxbGridlbVO[#].yysynse=ROUND($..ygzsffxcsmxbGridlbVO[#].yysysyye*$..ygzsffxcsmxbGridlbVO[#].yyssl,2)",
+  "tips": ""
+},{
+  "id": "06100101013501003",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为本行金额*17%税率的值",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[1].se=ROUND($..bqdkjxsejgmxbGridlbVO[1].je*0.17,2)",
+  "tips": ""
+},{
+  "id": "06100101013501004",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为本行金额*17%税率的值",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[2].se=ROUND($..bqdkjxsejgmxbGridlbVO[2].je*0.17,2)",
+  "tips": ""
+},{
+  "id": "06100101013501005",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为本行金额*13%税率的值",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[3].se=ROUND($..bqdkjxsejgmxbGridlbVO[3].je*0.13,2)",
+  "tips": ""
+},{
+  "id": "06100101013501006",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为本行金额*11%税率的值。",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[4].se=ROUND($..bqdkjxsejgmxbGridlbVO[4].je*0.11,2)",
+  "tips": ""
+},{
+  "id": "06100101013501007",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为本行金额*11%税率的值",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[5].se=ROUND($..bqdkjxsejgmxbGridlbVO[5].je*0.11,2)",
+  "tips": ""
+},{
+  "id": "06100101013501008",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为本行金额*11%税率的值",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[6].se=ROUND($..bqdkjxsejgmxbGridlbVO[6].je*0.11,2)",
+  "tips": ""
+},{
+  "id": "06100101013501009",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为本行金额*11%税率的值",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[7].se=ROUND($..bqdkjxsejgmxbGridlbVO[7].je*0.11,2)",
+  "tips": ""
+},{
+  "id": "06100101013501010",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为本行金额*11%税率的值",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[8].se=ROUND($..bqdkjxsejgmxbGridlbVO[8].je*0.11,2)",
+  "tips": ""
+},{
+  "id": "06100101013501011",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为本行金额*11%税率的值",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[9].se=ROUND($..bqdkjxsejgmxbGridlbVO[9].je*0.11,2)",
+  "tips": ""
+},{
+  "id": "06100101013501012",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为本行金额*6%税率的值",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[10].se=ROUND($..bqdkjxsejgmxbGridlbVO[10].je*0.06,2)",
+  "tips": ""
+},{
+  "id": "061001010135501013",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为本行金额*6%税率的值",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[11].se=ROUND($..bqdkjxsejgmxbGridlbVO[11].je*0.06,2)",
+  "tips": ""
+},{
+  "id": "061001010135501014",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为本行金额*6%税率的值",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[12].se=ROUND($..bqdkjxsejgmxbGridlbVO[12].je*0.06,2)",
+  "tips": ""
+},{
+  "id": "061001010135501015",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为本行金额*6%税率的值",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[13].se=ROUND($..bqdkjxsejgmxbGridlbVO[13].je*0.06,2)",
+  "tips": ""
+},{
+  "id": "061001010135501016",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为本行金额*6%税率的值",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[14].se=ROUND($..bqdkjxsejgmxbGridlbVO[14].je*0.06,2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "061001010135501017",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为本行金额*5%税率的值。",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[15].se=ROUND($..bqdkjxsejgmxbGridlbVO[15].je*0.05,2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "061001010135501018",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为本行金额*5%税率的值",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[16].se=ROUND($..bqdkjxsejgmxbGridlbVO[16].je*0.05,2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "061001010135501019",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为本行金额*3%税率的值。",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[17].se=ROUND($..bqdkjxsejgmxbGridlbVO[17].je*0.03,2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "061001010135501020",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为本行金额*3%税率的值",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[18].se=ROUND($..bqdkjxsejgmxbGridlbVO[18].je*0.03,2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "061001010135501021",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为本行金额*3%税率的值",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[19].se=ROUND($..bqdkjxsejgmxbGridlbVO[19].je*0.03,2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101013501022",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为本行金额*3%税率的值",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[20].se=ROUND($..bqdkjxsejgmxbGridlbVO[20].je*0.03,2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101013501023",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为本行金额*3%税率的值",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[21].se=ROUND($..bqdkjxsejgmxbGridlbVO[21].je*0.03,2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101013501024",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为本行金额*3%税率的值",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[22].se=ROUND($..bqdkjxsejgmxbGridlbVO[22].je*0.03,2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101013501025",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为本行金额*3%税率的值",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[23].se=ROUND($..bqdkjxsejgmxbGridlbVO[23].je*0.03,2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101013501026",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为本行金额*3%税率的值",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[24].se=ROUND($..bqdkjxsejgmxbGridlbVO[24].je*0.03,2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101013501027",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为本行金额*3%税率的值",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[25].se=ROUND($..bqdkjxsejgmxbGridlbVO[25].je*0.03,2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101013501028",
+  "type": "01",
+  "desc": "自动带出，不可修改。带出的值为本行金额*1.5%税率的值",
+  "formula": "$..bqdkjxsejgmxbGridlbVO[26].se=ROUND($..bqdkjxsejgmxbGridlbVO[26].je*0.015,2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101013502001",
+  "type": "12",
+  "desc": "本栏“税额”列=《附列资料（二）》第12栏“税额”列-《附列资料（二）》第10栏“税额”列-《附列资料（二）》第11栏“税额”列",
+  "formula": "ROUND($..bqdkjxsejgmxbGridlbVO[0].se,2)==ROUND($..bqjxsemxbGridlbVO[11].se-$..bqjxsemxbGridlbVO[9].se-$..bqjxsemxbGridlbVO[10].se,2)",
+  "target": "",
+  "tips": "《本期抵扣进项税额结构明细表》第一栏“税额”列=《附列资料（二）》第12栏“税额”列-《附列资料（二）》第10栏“税额”列-《附列资料（二）》第11栏“税额”列。"
+},{
+  "id": "06100101013502002",
+  "type": "12",
+  "desc": "",
+  "formula": "ROUND($..bqdkjxsejgmxbGridlbVO[1].je,2)>=ROUND($..bqdkjxsejgmxbGridlbVO[2].je,2)",
+  "target": "",
+  "tips": "第2栏金额必须大于等于第3栏有形动产租赁的进项金额"
+},{
+  "id": "06100101013502003",
+  "type": "12",
+  "desc": "",
+  "formula": "ROUND($..bqdkjxsejgmxbGridlbVO[1].se,2)>=ROUND($..bqdkjxsejgmxbGridlbVO[2].se,2)",
+  "target": "",
+  "tips": "第2栏税额应大于等于第3栏有形动产租赁17%税率的进项税额。"
+},{
+  "id": "06100101013502004",
+  "type": "12",
+  "desc": "",
+  "formula": "ROUND($..bqdkjxsejgmxbGridlbVO[4].je,2)>=ROUND($..bqdkjxsejgmxbGridlbVO[5].je+$..bqdkjxsejgmxbGridlbVO[6].je+$..bqdkjxsejgmxbGridlbVO[7].je+$..bqdkjxsejgmxbGridlbVO[8].je+$..bqdkjxsejgmxbGridlbVO[9].je,2)",
+  "target": "",
+  "tips": "第5栏金额必须大于或等于第6栏运输服务、第7栏电信服务、第8栏建筑安装服务、第9栏不动产租赁服务、第10栏受让土地使用权的进项金额合计的值"
+},{
+  "id": "06100101013502005",
+  "type": "12",
+  "desc": "",
+  "formula": "ROUND($..bqdkjxsejgmxbGridlbVO[4].se,2)>=ROUND($..bqdkjxsejgmxbGridlbVO[5].se+$..bqdkjxsejgmxbGridlbVO[6].se+$..bqdkjxsejgmxbGridlbVO[7].se+$..bqdkjxsejgmxbGridlbVO[8].se+$..bqdkjxsejgmxbGridlbVO[9].se,2)",
+  "target": "",
+  "tips": "第5栏税额应大于等于第6栏运输服务、第7栏电信服务、第8栏建筑安装服务、第9栏不动产租赁服务、第10栏受让土地使用权的进项税额合计的值"
+},{
+  "id": "06100101013502006",
+  "type": "12",
+  "desc": "",
+  "formula": "ROUND($..bqdkjxsejgmxbGridlbVO[10].je,2)>=ROUND($..bqdkjxsejgmxbGridlbVO[11].je+$..bqdkjxsejgmxbGridlbVO[12].je+$..bqdkjxsejgmxbGridlbVO[13].je+$..bqdkjxsejgmxbGridlbVO[14].je,2)",
+  "target": "",
+  "tips": "第11栏金额必须大于或等于第12栏电信服务、第13栏金融保险服务、第14栏生活服务、第15栏取得无形资产金额合计的值。"
+},{
+  "id": "06100101013502007",
+  "type": "12",
+  "desc": "",
+  "formula": "ROUND($..bqdkjxsejgmxbGridlbVO[10].se,2)>=ROUND($..bqdkjxsejgmxbGridlbVO[11].se+$..bqdkjxsejgmxbGridlbVO[12].se+$..bqdkjxsejgmxbGridlbVO[13].se+$..bqdkjxsejgmxbGridlbVO[14].se,2)",
+  "target": "",
+  "tips": "第11栏税额必须大于或等于第12栏电信服务、第13栏金融保险服务、第14栏生活服务、第15栏取得无形资产税额合计的值。"
+},{
+  "id": "06100101013502008",
+  "type": "12",
+  "desc": "",
+  "formula": "ROUND($..bqdkjxsejgmxbGridlbVO[15].je,2)>=ROUND($..bqdkjxsejgmxbGridlbVO[16].je,2)",
+  "target": "",
+  "tips": "第16栏金额必须大于或等于第17栏不动产租赁服务的进项金额的值"
+},{
+  "id": "06100101013502009",
+  "type": "12",
+  "desc": "",
+  "formula": "ROUND($..bqdkjxsejgmxbGridlbVO[15].se,2)>=ROUND($..bqdkjxsejgmxbGridlbVO[16].se,2)",
+  "target": "",
+  "tips": "第16栏税额必须大于或等于第17栏不动产租赁服务的进项税额的值"
+},{
+  "id": "06100101013502010",
+  "type": "12",
+  "desc": "",
+  "formula": "ROUND($..bqdkjxsejgmxbGridlbVO[17].je,2)>=ROUND($..bqdkjxsejgmxbGridlbVO[18].je+$..bqdkjxsejgmxbGridlbVO[19].je+$..bqdkjxsejgmxbGridlbVO[20].je+$..bqdkjxsejgmxbGridlbVO[21].je+$..bqdkjxsejgmxbGridlbVO[22].je+$..bqdkjxsejgmxbGridlbVO[23].je+$..bqdkjxsejgmxbGridlbVO[24].je+$..bqdkjxsejgmxbGridlbVO[25].je,2)",
+  "target": "",
+  "tips": "第18栏金额必须大于或等于第19栏货物及加工、修理修配劳务、第20栏运输服务、第21栏电信服务、第22栏建筑安装服务、第23栏金融保险服务、第24栏有形动产租赁服务、第25栏生活服务、第26栏取得无形资产的进项金额的值"
+},{
+  "id": "06100101013502011",
+  "type": "12",
+  "desc": "",
+  "formula": "ROUND($..bqdkjxsejgmxbGridlbVO[17].se,2)>=ROUND($..bqdkjxsejgmxbGridlbVO[18].se+$..bqdkjxsejgmxbGridlbVO[19].se+$..bqdkjxsejgmxbGridlbVO[20].se+$..bqdkjxsejgmxbGridlbVO[21].se+$..bqdkjxsejgmxbGridlbVO[22].se+$..bqdkjxsejgmxbGridlbVO[23].se+$..bqdkjxsejgmxbGridlbVO[24].se+$..bqdkjxsejgmxbGridlbVO[25].se,2)",
+  "target": "",
+  "tips": "第18栏税额必须大于或等于第19栏货物及加工、修理修配劳务、第20栏运输服务、第21栏电信服务、第22栏建筑安装服务、第23栏金融保险服务、第24栏有形动产租赁服务、第25栏生活服务、第26栏取得无形资产的进项税额的值"
+},{
+  "id": "06100101013601025",
+  "type": "01",
+  "desc": "",
+  "formula": "$..ygzsffxcsmxbGridlbVO[#].zzsynse=ROUND(IF($..ygzsffxcsmxbGridlbVO[#].zzsslhzsl<0.06,$..ygzsffxcsmxbGridlbVO[#].zzskchxxynse,IF(($..zbGridlbVO[0].xxse+$..zbGridlbVO[2].xxse)!=0,$..ygzsffxcsmxbGridlbVO[#].zzskchxxynse/($..zbGridlbVO[0].xxse+$..zbGridlbVO[2].xxse)*($..zbGridlbVO[0].ynse+$..zbGridlbVO[2].ynse),0)),2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101013601026",
+  "type": "01",
+  "desc": "11 应等于 3 与 10 中较小的",
+  "formula": "$..ygzsffxcsmxbGridlbVO[#].yysbqsjkcje=MIN($..ygzsffxcsmxbGridlbVO[#].zzsjshj,$..ygzsffxcsmxbGridlbVO[#].yysbqykcje)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101013302001003",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..zzsjmssbmxbjsxmGrid.bqsjdjseHj,2)==ROUND($..zbGridlbVO[0].ynsejze,2)",
+  "target": "",
+  "tips": "“增值税减免税申报明细表“减税项目”的 本期实际抵减税额合计 应等于 主表第23行“一般项目”列“本月数”。"
+},{
+  "id": "06100101010102004",
+  "type": "12",
+  "desc": "",
+  "formula": "ROUND($..zbGridlbVO[0].msxse,2)>=ROUND($..zbGridlbVO[0].mshwxse+$..zbGridlbVO[0].mslwxse,2)",
+  "target": "",
+  "tips": "第8栏 免税销售额 应大于等于第9栏(其中:免税货物销售额)+第10栏(免税劳务销售额)之和"
+},{
+  "id": "06100101010602003",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..bqjxsemxbGridlbVO[22].se,2)>=ROUND($.zzsybsbSbbdxxVO.zzssyyybnsr05_bdcfqdkjsb.bdcfqdkjsbGrid.bdcfqdkjsbGridlbVO[0].bqsjdjse,2)",
+  "target": "",
+  "tips": "附表五 第4列应小于等于附表二 第23栏税额"
+},{
+  "id": "06100101013301015",
+  "type": "01",
+  "desc": "等于每一个新增的“免税性质代码及名称”的【扣除后免税销售额】*【适用税率】（保留小数点后2两位）-第10栏的【免税销售额对应的进项税额】",
+  "formula": "$..zzsjmssbmxbmsxmGridlbVO[#].mse=ROUND($..zzsjmssbmxbmsxmGridlbVO[#].kchmsxse*$..zzsjmssbmxbmsxmGridlbVO[#].sysl-$..zzsjmssbmxbmsxmGridlbVO[#].msxsedyjxse,2)",
+  "target": "",
+  "tips": ""
+},{
+  "id": "06100101013602001",
+  "type": "12",
+  "desc": "",
+  "formula": "-1<=ROUND($..ygzsffxcsmxbGrid.zzsjshjHj-($..bqxsqkmxbGridlbVO[1].jshj+$..bqxsqkmxbGridlbVO[3].jshj+$..bqxsqkmxbGridlbVO[4].jshj+$..bqxsqkmxbGridlbVO[9].jshj+$..bqxsqkmxbGridlbVO[12].jshj+$..bqxsqkmxbGridlbVO[13].jshj+$..bqxsqkmxbGridlbVO[14].jshj),2)&&ROUND($..ygzsffxcsmxbGrid.zzsjshjHj-($..bqxsqkmxbGridlbVO[1].jshj+$..bqxsqkmxbGridlbVO[3].jshj+$..bqxsqkmxbGridlbVO[4].jshj+$..bqxsqkmxbGridlbVO[9].jshj+$..bqxsqkmxbGridlbVO[12].jshj+$..bqxsqkmxbGridlbVO[13].jshj+$..bqxsqkmxbGridlbVO[14].jshj),2)<=1",
+  "target": "",
+  "tips": "营改增税负分析测算明细表合计行的第 3 列： “价税合计”必须等于《增值税纳税申报表附列资料（一）》（本期销售情况明细）第11列“价税合计”第2＋4＋5＋9b＋12＋13a＋13b行"
+},{
+  "id": "06100101013602002",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..zzsbqsjkcjeHj,2)==ROUND($..bqxsqkmxbGridlbVO[1].ysfwkcxmbqsjkcje+$..bqxsqkmxbGridlbVO[3].ysfwkcxmbqsjkcje+$..bqxsqkmxbGridlbVO[4].ysfwkcxmbqsjkcje+$..bqxsqkmxbGridlbVO[9].ysfwkcxmbqsjkcje+$..bqxsqkmxbGridlbVO[12].ysfwkcxmbqsjkcje+$..bqxsqkmxbGridlbVO[13].ysfwkcxmbqsjkcje+$..bqxsqkmxbGridlbVO[14].ysfwkcxmbqsjkcje,2)",
+  "target": "",
+  "tips": "营改增税负分析测算明细表合计行的第 4 列“ : “服务、不动产和无形资产扣除项目本期实际扣除金额” 必须等于 《增值税纳税申报表附列资料（一）》（本期销售情况明细）第12列“服务、不动产和无形资产扣除项目本期实际扣除金额”第2＋4＋5＋9b＋12＋13a＋13b行"
+},{
+  "id": "06100101013700006",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..wspzdkjqddkdjGrid.seHj,2)==ROUND($..bqjxsemxbGridlbVO[6].se,2)",
+  "tips": "《完税凭证抵扣（减）清单》“代扣代缴合计”栏数据中的“税额”应等于《增值税纳税申报表附列资料（二）》第7栏“税额”"
+},{
+  "id": "06100101013700008",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..wspzdkjqdyzjnskGrid.seHj,2)==ROUND($..bqjxsemxbGridlbVO[2].bqfse+$..bqjxsemxbGridlbVO[3].bqfse+$..bqjxsemxbGridlbVO[4].bqfse,2)",
+  "tips": "《完税凭证抵扣（减）清单》“预征缴纳税款合计”应等于《增值税纳税申报表附列资料（四）》（税额抵减情况表）第3-5行第2列“本期发生额”之和。"
+},{
+  "id": "06100101013800006",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..fwbdchwxzckcxmqdGrid.jeHj,2)==ROUND($..ysfwkcxmmxGridlbVO[0].bqfse+$..ysfwkcxmmxGridlbVO[1].bqfse+$..ysfwkcxmmxGridlbVO[2].bqfse+$..ysfwkcxmmxGridlbVO[3].bqfse+$..ysfwkcxmmxGridlbVO[4].bqfse+$..ysfwkcxmmxGridlbVO[5].bqfse+$..ysfwkcxmmxGridlbVO[6].bqfse+$..ysfwkcxmmxGridlbVO[7].bqfse,2)",
+  "tips": "《服务、不动产和无形资产扣除项目清单》“金额”合计栏应等于附列资料（三）第3列各栏合计数。"
+},{
+  "id": "06100101013800007",
+  "type": "02",
+  "desc": "",
+  "formula": "$..fwbdchwxzckcxmqdGridlb[#].pzzl=='001'&&$..fwbdchwxzckcxmqdGridlb[#].kpfnsrsbh!=''||$..fwbdchwxzckcxmqdGridlb[#].pzzl!='001'",
+  "tips": "当第3列“凭证种类”为“发票”的，该列必须填写开票方纳税人识别号。"
+},{
+  "id": "06100101013800009",
+  "type": "02",
+  "desc": "",
+  "formula": "$..fwbdchwxzckcxmqdGridlb[#].ysxwmc=='01'&&$..fwbdchwxzckcxmqdGridlb[#].pzzl=='004'||$..fwbdchwxzckcxmqdGridlb[#].ysxwmc=='07'&&$..fwbdchwxzckcxmqdGridlb[#].pzzl=='004'||$..fwbdchwxzckcxmqdGridlb[#].ysxwmc!='01'&&$..fwbdchwxzckcxmqdGridlb[#].ysxwmc!='07'",
+  "tips": "应税行为名称为“经纪代理服务”或“一般计税的销售房地产项目”，凭证种类只能为“财政票据”。"
+},{
+  "id": "06100101013800010",
+  "type": "02",
+  "desc": "",
+  "formula": "$..fwbdchwxzckcxmqdGridlb[#].pzzl=='001'&&$..fwbdchwxzckcxmqdGridlb[#].fpdm!=''||$..fwbdchwxzckcxmqdGridlb[#].pzzl!='001'",
+  "tips": "“凭证种类”为“发票”的，则“发票代码”为必填"
+},{
+  "id": "06100101013800011",
+  "type": "02",
+  "desc": "",
+  "formula": "$..fwbdchwxzckcxmqdGridlb[#].pzzl=='001'&&$..fwbdchwxzckcxmqdGridlb[#].fphm!=''||$..fwbdchwxzckcxmqdGridlb[#].pzzl!='001'",
+  "tips": "“凭证种类”为“发票”的，则“发票号码”为必填"
+},{
+  "id": "06100101013800013",
+  "type": "02",
+  "desc": "",
+  "formula": "$..fwbdchwxzckcxmqdGridlb[#].ysxwmc=='09'&&$..fwbdchwxzckcxmqdGridlb[#].kpfnsrsbh==''&&$..fwbdchwxzckcxmqdGridlb[#].kpfdwmc==''&&($..fwbdchwxzckcxmqdGridlb[#].pzzl==''||$..fwbdchwxzckcxmqdGridlb[#].pzzl==null)&&$..fwbdchwxzckcxmqdGridlb[#].fpdm==''&&$..fwbdchwxzckcxmqdGridlb[#].fphm==''||$..fwbdchwxzckcxmqdGridlb[#].ysxwmc!='09'",
+  "tips": "当应税行为名称为“金融商品转让”时，第1-5列不允许填写 "
+},{
+  "id": "06100101010303001",
+  "type": "13",
+  "desc": "辅导期一般纳税人录入",
+  "formula": "$..zzsybnsrsbInitData.rdzg=='1'",
+  "target": "$.zzsybsbSbbdxxVO.zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[2].fs:readonly;$.zzsybsbSbbdxxVO.zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[2].je:readonly;$.zzsybsbSbbdxxVO.zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[2].se:readonly;$.zzsybsbSbbdxxVO.zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[2].fs:background-color=#f1edee;$.zzsybsbSbbdxxVO.zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[2].je:background-color=#f1edee;$.zzsybsbSbbdxxVO.zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[2].se:background-color=#f1edee;",
+  "tips": ""
+},{
+  "id": "06100101010202007",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..bqxsqkmxbGridlbVO[17].xse,2)<=ROUND($..bqxsqkmxbGridlbVO[12].xse+$..bqxsqkmxbGridlbVO[9].xse,2)",
+  "tips": "附表一第15行第9列应小于等于附表一第12行第9列  + 附表一第9b行第9列"
+},{
+  "id": "06100101010202008",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..bqxsqkmxbGridlbVO[17].hjXxynse,2)<=ROUND($..bqxsqkmxbGridlbVO[12].hjXxynse+$..bqxsqkmxbGridlbVO[9].hjXxynse,2)",
+  "tips": "附表一第15行第10列应小于等于附表一第12行第10列  + 附表一第9b行第10列"
+},{
+  "id": "06100101010313001",
+  "type": "13",
+  "desc": "",
+  "formula": "$..sjlybz=='02'",
+  "target": "$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[20].se:readwrite;$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[20].se:background-color=#ffffff;$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[20].se:border=1px solid #fff;$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[21].se:readwrite;$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[21].se:background-color=#ffffff;$..zzssyyybnsr02_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO[21].se:border=1px solid #fff;",
+  "tips": ""
+},{
+  "id": "06100101010202009",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..bqxsqkmxbGridlbVO[17].kchXxynse,2)<=ROUND($..bqxsqkmxbGridlbVO[12].kchXxynse+$..bqxsqkmxbGridlbVO[9].kchXxynse,2)",
+  "tips": "附表一第15行第14列数值应小于等于本表第12行第14列+第9b行第14列之和 "
+},{
+  "id": "06100101012600006",
+  "type": "02",
+  "desc": "",
+  "formula": "($..dkdjsstyjksdkqdGridlb[#].dkdjpzbh).indexOf('<')<0&&($..dkdjsstyjksdkqdGridlb[#].dkdjpzbh).indexOf('>')<0&&($..dkdjsstyjksdkqdGridlb[#].dkdjpzbh).indexOf('@')<0",
+  "tips": "存在不能识别的字符，请重新输入！"
+},{
+  "id": "06100101012600010",
+  "type": "02",
+  "desc": "",
+  "formula": "($..dkdjsstyjksdkqdGridlb[#].kjrnsrsbh).indexOf('<')<0&&($..dkdjsstyjksdkqdGridlb[#].kjrnsrsbh).indexOf('>')<0&&($..dkdjsstyjksdkqdGridlb[#].kjrnsrsbh).indexOf('@')<0",
+  "tips": "存在不能识别的字符，请重新输入！"
+},{
+  "id": "06100101012600011",
+  "type": "02",
+  "desc": "",
+  "formula": "($..dkdjsstyjksdkqdGridlb[#].kjrnsrsbh).length>=15&&($..dkdjsstyjksdkqdGridlb[#].kjrnsrsbh).length<=20||($..dkdjsstyjksdkqdGridlb[#].kjrnsrsbh).length==0",
+  "tips": "[扣缴纳税人识别号]只能为15-20位字符！"
+},{
+  "id": "06100101011800005",
+  "type": "02",
+  "desc": "",
+  "formula": "IF($..hgwspzdklsjGridlbVO[#].Jybz>0&&$..hgwspzdklsjGridlbVO[#].hgwspzhm=='',false,true)",
+  "tips": "[专用缴款书号]不能为空！"
+},{
+  "id": "06100101011800006",
+  "type": "02",
+  "desc": "",
+  "formula": "IF($..hgwspzdklsjGridlbVO[#].Jybz>0&&$..hgwspzdklsjGridlbVO[#].jkkaDm=='',false,true)",
+  "tips": "[进口口岸代码]不能为空！"
+},{
+  "id": "06100101011800007",
+  "type": "02",
+  "desc": "",
+  "formula": "IF($..hgwspzdklsjGridlbVO[#].Jybz>0&&$..hgwspzdklsjGridlbVO[#].tfrq=='',false,true)",
+  "tips": "[填发日期]不能为空！"
+},{
+  "id": "06100101011800008",
+  "type": "02",
+  "desc": "",
+  "formula": "$..hgwspzdklsjGridlbVO[#].se>=0",
+  "tips": "[税额]不能为负数"
+},{
+  "id": "06100101011700005",
+  "type": "01",
+  "desc": "",
+  "formula": "$..dkqdGrid.dkqdGridlbVO[#].jsdkdjxse=ROUND($..dkqdGrid.dkqdGridlbVO[#].jsdkYfje*0.11,2)",
+  "tips": ""
+},{
+  "id": "06100101011700009",
+  "type": "02",
+  "desc": "",
+  "formula": "IF($..glysqd_dkqdGridlbVO[#].Jybz>0&&$..glysqd_dkqdGridlbVO[#].fphm=='',false,true)",
+  "tips": "[公路运输_发票号码]不能为空！"
+},{
+  "id": "06100101011700011",
+  "type": "02",
+  "desc": "",
+  "formula": "IF($..glysqd_dkqdGridlbVO[#].Jybz>0&&$..glysqd_dkqdGridlbVO[#].kprq=='',false,true)",
+  "tips": "[公路运输_开票日期]不能为空！"
+},{
+  "id": "06100101011700012",
+  "type": "02",
+  "desc": "",
+  "formula": "IF($..glysqd_dkqdGridlbVO[#].Jybz>0&&$..glysqd_dkqdGridlbVO[#].ysdwMc=='',false,true)",
+  "tips": "[公路运输_运输单位名称]不能为空！"
+},{
+  "id": "06100101011700014",
+  "type": "02",
+  "desc": "",
+  "formula": "IF($..glysqd_dkqdGridlbVO[#].Jybz>0&&$..glysqd_dkqdGridlbVO[#].ysdwNsrsbh=='',false,true)",
+  "tips": "[公路运输_运输单位纳税人识别号]不能为空！"
+},{
+  "id": "06100101011700042",
+  "type": "02",
+  "desc": "",
+  "formula": "($..glysqd_dkqdGridlbVO[#].ysdwNsrsbh).length>=15&&($..glysqd_dkqdGridlbVO[#].ysdwNsrsbh).length<=20||$..glysqd_dkqdGridlbVO[#].ysdwNsrsbh==''",
+  "tips": "运输单位纳税人识别号长度为15-20位"
+},{
+  "id": "06100101011700016",
+  "type": "02",
+  "desc": "",
+  "formula": "IF($..glysqd_dkqdGridlbVO[#].Jybz>0&&$..glysqd_dkqdGridlbVO[#].ysdwZgdfswjmc=='',false,true)",
+  "tips": "[公路运输_运输单位主管地方税务局名称]不能为空！"
+},{
+  "id": "06100101011700018",
+  "type": "02",
+  "desc": "",
+  "formula": "($..glysqd_dkqdGridlbVO[#].ysdwZgdfswjDm).length<=11",
+  "tips": "[公路运输_运输单位主管地方税务局代码]长度不能超过11位！"
+},{
+  "id": "06100101011700044",
+  "type": "02",
+  "desc": "",
+  "formula": "IF($..glysqd_dkqdGridlbVO[#].Jybz>0&&$..glysqd_dkqdGridlbVO[#].ysdwZgdfswjDm=='',false,true)",
+  "tips": "[公路运输_运输单位主管地方税务局代码]不能为空！"
+},{
+  "id": "06100101011700020",
+  "type": "01",
+  "desc": "",
+  "formula": "$..dkqdGrid.glysqd_dkqdGridlbVO[#].jsdkdjxse=ROUND($..dkqdGrid.glysqd_dkqdGridlbVO[#].jsdkYfje*0.11,2)",
+  "tips": ""
+},{
+  "id": "06100101011700024",
+  "type": "02",
+  "desc": "",
+  "formula": "IF($..nhysqd_dkqdGridlbVO[#].Jybz>0&&$..nhysqd_dkqdGridlbVO[#].fphm=='',false,true)",
+  "tips": "[内河运输_发票号码]不能为空！"
+},{
+  "id": "06100101011700026",
+  "type": "02",
+  "desc": "",
+  "formula": "IF($..nhysqd_dkqdGridlbVO[#].Jybz>0&&$..nhysqd_dkqdGridlbVO[#].kprq=='',false,true)",
+  "tips": "[内河运输_开票日期]不能为空！"
+},{
+  "id": "06100101011700027",
+  "type": "02",
+  "desc": "",
+  "formula": "IF($..nhysqd_dkqdGridlbVO[#].Jybz>0&&$..nhysqd_dkqdGridlbVO[#].ysdwMc=='',false,true)",
+  "tips": "[内河运输_运输单位名称]不能为空！"
+},{
+  "id": "06100101011700029",
+  "type": "02",
+  "desc": "",
+  "formula": "IF($..nhysqd_dkqdGridlbVO[#].Jybz>0&&$..nhysqd_dkqdGridlbVO[#].ysdwNsrsbh=='',false,true)",
+  "tips": "[内河运输_运输单位纳税人识别号]不能为空！"
+},{
+  "id": "06100101011700043",
+  "type": "02",
+  "desc": "",
+  "formula": "($..nhysqd_dkqdGridlbVO[#].ysdwNsrsbh).length>=15&&($..nhysqd_dkqdGridlbVO[#].ysdwNsrsbh).length<=20||$..nhysqd_dkqdGridlbVO[#].ysdwNsrsbh==''",
+  "tips": "运输单位纳税人识别号长度为15-20位"
+},{
+  "id": "06100101011700031",
+  "type": "02",
+  "desc": "",
+  "formula": "IF($..nhysqd_dkqdGridlbVO[#].Jybz>0&&$..nhysqd_dkqdGridlbVO[#].ysdwZgdfswjmc=='',false,true)",
+  "tips": "[内河运输_运输单位主管地方税务局名称]不能为空！"
+},{
+  "id": "06100101011700045",
+  "type": "02",
+  "desc": "",
+  "formula": "IF($..nhysqd_dkqdGridlbVO[#].Jybz>0&&$..nhysqd_dkqdGridlbVO[#].ysdwZgdfswjDm=='',false,true)",
+  "tips": "[内河运输_运输单位主管地方税务局代码]不能为空！"
+},{
+  "id": "06100101011700033",
+  "type": "02",
+  "desc": "",
+  "formula": "($..nhysqd_dkqdGridlbVO[#].ysdwZgdfswjDm).length<=11",
+  "tips": "[内河运输_运输单位主管地方税务局代码]输入字符不允许超过11位！"
+},{
+  "id": "06100101011700034",
+  "type": "01",
+  "desc": "",
+  "formula": "$..dkqdGrid.nhysqd_dkqdGridlbVO[#].jsdkdjxse=ROUND($..dkqdGrid.nhysqd_dkqdGridlbVO[#].jsdkYfje*0.11,2)",
+  "tips": ""
+},{
+  "id": "06100101012700013",
+  "type": "01",
+  "desc": "",
+  "formula": "$..hznsqytycddjxGridlbVO[#].xjJxsezc=$..hznsqytycddjxGridlbVO[#].mshwyJxsezc+$..hznsqytycddjxGridlbVO[#].fzcssJxsezc+$..hznsqytycddjxGridlbVO[#].qtJxsezc",
+  "tips": ""
+},{
+  "id": "06100101012700014",
+  "type": "01",
+  "desc": "",
+  "formula": "$..hznsqytycddjxGridlbVO[#].bqsjkce=$..hznsqytycddjxGridlbVO[#].bqfsjx-$..hznsqytycddjxGridlbVO[#].xjJxsezc",
+  "tips": ""
+},{
+  "id": "06100101012700007",
+  "type": "02",
+  "desc": "",
+  "formula": "IF($..hznsqytycddxxGridlbVO[#].Jybz>0&&$..hznsqytycddxxGridlbVO[#].ysxmmc=='',false,true)",
+  "tips": "[应税项目]不能为空！"
+},{
+  "id": "06100101012800018",
+  "type": "01",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGridlbVO[#].fzjgybhwjlwfpse=ROUND(IF($..zfjgxsehj!=0,$..hznsqyzzsfpbGridlbVO[#].fzjgybhwjlwfpbl*$..hznsqyzzsfpbForm.ybtse*$..hznsqyzzsfpbGrid.ybhwjlwxssrHj/$..zfjgxsehj,0),2)",
+  "tips": ""
+},{
+  "id": "06100101012800017",
+  "type": "01",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGridlbVO[#].fzjgysfwjzjtfpbl=ROUND(IF($..hznsqyzzsfpbGrid.ysfwjzjtxssrHj!=0,$..hznsqyzzsfpbGridlbVO[#].fzjgysfwjzjtxssr/$..hznsqyzzsfpbGrid.ysfwjzjtxssrHj,0),6)",
+  "tips": ""
+},{
+  "id": "06100101012800020",
+  "type": "01",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGridlbVO[#].fzjgybhwjlwjzjtfpse=ROUND(IF($..zfjgxsehj!=0,$..hznsqyzzsfpbGridlbVO[#].fzjgybhwjlwjzjtfpbl*$..hznsqyzzsfpbForm.ybtse*$..hznsqyzzsfpbGrid.ybhwjlwjzjtxssrHj/$..zfjgxsehj,0),2)",
+  "tips": ""
+},{
+  "id": "06100101012800021",
+  "type": "01",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGridlbVO[#].fzjgysfwfpse=ROUND(IF($..zfjgxsehj!=0,$..hznsqyzzsfpbGridlbVO[#].fzjgysfwfpbl*$..hznsqyzzsfpbForm.ybtse*$..hznsqyzzsfpbGrid.ysfwxssrHj/$..zfjgxsehj,0),2)",
+  "tips": ""
+},{
+  "id": "06100101012800022",
+  "type": "01",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGridlbVO[#].fzjgysfwjzjtfpse=ROUND(IF($..zfjgxsehj!=0,$..hznsqyzzsfpbGridlbVO[#].fzjgysfwjzjtfpbl*$..hznsqyzzsfpbForm.ybtse*$..hznsqyzzsfpbGrid.ysfwjzjtxssrHj/$..zfjgxsehj,0),2)",
+  "tips": ""
+},{
+  "id": "06100101012800016",
+  "type": "01",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGridlbVO[#].fzjgysfwfpbl=ROUND(IF($..hznsqyzzsfpbGrid.ysfwxssrHj!=0,$..hznsqyzzsfpbGridlbVO[#].fzjgysfwxssr/$..hznsqyzzsfpbGrid.ysfwxssrHj,0),6)",
+  "tips": ""
+},{
+  "id": "06100101012800015",
+  "type": "01",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGridlbVO[#].fzjgybhwjlwjzjtfpbl=ROUND(IF($..hznsqyzzsfpbGrid.ybhwjlwjzjtxssrHj!=0,$..hznsqyzzsfpbGridlbVO[#].fzjgybhwjlwjzjtxssr/$..hznsqyzzsfpbGrid.ybhwjlwjzjtxssrHj,0),6)",
+  "tips": ""
+},{
+  "id": "06100101012800014",
+  "type": "01",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGridlbVO[#].fzjgybhwjlwfpbl=ROUND(IF($..hznsqyzzsfpbGrid.ybhwjlwxssrHj!=0,$..hznsqyzzsfpbGridlbVO[#].fzjgybhwjlwxssr/$..hznsqyzzsfpbGrid.ybhwjlwxssrHj,0),6)",
+  "tips": ""
+},{
+  "id": "06100101012800030",
+  "type": "01",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbForm.ybtse=$..zbGridlbVO[0].bqybtse+$..zbGridlbVO[2].bqybtse",
+  "tips": ""
+},{
+  "id": "06100101012800031",
+  "type": "01",
+  "desc": "",
+  "formula": "$..zfjgxsehj=$..zjgybhwjlwxssr+$..zjgybhwjlwjzjtxssr+$..zjgysfwxssr+$..zjgysfwjzjtxssr+SUM($..hznsqyzzsfpbGridlbVO[*].fzjgybhwjlwxssr)+SUM($..hznsqyzzsfpbGridlbVO[*].fzjgybhwjlwjzjtxssr)+SUM($..hznsqyzzsfpbGridlbVO[*].fzjgysfwxssr)+SUM($..hznsqyzzsfpbGridlbVO[*].fzjgysfwjzjtxssr)",
+  "tips": ""
+},{
+  "id": "06100101012800060",
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGrid.fzjgybhwjlwxssrHj=SUM($..hznsqyzzsfpbGridlbVO[*].fzjgybhwjlwxssr)",
+  "tips": ""
+},{
+  "id": "06100101012800061",
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGrid.ybhwjlwxssrHj=$..zjgybhwjlwxssr+$..hznsqyzzsfpbGrid.fzjgybhwjlwxssrHj",
+  "tips": ""
+},{
+  "id": "06100101012800062",
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGrid.fzjgybhwjlwjzjtxssrHj=SUM($..hznsqyzzsfpbGridlbVO[*].fzjgybhwjlwjzjtxssr)",
+  "tips": ""
+},{
+  "id": "06100101012800063",
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGrid.ybhwjlwjzjtxssrHj=$..zjgybhwjlwjzjtxssr+$..hznsqyzzsfpbGrid.fzjgybhwjlwjzjtxssrHj",
+  "tips": ""
+},{
+  "id": "06100101012800064",
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGrid.fzjgysfwxssrHj=SUM($..hznsqyzzsfpbGridlbVO[*].fzjgysfwxssr)",
+  "tips": ""
+},{
+  "id": "06100101012800065",
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGrid.ysfwxssrHj=$..zjgysfwxssr+$..hznsqyzzsfpbGrid.fzjgysfwxssrHj",
+  "tips": ""
+},{
+  "id": "06100101012800066",
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGrid.fzjgysfwjzjtxssrHj=SUM($..hznsqyzzsfpbGridlbVO[*].fzjgysfwjzjtxssr)",
+  "tips": ""
+},{
+  "id": "06100101012800067",
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGrid.ysfwjzjtxssrHj=$..zjgysfwjzjtxssr+$..hznsqyzzsfpbGrid.fzjgysfwjzjtxssrHj",
+  "tips": ""
+},{
+  "id": "06100101012800048",
+  "type": "01",
+  "desc": "",
+  "formula": "$..zjgysfwfpse=ROUND(IF($..zfjgxsehj!=0,$..zjgysfwfpbl*$..hznsqyzzsfpbForm.ybtse*$..hznsqyzzsfpbGrid.ysfwxssrHj/$..zfjgxsehj,0),2)",
+  "tips": ""
+},{
+  "id": "06100101012800047",
+  "type": "01",
+  "desc": "",
+  "formula": "$..zjgybhwjlwjzjtfpse=ROUND(IF($..zfjgxsehj!=0,$..zjgybhwjlwjzjtfpbl*$..hznsqyzzsfpbForm.ybtse*$..hznsqyzzsfpbGrid.ybhwjlwjzjtxssrHj/$..zfjgxsehj,0),2)",
+  "tips": ""
+},{
+  "id": "06100101012800046",
+  "type": "01",
+  "desc": "",
+  "formula": "$..zjgybhwjlwfpse=ROUND(IF($..zfjgxsehj!=0,$..zjgybhwjlwfpbl*$..hznsqyzzsfpbForm.ybtse*$..hznsqyzzsfpbGrid.ybhwjlwxssrHj/$..zfjgxsehj,0),2)",
+  "tips": ""
+},{
+  "id": "06100101012800041",
+  "type": "01",
+  "desc": "",
+  "formula": "$..zjgysfwjzjtfpbl=ROUND(IF($..hznsqyzzsfpbGrid.ysfwjzjtxssrHj!=0,$..zjgysfwjzjtxssr/$..hznsqyzzsfpbGrid.ysfwjzjtxssrHj,0),6)",
+  "tips": ""
+},{
+  "id": "06100101012800040",
+  "type": "01",
+  "desc": "",
+  "formula": "$..zjgysfwfpbl=ROUND(IF($..hznsqyzzsfpbGrid.ysfwxssrHj!=0,$..zjgysfwxssr/$..hznsqyzzsfpbGrid.ysfwxssrHj,0),6)",
+  "tips": ""
+},{
+  "id": "06100101012800039",
+  "type": "01",
+  "desc": "",
+  "formula": "$..zjgybhwjlwjzjtfpbl=ROUND(IF($..hznsqyzzsfpbGrid.ybhwjlwjzjtxssrHj!=0,$..zjgybhwjlwjzjtxssr/$..hznsqyzzsfpbGrid.ybhwjlwjzjtxssrHj,0),6)",
+  "tips": ""
+},{
+  "id": "06100101012800038",
+  "type": "01",
+  "desc": "",
+  "formula": "$..zjgybhwjlwfpbl=ROUND(IF($..hznsqyzzsfpbGrid.ybhwjlwxssrHj!=0,$..zjgybhwjlwxssr/$..hznsqyzzsfpbGrid.ybhwjlwxssrHj,0),6)",
+  "tips": ""
+},{
+  "id": "06100101012800049",
+  "type": "01",
+  "desc": "",
+  "formula": "$..zjgysfwjzjtfpse=ROUND(IF($..zfjgxsehj!=0,$..zjgysfwjzjtfpbl*$..hznsqyzzsfpbForm.ybtse*$..hznsqyzzsfpbGrid.ysfwjzjtxssrHj/$..zfjgxsehj,0),2)",
+  "tips": ""
+},{
+  "id": "06100101012800102",
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGrid.fzjgybhwjlwfpblHj=SUM($..hznsqyzzsfpbGridlbVO[*].fzjgybhwjlwfpbl)",
+  "tips": ""
+},{
+  "id": "06100101012800042",
+  "type": "02",
+  "desc": "",
+  "formula": "IF($..hznsqyzzsfpbGrid.fzjgybhwjlwfpblHj!=0,ROUND($..zjgybhwjlwfpbl+$..hznsqyzzsfpbGrid.fzjgybhwjlwfpblHj,6)==1.000000,true)",
+  "tips": "[分支机构一般货物及劳务_分配比例]+[总机构一般货物及劳务分配比例]【数值+数值】之和应等于1"
+},{
+  "id": "06100101012800103",
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGrid.fzjgybhwjlwjzjtfpblHj=SUM($..hznsqyzzsfpbGridlbVO[*].fzjgybhwjlwjzjtfpbl)",
+  "tips": ""
+},{
+  "id": "06100101012800043",
+  "type": "02",
+  "desc": "",
+  "formula": "IF($..hznsqyzzsfpbGrid.fzjgybhwjlwjzjtfpblHj!=0,ROUND($..zjgybhwjlwjzjtfpbl+$..hznsqyzzsfpbGrid.fzjgybhwjlwjzjtfpblHj,6)==1.000000,true)",
+  "tips": "[分支机构一般货物及劳务即征即退_分配比例]+[总机构一般货物及劳务即征即退分配比例]【数值+数值】之和应等于1"
+},{
+  "id": "06100101012800104",
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGrid.fzjgysfwfpblHj=SUM($..hznsqyzzsfpbGridlbVO[*].fzjgysfwfpbl)",
+  "tips": ""
+},{
+  "id": "06100101012800044",
+  "type": "02",
+  "desc": "",
+  "formula": "IF($..hznsqyzzsfpbGrid.fzjgysfwfpblHj!=0,ROUND($..zjgysfwfpbl+$..hznsqyzzsfpbGrid.fzjgysfwfpblHj,6)==1.000000,true)",
+  "tips": "[分支机构应税服务_分配比例]+[总机构应税服务分配比例]【数值+数值】之和应等于1"
+},{
+  "id": "06100101012800105",
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGrid.fzjgysfwjzjtfpblHj=SUM($..hznsqyzzsfpbGridlbVO[*].fzjgysfwjzjtfpbl)",
+  "tips": ""
+},{
+  "id": "06100101012800045",
+  "type": "02",
+  "desc": "",
+  "formula": "IF($..hznsqyzzsfpbGrid.fzjgysfwjzjtfpblHj!=0,ROUND($..zjgysfwjzjtfpbl+$..hznsqyzzsfpbGrid.fzjgysfwjzjtfpblHj,6)==1.000000,true)",
+  "tips": "[分支机构应税服务即征即退_分配比例]+[总机构应税服务即征即退分配比例]【数值+数值】之和应等于1"
+},{
+  "id": "06100101012800106",
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGrid.fzjgybhwjlwfpseHj=SUM($..hznsqyzzsfpbGridlbVO[*].fzjgybhwjlwfpse)",
+  "tips": ""
+},{
+  "id": "06100101012800107",
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGrid.fzjgybhwjlwjzjtfpseHj=SUM($..hznsqyzzsfpbGridlbVO[*].fzjgybhwjlwjzjtfpse)",
+  "tips": ""
+},{
+  "id": "06100101012800108",
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGrid.fzjgysfwfpseHj=SUM($..hznsqyzzsfpbGridlbVO[*].fzjgysfwfpse)",
+  "tips": ""
+},{
+  "id": "06100101012800109",
+  "type": "11",
+  "desc": "",
+  "formula": "$..hznsqyzzsfpbGrid.fzjgysfwjzjtfpseHj=SUM($..hznsqyzzsfpbGridlbVO[*].fzjgysfwjzjtfpse)",
+  "tips": ""
+},{
+  "id": "06100101012800019",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..zjgybhwjlwfpse+$..zjgybhwjlwjzjtfpse+$..zjgysfwfpse+$..zjgysfwjzjtfpse+$..hznsqyzzsfpbGrid.fzjgybhwjlwfpseHj+$..hznsqyzzsfpbGrid.fzjgybhwjlwjzjtfpseHj+$..hznsqyzzsfpbGrid.fzjgysfwfpseHj+$..hznsqyzzsfpbGrid.fzjgysfwjzjtfpseHj,2)==$..hznsqyzzsfpbForm.ybtse",
+  "tips": "[总机构一般货物及劳务分配税额]+[总机构一般货物及劳务即征即退分配税额]+[总机构应税服务分配税额]+[总机构应税服务即征即退分配税额]]+[分支机构一般货物及劳务分配税额合计]+[分支机构一般货物及劳务即征即退分配税额合计]+[分支机构应税服务分配税额合计]+[分支机构应税服务即征即退分配税额合计]【{{$..zjgybhwjlwfpse}}+{{$..zjgybhwjlwjzjtfpse}}+{{$..zjgysfwfpse}}+{{$..zjgysfwjzjtfpse}}+{{$..hznsqyzzsfpbGrid.fzjgybhwjlwfpseHj}}+{{$..hznsqyzzsfpbGrid.fzjgybhwjlwjzjtfpseHj}}+{{$..hznsqyzzsfpbGrid.fzjgysfwfpseHj}}+{{$..hznsqyzzsfpbGrid.fzjgysfwjzjtfpseHj}}】之和应等于[应补(退)税额]【{{$..hznsqyzzsfpbForm.ybtse}}】"
+},{
+  "id": "06100101012800010",
+  "type": "02",
+  "desc": "",
+  "formula": "ROUND($..zjgybhwjlwfpse+$..zjgybhwjlwjzjtfpse+$..zjgysfwfpse+$..zjgysfwjzjtfpse,2)>=$..bqxsqkmxbGridlbVO[13].kchXxynse",
+  "tips": "汇总纳税企业增值税分配表[总机构一般货物及劳务分配税额]+[总机构一般货物及劳务即征即退分配税额]+[总机构应税服务分配税额]+[总机构应税服务即征即退分配税额]【{{$..zjgybhwjlwfpse}}+{{$..zjgybhwjlwjzjtfpse}}+{{$..zjgysfwfpse}}+{{$..zjgysfwjzjtfpse}}】之和应大于等于附表一第13a行第14列[扣除后_销项(应纳)税额]【数值】"
+},{
+		"id": "06100101012100001",
+		"type": "10",
+		"desc": "",
+		"formula": "$..zzsybnsrsb_cbfhdccpzzsjxsejsb.sbbheadVO.nsrsbh=$..nsrjbxx.nsrsbh",
+		"tips": ""
+	}, {
+		"id": "06100101012100002",
+		"type": "10",
+		"desc": "",
+		"formula": "$..zzsybnsrsb_cbfhdccpzzsjxsejsb.sbbheadVO.nsrmc=$..nsrjbxx.nsrmc",
+		"tips": ""
+	}, {
+		"id": "06100101012100003",
+		"type": "10",
+		"desc": "",
+		"formula": "$..zzsybnsrsb_cbfhdccpzzsjxsejsb.sbbheadVO.skssqq=$..zzsybnsrsbInitData.sssq.rqQ",
+		"tips": ""
+	}, {
+		"id": "06100101012100004",
+		"type": "10",
+		"desc": "",
+		"formula": "$..zzsybnsrsb_cbfhdccpzzsjxsejsb.sbbheadVO.skssqz=$..zzsybnsrsbInitData.sssq.rqZ",
+		"tips": ""
+	}, {
+		"id": "88801",
+		"type": "11",
+		"desc": "",
+		"formula": "$..zzsybnsrsbCbfhdccpzzsjxsejsbbwGridlbVO[#].Hhj=$..zzsybnsrsbCbfhdccpzzsjxsejsbbwGridlbVO[#].kcl+$..zzsybnsrsbCbfhdccpzzsjxsejsbbwGridlbVO[#].dqzyywcb+$..zzsybnsrsbCbfhdccpzzsjxsejsbbwGridlbVO[#].ncphyl",
+		"tips": ""
+	}, {
+		"id": "06100101012100013",
+		"type": "11",
+		"desc": "自动带出，不可修改，等于当期允许抵扣农产品进项税额元本列之和",
+		"formula": "$..zzsybnsrsbCbfhdccpzzsjxsejsbbwGrid.dqyxdkncpjxseHj=SUM($..zzsybnsrsbCbfhdccpzzsjxsejsbbwGridlbVO[*].dqyxdkncpjxse)",
+		"tips": ""
+	}, {
+		"id": "06100101012100006",
+		"type": "02",
+		"desc": "",
+		"formula": "['#','$','*','{','}','[',']','<','>','.'].indexOf($..zzsybnsrsbCbfhdccpzzsjxsejsbbwGridlbVO[#].cpmc1)==-1",
+		"target": "",
+		"tips": "存在不能识别的字符，请重新输入"
+	}, {
+		"id": "06100101012100012",
+		"type": "01",
+		"desc": "自动带出，不可修改。“当期允许抵扣农产品增值税进项税额=当期主营业务成本×农产品耗用率×扣除率/（1＋扣除率）”",
+		"formula": "$..zzsybnsrsbCbfhdccpzzsjxsejsbbwGridlbVO[#].dqyxdkncpjxse=ROUND(IF(1+$..zzsybnsrsbCbfhdccpzzsjxsejsbbwGridlbVO[#].kcl!=0,$..zzsybnsrsbCbfhdccpzzsjxsejsbbwGridlbVO[#].dqzyywcb*$..zzsybnsrsbCbfhdccpzzsjxsejsbbwGridlbVO[#].ncphyl*$..zzsybnsrsbCbfhdccpzzsjxsejsbbwGridlbVO[#].kcl/(1+$..zzsybnsrsbCbfhdccpzzsjxsejsbbwGridlbVO[#].kcl),0),2)",
+		"target": "",
+		"tips": ""
+	}, {
+		"id": "06100101012100014",
+		"type": "02",
+		"desc": "",
+		"formula": "IF($..zzsybnsrsbCbfhdccpzzsjxsejsbbwGridlbVO[#].Hhj!=0,$..zzsybnsrsbCbfhdccpzzsjxsejsbbwGridlbVO[#].cpmc1!='',true)",
+		"target": "",
+		"tips": "[产品名称]不能为空！"
+	}, {
+		"id": "06100101012300001",
+		"type": "10",
+		"desc": "",
+		"formula": "$..zzssyyybnsr_gjncpyyscjyqbgchwsthdncpzzsjxsejsb.sbbhead.nsrsbh=$..initData.nsrjbxx.nsrsbh",
+		"tips": ""
+	}, {
+		"id": "06100101012300002",
+		"type": "10",
+		"desc": "",
+		"formula": "$..zzssyyybnsr_gjncpyyscjyqbgchwsthdncpzzsjxsejsb.sbbhead.nsrmc=$..initData.nsrjbxx.nsrmc",
+		"tips": ""
+	}, {
+		"id": "06100101012300003",
+		"type": "10",
+		"desc": "",
+		"formula": "$..zzssyyybnsr_gjncpyyscjyqbgchwsthdncpzzsjxsejsb.sbbhead.skssqq=$..initData.zzsybnsrsbInitData.sssq.rqQ",
+		"tips": ""
+	}, {
+		"id": "06100101012300000",
+		"type": "10",
+		"desc": "",
+		"formula": "$..zzssyyybnsr_gjncpyyscjyqbgchwsthdncpzzsjxsejsb.sbbhead.skssqz=$..initData.zzsybnsrsbInitData.sssq.rqZ",
+		"tips": ""
+	}, {
+		"id": "8801",
+		"type": "11",
+		"desc": "",
+		"formula": "$..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].Zhj=IF($..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].hyncpmc!=''||$..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].cpmc1!='',1,$..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].dqhyncpsl+$..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].qckcncpsl+$..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].qcpjmj+$..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].dqgjncpsl+$..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].dqmj)",
+		"tips": ""
+	}, {
+		"id": "06100101012300006",
+		"type": "02",
+		"desc": "",
+		"formula": "['#','$','*','{','}','[',']','<','>','.'].indexOf($..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].cpmc1)==-1",
+		"tips": "存在不能识别的字符，请重新输入"
+	}, {
+		"id": "06100101012300008",
+		"type": "02",
+		"desc": "",
+		"formula": "['#','$','*','{','}','[',']','<','>','.'].indexOf($..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].hyncpmc)==-1",
+		"tips": "存在不能识别的字符，请重新输入"
+	}, {
+		"id": "06100101012300009",
+		"type": "01",
+		"desc": "自动带出，不可修改。农产品平均购买单价（元/吨）=（期初库存农产品数量（吨）×期初平均买价（元/吨）+当期购进农产品数量（吨）×当期买价（元/吨）/（期初库存农产品数量（吨）+当期购进农产品数量（吨））",
+		"formula": "$..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].ncppjgmdj=ROUND(IF($..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].qckcncpsl+$..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].dqgjncpsl>0,($..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].qckcncpsl*$..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].qcpjmj+$..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].dqgjncpsl*$..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].dqmj)/($..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].qckcncpsl+$..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].dqgjncpsl),0),2)",
+		"target": "",
+		"tips": ""
+	}, {
+		"id": "06100101012300011",
+		"type": "01",
+		"desc": "自动带出，不可修改。当期允许抵扣农产品进项税额（元）=当期耗用农产品数量（吨）×农产品平均购买单价（元/吨）×扣除率（13%）/（1+扣除率（13%））",
+		"formula": "$..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].dqyxdkncpjxse=ROUND($..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].dqhyncpsl*$..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].ncppjgmdj*$..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].kcl/(1+$..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].kcl),2)",
+		"target": "",
+		"tips": ""
+	}, {
+		"id": "27",
+		"type": "11",
+		"desc": "自动带出，不可修改，等于当期允许抵扣农产品进项税额元本列之和",
+		"formula": "$.zzsybsbSbbdxxVO.zzssyyybnsr_gjncpyyscjyqbgchwsthdncpzzsjxsejsb.gjncpyyscjyqbgchwsthdncpzzsjxsejsbGrid.dqyxdkncpjxseHj=SUM($..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[*].dqyxdkncpjxse)",
+		"target": "",
+		"tips": ""
+	}, {
+		"id": "06100101012300005",
+		"type": "02",
+		"desc": "",
+		"formula": "IF($..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].Zhj>0,$..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].cpmc1!='',true)",
+		"target": "",
+		"tips": "[产品名称]不能为空！"
+	}, {
+		"id": "06100101012300007",
+		"type": "02",
+		"desc": "",
+		"formula": "IF($..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].Zhj>0,$..gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO[#].hyncpmc!='',true)",
+		"target": "",
+		"tips": "[耗用农产品名称]不能为空！"
+	}, {
+		"id": "06100101012200010",
+		"type": "10",
+		"desc": "",
+		"formula": "$..zzssyyybnsr_gjncpzjxshdncpzzsjxsejsb.sbbhead.nsrsbh=$..nsrjbxx.nsrsbh",
+		"tips": ""
+	}, {
+		"id": "06100101012200011",
+		"type": "10",
+		"desc": "",
+		"formula": "$..zzssyyybnsr_gjncpzjxshdncpzzsjxsejsb.sbbhead.nsrmc=$..nsrjbxx.nsrmc",
+		"tips": ""
+	}, {
+		"id": "06100101012200012",
+		"type": "10",
+		"desc": "",
+		"formula": "$..zzssyyybnsr_gjncpzjxshdncpzzsjxsejsb.sbbhead.skssqq=$..zzsybnsrsbInitData.sssq.rqQ",
+		"tips": ""
+	}, {
+		"id": "06100101012200013",
+		"type": "10",
+		"desc": "",
+		"formula": "$..zzssyyybnsr_gjncpzjxshdncpzzsjxsejsb.sbbhead.skssqz=$..zzsybnsrsbInitData.sssq.rqZ",
+		"tips": ""
+	}, {
+		"id": "06100101012200002",
+		"type": "02",
+		"desc": "",
+		"formula": "['#','$','*','{','}','[',']','<','>','.'].indexOf($..gjncpzjxshdncpzzsjxseGridlbVO[#].cpmc1)==-1",
+		"target": "",
+		"tips": "存在不能识别的字符，请重新输入"
+	}, {
+		"id": 0,
+		"type": "01",
+		"desc": "自动带出，不可修改；农产品平均购买单价（元/吨）=（期初库存农产品数量（吨）×期初平均买价（元/吨）＋当期购进农产品数量（吨）×当期买价（元/吨））/（期初库存农产品数量（吨）+当期购进农产品数量（吨））",
+		"formula": "$..gjncpzjxshdncpzzsjxseGridlbVO[#].ncppjgmdj=ROUND(IF($..gjncpzjxshdncpzzsjxseGridlbVO[#].qckcncpsl+$..gjncpzjxshdncpzzsjxseGridlbVO[#].dqgjncpsl>0,($..gjncpzjxshdncpzzsjxseGridlbVO[#].qckcncpsl*$..gjncpzjxshdncpzzsjxseGridlbVO[#].qcpjmj+$..gjncpzjxshdncpzzsjxseGridlbVO[#].dqgjncpsl*$..gjncpzjxshdncpzzsjxseGridlbVO[#].dqmj)/($..gjncpzjxshdncpzzsjxseGridlbVO[#].qckcncpsl+$..gjncpzjxshdncpzzsjxseGridlbVO[#].dqgjncpsl),0),2)",
+		"target": "",
+		"tips": ""
+	}, {
+		"id": "88802",
+		"type": "11",
+		"desc": "",
+		"formula": "$..gjncpzjxshdncpzzsjxseGridlbVO[#].Hhj=$..gjncpzjxshdncpzzsjxseGridlbVO[#].dqxsncpsl+$..gjncpzjxshdncpzzsjxseGridlbVO[#].shsl1+$..gjncpzjxshdncpzzsjxseGridlbVO[#].ncpgjsl+$..gjncpzjxshdncpzzsjxseGridlbVO[#].qckcncpsl+$..gjncpzjxshdncpzzsjxseGridlbVO[#].qcpjmj+$..gjncpzjxshdncpzzsjxseGridlbVO[#].dqgjncpsl+$..gjncpzjxshdncpzzsjxseGridlbVO[#].dqmj",
+		"tips": ""
+	}, {
+		"id": 0,
+		"type": "01",
+		"desc": "“当期允许抵扣农产品增值税进项税额=当期销售农产品数量（吨）/(1-损耗率)×农产品平均购买单价（元/吨）×扣除率（13%）/(1+扣除率（13%）)",
+		"formula": "$..gjncpzjxshdncpzzsjxseGridlbVO[#].dqyxdkncpjxse=ROUND(IF(1-$..gjncpzjxshdncpzzsjxseGridlbVO[#].shl>0,$..gjncpzjxshdncpzzsjxseGridlbVO[#].dqxsncpsl/(1-$..gjncpzjxshdncpzzsjxseGridlbVO[#].shl)*$..gjncpzjxshdncpzzsjxseGridlbVO[#].ncppjgmdj*$..gjncpzjxshdncpzzsjxseGridlbVO[#].kcl/(1+$..gjncpzjxshdncpzzsjxseGridlbVO[#].kcl),0),2)",
+		"target": "",
+		"tips": ""
+	}, {
+		"id": 0,
+		"type": "11",
+		"desc": "当期允许抵扣农产品进项税额元本列之和",
+		"formula": "$.zzsybsbSbbdxxVO.zzssyyybnsr_gjncpzjxshdncpzzsjxsejsb.gjncpzjxshdncpzzsjxseGrid.dqyxdkncpjxseHj=SUM($..gjncpzjxshdncpzzsjxseGridlbVO[*].dqyxdkncpjxse)",
+		"target": "",
+		"tips": ""
+	}, {
+		"id": "06100101012200001",
+		"type": "02",
+		"desc": "",
+		"formula": "IF($..gjncpzjxshdncpzzsjxseGridlbVO[#].Hhj>0&&$..gjncpzjxshdncpzzsjxseGridlbVO[#].cpmc1=='',false,true)",
+		"target": "",
+		"tips": "[产品名称]不能为空！"
+	}, {
+		"id": "06100101012200005",
+		"type": "01",
+		"desc": "",
+		"formula": "$..gjncpzjxshdncpzzsjxseGridlbVO[#].shl=ROUND(IF($..gjncpzjxshdncpzzsjxseGridlbVO[#].ncpgjsl>0,$..gjncpzjxshdncpzzsjxseGridlbVO[#].shsl1/$..gjncpzjxshdncpzzsjxseGridlbVO[#].ncpgjsl,0),4)",
+		"target": "",
+		"tips": ""
+	}, {
+		"id": "06100101011900001",
+		"type": "10",
+		"desc": "",
+		"formula": "$..zzsybnsrsb_ncphdkczzsjxsejsb.sbbheadVO.nsrsbh=$..initData.nsrjbxx.nsrsbh",
+		"tips": ""
+	}, {
+		"id": "06100101011900002",
+		"type": "10",
+		"desc": "",
+		"formula": "$..zzsybnsrsb_ncphdkczzsjxsejsb.sbbheadVO.nsrmc=$..initData.nsrjbxx.nsrmc",
+		"tips": ""
+	}, {
+		"id": "06100101011900003",
+		"type": "10",
+		"desc": "",
+		"formula": "$..zzsybnsrsb_ncphdkczzsjxsejsb.sbbheadVO.skssqq=$..initData.zzsybnsrsbInitData.sssq.rqQ",
+		"tips": ""
+	}, {
+		"id": "06100101011900004",
+		"type": "10",
+		"desc": "",
+		"formula": "$..zzsybnsrsb_ncphdkczzsjxsejsb.sbbheadVO.skssqz=$..initData.zzsybnsrsbInitData.sssq.rqZ",
+		"tips": ""
+	}, {
+		"id": "06100101011900005",
+		"type": "01",
+		"desc": "调用《投入产出法核定农产品增值税进项税额计算表》当期允许抵扣农产品进项税额（元）合计",
+		"formula": "$..schwTrccfJxse=$.zzsybsbSbbdxxVO.zzssyyybnsr_hqysqyfzjgcdd.trccfhdncpzzsjxseGrid.dqyxdkncpjxseHj",
+		"tips": ""
+	}, {
+		"id": "06100101011900006",
+		"type": "02",
+		"desc": "",
+		"formula": "($..schwTrccfBz).indexOf('#')==-1&&($..schwTrccfBz).indexOf('$')==-1&&($..schwTrccfBz).indexOf('{')==-1&&($..schwTrccfBz).indexOf('}')==-1&&($..schwTrccfBz).indexOf('<')==-1&&($..schwTrccfBz).indexOf('>')==-1",
+		"target": "",
+		"tips": "存在不能识别的字符，请重新输入"
+	}, {
+		"id": "06100101011900007",
+		"type": "01",
+		"desc": "调用《成本法核定农产品增值税进项税额计算表》当期允许抵扣农产品进项税额（元）合计",
+		"formula": "$..schwCbfJxse=$.zzsybsbSbbdxxVO.zzsybnsrsb_cbfhdccpzzsjxsejsb.zzsybnsrsbCbfhdccpzzsjxsejsbbwGrid.dqyxdkncpjxseHj",
+		"tips": ""
+	}, {
+		"id": "06100101011900008",
+		"type": "02",
+		"desc": "",
+		"formula": "($..schwCbfBz).indexOf('#')==-1&&($..schwCbfBz).indexOf('$')==-1&&($..schwCbfBz).indexOf('{')==-1&&($..schwCbfBz).indexOf('}')==-1&&($..schwCbfBz).indexOf('<')==-1&&($..schwCbfBz).indexOf('>')==-1",
+		"target": "",
+		"tips": "存在不能识别的字符，请重新输入"
+	}, {
+		"id": "06100101011900009",
+		"type": "01",
+		"desc": "调用《购进农产品直接销售核定农产品增值税进项税额计算表》当期允许抵扣农产品进项税额（元）合计",
+		"formula": "$..zjxsJxse=$.zzsybsbSbbdxxVO.zzssyyybnsr_gjncpzjxshdncpzzsjxsejsb.gjncpzjxshdncpzzsjxseGrid.dqyxdkncpjxseHj",
+		"tips": ""
+	}, {
+		"id": "06100101011900010",
+		"type": "02",
+		"desc": "",
+		"formula": "($..zjxsBz).indexOf('#')==-1&&($..zjxsBz).indexOf('$')==-1&&($..zjxsBz).indexOf('{')==-1&&($..zjxsBz).indexOf('}')==-1&&($..zjxsBz).indexOf('<')==-1&&($..zjxsBz).indexOf('>')==-1",
+		"target": "",
+		"tips": "存在不能识别的字符，请重新输入"
+	}, {
+		"id": "06100101011900011",
+		"type": "01",
+		"desc": "调用《购进农产品用于生产经营且不构成货物实体核定农产品增值税进项税额计算表》当期允许抵扣农产品进项税额（元）合计",
+		"formula": "$..ncphdkczzsjxsejsbGridlbVO[0].scjyJxse=$.zzsybsbSbbdxxVO.zzssyyybnsr_gjncpyyscjyqbgchwsthdncpzzsjxsejsb.gjncpyyscjyqbgchwsthdncpzzsjxsejsbGrid.dqyxdkncpjxseHj",
+		"tips": ""
+	}, {
+		"id": "06100101011900012",
+		"type": "02",
+		"desc": "",
+		"formula": "($..scjyBz).indexOf('#')==-1&&($..scjyBz).indexOf('$')==-1&&($..scjyBz).indexOf('{')==-1&&($..scjyBz).indexOf('}')==-1&&($..scjyBz).indexOf('<')==-1&&($..scjyBz).indexOf('>')==-1",
+		"target": "",
+		"tips": "存在不能识别的字符，请重新输入"
+	}, {
+		"id": "06100101011900013",
+		"type": "11",
+		"desc": "自动带出，不可修改，等于本列的当期允许抵扣农产品增值税之和",
+		"formula": "$.zzsybsbSbbdxxVO.zzsybnsrsb_ncphdkczzsjxsejsb.ncphdkczzsjxsejsbGrid.ncphdkczzsjxsejsbGridlbVO[0].seHj=$..schwTrccfJxse+$..schwCbfJxse+$..zjxsJxse+$..scjyJxse",
+		"target": "",
+		"tips": ""
+	}, {
+		"id": "06100101012000001",
+		"type": "10",
+		"desc": "",
+		"formula": "$..zzssyyybnsr_hqysqyfzjgcdd.sbbhead.nsrsbh=$..nsrjbxx.nsrsbh",
+		"tips": ""
+	}, {
+		"id": "06100101012000002",
+		"type": "10",
+		"desc": "",
+		"formula": "$..zzssyyybnsr_hqysqyfzjgcdd.sbbhead.nsrmc=$..nsrjbxx.nsrmc",
+		"tips": ""
+	}, {
+		"id": "06100101012000003",
+		"type": "10",
+		"desc": "",
+		"formula": "$..zzssyyybnsr_hqysqyfzjgcdd.sbbhead.skssqq=$..zzsybnsrsbInitData.sssq.rqQ",
+		"tips": ""
+	}, {
+		"id": "06100101012000004",
+		"type": "10",
+		"desc": "",
+		"formula": "$..zzssyyybnsr_hqysqyfzjgcdd.sbbhead.skssqz=$..zzsybnsrsbInitData.sssq.rqZ",
+		"tips": ""
+	}, {
+		"id": "06100101012000020",
+		"type": "11",
+		"desc": "自动带出，不可修改，等于当期允许抵扣农产品进项税额元本列之和",
+		"formula": "$.zzsybsbSbbdxxVO.zzssyyybnsr_hqysqyfzjgcdd.trccfhdncpzzsjxseGrid.dqyxdkncpjxseHj=SUM($..trccfhdncpzzsjxseGridlbVO[*].dqyxdkncpjxse)",
+		"tips": ""
+	}, {
+		"id": "18802",
+		"type": "11",
+		"desc": "用于判断这一行是否有填数据，返回1 ：有  ， 0： 无",
+		"formula": "$..trccfhdncpzzsjxseGridlbVO[#].hjh=IF($..trccfhdncpzzsjxseGridlbVO[#].hdddhsl+$..trccfhdncpzzsjxseGridlbVO[#].qckcncpsl+$..trccfhdncpzzsjxseGridlbVO[#].qcpjmj+$..trccfhdncpzzsjxseGridlbVO[#].dqgjncpsl+$..trccfhdncpzzsjxseGridlbVO[#].dqmj+$..trccfhdncpzzsjxseGridlbVO[#].dqxshwsl+$..trccfhdncpzzsjxseGridlbVO[#].kcl>0||$..trccfhdncpzzsjxseGridlbVO[#].hyncpmc!=''||$..trccfhdncpzzsjxseGridlbVO[#].cpmc1!='',1,0)",
+		"tips": ""
+	}, {
+		"id": "06100101012000015",
+		"type": "01",
+		"desc": "自动带出，不可修改。平均购买单价=（期初库存农产品数量×期初平均买价＋当期购进农产品数量×当期买价）/(期初库存农产品数量＋当期购进农产品数量)",
+		"formula": "$..trccfhdncpzzsjxseGridlbVO[#].pjgmdj=ROUND(IF($..trccfhdncpzzsjxseGridlbVO[#].qckcncpsl+$..trccfhdncpzzsjxseGridlbVO[#].dqgjncpsl!=0,($..trccfhdncpzzsjxseGridlbVO[#].qckcncpsl*$..trccfhdncpzzsjxseGridlbVO[#].qcpjmj+$..trccfhdncpzzsjxseGridlbVO[#].dqgjncpsl*$..trccfhdncpzzsjxseGridlbVO[#].dqmj)/($..trccfhdncpzzsjxseGridlbVO[#].qckcncpsl+$..trccfhdncpzzsjxseGridlbVO[#].dqgjncpsl),0),2)",
+		"target": "",
+		"tips": ""
+	}, {
+		"id": "06100101012000019",
+		"type": "01",
+		"desc": "当期允许抵扣农产品增值税进项税额=当期销售货物数量（吨）×核定的单耗数量×平均购买单价×扣除率/（1＋扣除率）",
+		"formula": "$..trccfhdncpzzsjxseGridlbVO[#].dqyxdkncpjxse=ROUND($..trccfhdncpzzsjxseGridlbVO[#].dqxshwsl*$..trccfhdncpzzsjxseGridlbVO[#].hdddhsl*$..trccfhdncpzzsjxseGridlbVO[#].pjgmdj*$..trccfhdncpzzsjxseGridlbVO[#].kcl/(1+$..trccfhdncpzzsjxseGridlbVO[#].kcl),2)",
+		"target": "",
+		"tips": ""
+	}, {
+		"id": "06100101012000021",
+		"type": "02",
+		"desc": "本行一列或多列不为0或者不为空,[产品名称]不能为空",
+		"formula": "IF($..trccfhdncpzzsjxseGridlbVO[#].hjh>0&&$..trccfhdncpzzsjxseGridlbVO[#].cpmc1=='',false,true)",
+		"target": "",
+		"tips": "[产品名称]不能为空！"
+	}, {
+		"id": "06100101012000006",
+		"type": "02",
+		"desc": "",
+		"formula": "['#','$','*','{','}','[',']','<','>','.'].indexOf($..trccfhdncpzzsjxseGridlbVO[#].cpmc1)==-1",
+		"target": "",
+		"tips": "存在不能识别的字符，请重新输入！"
+	}, {
+		"id": "06100101012000007",
+		"type": "02",
+		"desc": "本行一列或多列不为0或者不为空,[耗用农产品名称]不能为空",
+		"formula": "IF($..trccfhdncpzzsjxseGridlbVO[#].hjh>0&&$..trccfhdncpzzsjxseGridlbVO[#].hyncpmc=='',false,true)",
+		"target": "",
+		"tips": "[耗用农产品名称]不能为空！"
+	},{
+		"id":"06100101012821001",
+	  	"type":"21",
+	  	"desc":"不存在BDA0610669[附表汇总纳税企业增值税分配表]，则删除对应的节点",
+	  	"formula":"(function() { if(document.getElementById('dzbdbmList').value.indexOf('BDA0610669')<0){delete formData.zzsybsbSbbdxxVO.zzssyyybnsr_hznsqyzzsfpb;} })();",
+	  	"tips":""
+	},{
+		"id":"06100101012721001",
+	  	"type":"21",
+	  	"desc":"不存在BDA0610614[附表汇总纳税企业通用传递单]，则删除对应的节点",
+	  	"formula":"(function() { if(document.getElementById('dzbdbmList').value.indexOf('BDA0610614')<0){delete formData.zzsybsbSbbdxxVO.zzssyyybnsr_hznsqytycdd;} })();",
+	  	"tips":""
+},{
+	"id": "06100101013611001",
+	"type": "11",
+	"desc": "创建一个中间节点，用于判断本行是否有填数据 ， 返回  1 ： 有填   0： 没填",
+	"formula": "$..ygzsffxcsmxbGridlbVO[#].hsj=IF(($..ygzsffxcsmxbGridlbVO[#].ysxmdmjmc!=''&&$..ygzsffxcsmxbGridlbVO[#].ysxmdmjmc!=null)||($..ygzsffxcsmxbGridlbVO[#].zzsslhzsl!=''&&$..ygzsffxcsmxbGridlbVO[#].zzsslhzsl!=null)||($..ygzsffxcsmxbGridlbVO[#].yyssl!=''&&$..ygzsffxcsmxbGridlbVO[#].yyssl!=null)||$..ygzsffxcsmxbGridlbVO[#].zzsbhsxse!=0||$..ygzsffxcsmxbGridlbVO[#].zzsbqsjkcje!=0||$..ygzsffxcsmxbGridlbVO[#].yysqcye!=0||$..ygzsffxcsmxbGridlbVO[#].yysbqfse!=0||$..ygzsffxcsmxbGridlbVO[#].yysbqsjkcje!=0,1,0)",
+	"target": "",
+	"tips": ""
+},{
+		"id": "06100101013602004",
+		"type": "02",
+		"desc": "",
+		"formula": "IF($..ygzsffxcsmxbGridlbVO[#].hsj>0&&($..ygzsffxcsmxbGridlbVO[#].ysxmdmjmc==''||$..ygzsffxcsmxbGridlbVO[#].ysxmdmjmc==null),false,true)",
+		"tips": "'应税项目代码及名称' 不能为空 "
+	},{
+		"id": "06100101013602005",
+		"type": "02",
+		"desc": "",
+		"formula": "IF($..ygzsffxcsmxbGridlbVO[#].hsj>0&&($..ygzsffxcsmxbGridlbVO[#].zzsslhzsl==''||$..ygzsffxcsmxbGridlbVO[#].zzsslhzsl==null),false,true)",
+		"tips": "'增值税税率或征收率' 不能为空 "
+	},{
+		"id": "06100101013602006",
+		"type": "02",
+		"desc": "",
+		"formula": "IF($..ygzsffxcsmxbGridlbVO[#].hsj>0&&($..ygzsffxcsmxbGridlbVO[#].yyssl==''||$..ygzsffxcsmxbGridlbVO[#].yyssl==null),false,true)",
+		"tips": "'营业税税率' 不能为空 "
+	},{"id":"06100101011000001",
+"type":"10",
+"desc":"",
+"formula":"$..zzssyyybnsr_cpygxcslmxb.sbbHead.nsrsbh=$..nsrjbxx.nsrsbh",
+"tips":""
+},
+{"id":"06100101011000002",
+"type":"10",
+"desc":"",
+"formula":"$..zzssyyybnsr_cpygxcslmxb.sbbHead.nsrmc=$..nsrjbxx.nsrmc",
+"tips":""
+},
+{"id":"06100101011000003",
+"type":"10",
+"desc":"",
+"formula":"$..zzssyyybnsr_cpygxcslmxb.sbbHead.skssqq=$..zzsybnsrsbInitData.sssq.rqQ",
+"tips":""
+},
+{"id":"06100101011000004",
+"type":"10",
+"desc":"",
+"formula":"$..zzssyyybnsr_cpygxcslmxb.sbbHead.skssqz=$..zzsybnsrsbInitData.sssq.rqZ",
+"tips":""
+},
+{"id":"06100101011000005",
+"type":"11",
+"desc":"填表日期",
+"formula":"$..zzssyyybnsr_cpygxcslmxb.sbbHead.tbrq=$..zzsybnsrsbInitData.sbrq",
+"tips":""
+},
+{"id":"06100101011000006",
+"type":"02",
+"desc":"",
+"formula":"($..ylxh).indexOf('#')==-1&&($..ylxh).indexOf('$')==-1&&($..ylxh).indexOf('{')==-1&&($..ylxh).indexOf('}')==-1&&($..ylxh).indexOf('<')==-1&&($..ylxh).indexOf('>')==-1",
+"tips":"存在不能识别的字符，请重新输入"
+},
+{"id":"808",
+"type": "11",
+"desc": "用于判断这一行是否有填数据，返回1 ：有  ， 0： 无",
+"formula": "$..cpygxcslmxbGridlbVO[#].Hhj=IF($..cpygxcslmxbGridlbVO[#].qckcl+$..cpygxcslmxbGridlbVO[#].bqgjl+$..cpygxcslmxbGridlbVO[#].bqcklYsxsl+$..cpygxcslmxbGridlbVO[#].bqcklYkcsl+$..cpygxcslmxbGridlbVO[#].qmkcl>0||$..cpygxcslmxbGridlbVO[#].ylxh!='',1,0)",
+"tips": ""
+},
+{"id":"06100101011000014",
+"type":"02",
+"desc":"本行一列或多列不为0或者不为空，[油量型号]不能为空",
+"formula":"IF($..cpygxcslmxbGridlbVO[#].Hhj>0&&$..cpygxcslmxbGridlbVO[#].ylxh=='',false,true)",
+"tips":"[油量型号]不能为空！"
+},
+{"id":"06100101011000011",
+"type":"01",
+"desc":"自动带出，不可修改。等于1栏加2栏减3栏减4栏",
+"formula":"$..cpygxcslmxbGridlbVO[#].qmkcl=$..cpygxcslmxbGridlbVO[#].qckcl+$..cpygxcslmxbGridlbVO[#].bqgjl-$..cpygxcslmxbGridlbVO[#].bqcklYsxsl-$..cpygxcslmxbGridlbVO[#].bqcklYkcsl",
+"tips":""
+},
+{"id":"06100101011000012",
+"type":"02",
+"desc":"",
+"formula":"$..cpygxcslmxbGridlbVO[#].qmkcl>=0",
+"tips":"[期末库存量]不能为负！"
+},
+
+
+{"id":"06100101012500001",
+"type":"10",
+"desc":"",
+"formula":"$..zzsybnsrsb_jyzyxsyphzb.sbbheadVO.nsrsbh=$..nsrjbxx.nsrsbh",
+"tips":""
+},
+{"id":"06100101012500002",
+"type":"10",
+"desc":"",
+"formula":"$..zzsybnsrsb_jyzyxsyphzb.sbbheadVO.nsrmc=$..nsrjbxx.nsrmc",
+"tips":""
+},
+{"id":"06100101012500003",
+"type":"10",
+"desc":"",
+"formula":"$..zzsybnsrsb_jyzyxsyphzb.sbbheadVO.skssqq=$..zzsybnsrsbInitData.sssq.rqQ",
+"tips":""
+},
+{"id":"06100101012500004",
+"type":"10",
+"desc":"",
+"formula":"$..zzsybnsrsb_jyzyxsyphzb.sbbheadVO.skssqz=$..zzsybnsrsbInitData.sssq.rqZ",
+"tips":""
+},
+
+
+
+{"id":"06100101012400001",
+"type":"10",
+"desc":"",
+"formula":"$..zzssyyybnsr_jyzyfjyxxmxb.sbbhead.nsrsbh=$..nsrjbxx.nsrsbh",
+"tips":""
+},
+{"id":"06100101012400002",
+"type":"10",
+"desc":"",
+"formula":"$..zzssyyybnsr_jyzyfjyxxmxb.sbbhead.nsrmc=$..nsrjbxx.nsrmc",
+"tips":""
+},
+{"id":"06100101012400003",
+"type":"10",
+"desc":"",
+"formula":"$..zzssyyybnsr_jyzyfjyxxmxb.sbbhead.skssqq=$..zzsybnsrsbInitData.sssq.rqQ",
+"tips":""
+},
+{"id":"06100101012400004",
+"type":"10",
+"desc":"",
+"formula":"$..zzssyyybnsr_jyzyfjyxxmxb.sbbhead.skssqz=$..zzsybnsrsbInitData.sssq.rqZ",
+"tips":""
+},
+{"id":"06100101012400005",
+"type":"10",
+"desc":"自动带出，不可修改",
+"formula":"$..zzssyyybnsr_jyzyfjyxxmxb.jyzyfjyxxmxGrid.jyzyfjyxxmxGridlbVO[0].fddbr=$..initData.nsrjbxx.frxm",
+"tips":""
+},
+{"id":"06100101012400006",
+"type":"02",
+"desc":"",
+"formula":"($..jyzyfjyxxmxGridlbVO[#].lxdh).indexOf('#')==-1&&($..jyzyfjyxxmxGridlbVO[#].lxdh).indexOf('$')==-1&&($..jyzyfjyxxmxGridlbVO[#].lxdh).indexOf('{')==-1&&($..jyzyfjyxxmxGridlbVO[#].lxdh).indexOf('}')==-1&&($..jyzyfjyxxmxGridlbVO[#].lxdh).indexOf('<')==-1&&($..jyzyfjyxxmxGridlbVO[#].lxdh).indexOf('>')==-1",
+"tips":"存在不能识别的字符，请重新输入"
+},
+{"id":"06100101012400015",
+"type":"11",
+"desc":"所属月份",
+"formula":"$..zzssyyybnsr_jyzyfjyxxmxb.sbbhead.ssyf=($..zzsybnsrsbInitData.sbrq).split('-')[1]",
+"tips":""
+},
+{"id":"06100101012400007",
+"type":"02",
+"desc":"",
+"formula":"($..jyzyfjyxxmxGridlbVO[#].zqs).indexOf('#')==-1&&($..jyzyfjyxxmxGridlbVO[#].zqs).indexOf('$')==-1&&($..jyzyfjyxxmxGridlbVO[#].zqs).indexOf('{')==-1&&($..jyzyfjyxxmxGridlbVO[#].zqs).indexOf('}')==-1&&($..jyzyfjyxxmxGridlbVO[#].zqs).indexOf('<')==-1&&($..jyzyfjyxxmxGridlbVO[#].zqs).indexOf('>')==-1",
+"tips":"存在不能识别的字符，请重新输入"
+},
+{"id":"06100101012400008",
+"type":"02",
+"desc":"",
+"formula":"($..jyzyfjyxxmxGridlbVO[#].tbr).indexOf('#')==-1&&($..jyzyfjyxxmxGridlbVO[#].tbr).indexOf('$')==-1&&($..jyzyfjyxxmxGridlbVO[#].tbr).indexOf('{')==-1&&($..jyzyfjyxxmxGridlbVO[#].tbr).indexOf('}')==-1&&($..jyzyfjyxxmxGridlbVO[#].tbr).indexOf('<')==-1&&($..jyzyfjyxxmxGridlbVO[#].tbr).indexOf('>')==-1",
+"tips":"存在不能识别的字符，请重新输入"
+},
+{"id":"06100101012400010",
+"type":"02",
+"desc":"",
+"formula":"($..jyzyfjyxxmxGridlbVO[#].jyqccbh).indexOf('#')==-1&&($..jyzyfjyxxmxGridlbVO[#].jyqccbh).indexOf('$')==-1&&($..jyzyfjyxxmxGridlbVO[#].jyqccbh).indexOf('{')==-1&&($..jyzyfjyxxmxGridlbVO[#].jyqccbh).indexOf('}')==-1&&($..jyzyfjyxxmxGridlbVO[#].jyqccbh).indexOf('<')==-1&&($..jyzyfjyxxmxGridlbVO[#].jyqccbh).indexOf('>')==-1",
+"tips":"存在不能识别的字符，请重新输入"
+},
+{"id":"06100101012400011",
+"type":"02",
+"desc":"",
+"formula":"($..jyzyfjyxxmxGridlbVO[#].ypxh).indexOf('#')==-1&&($..jyzyfjyxxmxGridlbVO[#].ypxh).indexOf('$')==-1&&($..jyzyfjyxxmxGridlbVO[#].ypxh).indexOf('{')==-1&&($..jyzyfjyxxmxGridlbVO[#].ypxh).indexOf('}')==-1&&($..jyzyfjyxxmxGridlbVO[#].ypxh).indexOf('<')==-1&&($..jyzyfjyxxmxGridlbVO[#].ypxh).indexOf('>')==-1",
+"tips":"存在不能识别的字符，请重新输入"
+},
+{"id":"06100101012400012",
+"type":"11",
+"desc":"等于月累计加油量之和",
+"formula":"$..zzssyyybnsr_jyzyfjyxxmxb.jyzyfjyxxmxGrid.yljjylHj=SUM($..zzssyyybnsr_jyzyfjyxxmxb.jyzyfjyxxmxGrid.jyzyfjyxxmxGridlbVO[*].yljjyl)",
+"tips":""
+},
+{"id":"06100101012400013",
+"type":"11",
+"desc":"等于月累计金额之和",
+"formula":"$..zzssyyybnsr_jyzyfjyxxmxb.jyzyfjyxxmxGrid.yljjeHj=SUM($..zzssyyybnsr_jyzyfjyxxmxb.jyzyfjyxxmxGrid.jyzyfjyxxmxGridlbVO[*].yljje)",
+"tips":""
+},
+{"id":"06100101012400014",
+"type":"11",
+"desc":"等于月累计金额之和",
+"formula":"$..zzssyyybnsr_jyzyfjyxxmxb.jyzyfjyxxmxGrid.yynzzseHj=SUM($..zzssyyybnsr_jyzyfjyxxmxb.jyzyfjyxxmxGrid.jyzyfjyxxmxGridlbVO[*].yynzzse)",
+"tips":""
+},
+{"id":"06100101012400017",
+"type":"11",
+"desc":"",
+"formula":"$..zzssyyybnsr_jyzyfjyxxmxb.slxx.slrDm=$..nsrjbxx.slr",
+"tips":"受理人代码"
+},
+{"id":"06100101012400016", 
+"type":"10",
+"desc":"",
+"formula":"$..zzssyyybnsr_jyzyfjyxxmxb.slxx.slswjgDm=$..nsrjbxx.swjgDm",
+"tips":"受理税务机关代码"
+},
+{"id":"06100101012400018", 
+"type":"11",
+"desc":"受理日期",
+"formula":"$..zzssyyybnsr_jyzyfjyxxmxb.slxx.slrq=$..zzsybnsrsbInitData.sbrq",
+"tips":""
+},
+{"id":"06100101010900001",
+"type":"10",
+"desc":"",
+"formula":"$..zzssyyybnsr_cpygxcqkmxb.sbbheadVO.nsrsbh=$..nsrjbxx.nsrsbh",
+"tips":""
+},
+{"id":"06100101010900002",
+"type":"10",
+"desc":"",
+"formula":"$..zzssyyybnsr_cpygxcqkmxb.sbbheadVO.nsrmc=$..nsrjbxx.nsrmc",
+"tips":""
+},
+{"id":"06100101010900003",
+"type":"10",
+"desc":"",
+"formula":"$..zzssyyybnsr_cpygxcqkmxb.sbbheadVO.skssqq=$..zzsybnsrsbInitData.sssq.rqQ",
+"tips":""
+},
+{"id":"06100101010900004",
+"type":"10",
+"desc":"",
+"formula":"$..zzssyyybnsr_cpygxcqkmxb.sbbheadVO.skssqz=$..zzsybnsrsbInitData.sssq.rqZ",
+"tips":""
+},
+{"id":"999",
+"type":"11",
+"desc":"填表日期",
+"formula":"$..zzssyyybnsr_cpygxcqkmxb.sbbheadVO.tbrq=$..zzsybnsrsbInitData.sbrq",
+"tips":""
+},
+{"id":"06100101010900005",
+"type":"02",
+"desc":"",
+"formula":"($..cpygxcqkmxbGridlbVO[#].ypxh).indexOf('#')==-1&&($..cpygxcqkmxbGridlbVO[#].ypxh).indexOf('$')==-1&&($..cpygxcqkmxbGridlbVO[#].ypxh).indexOf('{')==-1&&($..cpygxcqkmxbGridlbVO[#].ypxh).indexOf('}')==-1&&($..cpygxcqkmxbGridlbVO[#].ypxh).indexOf('<')==-1&&($..cpygxcqkmxbGridlbVO[#].ypxh).indexOf('>')==-1",
+"tips":"存在不能识别的字符，请重新输入！"
+},
+{"id":"809",
+"type":"11",
+"desc":"用于判断这一行是否有填数据，返回1 ：有  ， 0： 无",
+"formula":"$..cpygxcqkmxbGridlbVO[#].Hhj=IF($..cpygxcqkmxbGridlbVO[#].qckcZgsl+$..cpygxcqkmxbGridlbVO[#].qckcDcsl+$..cpygxcqkmxbGridlbVO[#].qckcZgje+$..cpygxcqkmxbGridlbVO[#].qckcDcje+$..cpygxcqkmxbGridlbVO[#].bqrkZgsl+$..cpygxcqkmxbGridlbVO[#].bqrkDcsl+$..cpygxcqkmxbGridlbVO[#].bqrkZgje+$..cpygxcqkmxbGridlbVO[#].bqrkDcje+$..cpygxcqkmxbGridlbVO[#].bqckYsbfsl+$..cpygxcqkmxbGridlbVO[#].bqckYsbfje+$..cpygxcqkmxbGridlbVO[#].bqckFysbfZysl+$..cpygxcqkmxbGridlbVO[#].bqckFysbfDcsl+$..cpygxcqkmxbGridlbVO[#].bqckFysbfZyje+$..cpygxcqkmxbGridlbVO[#].bqckFysbfDcje+$..cpygxcqkmxbGridlbVO[#].qmkcDcje>0||$..cpygxcqkmxbGridlbVO[#].ypxh!='',1,0)",
+"tips":""
+},
+{"id":"06100101010900028",
+"type":"02",
+"desc":"本行一列或多列不为0或者不为空，[油品型号]不能为空",
+"formula":"IF($..cpygxcqkmxbGridlbVO[#].Hhj>0&&$..cpygxcqkmxbGridlbVO[#].ypxh=='',false,true)",
+"tips":"[油品型号]不能为空！"
+},
+{"id":"06100101010900006",
+"type":"02",
+"desc":"本行一列或多列不为0或者不为空，[期初库存_数量_自购]不能为负数",
+"formula":"$..cpygxcqkmxbGridlbVO[#].qckcZgsl>=0",
+"tips":"[期初库存_数量_自购]不能为负！"
+},
+{"id":"06100101010900007",
+"type":"02",
+"desc":"本行一列或多列不为0或者不为空，[期初库存_数量_代储]不能为负数",
+"formula":"$..cpygxcqkmxbGridlbVO[#].qckcDcsl>=0",
+"tips":"[期初库存_数量_代储]不能为负！"
+},
+{"id":"06100101010900008",
+"type":"02",
+"desc":"本行一列或多列不为0或者不为空，[期初库存_金额_自购]不能为负数",
+"formula":"$..cpygxcqkmxbGridlbVO[#].qckcZgje>=0",
+"tips":"[期初库存_金额_自购]不能为负！"
+},
+{"id":"06100101010900009",
+"type":"02",
+"desc":"本行一列或多列不为0或者不为空，[本期入库_数量_自购]不能为负数",
+"formula":"$..cpygxcqkmxbGridlbVO[#].bqrkZgsl>=0",
+"tips":"[本期入库_数量_自购]不能为负！"
+},
+{"id":"06100101010900010",
+"type":"02",
+"desc":"本行一列或多列不为0或者不为空，[本期入库_数量_代储]不能为负数",
+"formula":"$..cpygxcqkmxbGridlbVO[#].bqrkDcsl>=0",
+"tips":"[本期入库_数量_代储]不能为负！"
+},
+{"id":"06100101010900011",
+"type":"02",
+"desc":"本行一列或多列不为0或者不为空，[本期入库_金额_自购]不能为负数",
+"formula":"$..cpygxcqkmxbGridlbVO[#].bqrkZgje>=0",
+"tips":"[本期入库_金额_自购]不能为负！"
+},
+{"id":"06100101010900012",
+"type":"02",
+"desc":"本行一列或多列不为0或者不为空，[本期出库_应税部分_数量]不能为负数",
+"formula":"$..cpygxcqkmxbGridlbVO[#].bqckYsbfsl>=0",
+"tips":"[本期出库_应税部分_数量]不能为负！"
+},
+{"id":"06100101010900013",
+"type":"02",
+"desc":"本行一列或多列不为0或者不为空，[本期出库_应税部分_金额]不能为负数",
+"formula":"$..cpygxcqkmxbGridlbVO[#].bqckYsbfje>=0",
+"tips":"[本期出库_应税部分_金额]不能为负！"
+},
+{"id":"06100101010900014",
+"type":"02",
+"desc":"本行一列或多列不为0或者不为空，[本期出库_非应税部分_数量_自用]不能为负数",
+"formula":"$..cpygxcqkmxbGridlbVO[#].bqckFysbfZysl>=0",
+"tips":"[本期出库_非应税部分_数量_自用]不能为负！"
+},
+{"id":"06100101010900015",
+"type":"02",
+"desc":"本行一列或多列不为0或者不为空，[本期出库_非应税部分_数量_代储]不能为负数",
+"formula":"$..cpygxcqkmxbGridlbVO[#].bqckFysbfDcsl>=0",
+"tips":"[本期出库_非应税部分_数量_代储]不能为负！"
+},
+{"id":"06100101010900016",
+"type":"02",
+"desc":"本行一列或多列不为0或者不为空，[本期出库_非应税部分_金额_自用]不能为负数",
+"formula":"$..cpygxcqkmxbGridlbVO[#].bqckFysbfZyje>=0",
+"tips":"[本期出库_非应税部分_金额_自用]不能为负！"
+},
+{"id":"06100101010900017",
+"type":"01",
+"desc":"自动带出，不可修改。本项=第1栏+第5栏-第9栏-第11栏",
+"formula":"$..cpygxcqkmxbGridlbVO[#].qmkcZgsl=$..cpygxcqkmxbGridlbVO[#].qckcZgsl+$..cpygxcqkmxbGridlbVO[#].bqrkZgsl-$..cpygxcqkmxbGridlbVO[#].bqckYsbfsl-$..cpygxcqkmxbGridlbVO[#].bqckFysbfZysl",
+"tips":""
+},
+{"id":"06100101010900018",
+"type":"02",
+"desc":"",
+"formula":"$..cpygxcqkmxbGridlbVO[#].qmkcZgsl>=0",
+"tips":"[期末库存_数量_自购]不能为负！"
+},
+{"id":"06100101010900019",
+"type":"01",
+"desc":"自动带出，不可修改。本项=第2栏+6栏-12栏",
+"formula":"$..cpygxcqkmxbGridlbVO[#].qmkcDcsl=$..cpygxcqkmxbGridlbVO[#].qckcDcsl+$..cpygxcqkmxbGridlbVO[#].bqrkDcsl-$..cpygxcqkmxbGridlbVO[#].bqckFysbfDcsl",
+"tips":""
+},
+{"id":"06100101010900020",
+"type":"02",
+"desc":"",
+"formula":"$..cpygxcqkmxbGridlbVO[#].qmkcDcsl>=0",
+"tips":"[期末库存_数量_代储]不能为负！"
+},
+{"id":"06100101010900021",  
+"type":"01",
+"desc":"自动带出，不可修改。本项=第3栏+第7栏-第10栏-第13栏",
+"formula":"$..cpygxcqkmxbGridlbVO[#].qmkcZgje=$..cpygxcqkmxbGridlbVO[#].qckcZgje+$..cpygxcqkmxbGridlbVO[#].bqrkZgje-$..cpygxcqkmxbGridlbVO[#].bqckYsbfje-$..cpygxcqkmxbGridlbVO[#].bqckFysbfZyje",
+"tips":""
+},
+{"id":"06100101010900022",
+"type":"02",
+"desc":"",
+"formula":"$..cpygxcqkmxbGridlbVO[#].qmkcZgje>=0",
+"tips":"[期末库存_金额_自购]不能为负！"
+},
+{"id":"06100101010900023",
+"type":"11",
+"desc":"1.自动带出，不可修改2.应等于期末库存自购的金额之和",
+"formula":"$..cpygxcqkmxbGrid.qckcZgjehj=SUM($..cpygxcqkmxbGridlbVO[*].qmkcZgje)",
+"tips":""
+},
+{"id":"06100101010900024",
+"type":"11",
+"desc":"1.自动带出，不可修改2.应等于本期入库中自购的金额之和",
+"formula":"$..cpygxcqkmxbGrid.bqrkZgjehj=SUM($..cpygxcqkmxbGridlbVO[*].bqrkZgje)",
+"tips":""
+},
+{"id":"06100101010900025",
+"type":"11",
+"desc":"1.自动带出，不可修改2.应等于本期出库的应税部分金额之和",
+"formula":"$..cpygxcqkmxbGrid.bqckYsbfjehj=SUM($..cpygxcqkmxbGridlbVO[*].bqckYsbfje)",
+"tips":""
+},
+{"id":"06100101010900026",
+"type":"11",
+"desc":"1.自动带出，不可修改2.应等于本期出库非应税部分自用的金额之和",
+"formula":"$..cpygxcqkmxbGrid.bqckFysbfZyjehj=SUM($..cpygxcqkmxbGridlbVO[*].bqckFysbfZyje)",
+"tips":""
+},
+{"id":"06100101010900027",
+"type":"11",
+"desc":"1.自动带出，不可修改2.应等于期末库存自购的金额之和",
+"formula":"$..cpygxcqkmxbGrid.qmkcZgjehj=SUM($..cpygxcqkmxbGridlbVO[*].qmkcZgje)",
+"tips":""
+}]

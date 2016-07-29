@@ -1,0 +1,131 @@
+<!doctype html>
+<html id="ng-app"  xmlns:ng="http://angularjs.org">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=EDGE">
+<meta http-equiv="pragma" content="no-cache">
+<title>卷烟消费税纳税申报表（批发）</title>
+
+</head>
+
+<body>
+<div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl" >
+<div class="NewTableHead" ng-jprefix="xfssbSbbdxxVO.xfsYlpfsb.xfssb2.sbbhead"> 
+     <h1>卷烟消费税纳税申报表（批发）</h1>
+    <li class="dateTxt">税款所属期:<input  type="text" class="topInput"  value=" " ng-model="sbbhead.skssqq"  readonly> 至<input  type="text" class="topInput"  value=" " ng-model="sbbhead.skssqz" readonly>  </li>
+</div>
+
+<div class="NewTableTop" >
+<table width="100%" border="0" cellspacing="0" cellpadding="0" ng-jprefix="xfssbSbbdxxVO.xfsYlpfsb.xfssb2.sbbhead">
+  <tr>
+    <td>纳税人名称（公章）：<input style="width: 160px;"  type="text" class="topInput"  ng-model="sbbhead.nsrmc" readonly> </td>
+    <td align="right">纳税人识别号：<input  type="text" class="topInput"  value=" " ng-model="sbbhead.nsrsbh" readonly> </td>
+  </tr>
+  <tr>
+    <td>填表日期：<input  type="text" class="topInput"  value=" " ng-model="sbbhead.sbrq1"  readonly> </td>
+    <td align="right">单位：卷烟万支、金额单位：元（列至角分）</td>
+  </tr>
+</table>
+</div>
+
+<div class="NewTableMain">
+<table width="100%" border="0" cellspacing="1" cellpadding="0"   class="sfzrdLockTb" ng-jprefix="xfssbSbbdxxVO.xfsYlpfsb.xfssb2.sbsjxxGrid2.sbsjxxGridlb">
+<tr>
+    <td width="130" align="center" class="title01"  rowspan="2" ><strong>应税消费品名称</strong></td>
+    <td width="70" align="center" class="title01" colspan="2"><strong>适用税率</strong></td>
+     <td align="center" class="title01" rowspan="2" ><strong>销售数量（万支）</strong></td>
+    <td align="center" class="title01" rowspan="2" ><strong>销售额</strong></td>
+    <td align="center" class="title01" rowspan="2" ><strong>应纳税额</strong></td>
+  </tr>
+  <tr>
+    <td width="70" align="center" class="title01"><strong>定额税率</strong></td>
+    <td align="center" class="title01"><strong>比例税率</strong></td>
+  </tr>
+  <tr >
+    <td align="center" class="title01">卷烟</td>
+    <td class="read mid" align="center"  ><input   style="width: 1px" ng-datatype="number" ng-model="sbsjxxGridlb[1].sl1" type="text"   readonly >50元每万支</td>
+    <td class="read mid" align="center" ><input  style="width: 1px" ng-datatype="number" ng-model="sbsjxxGridlb[0].sl1" type="text" readonly>11%</td>
+     <td class="edit right"  ><input  lockZspmDm="0126"      ng-datatype="number{4}" ng-model="sbsjxxGridlb[1].xssl" type="text" ></td>
+    <td class="edit right"  ><input  lockZspmDm="0126"    ng-datatype="number" ng-model="sbsjxxGridlb[0].xse" type="text"></td>
+    <td class="read right"  ><input  ng-datatype="number" ng-model="sbsjxxGridlb[0].ynse"  type="text"   ></td>
+      </tr>
+    <tr  style="display: none;">
+      <td class="read right" ng-jprefix="1xfssbSbbdxxVO.xfsYlpfsb.xfssb2.sbsjxxGrid2.sbsjxxGridlb"><input  ng-datatype="number" ng-model="sbsjxxGridlb[0].ynse"  type="text"  readonly></td>
+         <td class="read right" ng-jprefix="1xfssbSbbdxxVO.xfsYlpfsb.xfssb2.sbsjxxGrid2.sbsjxxGridlb"><input  ng-datatype="number" ng-model="sbsjxxGridlb[1].ynse"  type="text"  readonly></td>
+    </tr>
+  <tr  ng-jprefix="xfssbSbbdxxVO.xfsYlpfsb.xfssb2">
+    <td align="center" class="title01">合计</td>
+    <td class="read mid"><input    type="text" value="--" readonly></td>
+    <td class="read mid"><input    type="text" value="--" readonly></td>
+    <td class="read right"><input     ng-datatype="number{4}" ng-model="xfssb2.jyxsslhj" type="text" readonly></td>
+    <td class="read right"><input  ng-datatype="number" ng-model="xfssb2.jyxsehj" type="text" readonly></td>
+    <td class="read right"><input  ng-datatype="number" ng-model="xfssb2.jyynsehj" type="text" readonly   ></td>
+  </tr>
+  </table>
+  <table width="100%" border="0" cellspacing="1" cellpadding="0"  ng-jprefix="xfssbSbbdxxVO.xfsYlpfsb.xfssb2.sbsjxxForm2">
+  <tr >
+    <td  colspan="4" class="title01">&nbsp;</td>
+    <td colspan="2" rowspan="2"><div class="statement">
+      <h2>声明</h2>
+      <div class="text" ng-jprefix="xfssbSbbdxxVO.xfsYlpfsb.xfssb2.slxxForm">此纳税申报表是根据国家税收法律的规定填报的，我确定它是真实的、可靠的、完整的。<br/>
+        经办人（签章）：<input class="topInput"   type="text"
+					style="width: 100px;" readonly ng-model="slxxForm.jbr"     /><br/>
+              财务负责人（签章）：<input class="topInput" ng-model="slxxForm.cwfzr"   type="text"
+					style="width: 100px;" readonly    /><br/>
+              联系电话：<input class="topInput"   ng-model="slxxForm.lxdh"  type="text"
+					style="width: 100px;" readonly     /><br/>
+        
+        </div>
+      </div>  </td>
+  </tr>
+  <tr>
+    <td colspan="3" class="title01">期初未缴税额:</td>
+    <td class="edit right"  ><input  ng-datatype="number" ng-model="sbsjxxForm2.qcwjse" type="text" value="0.00" ></td>
+  </tr>
+  <tr>
+    <td colspan="3" class="title01">本期缴纳前期应纳税额：</td>
+    <td class="edit right"  ><input  ng-datatype="number" ng-model="sbsjxxForm2.bqjnqqynse" type="text" value="0.00"  ></td>
+    <td colspan="2" rowspan="4" ng-jprefix="xfssbSbbdxxVO.xfsYlpfsb.xfssb2.slxxForm"><div class="statement">
+        <div class="text" style=" text-align:center">（如果你已委托代理人申报，请填写）</div>
+            <h2>授权声明</h2>
+             <div class="text">为代理一切税务事宜，现授权 <input  ng-model="slxxForm.swdlrmc"  type="text" class="topInput"
+					style="width: 200px; text-align:center;"     readonly   />(地址)<input   type="text" class="topInput"
+					style="width: 200px; text-align:center;" ng-model="slxxForm.swdlrdz"  readonly   />为本纳税人的代理
+申报人，任何与本申报表有关的往来文件，都可寄予此人。<br/>
+              授权人签章：<input class="topInput" name="text" type="text"
+					style="width: 100px;" readonly   ng-model="slxxForm.sqr"   /> 
+            </div>
+          </div></td>
+    </tr>
+  <tr>
+    <td colspan="3" class="title01">本期预缴税额： </td>
+    <td class="read right"><input  ng-datatype="number" ng-model="sbsjxxForm2.bqyjse" type="text" readonly ></td>
+    </tr>
+  <tr>
+    <td colspan="3" class="title01">本期应补（退）税额：</td>
+    <td class="read right"><input  ng-datatype="number" ng-model="sbsjxxForm2.bqybtse" type="text"  readonly  ></td>
+    </tr>
+  <tr>
+    <td colspan="3" class="title01">期末未缴税额: </td>
+    <td class="read right"><input  ng-datatype="number" ng-model="sbsjxxForm2.qmwjse" type="text" readonly ></td>
+    </tr>
+</table>
+</div>
+
+<div class="NewTableFoot">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center">受理人（签章）：  <input class="topInput" name="text" type="text"
+					style=" text-align:center;width: 100px;" readonly      />  &nbsp; &nbsp;  受理日期： <input name="text" type="text" class="topInput"
+					style="text-align:center;width: 40px;" readonly      /> 年  <input name="text" type="text" class="topInput"
+					style="text-align:center;width: 20px;" readonly      /> 月<input name="text" type="text" class="topInput"
+					style="text-align:center;width: 20px;" readonly      />日       &nbsp; &nbsp;  受理税务机关（章）：<input class="topInput" name="text" type="text"
+					style=" text-align:center;width: 100px;" readonly      /> </td>
+  </tr>
+</table>
+</div>
+
+
+</div>
+</body>
+</html>

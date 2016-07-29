@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" >
+<title>16$增值税运输发票抵扣清单(动态行分组显示)</title>
+</head>
+
+<body>
+<div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl">
+<div class="NewTableHead">
+     <h1>　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　增值税运输发票抵扣清单</h1>
+</div>
+
+
+<div class="NewTableTop" ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_zzsysfpdkqd.sbbhead">
+<table width="160%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>纳税人名称： 
+      <span class="textline" ng-bind="sbbhead.nsrmc"></span>
+     </td>
+    <td align="right">纳税人识别号：
+      <input type="text"    readonly style="width:200px;" ng-model="sbbhead.nsrsbh" class="topInput" /></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td align="right">金额单位:元至角分</td>
+  </tr>
+</table>
+</div>
+
+<div class="NewTableMain"  ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_zzsysfpdkqd.dkqdGrid.dkqdGridlbVO">
+<div>
+   <table width="160%" border="0" cellpadding="0" cellspacing="1" class="ysfpdkqd">
+  <tr>
+    <td align="center" class="title01" width="2%"><strong>序号</strong></td>
+    <td colspan="2" align="center" class="title01" width="9%"><strong>发票种类</strong></td>
+    <td align="center" class="title01" width="9%"><strong>发票号码</strong></td>
+    <td align="center" class="title01" width="7%"><strong>开票日期</strong></td>
+    <td align="center" class="title01" width="12%"><strong>运输单位名称</strong></td>
+    <td align="center" class="title01" style="line-height:18px;" width="9%"><strong>运输单位<br>纳税人<br>识别号</strong></td>
+    <td align="center" class="title01" style="line-height:18px;" width="9%"><strong>运输单位<br>主管地方<br>税务局名称</strong></td>
+    <td align="center" class="title01" style="line-height:18px;" width="9%"><strong>运输单位<br>主管地方<br>税务局代码</strong></td>
+    <td align="center" class="title01" width="9%"><strong>运费金额</strong></td>
+    <td align="center" class="title01" style="line-height:18px;" width="9%"><strong>允许计算<br>抵扣的<br>运费金额</strong></td>
+    <td align="center" class="title01" style="line-height:18px;" width="9%"><strong>计算抵扣的<br>进项税额</strong></td>
+    <td align="center" class="title01" width="8%"><strong>操作</strong></td>
+  </tr>
+  <tr>
+    <td class="title01" width="2%">一</td>
+    <td colspan="2" class="title01">铁路运输</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td class="edit right"><input type="text" ng-datatype="number"   ng-model="dkqdGridlbVO[0].yfje"></td>
+    <td class="edit right"><input type="text" ng-datatype="number"   ng-model="dkqdGridlbVO[0].jsdkYfje"></td>
+    <td class="edit right"><input type="text" ng-datatype="number"   ng-model="dkqdGridlbVO[0].jsdkdjxse"></td>
+    <td align="center" class="read right">--</td>
+  </tr>
+  <tr>
+    <td class="title01" width="2%">二</td>
+    <td colspan="2" class="title01">航空运输</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td class="edit right"><input type="text" ng-datatype="number"   ng-model="dkqdGridlbVO[1].yfje"></td>
+    <td class="edit right"><input type="text" ng-datatype="number"   ng-model="dkqdGridlbVO[1].jsdkYfje"></td>
+    <td class="edit right"><input type="text" ng-datatype="number"   ng-model="dkqdGridlbVO[1].jsdkdjxse"></td>
+    <td align="center" class="read right">--</td>
+  </tr>
+  <tr> 
+    <td class="title01" width="2%">三</td>
+    <td colspan="2" class="title01">管道运输</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td class="edit right"><input type="text" ng-datatype="number"   ng-model="dkqdGridlbVO[2].yfje"></td>
+    <td class="edit right"><input type="text" ng-datatype="number"   ng-model="dkqdGridlbVO[2].jsdkYfje"></td>
+    <td class="edit right"><input type="text" ng-datatype="number"   ng-model="dkqdGridlbVO[2].jsdkdjxse"></td>
+    <td align="center" class="read right">--</td>
+  </tr>
+  <tr>
+    <td class="title01" width="2%">四</td>
+    <td colspan="2" class="title01">海洋运输</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td class="edit right"><input type="text" ng-datatype="number"   ng-model="dkqdGridlbVO[3].yfje"></td>
+    <td class="edit right"><input type="text" ng-datatype="number"   ng-model="dkqdGridlbVO[3].jsdkYfje"></td>
+    <td class="edit right"><input type="text" ng-datatype="number"   ng-model="dkqdGridlbVO[3].jsdkdjxse"></td>
+    <td align="center" class="read right">--</td>
+  </tr>
+    </table>
+  </div>
+  
+   <div>
+    <table width="160%" border="0" cellpadding="0" cellspacing="1" class="ysfpdkqd">
+    <tr cellspacing-top="0">
+    	 <td rowspan="100" class="title01" width="2%">五</td>
+    	<td rowspan="100" class="title01" width="5%">公路运输</td>
+    </tr>
+    <tr ng-repeat="p in dkqdGridlbVO track by $index"  ng-repeat-init="dkqdGridlbVO"
+         default-value='{"fpzlDm":"公路运输","fphm":"","kprq":"","ysdwMc":"","ysdwNsrsbh":"","ysdwZgdfswjmc":"","ysdwZgdfswjDm":"","yfje":0,"jsdkYfje":0,"jsdkdjxse":0}' ng-if="p.fpzlDm=='公路运输'">
+    <td align="center" class="title01" ng-bind="$index+1" width="4%"></td>
+     <td class="edit right"  style="display:none">
+         		 <input type="text"   ng-model="p.fpzlDm">
+    </td>
+    <td class="edit right" width="9%">
+      <input type="text"   ng-model="p.fphm" ng-datatype="digit">
+     </td>
+      <td class="edit left" width="7%">
+      <input type="text" class="laydate-icon topInput"  ng-laydate="{}" ng-model ="p.kprq"  readonly style="width: 99%; padding-right: 0; padding-left: 0; height: 100%;"> 
+      </td>
+    <td class="edit right" width="12%">
+      <input type="text"    ng-model="p.ysdwMc">
+      </td>
+    <td class="edit right" width="9%">
+      <input type="text"    ng-model="p.ysdwNsrsbh">
+      </td>
+    <td class="edit right" width="9%">
+      <input type="text"    ng-model="p.ysdwZgdfswjmc">
+      </td>
+    <td class="edit right" width="9%">
+      <input type="text"    ng-model="p.ysdwZgdfswjDm">
+      </td>
+    <td class="edit right" width="9%"><input type="text" ng-datatype="number"   ng-model="p.yfje"></td>
+    <td class="edit right" width="9%"><input type="text" ng-datatype="number"   ng-model="p.jsdkYfje"></td>
+    <td class="edit right" width="9%"><input type="text" ng-datatype="number"   ng-model="p.jsdkdjxse"></td>
+    <td align="center" width="8%"><div class="sbtnbox"><a class="sbtn sbtn01" ng-href="#" ng-click="add()">增加</a>&nbsp;&nbsp;&nbsp;<a class="sbtn sbtn03" ng-if="$index!=0" ng-href="#" ng-click="del($index)">删除</a></div></td>
+  </tr>
+  <tr>
+    <td align="center" class="title01">小计</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td class="read right"><input type="text" ng-datatype="number"   readonly ng-model="dkqdGrid.glysqd_yfjeXj"></td>
+    <td class="read right"><input type="text" ng-datatype="number"   readonly ng-model="dkqdGrid.glysqd_jsdkYfjeXj"></td>
+    <td class="read right"><input type="text" ng-datatype="number"   readonly ng-model="dkqdGrid.glysqd_jsdkdjxseXj"></td>
+    <td align="center" class="read right">--</td>
+  </tr>
+  </table>
+  </div>
+  
+  <div>
+    <table width="160%" border="0" cellpadding="0" cellspacing="1" class="ysfpdkqd">
+    <tr>
+	    <td rowspan="100" class="title01" width="2%">六</td>
+	    <td rowspan="100" class="title01" width="5%">内河运输</td>
+    </tr>
+   <tr ng-repeat="p in dkqdGridlbVO track by $index"  ng-repeat-init="dkqdGridlbVO"
+         default-value='{"fpzlDm":"内河运输","fphm":"","kprq":"","ysdwMc":"","ysdwNsrsbh":"","ysdwZgdfswjmc":"","ysdwZgdfswjDm":"","yfje":0,"jsdkYfje":0,"jsdkdjxse":0}' ng-if="p.fpzlDm=='内河运输'">
+       <td align="center" class="title01" ng-bind="$index+1" width="4%"></td>
+     <td class="edit right"  style="display:none">
+         		 <input type="text"    ng-model="p.fpzlDm">
+    </td>
+    <td class="edit right" width="9%">
+       		<input type="text"    ng-model="p.fphm" ng-datatype="digit" >
+    </td>
+    <td class="edit left" width="7%">
+         		 <input type="text" class="laydate-icon topInput"  ng-laydate="{}" ng-model ="p.kprq"  readonly style="width: 99%; padding-right: 0; padding-left: 0; height: 100%;"> 
+    </td>
+    <td class="edit right" width="12%" ng-if="type==1">
+         		 <input type="text"    ng-model="p.ysdwMc">
+    </td>
+       <td class="edit radio" width="12%" ng-if="type==2">
+           <input type="text"    ng-model="p.ysdwMc">
+       </td>
+    <td class="edit right" width="9%">
+         		<input type="text"    ng-model="p.ysdwNsrsbh">
+    </td>
+    <td class="edit right" width="9%">
+         		 <input type="text"    ng-model="p.ysdwZgdfswjmc">
+    </td>
+    <td class="edit right" width="9%">
+         	<input type="text"    ng-model="p.ysdwZgdfswjDm">
+    </td>
+    <td class="edit right" width="9%">
+         	 <input type="text" ng-datatype="number"   ng-model="p.yfje">	
+         </td>
+    <td class="edit right" width="9%">
+         	<input type="text" ng-datatype="number"   ng-model="p.jsdkYfje">	
+      </td>
+    <td class="edit right" width="9%">
+         	 <input type="text" ng-datatype="number"   ng-model="p.jsdkdjxse">	
+        </td>
+     <td align="center" ><div class="sbtnbox" width="8%"><a class="sbtn sbtn01" ng-href="#" ng-click="add()">增加</a>&nbsp;&nbsp;&nbsp;<a class="sbtn sbtn03" ng-if="$index!=0" ng-href="#" ng-click="del($index)">删除</a></div></td>
+  </tr>
+  <tr ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_zzsysfpdkqd.dkqdGrid">
+    <td align="center"  class="title01">小计</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td align="center" class="read right">--</td>
+    <td class="read right"><input type="text" ng-datatype="number"   readonly ng-model="dkqdGrid.nhysqd_yfjeXj"></td>
+    <td class="read right"><input type="text" ng-datatype="number"   readonly ng-model="dkqdGrid.nhysqd_jsdkYfjeXj"></td>
+    <td class="read right"><input type="text" ng-datatype="number"   readonly ng-model="dkqdGrid.nhysqd_jsdkdjxseXj"></td>
+     <td align="center" class="read right">--</td>
+  </tr>
+  </table>
+</div>
+
+
+ <div  ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_zzsysfpdkqd.dkqdGrid">
+   <table width="160%" border="0" cellpadding="0" cellspacing="1" class="ysfpdkqd">
+  <tr>
+    <td colspan="3" width="11%" height="31" class="title01" align="center" >合  计</td>
+    <td align="center" class="read right" width="9%">--</td>
+    <td align="center" class="read right" width="7%">--</td>
+    <td align="center" class="read right" width="12%">--</td>
+    <td align="center" class="read right" width="9%">--</td>
+    <td align="center" class="read right" width="9%">--</td>
+    <td align="center" class="read right" width="9%">--</td>
+    <td class="read right" width="9%"><input type="text" ng-datatype="number"   readonly ng-model="dkqdGrid.yfjeHj"></td>
+    <td class="read right" width="9%"><input type="text" ng-datatype="number"   readonly ng-model="dkqdGrid.jsdkYfjeHj"></td>
+    <td class="read right" width="9%"><input type="text" ng-datatype="number"   readonly ng-model="dkqdGrid.jsdkdjxseHj"></td>
+     <td align="center" class="read right" width="8%">--</td>
+  </tr>
+</table>
+</div>
+</div>
+
+ <div class="NewTableFoot"> 
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>注：1、铁路运输、航空运输、管道运输、海洋运输栏按汇总数填写；</td>
+  </tr>
+  <tr ng-render-finish=""></tr>
+</table>
+ </div> 
+
+</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+﻿@charset "utf-8";
+/* CSS Document */
+*{ margin:0px; padding:0px; font-family:"微软雅黑"; color:#313131; list-style-type:none;}
+body{  padding-top:10px; padding-bottom:10px;}
+body a{ outline:none; text-decoration:underline;}
+a:active {color: red;}
+a:link {color: blue; text-decoration:none;}
+a:visited {color:purple;text-decoration:none;}
+a:hover {color: red; text-decoration:underline;} 
+.NewTableHead{}
+.NewTableTop{}
+.NewTableTop .textline{font-size:12px; padding:3px 5px; padding-left:5px; border-bottom:1px solid #b5b5b5;}
+.NewTableHead h1{  font-size:18px; text-align:center; padding-bottom:30px;  padding-top:30px; line-height:28px;}
+.NewTableHead .dateTxt{ text-align:center; font-size:12px; height:28px; line-height:33px;}
+.NewTableTop td{ font-size:12px; height:26px; line-height:26px; padding-top:8px;}
+.NewTableMain {  background-color:#fff; padding-top:12px;}
+.NewTableMain table{ background-color:#b5b5b5; font-size:12px;}
+.NewTableMain td{ background-color:#fff; height:27px;}
+.NewTableMain .title01{ background-color:#f8fcfd; padding:0 5px 0 5px;}
+
+.statement{ margin:5px; }
+.statement .text{ font-size:12px; line-height:18px; }
+.statement td{color:#575757;}
+.statement h2{text-align:center;font-size:12px; height:20px; line-height:20px;}
+.NewTableFoot { font-size:12px; padding-bottom:10px; padding-top:10px;}
+.NewTableFoot h2{font-size:12px; height:28px; line-height:28px; }
+.NewTableFoot td{font-size:12px; height:22px; }
+.topInput{ font-size:12px; height:25px; line-height:25px; padding-left:5px; border:1px solid #fff; border-bottom-color:#b5b5b5; }
+.topInput:hover{background-color:#ffffd5;}
+.yellow_tisi{line-height:20px; background-color:red;right:-70px; bottom:-50px; padding:5px 5px;text-align:left; z-index:2; box-shadow:2px 2px 3px #ccc; display:none;}
+.NewTableMain select{ border:1px solid #fff; width:100%;}
+.NewTableMain .back{ text-align:center; background-color:#f1edee;}
+.topInput:hover{background-color:#ffffd5;}
+.yellow{ background-color: #ffd21d !important;}
+.relative{ position:relative;}
+/* .yellow_tisi{line-height:20px; background-color:#FFC; position:absolute; right:-70px; bottom:-50px; padding:0px 5px;text-align:left; z-index:2; box-shadow:2px 2px 3px #ccc; display:none;} */
+.yellow_tisi{line-height:20px; background-color:#FFC; position:absolute; right:-10px; bottom:-30px; padding:5px 5px;text-align:left; z-index:2; box-shadow:2px 2px 3px #ccc; display:none;}
+/*新增按钮0622*/
+.sbtn{ color:#fff !important; margin:0px 0px; border-radius:2px; font-size:12px; padding:0px 10px; display:inline-block; height:24px; line-height:24px;}
+.sbtn:hover{ opacity:0.8}
+.sbtn01{ background-color:#1a56a9; cursor:pointer;}
+.sbtn02{ background-color:#F4D03F;cursor:pointer;}
+.sbtn03{ background-color:#ff5a00;cursor:pointer;}
+
+.NewTableMain .left input{text-align:left;}
+.NewTableMain .mid input{text-align:center;}
+.NewTableMain .right input{text-align:right;}
+
+.NewTableMain .edit { padding-right: 2px;}
+.NewTableMain .edit input{width:100%; height:25px; border:1px solid #fff; font-size:12px;*width:98%;}
+.NewTableMain .edit input:hover{ background-color:#ffffd5;}
+.NewTableMain .read { padding-right: 2px;background-color:#f1edee;}
+.NewTableMain .read input{width:100%; height:25px; border:1px solid #f1edee; font-size:12px;background-color:#f1edee;*width:98%;}
+
+/* 手工修改单元格后消除自动计算的相关提示 */
+.manual { background-color:#FFFDA5; color:#ff6600; z-index:100000; position:relative; }
+.manual .rtDelta{ position:absolute; right:0; width: 0; top:0px; height: 0; border-top: 10px solid #22ff22; border-left: 10px solid transparent; }
+.manual i{ color:#326ab7; font-style:normal; padding-top:10px; display:block;}

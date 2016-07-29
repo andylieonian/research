@@ -1,0 +1,128 @@
+<!doctype html>
+<html id="ng-app"  xmlns:ng="http://angularjs.org">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" >
+<title>增值税纳税申报表（适用于增值税小规模纳税人）附列资料</title>
+</head>
+<body>
+<div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl">
+<div class="NewTableHead" ng-jprefix="qcs.initData.zzsxgmsbInitData.sssq">
+     <h1>增值税纳税申报表（适用于增值税小规模纳税人）附列资料</h1>
+    <li class="dateTxt">税款所属期：
+         <input type="text" readonly="true" style="width:100px; height:20px;" ng-model="sssq.rqQ" class="topInput">             
+    	至 
+    	 <input type="text" readonly="true" style="width:100px; height:20px;" ng-model="sssq.rqZ" class="topInput">       		
+    </li>
+</div>
+<div class="NewTableTop">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr ng-jprefix="qcs.initData.nsrjbxx">
+    <td>纳税人名称（公章）：
+    <span class="textline" ng-bind="nsrjbxx.nsrmc"></span>         
+    </td>    
+    <td align="right">纳税人识别号：
+    <span class="textline" ng-bind="nsrjbxx.nsrsbh"></span> 
+    </td>  
+  </tr>
+  <tr ng-jprefix="qcs.initData.zzsxgmsbInitData">
+    <td>填表日期：
+    	<span class="textline" ng-bind="zzsxgmsbInitData.sbrq"></span>    
+    </td>
+    <td align="right">金额单位：元（列至角分）</td>
+  </tr>
+</table>
+</div>
+
+
+<div class="NewTableMain">
+<table width="100%" border="0" cellspacing="1" cellpadding="0" ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.zzsxgmflzl.flzlForm">
+    <tr>
+      <td colspan="4" align="center" class="title01"><strong>应税行为（3%征收率）扣除额计算</strong></td>
+    </tr>
+    <tr>
+      <td align="center" class="title01">期初余额 </td>
+      <td align="center" class="title01">本期发生额 </td>
+      <td align="center" class="title01">本期扣除额 </td>
+      <td align="center" class="title01">期末余额</td>
+    </tr>
+    <tr>
+      <td align="center" class="title01">1</td>
+      <td align="center" class="title01">2</td>
+      <td align="center" class="title01">3（3≤1＋2之和，且3≤5）</td>
+      <td align="center" class="title01">4＝1＋2－3</td>
+    </tr>
+    <tr>
+      <td class="read right"><input readonly="true" type="text" ng-datatype="number" ng-model="flzlForm.qcye"></td>
+      <td class="edit right"><input  type="text"  ng-datatype="number" ng-model="flzlForm.bqfse"></td>
+      <td class="edit right"><input  type="text"  ng-datatype="number" ng-model="flzlForm.bqkce"></td>
+      <td class="read right"><input readonly="true" type="text" ng-datatype="number" ng-model="flzlForm.qmye"></td>
+      </tr>
+    <tr>
+      <td colspan="4" align="center" class="title01" ><strong>应税行为（3%征收率）计税销售额计算</strong></td>
+    </tr>
+    <tr>
+      <td align="center" class="title01">全部含税收入 </td>
+      <td align="center" class="title01">本期扣除额 </td>
+      <td align="center" class="title01">含税销售额</td>
+      <td align="center" class="title01"> 不含税销售额</td>
+    </tr>
+    <tr>
+      <td align="center" class="title01">5</td>
+      <td align="center" class="title01">6=3</td>
+      <td align="center" class="title01">7＝5－6</td>
+      <td align="center" class="title01">8＝7÷1.03</td>
+    </tr>
+    <tr>
+      <td class="edit right"><input  type="text"  ng-datatype="number" ng-model="flzlForm.ysfwxsqbhssr"></td>
+      <td class="read right"><input readonly="true" type="text"  ng-datatype="number" ng-model="flzlForm.ysfwxsbqkce"></td>
+      <td class="read right"><input readonly="true" type="text" ng-datatype="number"  ng-model="flzlForm.ysfwxshsxse"></td>
+      <td class="read right"><input readonly="true" type="text" ng-datatype="number"  ng-model="flzlForm.ysfwxsbhsxse"></td>
+      </tr>
+      <tr>
+      <td colspan="4" align="center" class="title01" ><strong>应税行为（5%征收率）扣除额计算</strong></td>
+    </tr>
+    <tr>
+      <td align="center" class="title01">期初余额 </td>
+      <td align="center" class="title01">本期发生额 </td>
+      <td align="center" class="title01">本期扣除额 </td>
+      <td align="center" class="title01">期末余额</td>
+    </tr>
+    <tr>
+      <td align="center" class="title01">9</td>
+      <td align="center" class="title01">10</td>
+      <td align="center" class="title01">11（11≤9＋10之和，且11≤13）</td>
+      <td align="center" class="title01">12＝9＋10－11</td>
+    </tr>
+    <tr>
+       	  <td class="read right"><input readonly="true" type="text"  ng-datatype="number" ng-model="flzlForm.qcye5"></td>
+	      <td class="edit right"><input  type="text"  ng-datatype="number" ng-model="flzlForm.bqfse5"></td>
+	      <td class="edit right"><input  type="text" ng-datatype="number" datatype="number" ng-model="flzlForm.bqkce5"></td>
+	      <td class="read right"><input readonly="true" type="text"  ng-datatype="number" ng-model="flzlForm.qmye5"></td>      
+      </tr>
+      <tr>
+      <td colspan="4" align="center" class="title01" ><strong>应税行为（5%征收率）计税销售额计算</strong></td>
+    </tr>
+    <tr>
+      <td align="center" class="title01">全部含税收入 </td>
+      <td align="center" class="title01">本期扣除额 </td>
+      <td align="center" class="title01">含税销售额</td>
+      <td align="center" class="title01"> 不含税销售额</td>
+    </tr>
+    <tr>
+      <td align="center" class="title01">13</td>
+      <td align="center" class="title01">14=11</td>
+      <td align="center" class="title01">15＝13－14</td>
+      <td align="center" class="title01">16＝15÷1.05</td>
+    </tr>
+    <tr>
+      <td class="edit right"><input ng-datatype="number" ng-model="flzlForm.ysfwxsqbhssr5"></td>
+      <td class="read right"><input readonly="true" type="text" ng-datatype="number" ng-model="flzlForm.ysfwxsbqkce5"></td>
+      <td class="read right"><input readonly="true" type="text" ng-datatype="number" ng-model="flzlForm.ysfwxshsxse5"></td>
+      <td class="read right"><input readonly="true" type="text" ng-datatype="number" ng-model="flzlForm.ysfwxsbhsxse5"></td>
+      </tr>
+  </table>
+</div>
+</div>
+</body>
+</html>

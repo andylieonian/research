@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=EDGE">
+<title>12$汇总纳税企业增值税分配表</title>
+</head>
+
+<body style="width:1600px;">
+<div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl">
+<ng-codetable model="qcs.initData.nsrjbxx.yhxxGrid.yhxxGridlb" name="yhxxCT" node="" dm="yhyywdDm" mc=""></ng-codetable>
+<div class="NewTableHead"  ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_hznsqyzzsfpb.sbbhead">
+     <h1>汇总纳税企业增值税分配表</h1>
+     <li class="dateTxt">税款所属时间:<input type="text" class="topInput"  ng-model="sbbhead.skssqq"  readonly> 至<input  type="text" class="topInput"  ng-model="sbbhead.skssqz"  readonly>  </li>
+</div>
+<div class="NewTableMain" >
+<div  ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_hznsqyzzsfpb.hznsqyzzsfpbForm">
+       <table width="100%" border="0" cellpadding="0" cellspacing="1" >
+	      <tr align="center">
+	        <td colspan="15" class="title01"><b>总机构信息</b></td>
+	      </tr>
+	      <tr>
+	        <td  class="title01" width="240">总机构纳税人名称</td>
+	        <td   class="read left"><input type="text" value="" readonly jflag="1" ng-datatype="string" ng-model="hznsqyzzsfpbForm.zjgnsrmc"></td>
+	        <td width="240"  class="title01">营业地址</td>
+	        <td class="read left" width="17%"><div ng-bind="hznsqyzzsfpbForm.yydz"></div></td>
+	        <td width="240"  class="title01">联系电话</td>
+	        <td  class="read left"><input jflag="1" readonly type="text" ng-datatype="string" ng-model="hznsqyzzsfpbForm.lxdh"></td>
+	      </tr>
+	      <tr>
+	        <td  class="title01">法定代表人姓名</td>
+	        <td  class="read left"><input jflag="1" readonly type="text" ng-datatype="string" ng-model="hznsqyzzsfpbForm.fddbrxm"></td>
+	        <td  class="title01">开户银行</td>
+	        <td  class="edit left"><select ng-model="hznsqyzzsfpbForm.khyh" ng-selected="key==hznsqyzzsfpbForm.khyh" ng-options="key as value.yhyywdMc for (key,value) in CT.yhxxCT"></select></td>
+	        <td  class="title01">银行账号</td>
+	        <td  class="edit left"><input jflag="1" type="text" ng-datatype="string" ng-model="hznsqyzzsfpbForm.yhzh" ng-value="hznsqyzzsfpbForm.yhzh=CT.yhxxCT[hznsqyzzsfpbForm.khyh].yhzh"></td>
+	      </tr>
+	      <tr>
+	        <td  class="title01">总机构纳税人识别号</td>
+	        <td  class="read left"><input jflag="1" readonly type="text" ng-datatype="string" ng-model="hznsqyzzsfpbForm.zjgnsrsbh"></td>
+	        <td class="title01">应补(退)税额</td>
+	        <td class="read right"><input jflag="1" readonly type="text" ng-datatype="number" ng-model="hznsqyzzsfpbForm.ybtse"></td>
+	        <td class="title01">总分机构销售额合计</td>
+	        <td class="read right"><input jflag="1" readonly type="text" ng-datatype="number" ng-model="hznsqyzzsfpbForm.zfjgxsehj"></td>
+	      </tr>
+	      <tr>
+	        <td class="title01">总机构一般货物及劳务销售收入</td>
+	        <td class="edit right"><input jflag="1"  type="text" ng-datatype="number" ng-model="hznsqyzzsfpbForm.zjgybhwjlwxssr"></td>
+	        <td  class="title01">总机构一般货物及劳务分配比例</td>
+	        <td class="edit right"><input jflag="1"  type="text" ng-datatype="number{6}" ng-model="hznsqyzzsfpbForm.zjgybhwjlwfpbl"></td>
+	        <td  class="title01">总机构一般货物及劳务分配税额</td>
+	        <td  class="edit right"><input jflag="1"  type="text" ng-datatype="number" ng-model="hznsqyzzsfpbForm.zjgybhwjlwfpse"></td>
+	      </tr>
+	      <tr>
+	        <td class="title01">总机构一般货物及劳务即征即退销售收入</td>
+	        <td class="edit right"><input jflag="1"  type="text" ng-datatype="number" ng-model="hznsqyzzsfpbForm.zjgybhwjlwjzjtxssr"></td>
+	        <td  class="title01">总机构一般货物及劳务即征即退分配比例</td>
+	        <td  class="edit right"><input jflag="1"  type="text" ng-datatype="number{6}" ng-model="hznsqyzzsfpbForm.zjgybhwjlwjzjtfpbl"></td>
+	        <td  class="title01">总机构一般货物及劳务即征即退分配税额</td>
+	        <td class="edit right"><input jflag="1"  type="text" ng-datatype="number" ng-model="hznsqyzzsfpbForm.zjgybhwjlwjzjtfpse"></td>
+	      </tr>
+	      <tr>
+	        <td  class="title01">总机构应税服务销售收入</td>
+	        <td class="edit right"><input jflag="1"  type="text" ng-datatype="number" ng-model="hznsqyzzsfpbForm.zjgysfwxssr"></td>
+	        <td  class="title01">总机构应税服务分配比例</td>
+	        <td class="edit right"><input jflag="1"  type="text" ng-datatype="number{6}" ng-model="hznsqyzzsfpbForm.zjgysfwfpbl"></td>
+	        <td  class="title01">总机构应税服务分配税额</td>
+	        <td  class="edit right"><input jflag="1"  type="text" ng-datatype="number" ng-model="hznsqyzzsfpbForm.zjgysfwfpse"></td>
+	      </tr>
+	      <tr>
+	        <td class="title01">总机构应税服务即征即退销售收入</td>
+	        <td  class="edit right"><input name="text"  type="text" jflag="1"  ng-datatype="number" ng-model="hznsqyzzsfpbForm.zjgysfwjzjtxssr"></td>
+	        <td class="title01">总机构应税服务即征即退分配比例</td>
+	        <td class="edit right"><input jflag="1"  type="text" ng-datatype="number{6}" ng-model="hznsqyzzsfpbForm.zjgysfwjzjtfpbl"></td>
+	        <td class="title01">总机构应税服务即征即退分配税额</td>
+	        <td class="edit right"><input jflag="1"  type="text" ng-datatype="number" ng-model="hznsqyzzsfpbForm.zjgysfwjzjtfpse"></td>
+	      </tr>
+      </table>
+ </div>     
+ <div ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_hznsqyzzsfpb.hznsqyzzsfpbGrid.hznsqyzzsfpbGridlbVO">     
+      <table width="100%" border="0" cellpadding="0" cellspacing="1" >
+	      <tr align="center">
+	        <td colspan="16" class="title01"><b>分支机构情况</b></td>
+	      </tr>
+	      <tr>
+	        <td  rowspan="2" align="center" class="title01">序号</td>
+	        <td rowspan="2" align="center" class="title01">纳税人识别号</td>
+	        <td rowspan="2" align="center" class="title01">纳税人名称</td>
+	        <td colspan="3" align="center" class="title01">分支机构一般货物及劳务</td>
+	        <td colspan="3" align="center" class="title01">分支机构一般货物及劳务即征即退</td>
+	        <td colspan="3" align="center" class="title01">分支机构应税服务</td>
+	        <td colspan="3" align="center" class="title01">分支机构应税服务即征即退</td>
+	         <td align="center" class="title01"></td> 
+	      </tr>
+	      <tr>
+	        <td align="center" class="title01">销售收入</td>
+	        <td align="center" class="title01">分配比例</td>
+	        <td align="center" class="title01">分配税额</td>
+	        <td align="center" class="title01">销售收入</td>
+	        <td align="center" class="title01">分配比例</td>
+	        <td align="center" class="title01">分配税额</td>
+	        <td align="center" class="title01">销售收入</td>
+	        <td align="center" class="title01">分配比例</td>
+	        <td align="center" class="title01">分配税额</td>
+	        <td align="center" class="title01">销售收入</td>
+	        <td align="center" class="title01">分配比例</td>
+	        <td align="center" class="title01">分配税额</td>
+	        <td align="center" class="title01">操作</td>
+	      </tr>
+	      <tr ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_hznsqyzzsfpb.hznsqyzzsfpbGrid">
+	        <td align="center" class="title01">合计</td>
+	        <td class="back">--</td>
+	        <td class="back">--</td>
+	        <td align="center" class="read right">
+	         <input jflag="1"  type="text" ng-datatype="number" ng-model="hznsqyzzsfpbGrid.fzjgybhwjlwxssrHj" readonly>      </td>
+	        <td align="center" class="read right">
+	          <input jflag="1"  type="text" ng-datatype="number{6}" ng-model="hznsqyzzsfpbGrid.fzjgybhwjlwfpblHj" readonly>        </td>
+	        <td align="center" class="read right">
+	          <input jflag="1"  type="text" ng-datatype="number" ng-model="hznsqyzzsfpbGrid.fzjgybhwjlwfpseHj" readonly>        </td>
+	        <td align="center" class="read right">
+	          <input jflag="1"  type="text" ng-datatype="number" ng-model="hznsqyzzsfpbGrid.fzjgybhwjlwjzjtxssrHj" readonly>        </td>
+	        <td align="center" class="read right">
+	          <input jflag="1"  type="text" ng-datatype="number{6}" ng-model="hznsqyzzsfpbGrid.fzjgybhwjlwjzjtfpblHj" readonly>        </td>
+	        <td align="center" class="read right">
+	          <input jflag="1"  type="text" ng-datatype="number" ng-model="hznsqyzzsfpbGrid.fzjgybhwjlwjzjtfpseHj" readonly>        </td>
+	        <td align="center" class="read right">
+	          <input jflag="1"  type="text" ng-datatype="number" ng-model="hznsqyzzsfpbGrid.fzjgysfwxssrHj" readonly>        </td>
+	        <td align="center" class="read right">
+	          <input jflag="1"  type="text" ng-datatype="number{6}" ng-model="hznsqyzzsfpbGrid.fzjgysfwfpblHj" readonly>        </td>
+	        <td align="center" class="read right">
+	          <input jflag="1"  type="text" ng-datatype="number" ng-model="hznsqyzzsfpbGrid.fzjgysfwfpseHj" readonly>        </td>
+	        <td align="center" class="read right">
+	          <input jflag="1"  type="text" ng-datatype="number" ng-model="hznsqyzzsfpbGrid.fzjgysfwjzjtxssrHj" readonly>        </td>
+	        <td align="center" class="read right">
+	          <input jflag="1"  type="text" ng-datatype="number{6}" ng-model="hznsqyzzsfpbGrid.fzjgysfwjzjtfpblHj" readonly>        </td>
+	        <td align="center" class="read right">
+	          <input jflag="1"  type="text" ng-datatype="number" ng-model="hznsqyzzsfpbGrid.fzjgysfwjzjtfpseHj" readonly>        </td>
+	        <td class="back">--</td>
+	      </tr>
+	      <tr ng-repeat="p in hznsqyzzsfpbGridlbVO track by $index" ng-repeat-init="hznsqyzzsfpbGridlbVO"
+	                default-value='{"ewbhxh":"","hmc":"","fzjgnsrsbh":"","fzjgmc":"","fzjgybhwjlwxssr":0.00,"fzjgybhwjlwfpbl":0.00,"fzjgybhwjlwfpse":0.00,"fzjgybhwjlwjzjtxssr":0.00,"fzjgybhwjlwjzjtfpbl":0.00,"fzjgybhwjlwjzjtfpse":0.00,"fzjgysfwxssr":0.00,
+	                "fzjgysfwfpbl":0.00,"fzjgysfwfpse":0.00,"fzjgysfwjzjtxssr":0.00,"fzjgysfwjzjtfpbl":0.00,"fzjgysfwjzjtfpse":0.00}'>
+	        <td align="center" class="title01" ng-bind="p.ewbhxh=$index+1"></td>
+	        <td class="edit left"  width="7.5%">
+	         <input  type="text" jflag="1"  ng-model="p.fzjgnsrsbh"> </td>
+	        <td class="edit left" width="15%">
+	         <input jflag="1"  type="text"  ng-model="p.fzjgmc">         </td>
+	        <td align="center" class="edit right">
+	         <input jflag="1"  type="text" ng-datatype="number" ng-model="p.fzjgybhwjlwxssr">      </td>
+	        <td align="center" class="edit right">
+	          <input jflag="1"  type="text" ng-datatype="number{6}" ng-model="p.fzjgybhwjlwfpbl">        </td>
+	        <td align="center" class="edit right">
+	          <input jflag="1"  type="text" ng-datatype="number" ng-model="p.fzjgybhwjlwfpse">        </td>
+	        <td align="center" class="edit right">
+	          <input jflag="1"  type="text" ng-datatype="number" ng-model="p.fzjgybhwjlwjzjtxssr">        </td>
+	        <td align="center" class="edit right">
+	          <input jflag="1"  type="text" ng-datatype="number{6}" ng-model="p.fzjgybhwjlwjzjtfpbl">        </td>
+	        <td align="center" class="edit right">
+	          <input jflag="1"  type="text" ng-datatype="number" ng-model="p.fzjgybhwjlwjzjtfpse">        </td>
+	        <td align="center" class="edit right">
+	          <input jflag="1"  type="text" ng-datatype="number" ng-model="p.fzjgysfwxssr">        </td>
+	        <td align="center" class="edit right">
+	          <input jflag="1"  type="text" ng-datatype="number{6}" ng-model="p.fzjgysfwfpbl">        </td>
+	        <td align="center" class="edit right">
+	          <input jflag="1"  type="text" ng-datatype="number" ng-model="p.fzjgysfwfpse">        </td>
+	        <td align="center" class="edit right">
+	          <input jflag="1"  type="text" ng-datatype="number" ng-model="p.fzjgysfwjzjtxssr">        </td>
+	        <td align="center" class="edit right">
+	          <input jflag="1"  type="text" ng-datatype="number{6}" ng-model="p.fzjgysfwjzjtfpbl">        </td>
+	        <td align="center" class="edit right">
+	          <input jflag="1"  type="text" ng-datatype="number" ng-model="p.fzjgysfwjzjtfpse">        </td>
+	         <td align="center"  width="7%"><div class="sbtnbox"><a class="sbtn sbtn01" ng-href="#" ng-click="add()">增加</a>&nbsp;<a class="sbtn sbtn03" ng-if="$index!=0" ng-href="#" ng-click="del($index)">删除</a></div></td>
+	      </tr>
+	      <tr ng-render-finish=""></tr>
+  	</table>
+</div>    
+</div>
+</div>
+</body>
+</html>

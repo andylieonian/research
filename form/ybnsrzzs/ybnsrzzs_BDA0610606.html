@@ -1,0 +1,425 @@
+<!doctype html>
+<html id="ng-app"  xmlns:ng="http://angularjs.org">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" >
+<title> 00$ 增值税纳税申报表（一般纳税人适用）</title>
+</head>
+
+<body>
+<div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl">
+<div class="NewTableHead"  ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_zb.sbbhead">
+     <h1>增值税纳税申报表（一般纳税人适用）</h1>
+    
+    
+ <li style="font-size:12px;">  根据国家税收法律法规及增值税相关规定制定本表。纳税人不论有无销售额，均应按税务机关核定的纳税期限填写本表，并向当地税务机关申报。</li>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+ <tr  style="font-size:12px;"><td>税款所属时间:<input  type="text" class="topInput"   ng-model="sbbhead.skssqq"  readonly> 至<input  type="text" class="topInput"   ng-model="sbbhead.skssqz" readonly></td>
+ <td> 填表日期：<input  type="text" class="topInput"   ng-model="sbbhead.sbrq1" readonly></td>
+ <td align="right">  金额单位：元至角分</td>
+ </tr>
+ </table>
+</div>
+
+<div class="NewTableTop">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  
+</table>
+</div>
+
+<div class="NewTableMain" ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_zb.zbGrid">
+
+<table width="100%" border="0" cellpadding="0" cellspacing="1">
+  <tr  ng-jprefix="qcs.initData.nsrjbxx">
+<td   colspan="1" class="title01">纳税人识别号：</td>
+<td colspan="3" ><input style=" border:0;background:transparent;	readonly;	 width: 100%;" type="text"   ng-model="sbbhead.nsrsbh" readonly> </td>
+ <td  width="8%"  colspan="1" class="title01">所属行业：</td>
+     <td colspan="3"  > <input style=" border:0;background:transparent;	readonly; width: 100%;" type="text"   ng-model="nsrjbxx.sshy"  readonly></td>
+</tr>
+<tr>
+   <td width="15%"  class="title01" >纳税人名称（公章）：</td>
+   <td width="15%">
+   <div ng-bind="sbbhead.nsrmc"></div>
+     </td>
+  <td  width="12%"  class="title01">法定代表人姓名：</td>
+   <td width="8%" ><div ng-bind="nsrjbxx.frxm"></div> </td>
+  <td   width="8%"  class="title01" >注册地址：</td>
+  <td><div ng-bind="nsrjbxx.zcdz"></div></td>
+   <td  width="10%"  class="title01" >生产经营地址：</td>
+    <td ><div ng-bind="nsrjbxx.jydz"></div></td>
+   </tr>
+   <tr>
+   <td  class="title01">开户银行及账号： </td>
+    <td  colspan="3">  
+    <div ng-bind="nsrjbxx.yhMc+' &nbsp&nbsp' +nsrjbxx.khzh"></div>
+    <!-- <input   type="text" style="border:0;background:transparent;	readonly; width: 45%;"    ng-model="nsrjbxx.yhMc" readonly><input  type="text"    style=" border:0;background:transparent;	readonly;width: 50%;"  ng-model="nsrjbxx.khzh" readonly> -->
+    </td>
+    <td  width="10%" class="title01"   >登记注册类型：</td>
+      <td > <input  style="border:0;background:transparent;	readonly; width: 100%;" type="text"   ng-model="nsrjbxx.djzclxMc" readonly></td>
+      <td  width="8%"  class="title01"    >电话号码：</td>
+      <td  > <input style=" border:0;background:transparent;	readonly;width: 100%;"  type="text"    ng-model="nsrjbxx.dhhm" readonly></td>
+   </tr>
+   </table>
+
+  <table width="100%" border="0" cellpadding="0" cellspacing="1">
+    
+    <tr>
+      <td colspan="2" rowspan="2" align="center" class="title01">项     目</td>
+      <td colspan="-10" rowspan="2" align="center" class="title01">栏次</td>
+      <td colspan="2" align="center" class="title01">一般项目</td>
+      <td colspan="2" align="center" class="title01">即征即退项目</td>
+    </tr>
+    <tr>
+      <td align="center"  width="14%"  style="width:14%;" class="title01">本月数</td>
+      <td width="14%" colspan="-5" align="center"  class="title01">本年累计</td>
+      <td width="14%" align="center" class="title01">本月数</td>
+      <td align="center" width="14%"  class="title01">本年累计</td>
+    </tr>
+    <tr>
+      <td rowspan="10" class="title01">销售额</td>
+      <td class="title01">（一）按适用税率计税销售额</td>
+      <td colspan="-10" align="center" class="title01">1</td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].asysljsxse"  type="text"    readonly></td>
+      <td colspan="-5" class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].asysljsxse"  type="text"  readonly></td>
+      <td class="read right"> <input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[2].asysljsxse"  type="text"   readonly></td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[3].asysljsxse"  type="text"  readonly></td>
+    </tr>
+    <tr>
+      <td class="title01">其中：应税货物销售额</td>
+      <td colspan="-10" align="center" class="title01">2</td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].yshwxse"  type="text"></td>
+      <td colspan="-5" class="read right"><input readonly   ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].yshwxse"  type="text" ></td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[2].yshwxse"  type="text" ></td>
+      <td class="read right"><input readonly   ng-datatype="number" ng-model="zbGrid.zbGridlbVO[3].yshwxse"  type="text" >      </td>
+      </tr>
+    <tr>
+      <td class="title01">   &nbsp  &nbsp &nbsp 应税劳务销售额</td>
+      <td colspan="-10" align="center" class="title01">3</td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].yslwxse"  type="text" ></td>
+      <td colspan="-5" class="read right"><input readonly   ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].yslwxse"  type="text" ></td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[2].yslwxse"  type="text" ></td>
+      <td class="read right"><input  readonly  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[3].yslwxse"  type="text" >      </td>
+      </tr>
+    <tr>
+      <td class="title01">    &nbsp &nbsp   纳税检查调整的销售额</td>
+      <td colspan="-10" align="center" class="title01">4</td>
+      <td class="read right"><input readonly   ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].syslNsjctzxse"  type="text" ></td>
+      <td colspan="-5" class="read right"><input readonly   ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].syslNsjctzxse"  type="text" ></td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[2].syslNsjctzxse"  type="text" ></td>
+      <td class="read right"><input readonly   ng-datatype="number" ng-model="zbGrid.zbGridlbVO[3].syslNsjctzxse"  type="text" >      </td>
+      </tr>
+    <tr>
+      <td class="title01">（二）按简易办法计税销售额</td>
+      <td colspan="-10" align="center" class="title01">5</td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].ajybfjsxse"  type="text"  readonly></td>
+      <td colspan="-5" class="read right"><input readonly   ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].ajybfjsxse"  type="text"  readonly></td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[2].ajybfjsxse"  type="text"  readonly></td>
+      <td class="read right"><input readonly   ng-datatype="number" ng-model="zbGrid.zbGridlbVO[3].ajybfjsxse"  type="text"  readonly>      </td>
+      </tr>
+    <tr>
+      <td class="title01">其中：纳税检查调整的销售额</td>
+      <td colspan="-10" align="center" class="title01">6</td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].jybfNsjctzxse"  type="text" ></td>
+      <td colspan="-5" class="read right"><input  readonly  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].jybfNsjctzxse"  type="text" ></td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[2].jybfNsjctzxse"  type="text" ></td>
+      <td class="read right"><input readonly   ng-datatype="number" ng-model="zbGrid.zbGridlbVO[3].jybfNsjctzxse"  type="text" >      </td>
+      </tr>
+    <tr>
+      <td class="title01">（三）免、抵、退办法出口销售额</td>
+      <td colspan="-10" align="center" class="title01">7</td>
+      <td class="read right"><input readonly   ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].mdtbfckxse"  type="text" ></td>
+      <td colspan="-5" class="read right"><input readonly   ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].mdtbfckxse"  type="text" ></td>
+      <td class="read mid" align="center">--</td>
+      <td class="read mid" align="center">--</td>
+    </tr>
+    <tr>
+      <td class="title01">（四）免税销售额</td>
+      <td colspan="-10" align="center" class="title01">8</td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].msxse"  type="text"  readonly></td>
+      <td colspan="-5" class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].msxse"  type="text" ></td>
+      <td class="read mid" align="center">--</td>
+      <td class="read mid" align="center">--</td>
+    </tr>
+    <tr>
+      <td class="title01">其中：免税货物销售额</td>
+      <td colspan="-10" align="center" class="title01">9</td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].mshwxse"  type="text"  ></td>
+      <td colspan="-5" class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].mshwxse"  type="text" ></td>
+      <td class="read mid" align="center">--</td>
+      <td class="read mid" align="center">--</td>
+    </tr>
+    <tr>
+      <td class="title01">   &nbsp &nbsp &nbsp&nbsp  免税劳务销售额</td>
+      <td colspan="-10" align="center" class="title01">10</td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].mslwxse"  type="text"  ></td>
+      <td colspan="-5" class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].mslwxse"  type="text" ></td>
+      <td class="read mid" align="center">--</td>
+      <td class="read mid" align="center">--</td>
+    </tr>
+    <tr>
+      <td rowspan="14" class="title01">税款计算</td>
+      <td class="title01">销项税额</td>
+      <td colspan="-10" align="center" class="title01">11</td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].xxse"  type="text"  ></td>
+      <td colspan="-5" class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].xxse"  type="text"  readonly></td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[2].xxse"  type="text"   ></td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[3].xxse"  type="text"  readonly> </td>
+      </tr>
+    <tr>
+      <td class="title01">进项税额</td>
+      <td colspan="-10" align="center" class="title01">12</td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].jxse"  type="text"   ></td>
+      <td colspan="-5" class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].jxse"  type="text"   readonly ></td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[2].jxse"  type="text"  readonly ></td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[3].jxse"  type="text"  readonly>      </td>
+      </tr>
+    <tr>
+      <td class="title01">上期留抵税额</td>
+      <td colspan="-10" align="center" class="title01">13</td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].sqldse"  type="text"    readonly></td>
+      <td colspan="-5" class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].sqldse"  type="text"  readonly></td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[2].sqldse"  type="text"  readonly></td>
+      <td class="read mid" align="center">--</td>
+    </tr>
+    <tr>
+      <td class="title01">进项税额转出</td>
+      <td colspan="-10" align="center" class="title01">14</td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].jxsezc"  type="text"  ></td>
+      <td colspan="-5" class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].jxsezc"  type="text"  readonly></td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[2].jxsezc"  type="text"  readonly></td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[3].jxsezc"  type="text"  readonly>      </td>
+      </tr>
+    <tr>
+      <td class="title01">免、抵、退应退税额</td>
+      <td colspan="-10" align="center" class="title01">15</td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].mdtytse"  type="text" ></td>
+      <td colspan="-5" class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].mdtytse"  type="text"  readonly></td>
+      <td class="read mid" align="center">--</td>
+      <td class="read mid" align="center">--</td>
+    </tr>
+    <tr>
+      <td class="title01">按适用税率计算的纳税检查应补缴税额</td>
+      <td colspan="-10" align="center" class="title01">16</td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].syslNsjcybjse"  type="text" ></td>
+      <td colspan="-5" class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].syslNsjcybjse"  type="text"  readonly></td>
+      <td class="read mid"><input   type="text"  value="--" readonly></td>
+      <td class="read mid"><input   type="text"  value="--" readonly></td>
+    </tr>
+    <tr>
+      <td class="title01">应抵扣税额合计</td>
+      <td colspan="-10" align="center" class="title01">17=12+13-14-15+16</td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].ydksehj"  type="text"   readonly></td>
+      <td colspan="-5" class="read mid" align="center">--</td>
+       <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[2].ydksehj"  type="text"  readonly></td>
+      <td class="read mid" align="center">--</td>
+    </tr>
+    <tr>
+      <td class="title01">实际抵扣税额</td>
+      <td width="106" colspan="-10" align="center" class="title01">18（如17&lt;11，则为17，否则为11）</td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].sjdkse"  type="text"  readonly></td>
+      <td colspan="-5" class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].sjdkse"  type="text"  readonly></td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[2].sjdkse"  type="text"  readonly></td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[3].sjdkse"  type="text"  readonly>      </td>
+      </tr>
+    <tr>
+      <td class="title01">应纳税额</td>
+      <td colspan="-10" align="center" class="title01">19=11-18</td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].ynse"  type="text"  readonly></td>
+      <td colspan="-5" class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].ynse"  type="text"  readonly></td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[2].ynse"  type="text"  readonly></td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[3].ynse"  type="text"  readonly>      </td>
+      </tr>
+    <tr>
+      <td class="title01">期末留抵税额</td>
+      <td colspan="-10" align="center" class="title01">20=17-18</td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].qmldse"  type="text"  readonly></td>
+      <td colspan="-5" class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].qmldse"  type="text"  readonly></td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[2].qmldse"  type="text"  readonly></td>
+      <td class="read mid" align="center">--</td>
+    </tr>
+    <tr>
+      <td class="title01">简易计税办法计算的应纳税额</td>
+      <td colspan="-10" align="center" class="title01">21</td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].jybfYnse"  type="text" ></td>
+      <td colspan="-5" class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].jybfYnse"  type="text"  readonly></td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[2].jybfYnse"  type="text"  readonly></td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[3].jybfYnse"  type="text"  readonly>      </td>
+      </tr>
+    <tr>
+      <td class="title01">按简易计税办法计算的纳税检查应补缴税额</td>
+      <td colspan="-10" align="center" class="title01">22</td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].jybfNsjcybjse"  type="text" ></td>
+      <td colspan="-5" class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].jybfNsjcybjse"  type="text"  readonly></td>
+      <td class="read mid" align="center">--</td>
+      <td class="read mid" align="center">--</td>
+    </tr>
+    <tr>
+      <td class="title01">应纳税额减征额</td>
+      <td colspan="-10" align="center" class="title01">23</td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].ynsejze"  type="text" ></td>
+      <td colspan="-5" class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].ynsejze" name="textfield11" type="text" id="textfield11" readonly></td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[2].ynsejze"  type="text" ></td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[3].ynsejze"  type="text"  readonly>      </td>
+      </tr>
+    <tr>
+      <td class="title01">应纳税额合计</td>
+      <td colspan="-10" align="center" class="title01">24=19+21-23</td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].ynsehj"  type="text"  readonly></td>
+      <td colspan="-5" class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].ynsehj"  type="text"  readonly></td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[2].ynsehj"  type="text"  readonly></td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[3].ynsehj"  type="text"  readonly>      </td>
+      </tr>
+    <tr>
+      <td rowspan="14" class="title01">税款缴纳</td>
+      <td class="title01">期初未缴税额（多缴为负数）</td>
+      <td colspan="-10" align="center" class="title01">25</td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].qcwjse"  type="text" ></td>
+      <td colspan="-5" class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].qcwjse"  type="text"  readonly></td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[2].qcwjse"  type="text"  readonly></td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[3].qcwjse"  type="text"  readonly>      </td>
+      </tr>
+    <tr>
+      <td class="title01">实收出口开具专用缴款书退税额</td>
+      <td colspan="-10" align="center" class="title01">26</td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].ssckkjzyjkstse"  type="text"  readonly></td>
+      <td colspan="-5" class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].ssckkjzyjkstse"  type="text"  readonly></td>
+      <td class="read mid" align="center">--</td>
+      <td class="read mid" align="center">--</td>
+    </tr>
+    <tr>
+      <td class="title01">本期已缴税额</td>
+      <td colspan="-10" align="center" class="title01">27=28+29+30+31</td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].bqyjse"  type="text"  readonly></td>
+      <td colspan="-5" class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].bqyjse"  type="text"  ></td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[2].bqyjse"  type="text"  readonly></td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[3].bqyjse"  type="text"  >      </td>
+      </tr>
+    <tr>
+      <td class="title01">①分次预缴税额</td>
+      <td colspan="-10" align="center" class="title01">28</td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].fcyjse"  type="text" ></td>
+      <td colspan="-5" class="read mid" align="center">--</td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[2].fcyjse"  type="text" ></td>
+      <td class="read mid" align="center">--</td>
+    </tr>
+    <tr>
+      <td class="title01">②出口开具专用缴款书预缴税额</td>
+      <td colspan="-10" align="center" class="title01">29</td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].ckkjzyjksyjse"  type="text" ></td>
+      <td colspan="-5" class="read mid" align="center">--</td>
+      <td class="read mid" align="center">--</td>
+      <td class="read mid" align="center">--</td>
+    </tr>
+    <tr>
+      <td class="title01">③本期缴纳上期应纳税额</td>
+      <td colspan="-10" align="center" class="title01">30</td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].bqjnsqynse"  type="text" ></td>
+      <td colspan="-5" class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].bqjnsqynse"  type="text"  readonly></td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[2].bqjnsqynse"  type="text" ></td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[3].bqjnsqynse"  type="text"  readonly>      </td>
+      </tr>
+    <tr>
+      <td class="title01">④本期缴纳欠缴税额</td>
+      <td colspan="-10" align="center" class="title01">31</td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].bqjnqjse"  type="text" ></td>
+      <td colspan="-5" class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].bqjnqjse"  type="text"  readonly></td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[2].bqjnqjse"  type="text" ></td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[3].bqjnqjse"  type="text"  readonly>      </td>
+      </tr>
+    <tr>
+      <td class="title01">期末未缴税额（多缴为负数）</td>
+      <td colspan="-10" align="center" class="title01">32=24+25+26-27</td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].qmwjse"  type="text" ></td>
+      <td colspan="-5" class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].qmwjse"  type="text" ></td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[2].qmwjse"  type="text"  ></td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[3].qmwjse"  type="text"  readonly>      </td>
+      </tr>
+    <tr>
+      <td class="title01">其中：欠缴税额（≥0）</td>
+      <td colspan="-10" align="center" class="title01">33=25+26-27</td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].qmwjseQjse"  type="text" ></td>
+      <td colspan="-5" class="read mid" align="center">--</td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[2].qmwjseQjse"  type="text"  readonly></td>
+      <td class="read mid" align="center">--</td>
+    </tr>
+    <tr>
+      <td class="title01">本期应补(退)税额</td>
+      <td width="106" colspan="-10" align="center" class="title01">34＝24-28-29</td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].bqybtse"  type="text"  readonly></td>
+      <td width="14%" colspan="-5" class="read mid" align="center">--</td>
+      <td class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[2].bqybtse"  type="text"  readonly></td>
+      <td width="14%" class="read mid" align="center">--</td>
+    </tr>
+    <tr>
+      <td class="title01">即征即退实际退税额</td>
+      <td colspan="-10" align="center" class="title01">35</td>
+      <td class="read mid" align="center">--</td>
+      <td colspan="-5" class="read mid" align="center">--</td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[2].jzjtsjtse"  type="text"  ></td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[3].jzjtsjtse"  type="text" ></td>
+    </tr>
+    <tr>
+      <td class="title01">期初未缴查补税额</td>
+      <td colspan="-10" align="center" class="title01">36</td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].qcwjcbse"  type="text"  ></td>
+      <td colspan="-5" class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].qcwjcbse"  type="text"  readonly></td>
+      <td class="read mid"><input   type="text"  value="--" readonly></td>
+      <td class="read mid"><input   type="text"  value="--" readonly></td>
+    </tr>
+    <tr>
+      <td class="title01">本期入库查补税额</td>
+      <td colspan="-10" align="center" class="title01">37</td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].bqrkcbse"  type="text" ></td>
+      <td colspan="-5" class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].bqrkcbse"  type="text"  readonly></td>
+      <td class="read mid" align="center">--</td>
+      <td class="read mid" align="center">--</td>
+    </tr>
+    <tr>
+      <td class="title01">期末未缴查补税额</td>
+      <td colspan="-10" align="center" class="title01">38=16+22+36-37</td>
+      <td class="edit right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[0].qmwjcbse"  type="text"  ></td>
+      <td colspan="-5" class="read right"><input  ng-datatype="number" ng-model="zbGrid.zbGridlbVO[1].qmwjcbse"  type="text"  readonly></td>
+      <td class="read mid" align="center">--</td>
+      <td class="read mid" align="center">--</td>
+    </tr>
+    <tr>
+      <td align="center" class="title01"><span class="text">授<br/>
+权<br/>
+声<br/>
+明 </span></td>
+      <td colspan="3"><div class="statement">
+        <!--    <h2>申报人声明</h2> -->
+        <div class="text">如果你已委托代理人申报，请填写下列资料：<br/>
+          为代理一切税务事宜，现授权<br/>
+          （地址）
+          <input style="border:0;background:transparent; width: 190px;" 	readonly	/>
+          为本纳税人的代理申报人，本申报表有关的往来文件，都可寄予此人。<br/>
+          授权人签字：          </div>
+      </div></td>
+      <td colspan="-5" align="center" class="title01"><span class="text">申<br/>
+报<br/>
+人<br/>
+声<br/>
+明</span></td>
+      <td colspan="2"><div class="statement">
+      <div class="text" > 本纳税申报表是根据国家税收法律法规及相关规定填报的，我确定它是真实的、可靠的、完整的。<br/>
+        <br/>
+        <input style="border:0;background:transparent; width: 150px;" 	readonly	/>
+        声明人签字： </div>
+    </div></td>
+      </tr>
+    </table>
+</div>
+  <div class="NewTableFoot">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr ng-render-finish="">
+    <td align="left">主管税务机关：<input style="border:0;background:transparent; width: 300px;" 	readonly	/>   接收人： <input style="border:0;background:transparent; width: 300px;" 	readonly	/>
+    接收日期： </td>
+			
+  </tr>
+</table>
+</div>
+</div>
+</body>
+</html>

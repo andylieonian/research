@@ -1,0 +1,92 @@
+<!doctype html>
+<html id="ng-app"  xmlns:ng="http://angularjs.org">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" >
+<title>$20购进农产品用于生产经营且不构成货物实体核定农产品增值税进项税额计算表</title>
+</head>
+<body style="width:1200px;">
+<div style="width:96%; margin:auto;"  id="viewCtrlId"  ng-controller="viewCtrl">
+<div  class="NewTableHead"  ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_gjncpyyscjyqbgchwsthdncpzzsjxsejsb.sbbhead">
+<h1>购进农产品用于生产经营且不构成货物实体核定农产品增值税进项税额计算表</h1>
+<li class="dateTxt">税款所属时间:<input name="textfield3" type="text" class="topInput" id="textfield3" value=" "   ng-model="sbbhead.skssqq"   readonly> 至<input name="textfield3" type="text" class="topInput" id="textfield3" value=" "   ng-model="sbbhead.skssqz" readonly>  </li>
+</div>
+
+
+
+<div class="NewTableTop"  ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_gjncpyyscjyqbgchwsthdncpzzsjxsejsb.sbbhead">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+
+ <tr>
+    <td>纳税人名称（公章）： 
+       <span class="textline" ng-bind="sbbhead.nsrmc"></span>
+          </td>
+    <td align="right">纳税人识别号：
+     <input   type="text" class="topInput"    ng-model="sbbhead.nsrsbh" readonly>
+      </tr>
+</table>
+</div>
+
+
+
+
+<div class="NewTableMain" ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_gjncpyyscjyqbgchwsthdncpzzsjxsejsb.gjncpyyscjyqbgchwsthdncpzzsjxsejsbGrid.gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO">
+  <table width="100%" border="0" cellpadding="0" cellspacing="1">
+  
+	<tr>
+		<td  rowspan="2" class="title01" style="width:5%">序号</td>
+		<td  rowspan="2" class="title01" style="width:9%">产品名称</td>
+		<td  rowspan="2" class="title01" style="width:9%" >耗用农产品名称</td>
+		<td  class="title01" style="width:9%" >当期耗用农>产品数量(吨)</td>
+		<td  class="title01" style="width:9%" >期初库存农产品数量（吨）</td>
+		<td  class="title01" style="width:9%" >期初平均买价（元/吨）</td>
+		<td  class="title01" style=" width:9%">当期购进农产品数量（吨）</td>
+		<td  class="title01" style=" width:9%">当期买价(元/吨)</td>
+		<td  class="title01" style=" width:9%">农产品平均购买单价（元/吨）</td>
+		<td  class="title01" style="width:5%">扣除率（13%）</td>
+		<td  class="title01" style=" width:9%;">当期允许抵扣农产品进项税额（元）</td>
+		<td  class="title01" style=" width:9%;"></td>
+		
+	</tr>
+	<tr>
+		<td  class="title01">L1</td>
+		<td  class="title01">L2</td>
+		<td  class="title01">L3</td>
+		<td  class="title01">L4</td>
+		<td  class="title01">L5</td>
+		<td  class="title01">L6=（L2*L3+L4*L5）/（L2+L4）</td>
+		<td  class="title01">L7</td>
+		<td  class="title01">L8=L1*L6*L7/(1+L7)</td>
+		<td  class="title01" align="center">操作</td>
+		
+	</tr>
+	<tr   ng-repeat="p in gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO track by $index"  ng-repeat-init="gjncpyyscjyqbgchwsthdncpzzsjxsejsbGridlbVO"
+         default-value='{"cpmc1": "","dqgjncpsl": 0.00,"dqhyncpsl": 0.00,"dqmj": 0,"dqyxdkncpjxse": 0,"ewbhxh": 0,"hyncpmc": "","kcl": 0.13,"ncppjgmdj": 0,"qckcncpsl": 0,"qcpjmj": 0}'>
+		<td class="title01" align="center" ng-bind="p.ewbhxh=$index+1"></td>
+		<td class="edit right"><input    type="text"    ng-model="p.cpmc1"></td>
+		<td class="edit right"><input   type="text"    ng-model="p.hyncpmc"></td>
+		<td class="edit right"><input    type="text"  ng-datatype ="number{4}"  ng-model="p.dqhyncpsl"></td>
+		<td class="edit right"><input    type="text"  ng-datatype ="number{4}"  ng-model="p.qckcncpsl"></td>
+		<td class="edit right"><input    type="text"  ng-datatype ="number"  ng-model="p.qcpjmj"></td>
+		<td class="edit right"><input    type="text"  ng-datatype ="number{4}"  ng-model="p.dqgjncpsl"></td>
+		<td class="edit right"><input    type="text"  ng-datatype ="number"  ng-model="p.dqmj"></td>
+		<td  class="read right"><input    readonly  type="text"  ng-datatype ="number"  ng-model="p.ncppjgmdj" /></td>
+		<td class="read mid"  align="center" >13.00%</td>
+		<td  class="read right"><input    readonly  type="text"  ng-datatype ="number"  ng-model="p.dqyxdkncpjxse"></td>	
+		<td align="center" >
+  <div class="sbtnbox"> 
+     <a class="sbtn sbtn01" ng-href="#"  ng-click="add()">增加</a>&nbsp;&nbsp;&nbsp;<a class="sbtn sbtn03" ng-if="$index!=0"   ng-href="#"  ng-click="del($index)">删除</a>
+     </div>
+     </td>
+	</tr>
+
+	<tr ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_gjncpyyscjyqbgchwsthdncpzzsjxsejsb.gjncpyyscjyqbgchwsthdncpzzsjxsejsbGrid">
+		<td  colspan="10" class="title01" align="center">合 计</td>
+		<td  class="edit right"><input    readonly  type="text"  ng-datatype ="number"  ng-model="gjncpyyscjyqbgchwsthdncpzzsjxsejsbGrid.dqyxdkncpjxseHj"></td>	
+	<td  class="title01"></td>
+	</tr>
+</table>
+</div>
+</div>
+</body>
+</html>

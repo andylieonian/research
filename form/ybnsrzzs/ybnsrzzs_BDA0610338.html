@@ -1,0 +1,146 @@
+<!doctype html>
+<html id="ng-app"  xmlns:ng="http://angularjs.org">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" >
+<title>03$增值税纳税申报表附列资料（三）（服务、不动产和无形资产扣除项目明细）</title>
+</head>
+
+<body>
+<div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl">	
+<div class="NewTableHead" ng-jprefix="qcs.initData.nsrjbxx">
+     <h1>增值税纳税申报表附列资料（三）（服务、不动产和无形资产扣除项目明细）</h1>
+ 
+    <li class="dateTxt">税款所属时间:<input  type="text" class="topInput" ng-model="sbbhead.skssqq" readonly> 至<input type="text" class="topInput" ng-model="sbbhead.skssqz" readonly>  </li>
+</div>
+  <!--<pre style="width: 200px;" ng-bind="showData"></pre>-->
+<div class="NewTableTop" ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr03_ysfwkcxmmx.sbbhead">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>纳税人名称（公章）：
+      <span class="textline" ng-bind="sbbhead.nsrmc"></td>
+    <td align="right">金额单位：元至角分</td>
+    </tr>
+</table>
+</div>
+
+<div class="NewTableMain" ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr03_ysfwkcxmmx.ysfwkcxmmxGrid.ysfwkcxmmxGridlbVO">
+  <table width="100%" border="0" cellpadding="0" cellspacing="1">
+    <tr>
+      <td colspan="2" rowspan="3" align="center" class="title01">项目及栏次</td>
+      <td  rowspan="2" align="center" class="title01">本期服务、不动产和无形<br>资产价税合计额（免税销售额）</td>
+      <td colspan="5" align="center" class="title01">服务、不动产和无形资产扣除项目</td>
+    </tr>
+    <tr >
+      <td  align="center" class="title01">期初余额</td>
+      <td  align="center" class="title01">本期发生额</td>
+      <td  align="center" class="title01">本期应扣除金额</td>
+      <td  align="center" class="title01">本期实际扣除金额</td>
+      <td  align="center" class="title01">期末余额</td>
+    </tr>
+    <tr>
+      <td  align="center" class="title01">1</td>
+      <td  align="center" class="title01">2</td>
+      <td  align="center" class="title01">3</td>
+      <td  align="center" class="title01">4=2+3</td>
+      <td  align="center" class="title01">5(5≤1且5≤4)</td>
+      <td  align="center" class="title01">6=4-5</td>
+    </tr>
+    <tr>
+      <td class="title01" >17%税率的项目</td>
+      <td  align="center" class="title01"  width="7%">1</td>
+      <td class="read right" >
+        <input ng-datatype="number" type="text" ng-model="ysfwkcxmmxGridlbVO[0].msxse" readonly>
+      </td>
+      <td class="edit right" >
+        <input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[0].qcye" type="text">
+      </td>
+      <td class="edit right" >
+        <input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[0].bqfse" type="text">
+      </td>
+      <td class="read right" >
+        <input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[0].bqykcje" type="text"  readonly>
+      </td>
+      <td class="edit right" >
+        <input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[0].bqsjkcje" type="text">
+      </td>
+      <td class="read right" >
+        <input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[0].qmye" type="text"  readonly>
+      </td>
+    </tr>
+    <tr>
+      <td class="title01" >11%税率的项目</td>
+      <td  align="center" class="title01">2</td>
+      <td class="read right" ><input  ng-model="ysfwkcxmmxGridlbVO[1].msxse" type="text" ng-datatype="number"  readonly></td>
+      <td class="edit right" ><input  ng-model="ysfwkcxmmxGridlbVO[1].qcye" type="text" ng-datatype="number"></td>
+      <td class="edit right" ><input  ng-model="ysfwkcxmmxGridlbVO[1].bqfse" type="text" ng-datatype="number"></td>
+      <td class="read right" ><input  ng-model="ysfwkcxmmxGridlbVO[1].bqykcje" type="text" ng-datatype="number" readonly></td>
+      <td class="edit right" ><input  ng-model="ysfwkcxmmxGridlbVO[1].bqsjkcje" type="text" ng-datatype="number"></td>
+      <td class="read right" ><input  ng-model="ysfwkcxmmxGridlbVO[1].qmye" type="text" ng-datatype="number" readonly></td>
+      </tr>
+    <tr>
+      <td class="title01" >6%税率的项目（不含金融商品转让）</td>
+      <td  align="center" class="title01">3</td>
+      <td class="edit right" ><input  ng-model="ysfwkcxmmxGridlbVO[2].msxse" type="text" ng-datatype="number" ></td>
+      <td class="edit right" ><input  ng-model="ysfwkcxmmxGridlbVO[2].qcye" type="text" ng-datatype="number"></td>
+      <td class="edit right" ><input  ng-model="ysfwkcxmmxGridlbVO[2].bqfse" type="text" ng-datatype="number"></td>
+      <td class="read right" ><input  ng-model="ysfwkcxmmxGridlbVO[2].bqykcje" type="text" ng-datatype="number" readonly></td>
+      <td class="edit right" ><input  ng-model="ysfwkcxmmxGridlbVO[2].bqsjkcje" type="text" ng-datatype="number"></td>
+      <td class="read right" ><input  ng-model="ysfwkcxmmxGridlbVO[2].qmye" type="text" ng-datatype="number" readonly></td>
+      </tr>
+    <tr>
+      <td class="title01" >6%税率的金融商品转让项目</td>
+      <td  align="center" class="title01">4</td>
+      <td class="edit right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[3].msxse" type="text" ></td>
+      <td class="edit right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[3].qcye" type="text"></td>
+      <td class="edit right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[3].bqfse" type="text"></td>
+      <td class="read right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[3].bqykcje" type="text" readonly></td>
+      <td class="edit right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[3].bqsjkcje" type="text"></td>
+      <td class="read right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[3].qmye" type="text" readonly></td>
+      </tr>
+    <tr>
+      <td class="title01" >5%征收率的项目</td>
+      <td  align="center" class="title01">5</td>
+      <td class="read right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[4].msxse" type="text" readonly></td>
+      <td class="edit right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[4].qcye" type="text"></td>
+      <td class="edit right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[4].bqfse" type="text"></td>
+      <td class="read right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[4].bqykcje" type="text" readonly></td>
+      <td class="edit right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[4].bqsjkcje" type="text"></td>
+      <td class="read right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[4].qmye" type="text" readonly></td>
+      </tr>
+    <tr>
+      <td class="title01" >3%征收率的项目</td>
+      <td  align="center" class="title01">6</td>
+      <td class="read right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[5].msxse" type="text" readonly></td>
+      <td class="edit right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[5].qcye" type="text"></td>
+      <td class="edit right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[5].bqfse" type="text"></td>
+      <td class="read right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[5].bqykcje" type="text" readonly></td>
+      <td class="edit right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[5].bqsjkcje" type="text"></td>
+      <td class="read right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[5].qmye" type="text" readonly></td>
+      </tr>
+    <tr>
+      <td class="title01" >免抵退税的项目</td>
+      <td  align="center" class="title01">7</td>
+      <td class="read right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[6].msxse" type="text" readonly></td>
+      <td class="edit right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[6].qcye" type="text"></td>
+      <td class="edit right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[6].bqfse" type="text"></td>
+      <td class="read right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[6].bqykcje" type="text" readonly></td>
+      <td class="edit right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[6].bqsjkcje" type="text"></td>
+      <td class="read right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[6].qmye" type="text" readonly></td>
+      </tr>
+    <tr ng-render-finish="">
+      <td class="title01" >免税的项目</td>
+      <td  align="center" class="title01">8</td>
+      <td class="read right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[7].msxse" type="text" readonly></td>
+      <td class="edit right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[7].qcye" type="text"></td>
+      <td class="edit right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[7].bqfse" type="text"></td>
+      <td class="read right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[7].bqykcje" type="text" readonly></td>
+      <td class="edit right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[7].bqsjkcje" type="text"></td>
+      <td class="read right" ><input ng-datatype="number" ng-model="ysfwkcxmmxGridlbVO[7].qmye" type="text" readonly></td>
+      </tr>
+  </table>
+</div>
+ 
+</div>
+</body>
+</html>

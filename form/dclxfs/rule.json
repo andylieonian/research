@@ -1,0 +1,134 @@
+[{
+  "id": "06100101010110001",
+  "type": "01",
+  "desc": "",
+  "formula": "$..sbsjxxGridlb[0].ynse=$..sbsjxxGridlb[0].sl1*$..sbsjxxGridlb[0].xse",
+  "tips": ""
+},{
+  "id": "06100101010110002",
+  "type": "01",
+  "desc": "应纳税额等于适用税率乘以销售额",
+  "formula": "$..sbsjxxGridlb[1].ynse=$..sbsjxxGridlb[1].sl1*$..sbsjxxGridlb[1].xse",
+  "target": "",
+  "tips": ""
+},{
+ "id": "06100101010110003",
+  "type": "01",
+  "desc": "本期减（免）税额等于本期减（免）销售额乘以适用",
+  "formula": "$..bqjmsejsbdcGridlb[0].bqjmse=$..bqjmsejsbdcGridlb[0].sysl*$..bqjmsejsbdcGridlb[0].bqjmxse",
+  "tips": ""
+},{
+"id": "06100101010110004",
+  "type": "01",
+  "desc": "",
+  "formula": "$..bqjmsejsbdcGridlb[1].bqjmse=$..bqjmsejsbdcGridlb[1].sysl*$..bqjmsejsbdcGridlb[1].bqjmxse",
+  "tips": ""
+},{
+"id": "06100101010110005",
+  "type": "01",
+  "desc": "",
+  "formula": "$..bqjmsejsbdcGridlb[2].bqjmse=$..bqjmsejsbdcGridlb[2].sysl*$..bqjmsejsbdcGridlb[2].bqjmxse",
+  "tips": ""
+},{
+"id": "06100101010110006",
+  "type": "01",
+  "desc": "",
+  "formula": "$..bqjmsejsbdcGridlb[3].bqjmse=$..bqjmsejsbdcGridlb[3].sysl*$..bqjmsejsbdcGridlb[3].bqjmxse",
+  "tips": ""
+},{
+"id": "06100101010110007",
+  "type": "01",
+  "desc": "",
+  "formula": "$..bqjmsejsbdcGridlb[4].bqjmse=$..bqjmsejsbdcGridlb[4].sysl*$..bqjmsejsbdcGridlb[4].bqjmxse",
+  "tips": ""
+},{
+"id": "06100101010110008",
+  "type": "01",
+  "desc": "",
+  "formula": "$..bqjmsejsbdcGridlb[5].bqjmse=$..bqjmsejsbdcGridlb[5].sysl*$..bqjmsejsbdcGridlb[5].bqjmxse",
+  "tips": ""
+},{
+"id": "06100101010110009",
+  "type": "01",
+  "desc": "",
+  "formula": "$..bqjmsejsbdcGridlb[6].bqjmse=$..bqjmsejsbdcGridlb[6].sysl*$..bqjmsejsbdcGridlb[6].bqjmxse",
+  "tips": ""
+},{
+"id": "061001010101100010",
+  "type": "01",
+  "desc": "组成计税价格 等于 （材料成本 加 加工费）除以（1-适用税率）",
+  "formula": "$..bqdsdjsejsbdcGridlb[0].zcjsjg=($..bqdsdjsejsbdcGridlb[0].clcb +$..bqdsdjsejsbdcGridlb[0].jgf)/(1-$..bqdsdjsejsbdcGridlb[0].sysl)",
+  "tips": ""
+},{
+"id": "061001010101100011",
+  "type": "01",
+  "desc": "本期代收代缴税款等于同类产品销售价格乘以受托加工数量乘以适用税率或组成计税价格乘以适用税率",
+  "formula": "$..bqdsdjsejsbdcGridlb[0].bqdsdjsk=IF($..bqdsdjsejsbdcGridlb[0].tlcpxsjg != 0,$..bqdsdjsejsbdcGridlb[0].tlcpxsjg*$..bqdsdjsejsbdcGridlb[0].stjgsl*$..bqdsdjsejsbdcGridlb[0].sysl*1,$..bqdsdjsejsbdcGridlb[0].zcjsjg*$..bqdsdjsejsbdcGridlb[0].sysl*1)",
+  "tips": ""
+},{
+"id": "061001010101100012",
+  "type": "01",
+  "desc": "组成计税价格 等于 （材料成本 加 加工费）除以（1-适用税率）",
+  "formula": "$..bqdsdjsejsbdcGridlb[1].zcjsjg=($..bqdsdjsejsbdcGridlb[1].clcb+$..bqdsdjsejsbdcGridlb[1].jgf)/(1-$..bqdsdjsejsbdcGridlb[1].sysl)",
+  "tips": ""
+},{
+"id": "061001010101100013",
+  "type": "01",
+  "desc": "本期受托加工减（免）税款等于同类产品销售价格乘以受托加工数量乘以适用税率或组成计税价格乘以适用税率",
+  "formula": "$..bqdsdjsejsbdcGridlb[1].bqstjgjmsk=IF($..bqdsdjsejsbdcGridlb[1].tlcpxsjg !=0,$..bqdsdjsejsbdcGridlb[1].tlcpxsjg*$..bqdsdjsejsbdcGridlb[1].stjgsl*$..bqdsdjsejsbdcGridlb[1].sysl*1,$..bqdsdjsejsbdcGridlb[1].zcjsjg*$..bqdsdjsejsbdcGridlb[1].sysl*1)",
+  "tips": ""
+},{
+"id": "061001010101100014",
+  "type": "10",
+  "desc": "本期预缴税额",
+  "formula": "$..bqyjse=$..xfsDclsbInitData.yjs",
+  "tips": ""
+},{
+"id": "061001010101100015",
+  "type": "10",
+  "desc": "期初未缴税额",
+  "formula": "$..qcwjse=$..xfsDclsbInitData.cqwjse",
+  "tips": ""
+},{
+"id": "061001010101100016",
+  "type": "11",
+  "desc": "本期减（免）税额合计=本期减（免）税额（无汞原电池）+本期减（免）税额（金属氢化物镍蓄电池）+本期减（免）税额(锂原电池)+本期减（免）税额(锂离子蓄电池)+本期减（免）税额(全钒液流电池)+本期减（免）税额(燃料电池)+本期减（免）税额(太阳能电池)",
+  "formula": "$..xfssbSbbdxxVO.xfsDcsb.xfssb7_fb1.bqjmsejsbdcGrid.bqjmsehj=$..bqjmsejsbdcGridlb[0].bqjmse+$..bqjmsejsbdcGridlb[1].bqjmse+$..bqjmsejsbdcGridlb[2].bqjmse+$..bqjmsejsbdcGridlb[3].bqjmse+$..bqjmsejsbdcGridlb[4].bqjmse+$..bqjmsejsbdcGridlb[5].bqjmse+$..bqjmsejsbdcGridlb[6].bqjmse",
+  "tips": ""
+},{
+"id": "061001010101100017",
+  "type": "10",
+  "desc": "本期缴纳前期应纳税额：",
+  "formula": "$..bqjnqqynse=$..xfsDclsbInitData.bqjnQqYnse",
+  "tips": ""
+},{
+"id": "061001010101100018",
+  "type": "11",
+  "desc": "应纳税额合计=应纳税额（电池）+应纳税额（铅蓄电池）",
+  "formula": "$..xfssbSbbdxxVO.xfsDcsb.xfssb7.sbsjxxGrid7.ynsehj=$..sbsjxxGridlb[0].ynse+$..sbsjxxGridlb[1].ynse",
+  "tips": ""
+},{
+"id": "061001010101100019",
+  "type": "10",
+  "desc": "本期准予扣除税额：",
+  "formula": "$..bqzykcse=0",
+  "tips": ""
+},{
+"id": "061001010101100020",
+  "type": "01",
+  "desc": "期末未缴税额等于期初未缴税额减去本期缴纳前期应纳税额加本期应补（退）税额",
+  "formula": "$..qmwjse=$..qcwjse-$..bqjnqqynse+$..bqybtse",
+  "tips": ""
+},{
+"id": "061001010101100021",
+  "type": "01",
+  "desc": "本期应补（退）税额等于应纳税额减去本期准予扣除税额减去本期减（免）税额减去本期预缴税额",
+  "formula": "$..bqybtse=$.xfssbSbbdxxVO.xfsDcsb.xfssb7.sbsjxxGrid7.ynsehj-$..bqzykcse-$..xfssbSbbdxxVO.xfsDcsb.xfssb7_fb1.bqjmsejsbdcGrid.bqjmsehj-$..bqyjse",
+  "tips": ""
+},{
+"id": "061001010101100022",
+  "type": "01",
+  "desc": "减（免）税额等于减（免）金额乘以适用税率（从价定率）加减（免）数量乘以适用税率（从量定额）",
+  "formula": "$..bqjmsemxbGridlb[0].bqjmse=$..bqjmsemxbGridlb[0].bqjmxse*$..bqjmsemxbGridlb[0].blsl+$..bqjmsemxbGridlb[0].bqjmsl*$..bqjmsemxbGridlb[0].desl1",
+  "tips": ""
+}]

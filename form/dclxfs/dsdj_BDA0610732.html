@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>本期代收代缴税额计算表</title>
+
+</head>
+
+<body>
+<div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl"  >
+  <div class="NewTableHead" ng-jprefix="xfssbSbbdxxVO.xfsDcsb.xfssb7.sbbhead">
+     <h1>本期代收代缴税额计算表</h1>
+     <li class="dateTxt">税款所属期:<input name="textfield3" type="text" class="topInput" id="textfield3"  ng-model="sbbhead.skssqq" readonly> 
+     至<input name="textfield3" type="text" class="topInput" 
+     id="textfield3" value=" " ng-model="sbbhead.skssqz" readonly>  </li>
+</div>
+
+
+<div class="NewTableTop">`
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>纳税人名称（公章）：<input type="text" class="topInput" value="" ng-model="sbbhead.nsrmc" readonly> </td>
+        <td colspan="2" align="right">纳税人识别号：<input name="textfield3" type="text" class="topInput" id="textfield3" value=" " ng-model="sbbhead.nsrsbh" readonly>  </td>
+      </tr>
+      <tr>
+        <td>填表日期：<input name="textfield3" type="text" class="topInput" id="textfield3" value=" " ng-model="sbbhead.sbrq1" readonly> </td>
+        <!--<td align="right">计量单位：只</td> -->
+        <td align="right">金额单位：元（列至角分）</td>
+      </tr>
+    </table>
+  </div>
+
+
+<div class="NewTableMain"  ng-jprefix="xfssbSbbdxxVO.xfsDcsb.xfssb7_fb2.bqdsdjsejsbdcGrid">
+  <table width="100%" border="0" cellspacing="1" cellpadding="0">
+    <tr>
+      <td class="title01" align="center"><strong>应税消费品名称</strong></td>
+      <td class="title01" align="center"><strong>非减（免）税电池</strong></td>
+      <td class="title01" align="center"><strong>减（免）税电池</strong></td>
+    </tr>
+    <tr>
+      <td class="title01">适用税率</td>
+      <td class="read mid"><input type="text" jflag="1" ng-datatype="number" ng-model="bqdsdjsejsbdcGrid.bqdsdjsejsbdcGridlb[0].sysl" readonly></td>
+      <td class="read mid"><input type="text" jflag="1" ng-datatype="number" ng-model="bqdsdjsejsbdcGrid.bqdsdjsejsbdcGridlb[1].sysl" readonly></td>
+    </tr>
+    <tr>
+      <td class="title01">受托加工数量</td>
+      <td class="edit right"><input decimal="0" jflag="1" ng-datatype="number" ng-model="bqdsdjsejsbdcGrid.bqdsdjsejsbdcGridlb[0].stjgsl" name="textfield" type="text" id="textfield" value="0"></td>
+        <td class="edit right"><input decimal="0" jflag="1" ng-datatype="number" ng-model="bqdsdjsejsbdcGrid.bqdsdjsejsbdcGridlb[1].stjgsl" name="textfield" type="text" id="textfield" value="0"></td>
+    </tr>
+    <tr>
+      <td class="title01">同类产品销售价格</td>
+      <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdsdjsejsbdcGrid.bqdsdjsejsbdcGridlb[0].tlcpxsjg" name="textfield" type="text" id="textfield" value="0.00"></td>
+        <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdsdjsejsbdcGrid.bqdsdjsejsbdcGridlb[1].tlcpxsjg" name="textfield" type="text" id="textfield" value="0.00"></td>
+    </tr>
+    <tr>
+      <td class="title01">材料成本</td>
+      <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdsdjsejsbdcGrid.bqdsdjsejsbdcGridlb[0].clcb" name="textfield" type="text" id="textfield" value="0.00"></td>
+        <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdsdjsejsbdcGrid.bqdsdjsejsbdcGridlb[1].clcb" name="textfield" type="text" id="textfield" value="0.00"></td>
+    </tr>
+    <tr>
+      <td class="title01">加工费</td>
+      <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdsdjsejsbdcGrid.bqdsdjsejsbdcGridlb[0].jgf" name="textfield" type="text" id="textfield" value="0.00"></td>
+        <td class="edit right"><input jflag="1" ng-datatype="number" ng-model="bqdsdjsejsbdcGrid.bqdsdjsejsbdcGridlb[1].jgf" name="textfield" type="text" id="textfield" value="0.00"></td>
+    </tr>
+    <tr>
+      <td class="title01">组成计税价格</td>
+      <td class="read right"><input type="text" value="0.0" jflag="1" ng-datatype="number" ng-model="bqdsdjsejsbdcGrid.bqdsdjsejsbdcGridlb[0].zcjsjg" name="textfield" readonly></td>
+        <td class="read right"><input type="text" value="0.0" jflag="1" ng-datatype="number" ng-model="bqdsdjsejsbdcGrid.bqdsdjsejsbdcGridlb[1].zcjsjg" name="textfield" readonly></td>
+    </tr>
+    <tr>
+      <td class="title01">本期代收代缴税款</td>
+      <td class="read right"><input type="text" value="0.0" jflag="1" ng-datatype="number" ng-model="bqdsdjsejsbdcGrid.bqdsdjsejsbdcGridlb[0].bqdsdjsk" name="textfield" readonly></td>
+        <td class="read mid"><input type="text" value="— —" jflag="1" name="textfield" readonly></td>
+    </tr>
+    <tr>
+      <td class="title01">本期受托加工减（免）税款</td>
+      <td class="read mid"><input type="text" value="— —" jflag="1" name="textfield" readonly></td>
+        <td class="read right"><input type="text" value="0.0" jflag="1" ng-datatype="number" ng-model="bqdsdjsejsbdcGrid.bqdsdjsejsbdcGridlb[1].bqstjgjmsk" name="textfield" readonly></td>
+    </tr>
+  </table>
+</div>
+
+
+
+</div>
+</body>
+</html>

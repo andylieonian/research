@@ -1,0 +1,95 @@
+<!doctype html>
+<html id="ng-app"  xmlns:ng="http://angularjs.org">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9" >
+<title>04$增值税纳税申报表附列资料（四）</title>
+</head>
+
+<body>
+<div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl">
+<div class="NewTableHead" ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr04_bqjxsemxb.sbbhead">
+     <h1>增值税纳税申报表附列资料（四）（税额抵减情况表）</h1>
+ 
+    <li class="dateTxt">税款所属时间:<input type="text" class="topInput" ng-model="sbbhead.skssqq" readonly> 至<input type="text" class="topInput" ng-model="sbbhead.skssqz" readonly>  </li>
+</div>
+
+<div class="NewTableTop" ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr04_bqjxsemxb.sbbhead">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>纳税人名称（公章）：
+     <span class="textline" ng-bind="sbbhead.nsrmc"></span> </td>
+    <td align="right">金额单位：元至角分</td>
+    </tr>
+</table>
+</div>
+
+<div class="NewTableMain" ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr04_bqjxsemxb.bqjxsemxbGrid.bqjxsemxbGridlbVO">
+  <table width="100%" border="0" cellpadding="0" cellspacing="1">
+ 
+    <tr>
+      <td rowspan="2" align="center" class="title01"><strong>序号</strong></td>
+      <td rowspan="2" align="center" class="title01"><strong>抵减项目</strong></td>
+      <td align="center" class="title01"><strong>期初余额</strong></td>
+      <td align="center" class="title01"><strong>本期发生额</strong></td>
+      <td align="center" class="title01"><strong>本期应抵减税额</strong></td>
+      <td align="center" class="title01"><strong>本期实际抵减税额</strong></td>
+      <td align="center" class="title01"><strong>期末余额</strong></td>
+    </tr>
+    <tr>
+      <td align="center" class="title01">1</td>
+      <td align="center" class="title01">2</td>
+      <td align="center" class="title01">3=1+2</td>
+      <td align="center" class="title01">4≤3</td>
+      <td align="center" class="title01">5=3-4</td>
+    </tr>
+    <tr>
+      <td align="center" class="title01">1</td>
+      <td width="254" class="title01">增值税税控系统专用设备费及技术维护费</td>
+      <td class="read right"><input jflag="1" ng-model="bqjxsemxbGridlbVO[0].qcye" type="text" ng-datatype="number" readonly></td>
+      <td class="edit right"><input jflag="1" ng-model="bqjxsemxbGridlbVO[0].bqfse" type="text" ng-datatype="number" ></td>
+      <td class="read right"><input jflag="1" ng-model="bqjxsemxbGridlbVO[0].bqydjse" type="text" ng-datatype="number" readonly></td>
+      <td class="edit right"><input jflag="1" ng-model="bqjxsemxbGridlbVO[0].bqsjdjse" type="text" ng-datatype="number" ></td>
+      <td class="read right"><input jflag="1" ng-model="bqjxsemxbGridlbVO[0].qmye" type="text" ng-datatype="number" readonly></td>
+      </tr>
+    <tr>
+      <td align="center" class="title01">2</td>
+      <td class="title01">分支机构预征缴纳税款 </td>
+      <td class="read right"><input jflag="1" ng-model="bqjxsemxbGridlbVO[1].qcye" type="text" ng-datatype="number" readonly></td>
+      <td class="edit right"><input jflag="1" ng-model="bqjxsemxbGridlbVO[1].bqfse" type="text" ng-datatype="number"></td>
+      <td class="read right"><input jflag="1" ng-model="bqjxsemxbGridlbVO[1].bqydjse" type="text" ng-datatype="number" readonly></td>
+      <td class="edit right"><input jflag="1" ng-model="bqjxsemxbGridlbVO[1].bqsjdjse" type="text" ng-datatype="number"></td>
+      <td class="read right"><input jflag="1" ng-model="bqjxsemxbGridlbVO[1].qmye" type="text" ng-datatype="number" readonly></td>
+      </tr>
+    <tr>
+      <td align="center" class="title01">3</td>
+      <td class="title01">建筑服务预征缴纳税款 </td>
+      <td class="read right"><input jflag="1" ng-model="bqjxsemxbGridlbVO[2].qcye" type="text" ng-datatype="number" readonly></td>
+      <td class="edit right"><input jflag="1" ng-model="bqjxsemxbGridlbVO[2].bqfse" type="text" ng-datatype="number" ></td>
+      <td class="read right"><input jflag="1" ng-model="bqjxsemxbGridlbVO[2].bqydjse" type="text" ng-datatype="number" readonly></td>
+      <td class="edit right"><input jflag="1" ng-model="bqjxsemxbGridlbVO[2].bqsjdjse" type="text" ng-datatype="number" ></td>
+      <td class="read right"><input jflag="1" ng-model="bqjxsemxbGridlbVO[2].qmye" type="text" ng-datatype="number" readonly></td>
+      </tr>
+    <tr>
+      <td align="center" class="title01">4</td>
+      <td class="title01">销售不动产预征缴纳税款 </td>
+      <td class="read right"><input jflag="1" ng-model="bqjxsemxbGridlbVO[3].qcye" type="text" ng-datatype="number" readonly></td>
+      <td class="edit right"><input jflag="1" ng-model="bqjxsemxbGridlbVO[3].bqfse" type="text" ng-datatype="number"></td>
+      <td class="read right"><input jflag="1" ng-model="bqjxsemxbGridlbVO[3].bqydjse" type="text" ng-datatype="number" readonly></td>
+      <td class="edit right"><input jflag="1" ng-model="bqjxsemxbGridlbVO[3].bqsjdjse" type="text" ng-datatype="number"></td>
+      <td class="read right"><input jflag="1" ng-model="bqjxsemxbGridlbVO[3].qmye" type="text" ng-datatype="number" readonly></td>
+      </tr>
+    <tr ng-render-finish="">
+      <td align="center" class="title01">5</td>
+      <td class="title01">出租不动产预征缴纳税款</td>
+      <td class="read right"><input jflag="1" ng-model="bqjxsemxbGridlbVO[4].qcye" type="text" ng-datatype="number" readonly></td>
+      <td class="edit right"><input jflag="1" ng-model="bqjxsemxbGridlbVO[4].bqfse" type="text" ng-datatype="number" ></td>
+      <td class="read right"><input jflag="1" ng-model="bqjxsemxbGridlbVO[4].bqydjse" type="text" ng-datatype="number" readonly></td>
+      <td class="edit right"><input jflag="1" ng-model="bqjxsemxbGridlbVO[4].bqsjdjse" type="text" ng-datatype="number" ></td>
+      <td class="read right"><input jflag="1" ng-model="bqjxsemxbGridlbVO[4].qmye" type="text" ng-datatype="number" readonly></td>
+      </tr>
+  </table>
+</div>
+</div>
+</body>
+</html>
