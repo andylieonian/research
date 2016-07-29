@@ -232,37 +232,7 @@ GDSDZSWJ-1927
 
 【模型：公式规则库】
 
-
-
- 
-
-
 公式规则库
-
-
-
-
-
-
-
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
- 
 
 [
 
@@ -298,10 +268,6 @@ GDSDZSWJ-1927
 
 ] 
 
-
-
-
-
 【重复行分组显示】
  使用ng-if指令，按照分类特性，比如下面这段是按照fpzldm(发票种类代码)分来显示，在ng-repeat的时候满足fpzldm=='公路运输'时才加载到当前重复区域
 
@@ -334,12 +300,6 @@ GDSDZSWJ-1927
 <td class="edit right" width="9%"><input type="text" ng-datatype="number" ng-model="p.jsdkdjxse"></td> 
 
 <td align="center" width="8%"><div class="sbtnbox"><a class="sbtn sbtn01" ng-href="#" ng-click="add()">增加</a>&nbsp;&nbsp;&nbsp;<a class="sbtn sbtn03" ng-if="$index!=0" ng-href="#" ng-click="del($index)">删除</a></div></td></tr> 
-
- 
-
-
-
-
 
 【angular兼容IE8（IE7）】
 
