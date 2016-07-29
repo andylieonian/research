@@ -382,3 +382,114 @@ return (elements.length) ? elements[0] : null;
 //3、在页头加
 
 <!doctype html> <html id="ng-app"  xmlns:ng="http://angularjs.org"> 
+
+产品--自定义指令
+ng-jprefix
+
+扩展指令，数据模型前缀定义。为了简化后续数据模型绑定时，需要大段大段重复写全路径，这里可以指定前缀。
+
+适用范围：任何HTML标准节点，但必须在ng-controller指令作用域范围内。
+
+最佳实践：页面开始段的DIV标签中。
+
+【技术解释】
+
+　　本指令主要实现两个效果：
+
+1、解析指令属性中所包含的路径，识别最后一个节点，将表单框架中所维护的主数据模型对应的路径节点赋予当前$scope的同名属性中：
+
+—— 如：ng-jprefix="aaa.bbb.ccc" 最终实现效果为： $.scope["ccc"] = parent.formData.aaa.bbb.ccc;
+
+—— 那么在后续指令中使用ccc.xxoo也即等同于直接使用主数据模型的对应节点。
+
+2、用于识别控件所绑定的数据模型全路径，在触发公式计算时，需要能明确主数据模型发生更新的节点全路径，为了能识别出全路径，需要结合ng-model指令中的子路径与ng-jprefix的前缀路径：
+
+—— 如：ng-model="ccc[0].dd"发生修改，那么为了触发关联公式，需要查找ng-jprefix="aaa.bbb.ccc"，最终形成全路径：aaa.bbb.ccc[0].dd，并分析引用了该节点参与计算的公式；
+
+—— 表单引擎实际运行时，识别每个控件所绑定的数据模型全路径，都是在HTML加载时自动完成的（可以认为是对HTML执行编译的期间）。
+
+【样例说明】
+
+例1：
+
+
+
+
+
+
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+ 
+
+<div class="tableHead" ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_zb.sbbhead">
+
+  <h1>增值税纳税申报表（一般纳税人适用）</h1>
+
+  <li class="dateTxt">
+
+     税款所属期:
+
+     <input type="text" class="topInput" ng-model="zzsybsbSbbdxxVO.zzssyyybnsr_zb.sbbhead.sbbhead.skssqq" readonly="readonly">
+
+     至
+
+     <input type="text" class="topInput" ng-model="sbbhead.skssqz" readonly="readonly">
+
+  </li>
+
+</div> 
+
+
+在上述例子中，如果按照缺省方式来进行数据模型绑定，则需要写全路径：
+
+“税款所属时期起”=> zzsybsbSbbdxxVO.zzssyyybnsr_zb.sbbhead.sbbhead.skssqq
+
+因为定义了ng-jprefix="zzsybsbSbbdxxVO.zzssyyybnsr_zb.sbbhead"，所以实际上可以只写后半段，也即：
+
+“税款所属时期止”=> sbbhead.skssqz
+
+ 
+
+ng-options、ng-selected
+
+最佳实践：这两个都是angular内置指令，用于加载select下拉选项列表，此处结合使用中容易碰到的问题进行简要说明；
+
+【样例说明】
+
+例1：
+
+级联下拉--二级级联
+
+<select ng-model="p.ysxmdmjmc" ng-options="key as key+'|'+value.mc for (key,value) in CT.ysxmCT" ng-selected="key==p.ysxmdmjmc"><option value=""></option></select>
+
+<select ng-model="p.yyssl" ng-options="key as value for (key,value) in CT.ysxmCT[p.ysxmdmjmc].yys" ng-selected="key==p.yyssl"><option value=""></option></select>
+
+问题：当选择选项一后，第二个出现空白选项并且value中带有问号和上次选项二所选的值也就是p.yyssl的值（如：<option value="? number:0.06 ?"></option>）。
+
+原因：当改变选项一时，选项二的列表随之改变，但是选项二的ng-model的值与之不匹配，于是出现了这种情况。
+
+解决：首先在<select>...</select>之间加入<option value=‘’>请选择(或者--、空)</option>，然后在加入ng-selected="key==p.yyssl"(将ng-model值赋值)，即可解决
+
+
+
+
+ng-laydate
+
+最佳实践：该指令为集成laydate.js日期控件（亦可集成其他日期控件）；
+
+【举例说明】
+
+例1：<input  type="text" class="laydate-icon topInput" id="sbrq1" ng-laydate="{}" ng-model="sbbhead.sbrq1" readonly>
+
+id为非必选项–laydate对象通过id定位到日期控件加载单元格（另外还可以使用.class）
+
+其他属性如 是否开启时间选择、是否显示节日等，需要加对应属性，根据日后需要扩展
