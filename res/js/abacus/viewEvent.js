@@ -223,7 +223,7 @@ function RegEvent() {
                     //console.log("-----------tips----" + FormulaObject.tips);
                     if($.inArray(id,_arr) == -1) {
                         if(index < 3) {
-                            _tips += FormulaObject.tips+"<br/>";
+                            _tips += formulaEngine.textSubstitution(FormulaObject.tips)+"<br/>";
                             _arr.push(id);
                             index++;
                         }

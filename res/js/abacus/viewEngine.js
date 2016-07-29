@@ -274,6 +274,7 @@ function ViewEngine(){
                     // Adding tips according to not passed verify. 
                     var var2NoPass = idxVariable2NoPass[_jpath];
                     var _tips = '';
+                    var _tips_title = '';
                     if (undefined == var2NoPass) {
                         _obj.removeAttr('title');
                         _obj.removeClass("yellow");
@@ -281,8 +282,10 @@ function ViewEngine(){
                     } else {
                         $.each(var2NoPass, function(id, FormulaObject){
                             _tips += FormulaObject.tips + '<br/>';
+                            _tips_title += FormulaObject.tips + '\n';
                         });
-                        _obj.attr('title', parent.formulaEngine.textSubstitution(_tips));
+                        _tips_title = parent.formulaEngine.textSubstitution(_tips_title);
+                        _obj.attr('title', _tips_title);
                         //layer.tips(_tips, _obj);
                         _obj.addClass("yellow");
                         _obj.parent().addClass("relative");
@@ -302,6 +305,7 @@ function ViewEngine(){
                     // Adding tips according to not passed verify. 
                     var var2NoPass = idxVariable2NoPass[_jpath];
                     var _tips = '';
+                    var _tips_title = '';
                     if (undefined == var2NoPass) {
                         _obj.removeAttr('title');
                         _obj.removeClass("yellow");
@@ -309,8 +313,10 @@ function ViewEngine(){
                     } else {
                         $.each(var2NoPass, function(id, FormulaObject){
                             _tips += FormulaObject.tips + '\n';
+                            _tips_title += FormulaObject.tips + '\n';
                         });
-                        _obj.attr('title', parent.formulaEngine.textSubstitution(_tips));
+                        _tips_title = parent.formulaEngine.textSubstitution(_tips_title);
+                        _obj.attr('title', _tips_title);
                         //layer.tips(_tips, _obj);
                         _obj.addClass("yellow");
                         _obj.parent().addClass("relative");

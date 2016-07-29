@@ -415,7 +415,6 @@ function ngDirectives(gobal, viewApp){
             }
                 $scope.del=function(idx){
                     $scope[_keyword].splice(this.$index,1);
-                    this.$remove
                     if(undefined != $scope['_arr_' + _keyword]) {
                     	_jpaths = $scope['_arr_' + _keyword];
                     	for(var i in _jpaths) {
