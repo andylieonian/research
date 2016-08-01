@@ -7,6 +7,8 @@
 </head>
 
 <body>
+<ng-codetable url="nf_dm_sb_zzs_qylxdm.json" name="qylxdmCT" node="" dm="root.dm" mc="root.mc"></ng-codetable>
+<ng-codetable url="dm_zzs_sysl.json" name="syslCT" node="" dm="root.dm" mc="root.mc"></ng-codetable>
 <div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl">
 <div class="NewTableHead" ng-jprefix="qcs.initData.zzsxgmsbInitData.sssq">
      <h1>电力企业增值税销项税额和进项税额传递单</h1>
@@ -43,7 +45,10 @@
       <td width="30%" ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.dlqyzzsxxsehjxsecdd">开户银行：<input name="textfield33" type="text" class="topInput" id="textfield33" value=" " ng-model="dlqyzzsxxsehjxsecdd.khyh" ></td>
       <td width="30%" ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.dlqyzzsxxsehjxsecdd">开户银行账号:<input name="textfield33" type="text" class="topInput" id="textfield33" value=" " ng-model="dlqyzzsxxsehjxsecdd.khyhzh" ></td>
       <td align="center">企业类型：</td>
-      <td class="edit right" ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.dlqyzzsxxsehjxsecdd.skzsForm"><input datatype="string" ng-model="skzsForm.qylxbz" name="textfield" type="text" ></td>      
+      <td class="edit right" ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.dlqyzzsxxsehjxsecdd.skzsForm">     
+      <select ng-model="skzsForm.qylxbz" ng-options="key as value for (key,value) in CT.qylxdmCT"><option value=""></option></select>
+      <input ng-model="skzsForm.dmmc" ng-value="skzsForm.dmmc=CT.qylxdmCT[skzsForm.qylxbz]" style="display:none">           
+      </td>      
       <td colspan="2" ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.dlqyzzsxxsehjxsecdd">电话号码:<input name="textfield33" type="text" class="topInput" id="textfield33" value=" " ng-model="dlqyzzsxxsehjxsecdd.dhhm" ></td>
     </tr>
     </table>
@@ -164,8 +169,8 @@
     <tr>
       <td colspan="6">注：1、发电企业本表由电厂（站、机组）填写，供电企业县（区）级供电企业能核算售电收入的，由县（区）级供电企业填写，市级核算售电收入的，由市级供电企业填写；</td>
       </tr>
-      <tr>
-      <td colspan="6"> 　　2、本表在申报期内，随同申报表一同报送至主管税务机关，税务机关审核完毕后，按隶属关系报送上一级汇总审核，并报送至相应税务机关审核盖章后，继续上报。</td>
+      <tr ng-render-finish="">
+      	<td colspan="6"> 　　2、本表在申报期内，随同申报表一同报送至主管税务机关，税务机关审核完毕后，按隶属关系报送上一级汇总审核，并报送至相应税务机关审核盖章后，继续上报。</td>
       </tr>
   </table>
 </div>

@@ -15,6 +15,7 @@ function _VIEW_START_UP_(){
     "/res/js/abacus/viewEvent.js",
     "/res/js/abacus/viewDirective.js", // Framework: custom's directives
     "/res/js/abacus/viewEngine.js", // Framework: viewEngine
+    "/res/js/lib/select2/select2.min.js",
     "/res/js/lib/laydate-v1.1/laydate/laydate.js"
     ];
     if (typeof _VIEW_START_UP_._inited == "undefined") {

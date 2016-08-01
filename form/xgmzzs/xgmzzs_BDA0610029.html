@@ -35,27 +35,39 @@
 <div class="NewTableMain" ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.jdclscqyxsmxb.jdcljxqyxsmxbGrid.jdclscqyxsmxbGridlb">
   <table width="100%" border="0" cellspacing="1" cellpadding="0">
     <tr>
+      <td align="center" style="display:none"></td>
       <td rowspan="2" align="center" class="title01"><strong>销售对象名称</strong></td>
       <td rowspan="2" align="center" class="title01"><strong>购货方纳税人识别号</strong></td>
       <td colspan="3" align="center" class="title01"><strong>销售情况</strong></td>
+      <td rowspan="2" width="110" align="center" class="title01">操作</td>
     </tr>
     <tr>
       <td align="center" class="title01"><strong>厂牌型号</strong></td>
       <td align="center" class="title01"><strong>车辆识别代码（车架号码）</strong></td>
-      <td align="center" class="title01"><strong>销售价格</strong></td>
+      <td align="center" class="title01"><strong>销售价格</strong></td>      
     </tr>
-    <tr ng-repeat="p in jdclscqyxsmxbGridlb track by $index" ng-repeat-init="jdclscqyxsmxbGridlb">
-      <td class="edit right"><input ng-datatype="string" ng-model="p.xsdxmc" type="text"></td>
-      <td class="edit right"><input ng-datatype="string" ng-model="p.ghfnsrrbh" type="text"></td>
-      <td class="edit right"><input ng-datatype="string" ng-model="p.cpxh1" type="text"></td>
-      <td class="edit right"><input ng-datatype="string" ng-model="p.clsbdm" type="text"></td>
+    <tr ng-repeat="p in jdclscqyxsmxbGridlb track by $index" ng-repeat-init="jdclscqyxsmxbGridlb"
+     default-value='{"xsdxmc":"","ghfnsrrbh":"","cpxh1":"","clsbdm":"","xsjg":0.00}'>
+      <td align="center" style="display:none" ng-bind="p.ewbhxh=$index+1"></td>
+      <td class="edit right"><input  ng-model="p.xsdxmc" type="text"></td>
+      <td class="edit right"><input  ng-model="p.ghfnsrrbh" type="text"></td>
+      <td class="edit right"><input  ng-model="p.cpxh1" type="text"></td>
+      <td class="edit right"><input  ng-model="p.clsbdm" type="text"></td>
       <td class="edit right"><input ng-datatype="number" ng-model="p.xsjg" type="text"></td>
+       <td>
+	      <div class="sbtnbox"> 	    
+		      <a class="sbtn sbtn01"  ng-href="#" ng-click="add()">增加</a>&nbsp;&nbsp;&nbsp;
+		      <a class="sbtn sbtn03" ng-if="$index!=0" ng-href="#"  ng-click="del($index)">删除</a>
+	      </div>
+	  </td>
       </tr>
-    <tr ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.jdclscqyxsmxb.jdcljxqyxsmxbGrid">
+    <tr ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.jdclscqyxsmxb.jdcljxqyxsmxbGrid" ng-render-finish="">
+      <td align="center" style="display:none" ></td>
       <td colspan="2" align="center" class="title01">合计</td>
       <td class="read right"><input type="text" value="--" readonly></td>
       <td class="read right"><input type="text" value="--" readonly></td>
       <td class="read right"><input ng-datatype="number" ng-model="jdcljxqyxsmxbGrid.xsjghj" type="text" readonly></td>
+       <td class="read right"><input name="textfield" type="text"  value="--" readonly></td>
     </tr>
   </table>
 </div>

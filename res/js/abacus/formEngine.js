@@ -5,6 +5,7 @@
 var formData;
 var formCT = {}; //Code-tables
 var flagDataLoaded = false;
+var flagExecuteInitial = true;//execute initialize formula flag
 var formulaEngine;
 var formulaCalculates;
 var formEngine;
@@ -35,7 +36,9 @@ function FormEngine(){
          */
         FormEngine.prototype.initialize = function(){
             var _start_ = new Date().getTime();
-            dhtmlx.message("表单引擎启动...", "info", 2000);
+            if(true == flagFormDebuging) {
+                dhtmlx.message("表单引擎启动...", "info", 2000);
+            }
             /**
              * 装载左侧表单数据列表。
              */
@@ -50,6 +53,9 @@ function FormEngine(){
                     dhtmlx.message(formData.msg, "error", 2000);
                 } else {
                     if("undefined" !== typeof formData.body) {
+                        if("undefined" !== typeof flagExecuteInitial) {
+                            flagExecuteInitial = formData.execute;
+                        }
                         formData = formData.body;
                     }
                     if ("string" === typeof formData) {
@@ -58,7 +64,9 @@ function FormEngine(){
                 }
                 formulaCalculates = rules[0];
                 var _ms_ = new Date().getTime() - _start_;
-                dhtmlx.message("数据模型装载完毕 , " + _ms_ + "ms", "info", 2000);
+                if(true == flagFormDebuging) {
+                    dhtmlx.message("数据模型装载完毕 , " + _ms_ + "ms", "info", 2000);
+                }
             }).then(function(){
                 var _start_formula_ = new Date().getTime();
                 // Init formula engine.
@@ -69,11 +77,15 @@ function FormEngine(){
                 	formulaEngine.initialize("formData");
             	}
                 var _ms_ = new Date().getTime() - _start_formula_;
-                dhtmlx.message("公式引擎初始化完毕 , " + _ms_ + "ms", "info", 2000);
+                if(true == flagFormDebuging) {
+                    dhtmlx.message("公式引擎初始化完毕 , " + _ms_ + "ms", "info", 2000);
+                }
             }).done(function(){
                 flagDataLoaded = true;
                 var _ms_ = new Date().getTime() - _start_;
-                dhtmlx.message("表单引擎初始化完毕 , " + _ms_ + "ms", "info", 2000);
+                if(true == flagFormDebuging) {
+                    dhtmlx.message("表单引擎初始化完毕 , " + _ms_ + "ms", "info", 2000);
+                }
             });
             /**
              * 注册IFrame事件，监听并动态注入JS脚本文件。
@@ -152,9 +164,13 @@ function FormEngine(){
                         formEngine.lstSheets = data;
                         formEngine.showSheetList();
                         var _ms_ = new Date().getTime() - _start_;
-                        dhtmlx.message("主附表清单加载完毕, " + _ms_ + "ms", "info", 2000);
+                        if(true == flagFormDebuging) {
+                            dhtmlx.message("主附表清单加载完毕, " + _ms_ + "ms", "info", 2000);
+                        }
                     } else {
-                        dhtmlx.message("主附表清单加载失败.", "error", 5000);
+                        if(true == flagFormDebuging) {
+                            dhtmlx.message("主附表清单加载失败.", "error", 5000);
+                        }
                         console.log("FormlistLoader: Error while loading: " + xhr.status + ": "
                             + xhr.statusText);
                     }
@@ -171,7 +187,9 @@ function FormEngine(){
                     var status = (xhr.status == "200") ? msg : xhr.status;
                     console.log("Loading sheet list fail with [" + status + "]\n----"
                         + xhr.responseText);
-                    dhtmlx.message("加载表清单失败 [" + status + "] " + err, "error", 5000);
+                    if(true == flagFormDebuging) {
+                        dhtmlx.message("加载表清单失败 [" + status + "] " + err, "error", 5000);
+                    }
                 });
         }
         /**

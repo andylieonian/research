@@ -2,31 +2,31 @@
 {"id":"06100101020110001",
 "type":"10",
 "desc":"",
-"formula":"$..sbbhead.skssqq=$..sssq.rqQ",
+"formula":"$..zzssyyxgmnsr.sbbhead.skssqq=$..sssq.rqQ",
 "tips":""
 },
 {"id":"06100101020110002",
 "type":"10",
 "desc":"",
-"formula":"$..sbbhead.skssqz=$..sssq.rqZ",
+"formula":"$..zzssyyxgmnsr.sbbhead.skssqz=$..sssq.rqZ",
 "tips":""
 },
 {"id":"06100101020110003",
 "type":"10",
 "desc":"",
-"formula":"$..sbbhead.nsrmc=$..nsrjbxx.nsrmc",
+"formula":"$..zzssyyxgmnsr.sbbhead.nsrmc=$..nsrjbxx.nsrmc",
 "tips":""
 },
 {"id":"06100101020110004",
 "type":"10",
 "desc":"",
-"formula":"$..sbbhead.sbrq1=$..zzsxgmsbInitData.sbrq",
+"formula":"$..zzssyyxgmnsr.sbbhead.sbrq1=$..zzsxgmsbInitData.sbrq",
 "tips":""
 },
 {"id":"06100101020110005",
 "type":"10",
 "desc":"",
-"formula":"$..sbbhead.nsrsbh=$..nsrjbxx.nsrsbh",
+"formula":"$..zzssyyxgmnsr.sbbhead.nsrsbh=$..nsrjbxx.nsrsbh",
 "tips":""
 },
 {"id":"06100101020110006",
@@ -38,8 +38,8 @@
 {"id":"06100101020102001",
 "type":"02",
 "desc":"",
-"formula":"(($..zzsxgmGrid.zzsxgmGridlb[0].yzzzsbhsxse-$..zzsxgmGrid.zzsxgmGridlb[0].swjgdkdzzszyfpbhsxse-$..zzsxgmGrid.zzsxgmGridlb[0].skqjkjdptfpbhsxse)>=0) && ($..zzsxgmGrid.zzsxgmGridlb[0].yzzzsbhsxse>=0)",
-"tips":"第1栏值必须大于或等于第2,3栏值之和,且第1栏值不能小于0"
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].yzzzsbhsxse>=0",
+"tips":"[货物及劳务]不能为负!"
 },
 {"id":"06100101020103001",
 "type":"13",
@@ -51,14 +51,14 @@
 {"id":"06100101020110007",
 "type":"10",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].swjgdkdzzszyfpbhsxse=$..zzsxgmsbInitData.yshwlwFpdkbhsxse",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].swjgdkdzzszyfpbhsxse=ROUND($..zzsxgmsbInitData.yshwlwFpdkbhsxse,2)",
 "tips":""
 },
 {"id":"06100101020102002",
 "type":"02",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].skqjkjdptfpbhsxse<0",
-"tips":"税控器具开具的普通发票不含税销售额的货物及劳务本期数不能为负数"
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].skqjkjdptfpbhsxse>=0",
+"tips":"[货物及劳务]不能为负!"
 },
 {"id":"06100101020103002",
 "type":"13",
@@ -70,15 +70,27 @@
 {"id":"06100101020102003",
 "type":"02",
 "desc":"",
-"formula":"",
-"tips":"第7栏必须大于等于第8栏，且第7栏不能为负数"
+"formula":"(ROUND($..zzsxgmGrid.zzsxgmGridlb[0].xssygdysgdzcbhsxse-$..zzsxgmGrid.zzsxgmGridlb[0].skqjkjdptfpbhsxse1,2)>=0)",
+"tips":"第7栏第1列【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[0].xssygdysgdzcbhsxse,2)}}】应大于等于第8栏【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[0].skqjkjdptfpbhsxse1,2)}}】"
 },
-
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].xssygdysgdzcbhsxse>=0",
+"tips":"[货物及劳务]不能为负!"
+},
+{"id":"06100101020103003",
+"type":"13",
+"desc":"",
+"formula":"$..zzsxgmsbInitData.yshwjlwRdzg=='N'",
+"target": "$..zzsxgmGrid.zzsxgmGridlb[0].xssygdysgdzcbhsxse:readonly;$..zzsxgmGrid.zzsxgmGridlb[0].xssygdysgdzcbhsxse:background-color=#f1edee;",
+"tips":""
+},
 {"id":"06100101020102004",
 "type":"02",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].skqjkjdptfpbhsxse1<0",
-"tips":"不能为负数"
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].skqjkjdptfpbhsxse1>=0",
+"tips":"[货物及劳务]不能为负!"
 },
 {"id":"06100101020103004",
 "type":"13",
@@ -90,7 +102,7 @@
 {"id":"06100101020101001",
 "type":"01",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].msxse=$..zzsxgmGrid.zzsxgmGridlb[0].xwqymsxse+$..zzsxgmGrid.zzsxgmGridlb[0].wdqzdxse+$..zzsxgmGrid.zzsxgmGridlb[0].qtmsxse",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].msxse=ROUND($..zzsxgmGrid.zzsxgmGridlb[0].xwqymsxse+$..zzsxgmGrid.zzsxgmGridlb[0].wdqzdxse+$..zzsxgmGrid.zzsxgmGridlb[0].qtmsxse,2)",
 "tips":""
 },
 {"id":"06100101020102005",
@@ -102,19 +114,19 @@
 {"id":"06100101020102006",
 "type":"02",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].msxse<0",
-"tips":"不能为负数"
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].msxse>=0",
+"tips":"[货物及劳务]不能为负!"
 },
 {"id":"06100101020102007",
 "type":"02",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].xwqymsxse<0",
-"tips":"不能为负数"
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].xwqymsxse>=0",
+"tips":"[货物及劳务]不能为负!"
 },
 {"id":"06100101020103005",
 "type":"13",
 "desc":"",
-"formula":"",
+"formula":"($..zzsxgmsbInitData.yshwjlwRdzg == 'N') || (['410','411','412','413','430','431','432','433'].indexOf($..nsrjbxx.djzclxDm)!=-1)",
 "target": "$..zzsxgmGrid.zzsxgmGridlb[0].xwqymsxse:readonly;$..zzsxgmGrid.zzsxgmGridlb[0].xwqymsxse:background-color=#f1edee;",
 "tips":""
 },
@@ -139,21 +151,21 @@
 {"id":"06100101020102011",
 "type":"02",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].wdqzdxse<0",
-"tips":"不能为负数"
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].wdqzdxse>=0",
+"tips":"[货物及劳务]不能为负!"
 },
 {"id":"06100101020103006",
 "type":"13",
 "desc":"",
-"formula":"",
+"formula":"($..zzsxgmsbInitData.yshwjlwRdzg == 'N') || (['410','411','412','413','430','431','432','433'].indexOf($..nsrjbxx.djzclxDm)==-1)",
 "target": "$..zzsxgmGrid.zzsxgmGridlb[0].wdqzdxse:readonly;$..zzsxgmGrid.zzsxgmGridlb[0].wdqzdxse:background-color=#f1edee;",
 "tips":""
 },
 {"id":"06100101020102012",
 "type":"02",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].qtmsxse<0",
-"tips":"不能为负数"
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].qtmsxse>=0",
+"tips":"[货物及劳务]不能为负!"
 },
 {"id":"06100101020103007",
 "type":"13",
@@ -165,21 +177,33 @@
 {"id":"06100101020102013",
 "type":"02",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].qtmsxse+$..zzsxgmGrid.zzsxgmGridlb[1].qtmsxse-$..zzsjmssbmxbmsxmGrid.mzzzsxmxsehj!=0",
-"tips":"其他免税销售额 本期数 应等于 附表《减免税申报明细表》 二、免税项目 免征增值税项目销售额 合计金额"
+"formula":"",
+"tips":""
 },
 {"id":"06100101020102014",
 "type":"02",
 "desc":"",
-"formula":"",
-"tips":"第13栏必须大于等于第14栏，且第13栏不能为负数"
+"formula":"(ROUND($..zzsxgmGrid.zzsxgmGridlb[0].ckmsxse-$..zzsxgmGrid.zzsxgmGridlb[0].skqjkjdptfpxse1>=0,2))",
+"tips":"第13栏第1列【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[0].ckmsxse,2)}}】应大于或等于第14栏【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[0].skqjkjdptfpxse1,2)}}】"
 },
-
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].ckmsxse>=0",
+"tips":"[货物及劳务]不能为负!"
+},
+{"id":"06100101020103008",
+"type":"13",
+"desc":"",
+"formula":"$..zzsxgmsbInitData.yshwjlwRdzg =='N'",
+"target":"$..zzsxgmGrid.zzsxgmGridlb[0].ckmsxse:readonly;$..zzsxgmGrid.zzsxgmGridlb[0].ckmsxse:background-color=#f1edee;",
+"tips":""
+},
 {"id":"06100101020102015",
 "type":"02",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].skqjkjdptfpxse1<0",
-"tips":"不能为负数"
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].skqjkjdptfpxse1>=0",
+"tips":"[货物及劳务]不能为负!"
 },
 {"id":"06100101020103009",
 "type":"13",
@@ -191,7 +215,7 @@
 {"id":"06100101020101002",
 "type":"01",
 "desc":"",
-"formula":"",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].bqynse=ROUND($..zzsxgmGrid.zzsxgmGridlb[0].yzzzsbhsxse*0.03+$..zzsxgmGrid.zzsxgmGridlb[0].xssygdysgdzcbhsxse*0.03,2)",
 "tips":""
 },
 {"id":"06100101020101003",
@@ -209,63 +233,70 @@
 {"id":"06100101020102017",
 "type":"02",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].bqynsejze<0",
-"tips":"本期应纳税额减征额必须大于或等于0"
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].bqynsejze>=0",
+"tips":"[货物及劳务]不能为负!"
 },
 {"id":"06100101020101004",
 "type":"01",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].bqmse=$..zzsxgmGrid.zzsxgmGridlb[0].msxse*0.03",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].bqmse=ROUND($..zzsxgmGrid.zzsxgmGridlb[0].msxse*0.03,2)",
 "tips":""
 },
 {"id":"06100101020101005",
 "type":"01",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].xwqymse=$..zzsxgmGrid.zzsxgmGridlb[0].xwqymsxse*0.03",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].xwqymse=ROUND($..zzsxgmGrid.zzsxgmGridlb[0].xwqymsxse*0.03,2)",
 "tips":""
 },
 {"id":"06100101020101006",
 "type":"01",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].wdqzdmse=$..zzsxgmGrid.zzsxgmGridlb[0].wdqzdxse*0.03",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].wdqzdmse=ROUND($..zzsxgmGrid.zzsxgmGridlb[0].wdqzdxse*0.03,2)",
 "tips":""
 },
-{"id":"06100101020102018",
-"type":"02",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].wdqzdmse>$..zzsxgmGrid.zzsxgmGridlb[0].xwqymse",
-"tips":"第20栏应小于等于第19栏"
-},
+
 {"id":"06100101020101007",
 "type":"01",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].ynsehj=$..zzsxgmGrid.zzsxgmGridlb[0].bqynse-$..zzsxgmGrid.zzsxgmGridlb[0].bqynsejze",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].ynsehj=ROUND($..zzsxgmGrid.zzsxgmGridlb[0].bqynse-$..zzsxgmGrid.zzsxgmGridlb[0].bqynsejze,2)",
 "tips":""
 },
 {"id":"06100101020110008",
 "type":"10",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].bqyjse1=$..zzsxgmsbInitData.yshwjlwYjye",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].bqyjse1=ROUND($..zzsxgmsbInitData.yshwjlwYjye,2)",
 "tips":""
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].bqyjse1<=ROUND($..zzsxgmsbInitData.yshwjlwYjye,2)",
+"tips":"您输入的预缴金额不应超过【{{ROUND($..zzsxgmsbInitData.ysfwYjye,2)}}】"
 },
 {"id":"06100101020102019",
 "type":"02",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].bqyjse1<0",
-"tips":"本期预缴税额不能为负数"
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].bqyjse1>=0",
+"tips":"[货物及劳务]不能为负!"
 },
+
 {"id":"06100101020101009",
 "type":"01",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].bqybtse=IF($..zzsxgmGrid.zzsxgmGridlb[0].ynsehj-$..zzsxgmGrid.zzsxgmGridlb[0].bqyjse1>=0,$..zzsxgmGrid.zzsxgmGridlb[0].ynsehj-$..zzsxgmGrid.zzsxgmGridlb[0].bqyjse1,0)",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[0].bqybtse=ROUND($..zzsxgmGrid.zzsxgmGridlb[0].ynsehj-$..zzsxgmGrid.zzsxgmGridlb[0].bqyjse1,2)",
 "tips":""
 },
-
+{"id":"06100101020101010",
+"type":"10",
+"desc":"",
+"formula":"",
+"tips":""
+},
 {"id":"06100101020102020",
 "type":"02",
 "desc":"",
-"formula":"($..zzsxgmGrid.zzsxgmGridlb[1].yzzzsbhsxse-$..zzsxgmGrid.zzsxgmGridlb[1].swjgdkdzzszyfpbhsxse-$..zzsxgmGrid.zzsxgmGridlb[1].skqjkjdptfpbhsxse>=0) && ($..zzsxgmGrid.zzsxgmGridlb[1].yzzzsbhsxse>=0)",
-"tips":"第1栏值必须大于或等于第2,3栏值之和,且第1栏值不能小于0"
+"formula":"($..zzsxgmGrid.zzsxgmGridlb[1].yzzzsbhsxse>=0)",
+"tips":"[服务、不动产和无形资产]不能为负!"
 },
 {"id":"06100101020103010",
 "type":"13",
@@ -277,7 +308,7 @@
 {"id":"06100101020110009",
 "type":"10",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].swjgdkdzzszyfpbhsxse=$..zzsxgmsbInitData.ysfwFpdkbhsxse",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].swjgdkdzzszyfpbhsxse=ROUND($..zzsxgmsbInitData.ysfwFpdkbhsxse,2)",
 "tips":""
 },
 {"id":"06100101020103011",
@@ -287,12 +318,29 @@
 "target": "$..zzsxgmGrid.zzsxgmGridlb[1].skqjkjdptfpbhsxse:readonly;$..zzsxgmGrid.zzsxgmGridlb[1].skqjkjdptfpbhsxse:background-color=#f1edee;",
 "tips":""
 },
-
-{"id":"06100101020103012",
-"type":"13",
+{"id":"",
+"type":"02",
 "desc":"",
-"formula":"$..zzsxgmsbInitData.ysfwRdzg=='N'",
-"target": "$..zzsxgmGrid.zzsxgmGridlb[1].xsczbdcbhsxse:readonly;$..zzsxgmGrid.zzsxgmGridlb[1].xsczbdcbhsxse:background-color=#f1edee;",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].skqjkjdptfpbhsxse>=0",
+"tips":"[服务、不动产和无形资产]不能为负!"
+},
+{"id":"06100101020101011",
+"type":"10",
+"desc":"等于《增值税纳税申报表（小规模纳税人适用）附列资料》第16栏",
+"formula":"",
+"tips":""
+},
+{"id":"",
+"type":"01",
+"desc":"",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].xsczbdcbhsxse=IF($..flzlForm.ysfwxsbhsxse5 > 0,ROUND($..flzlForm.ysfwxsbhsxse5,2),0)",
+"tips":""
+},
+{"id":"",
+"type":"03",
+"desc":"",
+"formula":"$..flzlForm.ysfwxsbhsxse5 > 0 ",
+"target": "$..zzsxgmGrid.zzsxgmGridlb[1].xsczbdcbhsxse:readonly;$..zzsxgmGridlb[1].xsczbdcbhsxse:background-color=#f1edee;",
 "tips":""
 },
 {"id":"06100101020103013",
@@ -302,6 +350,7 @@
 "target": "$..zzsxgmGrid.zzsxgmGridlb[1].swjgdkdzzszyfpbhsxse1:readonly;$..zzsxgmGrid.zzsxgmGridlb[1].swjgdkdzzszyfpbhsxse1:background-color=#f1edee;",
 "tips":""
 },
+
 {"id":"06100101020103014",
 "type":"13",
 "desc":"",
@@ -319,14 +368,14 @@
 {"id":"06100101020101012",
 "type":"01",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].msxse=$..zzsxgmGrid.zzsxgmGridlb[1].xwqymsxse+$..zzsxgmGrid.zzsxgmGridlb[1].wdqzdxse+$..zzsxgmGrid.zzsxgmGridlb[1].qtmsxse",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].msxse=ROUND($..zzsxgmGrid.zzsxgmGridlb[1].xwqymsxse+$..zzsxgmGrid.zzsxgmGridlb[1].wdqzdxse+$..zzsxgmGrid.zzsxgmGridlb[1].qtmsxse,2)",
 "tips":""
 },
 {"id":"06100101020102021",
 "type":"02",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].msxse<0",
-"tips":"不能为负数"
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].msxse>=0",
+"tips":"[服务、不动产和无形资产]不能为负!"
 },
 {"id":"06100101020102022",
 "type":"02",
@@ -343,8 +392,8 @@
 {"id":"06100101020102024",
 "type":"02",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].xwqymsxse<0",
-"tips":"不能为负数"
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].xwqymsxse>=0",
+"tips":"[服务、不动产和无形资产]不能为负!"
 },
 {"id":"06100101020102025",
 "type":"02",
@@ -355,27 +404,28 @@
 {"id":"06100101020103016",
 "type":"13",
 "desc":"",
-"formula":"",
+"formula":"$..zzsxgmsbInitData.ysfwRdzg=='N' || (['410','411','412','413','430','431','432','433'].indexOf($..nsrjbxx.djzclxDm)!=-1)",
 "target": "$..zzsxgmGrid.zzsxgmGridlb[1].xwqymsxse:readonly;$..zzsxgmGrid.zzsxgmGridlb[1].xwqymsxse:background-color=#f1edee;",
 "tips":""
 },
 {"id":"06100101020102026",
 "type":"02",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].wdqzdxse<0",
-"tips":"不能为负数"
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].wdqzdxse>=0",
+"tips":"[服务、不动产和无形资产]不能为负!"
 },
 {"id":"06100101020103017",
-"type":"02",
+"type":"13",
 "desc":"",
-"formula":"",
+"formula":"$..zzsxgmsbInitData.ysfwRdzg=='N' || (['410','411','412','413','430','431','432','433'].indexOf($..nsrjbxx.djzclxDm)==-1)",
+"target": "$..zzsxgmGrid.zzsxgmGridlb[1].wdqzdxse:readonly;$..zzsxgmGrid.zzsxgmGridlb[1].wdqzdxse:background-color=#f1edee;",
 "tips":""
 },
 {"id":"06100101020102027",
 "type":"02",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].qtmsxse<0",
-"tips":"不能为负数"
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].qtmsxse>=0",
+"tips":"[服务、不动产和无形资产]不能为负!"
 },
 {"id":"06100101020103018",
 "type":"13",
@@ -384,11 +434,23 @@
 "target": "$..zzsxgmGrid.zzsxgmGridlb[1].qtmsxse:readonly;$..zzsxgmGrid.zzsxgmGridlb[1].qtmsxse:background-color=#f1edee;",
 "tips":""
 },
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].skqjkjdptfpxse1>=0",
+"tips":"[服务、不动产和无形资产]不能为负!"
+},
 {"id":"06100101020102028",
 "type":"02",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].ckmsxse<0",
-"tips":"不能为负数"
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].ckmsxse>=0",
+"tips":"[服务、不动产和无形资产]不能为负!"
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"(ROUND($..zzsxgmGrid.zzsxgmGridlb[1].ckmsxse-$..zzsxgmGrid.zzsxgmGridlb[1].skqjkjdptfpxse1>=0,2))",
+"tips":"第13栏第2列【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[1].ckmsxse,2)}}】应大于或等于第14栏【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[1].skqjkjdptfpxse1,2)}}】"
 },
 {"id":"06100101020103019",
 "type":"13",
@@ -407,7 +469,7 @@
 {"id":"06100101020101013",
 "type":"01",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].bqynse=$..zzsxgmGrid.zzsxgmGridlb[1].yzzzsbhsxse*0.03",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].bqynse=ROUND($..zzsxgmGrid.zzsxgmGridlb[1].yzzzsbhsxse*0.03+$..zzsxgmGrid.zzsxgmGridlb[1].xsczbdcbhsxse*0.05,2)",
 "tips":""
 },
 {"id":"06100101020101014",
@@ -419,109 +481,102 @@
 {"id":"06100101020102029",
 "type":"02",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].bqynsejze<0",
-"tips":"本期应纳税额减征额必须大于或等于0"
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].bqynsejze>=0",
+"tips":"[服务、不动产和无形资产]不能为负!"
 },
 {"id":"06100101020101015",
 "type":"01",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].bqmse=$..zzsxgmGrid.zzsxgmGridlb[1].msxse*0.03",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].bqmse=ROUND($..zzsxgmGrid.zzsxgmGridlb[1].msxse*0.03,2)",
 "tips":""
 },
 {"id":"06100101020101016",
 "type":"01",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].xwqymse=$..zzsxgmGrid.zzsxgmGridlb[1].xwqymsxse*0.03",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].xwqymse=ROUND($..zzsxgmGrid.zzsxgmGridlb[1].xwqymsxse*0.03,2)",
 "tips":""
 },
-{"id":"06100101020102030",
-"type":"02",
+{"id":"",
+"type":"01",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].wdqzdmse>$..zzsxgmGrid.zzsxgmGridlb[1].bqmse",
-"tips":"第11栏应小于等于第10栏"
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].wdqzdmse=ROUND($..zzsxgmGrid.zzsxgmGridlb[1].wdqzdxse*0.03,2)",
+"tips":""
 },
+
 {"id":"06100101020101017",
 "type":"01",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].ynsehj=$..zzsxgmGrid.zzsxgmGridlb[1].bqynse-$..zzsxgmGrid.zzsxgmGridlb[1].bqynsejze",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].ynsehj=ROUND($..zzsxgmGrid.zzsxgmGridlb[1].bqynse-$..zzsxgmGrid.zzsxgmGridlb[1].bqynsejze,2)",
 "tips":""
 },
 {"id":"06100101020102031",
 "type":"02",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].bqyjse1<0",
-"tips":"本期预缴税额不能为负数"
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].bqyjse1>=0",
+"tips":"[服务、不动产和无形资产]不能为负!"
 },
 {"id":"06100101020110010",
 "type":"10",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].bqyjse1=$..zzsxgmsbInitData.ysfwYjye",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].bqyjse1=ROUND($..zzsxgmsbInitData.ysfwYjye,2)",
 "tips":""
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].bqyjse1<=ROUND($..zzsxgmsbInitData.ysfwYjye,2)",
+"tips":"您输入的预缴金额不应超过【{{ROUND($..zzsxgmsbInitData.ysfwYjye,2)}}】"
 },
 {"id":"06100101020101019",
 "type":"01",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].bqybtse=IF($..zzsxgmGrid.zzsxgmGridlb[1].ynsehj-$..zzsxgmGrid.zzsxgmGridlb[1].bqyjse1>=0,$..zzsxgmGrid.zzsxgmGridlb[1].ynsehj-$..zzsxgmGrid.zzsxgmGridlb[1].bqyjse1,0)",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[1].bqybtse=ROUND($..zzsxgmGrid.zzsxgmGridlb[1].ynsehj-$..zzsxgmGrid.zzsxgmGridlb[1].bqyjse1,2)",
 "tips":""
 },
 {"id":"06100101020101020",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].yzzzsbhsxse=$..zzsxgmGrid.zzsxgmGridlb[0].yzzzsbhsxse+$..zzsxgmsbInitData.yzzzshwjlwbhsxsebnlj",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].yzzzsbhsxse=ROUND($..zzsxgmGrid.zzsxgmGridlb[0].yzzzsbhsxse+$..zzsxgmsbInitData.yzzzshwjlwbhsxsebnlj,2)",
 "tips":""
 },
-{"id":"06100101020110011",
-"type":"10",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].yzzzsbhsxse=$..zzsxgmsbInitData.yzzzshwjlwbhsxsebnlj",
-"tips":""
-},
+
 {"id":"06100101020101021",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].swjgdkdzzszyfpbhsxse=$..zzsxgmGrid.zzsxgmGridlb[0].swjgdkdzzszyfpbhsxse+$..zzsxgmsbInitData.swjgdkyzhwlwzzszzfpbhsxsebnlj",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].swjgdkdzzszyfpbhsxse=ROUND($..zzsxgmGrid.zzsxgmGridlb[0].swjgdkdzzszyfpbhsxse+$..zzsxgmsbInitData.swjgdkyzhwlwzzszzfpbhsxsebnlj,2)",
 "tips":""
 },
-{"id":"06100101020110012",
-"type":"10",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].swjgdkdzzszyfpbhsxse=$..zzsxgmsbInitData.swjgdkyzhwlwzzszzfpbhsxsebnlj",
-"tips":""
-},
+
 {"id":"0610010102010100122",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].skqjkjdptfpbhsxse=$..zzsxgmGrid.zzsxgmGridlb[0].skqjkjdptfpbhsxse+$..zzsxgmsbInitData.skqjkjyzzzshwlwptfpbhsxsebnlj",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].skqjkjdptfpbhsxse=ROUND($..zzsxgmGrid.zzsxgmGridlb[0].skqjkjdptfpbhsxse+$..zzsxgmsbInitData.skqjkjyzzzshwlwptfpbhsxsebnlj,2)",
 "tips":""
 },
-{"id":"06100101020110013",
-"type":"10",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].skqjkjdptfpbhsxse=$..zzsxgmsbInitData.skqjkjyzzzshwlwptfpbhsxsebnlj",
-"tips":""
-},
+
 {"id":"06100101020101022",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].xssygdysgdzcbhsxse=ROUND($..zzsxgmGrid.zzsxgmGridlb[0].xssygdysgdzcbhsxse+$..zzsxgmsbInitData.xssygdysgdzcbhsxsebnlj,2)",
 "tips":""
 },
 {"id":"06100101020102032",
 "type":"02",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].xssygdysgdzcbhsxse-$..zzsxgmGrid.zzsxgmGridlb[2].skqjkjdptfpbhsxse1<0&&$..zzsxgmGrid.zzsxgmGridlb[2].xssygdysgdzcbhsxse<0",
-"tips":"第7栏必须大于等于第8栏，且第7栏不能为负数"
+"formula":"(ROUND($..zzsxgmGrid.zzsxgmGridlb[2].xssygdysgdzcbhsxse-$..zzsxgmGrid.zzsxgmGridlb[2].skqjkjdptfpbhsxse1,2)>=0)",
+"tips":"第7栏第3列【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[2].xssygdysgdzcbhsxse,2)}}】应大于或等于第8栏【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[2].skqjkjdptfpbhsxse1,2)}}】"
 },
-{"id":"06100101020110014",
-"type":"10",
+{"id":"",
+"type":"02",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].xssygdysgdzcbhsxse=$..zzsxgmsbInitData.xssygdysgdzcbhsxsebnlj",
-"tips":""
+"formula":"($..zzsxgmGrid.zzsxgmGridlb[2].xssygdysgdzcbhsxse>=0)",
+"tips":"[货物及劳务]不能为负!"
 },
+
 {"id":"06100101020101023",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].skqjkjdptfpbhsxse1=$..zzsxgmGrid.zzsxgmGridlb[0].skqjkjdptfpbhsxse1+$..zzsxgmsbInitData.skqjkjxssygysgdzcptfpbhsxsebnl",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].skqjkjdptfpbhsxse1=ROUND($..zzsxgmGrid.zzsxgmGridlb[0].skqjkjdptfpbhsxse1+$..zzsxgmsbInitData.skqjkjxssygysgdzcptfpbhsxsebnl,2)",
 "tips":""
 },
 {"id":"06100101020110015",
@@ -531,9 +586,9 @@
 "tips":""
 },
 {"id":"06100101020101024",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].msxse=$..zzsxgmGrid.zzsxgmGridlb[2].xwqymsxse+$..zzsxgmGrid.zzsxgmGridlb[2].wdqzdxse+$..zzsxgmGrid.zzsxgmGridlb[2].qtmsxse",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].msxse=ROUND($..zzsxgmGrid.zzsxgmGridlb[2].xwqymsxse+$..zzsxgmGrid.zzsxgmGridlb[2].wdqzdxse+$..zzsxgmGrid.zzsxgmGridlb[2].qtmsxse,2)",
 "tips":""
 },
 {"id":"06100101020110016",
@@ -543,299 +598,188 @@
 "tips":""
 },
 {"id":"06100101020101025",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].xwqymsxse=$..zzsxgmGrid.zzsxgmGridlb[0].xwqymsxse+$..zzsxgmsbInitData.mshwjlwxsexxwlqybnlj",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].xwqymsxse=ROUND($..zzsxgmGrid.zzsxgmGridlb[0].xwqymsxse+$..zzsxgmsbInitData.mshwjlwxsexxwlqybnlj,2)",
 "tips":""
 },
-{"id":"06100101020110017",
-"type":"10",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].xwqymsxse=$..zzsxgmsbInitData.mshwjlwxsexxwlqybnlj",
-"tips":""
-},
+
 {"id":"06100101020101026",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].wdqzdxse=$..zzsxgmGrid.zzsxgmGridlb[0].wdqzdxse+$..zzsxgmsbInitData.mshwjlwxsewdqzdbnlj",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].wdqzdxse=ROUND($..zzsxgmGrid.zzsxgmGridlb[0].wdqzdxse+$..zzsxgmsbInitData.mshwjlwxsewdqzdbnlj,2)",
 "tips":""
 },
-{"id":"06100101020110018",
-"type":"10",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].wdqzdxse=$..zzsxgmsbInitData.mshwjlwxsewdqzdbnlj",
-"tips":""
-},
+
 {"id":"06100101020101027",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].qtmsxse=$..zzsxgmGrid.zzsxgmGridlb[0].qtmsxse+$..zzsxgmsbInitData.skqjkjdmshwjlwptfpxsebnlj",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].qtmsxse=ROUND($..zzsxgmGrid.zzsxgmGridlb[0].qtmsxse+$..zzsxgmsbInitData.skqjkjdmshwjlwptfpxsebnlj,2)",
 "tips":""
 },
-{"id":"06100101020110019",
-"type":"10",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].qtmsxse=$..zzsxgmsbInitData.skqjkjdmshwjlwptfpxsebnlj",
-"tips":""
-},
+
 {"id":"06100101020101028",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].ckmsxse=ROUND($..zzsxgmGrid.zzsxgmGridlb[0].ckmsxse+$..zzsxgmsbInitData.ckmshwxsebnlj,2)",
 "tips":""
 },
-{"id":"06100101020110020",
-"type":"10",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].ckmsxse=$..zzsxgmsbInitData.ckmshwxsebnlj",
-"tips":""
-},
+
 {"id":"06100101020101029",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].skqjkjdptfpxse1=$..zzsxgmGrid.zzsxgmGridlb[0].skqjkjdptfpxse1+$..zzsxgmsbInitData.skqjkjdckmshwptfpxsebnlj",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].skqjkjdptfpxse1=ROUND($..zzsxgmGrid.zzsxgmGridlb[0].skqjkjdptfpxse1+$..zzsxgmsbInitData.skqjkjdckmshwptfpxsebnlj,2)",
 "tips":""
 },
-{"id":"06100101020110021",
-"type":"10",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].skqjkjdptfpxse1=$..zzsxgmsbInitData.skqjkjdckmshwptfpxsebnlj",
-"tips":""
-},
+
 {"id":"06100101020101030",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].bqynse=$..zzsxgmGrid.zzsxgmGridlb[0].bqynse+$..zzsxgmsbInitData.bqynsebnlj",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].bqynse=ROUND($..zzsxgmGrid.zzsxgmGridlb[0].bqynse+$..zzsxgmsbInitData.bqynsebnlj,2)",
 "tips":""
 },
-{"id":"06100101020110022",
-"type":"10",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].bqynse=$..zzsxgmsbInitData.bqynsebnlj",
-"tips":""
-},
+
 {"id":"06100101020101031",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].bqynsejze=$..zzsxgmGrid.zzsxgmGridlb[0].bqynsejze+$..zzsxgmsbInitData.bqynsejzebnlj",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].bqynsejze=ROUND($..zzsxgmGrid.zzsxgmGridlb[0].bqynsejze+$..zzsxgmsbInitData.bqynsejzebnlj,2)",
 "tips":""
 },
-{"id":"06100101020110023",
-"type":"10",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].bqynsejze=$..zzsxgmsbInitData.bqynsejzebnlj",
-"tips":""
-},
+
 {"id":"06100101020101032",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].bqmse=$..zzsxgmGrid.zzsxgmGridlb[0].bqmse+$..zzsxgmsbInitData.bqmsebnlj",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].bqmse=ROUND($..zzsxgmGrid.zzsxgmGridlb[0].bqmse+$..zzsxgmsbInitData.bqmsebnlj,2)",
 "tips":""
 },
-{"id":"06100101020110024",
-"type":"10",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].bqmse=$..zzsxgmsbInitData.bqmsebnlj",
-"tips":""
-},
+
 {"id":"06100101020101033",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].xwqymse=$..zzsxgmGrid.zzsxgmGridlb[0].xwqymse+$..zzsxgmsbInitData.bqmsexxwlqybnlj",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].xwqymse=ROUND($..zzsxgmGrid.zzsxgmGridlb[0].xwqymse+$..zzsxgmsbInitData.bqmsexxwlqybnlj,2)",
 "tips":""
 },
-{"id":"06100101020110025",
-"type":"10",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].xwqymse=$..zzsxgmsbInitData.bqmsexxwlqybnlj",
-"tips":""
-},
+
 {"id":"06100101020101034",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].wdqzdmse=$..zzsxgmGrid.zzsxgmGridlb[0].wdqzdmse+$..zzsxgmsbInitData.bqmsewdqzdbnlj",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].wdqzdmse=ROUND($..zzsxgmGrid.zzsxgmGridlb[0].wdqzdmse+$..zzsxgmsbInitData.bqmsewdqzdbnlj,2)",
 "tips":""
 },
-{"id":"06100101020110026",
-"type":"10",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].wdqzdmse=$..zzsxgmsbInitData.bqmsewdqzdbnlj",
-"tips":""
-},
-{"id":"06100101020110027",
-"type":"10",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].ynsehj=$..zzsxgmsbInitData.ynsehjdbnlj",
-"tips":""
-},
+
+
+
 {"id":"06100101020101036",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].ynsehj=$..zzsxgmGrid.zzsxgmGridlb[2].bqynse-$..zzsxgmGrid.zzsxgmGridlb[2].bqynsejze",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[2].ynsehj=ROUND($..zzsxgmGrid.zzsxgmGridlb[2].bqynse-$..zzsxgmGrid.zzsxgmGridlb[2].bqynsejze,2)",
 "tips":""
 },
 {"id":"06100101020101037",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].yzzzsbhsxse=$..zzsxgmGrid.zzsxgmGridlb[1].yzzzsbhsxse+$..zzsxgmsbInitData.yzzzshwjlwbhsxsebnlj2",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].yzzzsbhsxse=ROUND($..zzsxgmGrid.zzsxgmGridlb[1].yzzzsbhsxse+$..zzsxgmsbInitData.yzzzshwjlwbhsxsebnlj2,2)",
 "tips":""
 },
-{"id":"06100101020110028",
-"type":"10",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].yzzzsbhsxse=$..zzsxgmsbInitData.yzzzshwjlwbhsxsebnlj2",
-"tips":""
-},
+
 {"id":"06100101020101038",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].swjgdkdzzszyfpbhsxse=$..zzsxgmGrid.zzsxgmGridlb[1].swjgdkdzzszyfpbhsxse+$..zzsxgmsbInitData.swjgdkyzhwlwzzszzfpbhsxsebnlj2",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].swjgdkdzzszyfpbhsxse=ROUND($..zzsxgmGrid.zzsxgmGridlb[1].swjgdkdzzszyfpbhsxse+$..zzsxgmsbInitData.swjgdkyzhwlwzzszzfpbhsxsebnlj2,2)",
 "tips":""
 },
-{"id":"06100101020110029",
-"type":"10",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].swjgdkdzzszyfpbhsxse=$..zzsxgmsbInitData.swjgdkyzhwlwzzszzfpbhsxsebnlj2",
-"tips":""
-},
+
 {"id":"06100101020101039",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].skqjkjdptfpbhsxse=$..zzsxgmGrid.zzsxgmGridlb[1].skqjkjdptfpbhsxse+$..zzsxgmsbInitData.skqjkjyzzzshwlwptfpbhsxsebnlj2",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].skqjkjdptfpbhsxse=ROUND($..zzsxgmGrid.zzsxgmGridlb[1].skqjkjdptfpbhsxse+$..zzsxgmsbInitData.skqjkjyzzzshwlwptfpbhsxsebnlj2,2)",
 "tips":""
 },
-{"id":"06100101020110030",
-"type":"10",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].skqjkjdptfpbhsxse=$..zzsxgmsbInitData.skqjkjyzzzshwlwptfpbhsxsebnlj2",
-"tips":""
-},
+
 {"id":"06100101020101040",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].msxse=$..zzsxgmGrid.zzsxgmGridlb[3].xwqymsxse+$..zzsxgmGrid.zzsxgmGridlb[3].wdqzdxse+$..zzsxgmGrid.zzsxgmGridlb[3].wdqzdxse+$..zzsxgmGrid.zzsxgmGridlb[3].qtmsxse",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].msxse=ROUND($..zzsxgmGrid.zzsxgmGridlb[3].xwqymsxse+$..zzsxgmGrid.zzsxgmGridlb[3].wdqzdxse+$..zzsxgmGrid.zzsxgmGridlb[3].qtmsxse,2)",
 "tips":""
 },
-{"id":"06100101020110031",
-"type":"10",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].msxse=$..zzsxgmsbInitData.mshwjlwxsebnlj2",
-"tips":""
-},
+
 {"id":"06100101020101041",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].xwqymsxse=$..zzsxgmGrid.zzsxgmGridlb[1].xwqymsxse+$..zzsxgmsbInitData.mshwjlwxsexxwlqybnlj2",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].xwqymsxse=ROUND($..zzsxgmGrid.zzsxgmGridlb[1].xwqymsxse+$..zzsxgmsbInitData.mshwjlwxsexxwlqybnlj2,2)",
 "tips":""
 },
-{"id":"06100101020110032",
-"type":"10",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].xwqymsxse=$..zzsxgmsbInitData.mshwjlwxsexxwlqybnlj2",
-"tips":""
-},
+
 {"id":"06100101020101042",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].wdqzdxse=$..zzsxgmGrid.zzsxgmGridlb[1].wdqzdxse+$..zzsxgmsbInitData.mshwjlwxsewdqzdbnlj2",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].wdqzdxse=ROUND($..zzsxgmGrid.zzsxgmGridlb[1].wdqzdxse+$..zzsxgmsbInitData.mshwjlwxsewdqzdbnlj2,2)",
 "tips":""
 },
-{"id":"06100101020110033",
-"type":"10",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].wdqzdxse=$..zzsxgmsbInitData.mshwjlwxsewdqzdbnlj2",
-"tips":""
-},
+
 {"id":"06100101020101043",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].qtmsxse=$..zzsxgmGrid.zzsxgmGridlb[1].qtmsxse+$..zzsxgmsbInitData.skqjkjdmshwjlwptfpxsebnlj2",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].qtmsxse=ROUND($..zzsxgmGrid.zzsxgmGridlb[1].qtmsxse+$..zzsxgmsbInitData.skqjkjdmshwjlwptfpxsebnlj2,2)",
 "tips":""
 },
-{"id":"06100101020110034",
-"type":"10",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].qtmsxse=$..zzsxgmsbInitData.skqjkjdmshwjlwptfpxsebnlj2",
-"tips":""
-},
+
 {"id":"06100101020101044",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].ckmsxse=$..zzsxgmGrid.zzsxgmGridlb[1].ckmsxse+$..zzsxgmsbInitData.ckmshwxsebnlj2",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].ckmsxse=ROUND($..zzsxgmGrid.zzsxgmGridlb[1].ckmsxse+$..zzsxgmsbInitData.ckmshwxsebnlj2,2)",
 "tips":""
 },
-{"id":"06100101020110035",
-"type":"10",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].ckmsxse=$..zzsxgmsbInitData.ckmshwxsebnlj2",
-"tips":""
-},
+
 {"id":"06100101020101045",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].skqjkjdptfpxse1=$..zzsxgmGrid.zzsxgmGridlb[1].skqjkjdptfpxse1+$..zzsxgmsbInitData.skqjkjdckmshwptfpxsebnlj2",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].skqjkjdptfpxse1=ROUND($..zzsxgmGrid.zzsxgmGridlb[1].skqjkjdptfpxse1+$..zzsxgmsbInitData.skqjkjdckmshwptfpxsebnlj2,2)",
 "tips":""
 },
-{"id":"06100101020110036",
-"type":"10",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].skqjkjdptfpxse1=$..zzsxgmsbInitData.skqjkjdckmshwptfpxsebnlj2",
-"tips":""
-},
+
 {"id":"06100101020101046",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].bqynse=$..zzsxgmGrid.zzsxgmGridlb[1].bqynse+$..zzsxgmsbInitData.bqynsebnlj2",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].bqynse=ROUND($..zzsxgmGrid.zzsxgmGridlb[1].bqynse+$..zzsxgmsbInitData.bqynsebnlj2,2)",
 "tips":""
 },
-{"id":"06100101020110037",
-"type":"10",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].bqynse=$..zzsxgmsbInitData.bqynsebnlj2",
-"tips":""
-},
+
 {"id":"06100101020101047",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].bqynsejze=$..zzsxgmGrid.zzsxgmGridlb[1].bqynse+$..zzsxgmsbInitData.bqynsejzebnlj2",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].bqynsejze=ROUND($..zzsxgmGrid.zzsxgmGridlb[1].bqynsejze+$..zzsxgmsbInitData.bqynsejzebnlj2,2)",
 "tips":""
 },
-{"id":"06100101020110038",
-"type":"10",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].bqynsejze=$..zzsxgmsbInitData.bqynsejzebnlj2",
-"tips":""
-},
+
 {"id":"06100101020101048",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].bqmse=$..zzsxgmGrid.zzsxgmGridlb[1].bqmse+$..zzsxgmsbInitData.bqmsebnlj2",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].bqmse=ROUND($..zzsxgmGrid.zzsxgmGridlb[1].bqmse+$..zzsxgmsbInitData.bqmsebnlj2,2)",
 "tips":""
 },
-{"id":"06100101020110039",
-"type":"10",
+
+{"id":"06100101020101049",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].bqmse=$..zzsxgmsbInitData.bqmsebnlj2",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].xwqymse=ROUND($..zzsxgmGrid.zzsxgmGridlb[1].xwqymse+$..zzsxgmsbInitData.bqmsefwxxwlqybnlj2,2)",
 "tips":""
 },
-{"id":"06100101020110041",
-"type":"10",
+
+{"id":"",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].wdqzdmse=$..zzsxgmsbInitData.bqmsewdqzdbnlj2",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].wdqzdmse=ROUND($..zzsxgmGrid.zzsxgmGridlb[1].wdqzdmse+$..zzsxgmsbInitData.bqmsewdqzdbnlj2,2)",
 "tips":""
 },
+
 {"id":"061001010201010312",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].ynsehj=$..zzsxgmGrid.zzsxgmGridlb[1].ynsehj+$..zzsxgmsbInitData.ynsehjdbnlj2",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].ynsehj=ROUND($..zzsxgmGrid.zzsxgmGridlb[3].bqynse-$..zzsxgmGrid.zzsxgmGridlb[3].bqynsejze,2)",
 "tips":""
 },
-{"id":"06100101020110042",
-"type":"10",
-"desc":"",
-"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].ynsehj=$..zzsxgmsbInitData.ynsehjdbnlj2",
-"tips":""
-},
+
 {"id":"06100101020210001",
 "type":"10",
 "desc":"",
@@ -863,14 +807,14 @@
 {"id":"06100101020210005",
 "type":"10",
 "desc":"",
-"formula":"$..flzlForm.qcye=$..zzsxgmsbInitData.ysfwkcejsqcye",
+"formula":"$..flzlForm.qcye=ROUND($..zzsxgmsbInitData.ysfwkcejsqcye,2)",
 "tips":""
 },
 {"id":"06100101020202001",
 "type":"",
 "desc":"",
 "formula":"",
-"tips":"增值税申报表（适用小规模纳税人）附列资料 “服务扣除额计算”“本期发生额”，非营改增纳税人不能填报"
+"tips":"增值税申报表（适用小规模纳税人）附列资料 “服务扣除额计算”[本期发生额]，非营改增纳税人不能填报"
 },
 {"id":"06100101020203001",
 "type":"13",
@@ -881,9 +825,9 @@
 },
 {"id":"06100101020202002",
 "type":"02",
-"desc":"第3栏'本期扣除额'≤第1栏'期初余额'+第2栏'本期发生额'之和，且第3栏'本期扣除额'≤第5栏'全部含税收入（适用3%征收率）'。",
-"formula":"($..flzlForm.bqkce-$..flzlForm.qcye-$..flzlForm.bqfse > 0) || ($..flzlForm.bqkce-$..flzlForm.ysfwxsqbhssr > 0)",
-"tips":"服务扣除额计算的本期扣除额  应小于或等于 服务扣除额计算的期初余额 加 服务扣除额计算的本期发生额 之和，且服务扣除额计算本期扣除额 应小于等于 计税销售额计算的全部含税收入"
+"desc":"第3栏[本期扣除额]≤第1栏[期初余额]+第2栏[本期发生额]之和，且第3栏[本期扣除额]≤第5栏[全部含税收入]（适用3%征收率）'",
+"formula":"(ROUND($..flzlForm.bqkce-$..flzlForm.qcye-$..flzlForm.bqfse,2) <= 0) && (ROUND($..flzlForm.bqkce-$..flzlForm.ysfwxsqbhssr,2) <= 0)",
+"tips":"第3栏[本期扣除额]【{{ROUND($..flzlForm.bqkce,2)}}】应小于或等于第1栏[期初余额]+第2栏[本期发生额]【{{ROUND($..flzlForm.qcye,2)}}+{{ROUND($..flzlForm.bqfse,2)}}】之和，且第3栏[本期扣除额]【{{ROUND($..flzlForm.bqkce,2)}}】应小于等于第5栏[全部含税收入]【{{ROUND($..flzlForm.ysfwxsqbhssr,2)}}】"
 },
 {"id":"06100101020203002",
 "type":"13",
@@ -896,12 +840,12 @@
 "type":"",
 "desc":"",
 "formula":"",
-"tips":"增值税申报表（适用小规模纳税人）附列资料 “服务扣除额计算” “本期扣除额”，非营改增纳税人不能填报"
+"tips":"增值税申报表（适用小规模纳税人）附列资料 “服务扣除额计算” [本期扣除额]，非营改增纳税人不能填报"
 },
 {"id":"06100101020201001",
 "type":"01",
 "desc":"",
-"formula":"$..flzlForm.qmye=$..flzlForm.qcye+$..flzlForm.bqfse-$..flzlForm.bqkce",
+"formula":"$..flzlForm.qmye=ROUND($..flzlForm.qcye+$..flzlForm.bqfse-$..flzlForm.bqkce,2)",
 "tips":""
 },
 {"id":"06100101020203003",
@@ -912,27 +856,27 @@
 "tips":""
 },
 {"id":"06100101020201002",
-"type":"10",
-"desc":"第6栏'本期扣除额'=第3栏'本期扣除额'。",
-"formula":"$..flzlForm.ysfwxsbqkce=$..flzlForm.bqkce",
+"type":"01",
+"desc":"第6栏[本期扣除额]=第3栏[本期扣除额]",
+"formula":"$..flzlForm.ysfwxsbqkce=ROUND($..flzlForm.bqkce,2)",
 "tips":""
 },
 {"id":"06100101020201003",
 "type":"01",
-"desc":"第7栏'含税销售额'=第5栏'全部含税收入（适用3%征收率）'-第6栏'本期扣除额'。",
-"formula":"$..flzlForm.ysfwxshsxse=$..flzlForm.ysfwxsqbhssr-$..flzlForm.ysfwxsbqkce",
+"desc":"第7栏'[含税销售额]=第5栏[全部含税收入]（适用3%征收率）'-第6栏[本期扣除额]",
+"formula":"$..flzlForm.ysfwxshsxse=ROUND($..flzlForm.ysfwxsqbhssr-$..flzlForm.ysfwxsbqkce,2)",
 "tips":""
 },
 {"id":"06100101020201004",
 "type":"01",
 "desc":"第8栏'不含税销售额'=第7栏'含税销售额'÷1.03，与《增值税纳税申报表（小规模纳税人适用）》第1栏'应征增值税不含税销售额（3%征收率）''本期数''服务、不动产和无形资产'栏数据一致。",
-"formula":"$..flzlForm.ysfwxsbhsxse=$..flzlForm.ysfwxshsxse/1.03",
+"formula":"$..flzlForm.ysfwxsbhsxse=ROUND($..flzlForm.ysfwxshsxse/1.03,2)",
 "tips":""
 },
 {"id":"06100101020210006",
 "type":"10",
 "desc":"",
-"formula":"$..flzlForm.qcye5=$..zzsxgmsbInitData.jmsxszg",
+"formula":"$..flzlForm.qcye5=ROUND($..zzsxgmsbInitData.ysfwkcejsqcye5,2)",
 "tips":""
 },
 {"id":"06100101020203004",
@@ -945,8 +889,8 @@
 {"id":"06100101020202004",
 "type":"02",
 "desc":"第11栏'本期扣除额'≤第9栏'期初余额'+第10栏'本期发生额'之和，且第11栏'本期扣除额'≤第13栏'全部含税收入（适用5%征收率）'。",
-"formula":"",
-"tips":"服务扣除额计算的本期扣除额  应小于或等于 服务扣除额计算的期初余额 加 服务扣除额计算的本期发生额 之和，且服务扣除额计算本期扣除额 应小于等于 计税销售额计算的全部含税收入"
+"formula":"(ROUND($..flzlForm.bqkce5-$..flzlForm.qcye5-$..flzlForm.bqfse5,2) <= 0) && (ROUND($..flzlForm.bqkce5-$..flzlForm.ysfwxsqbhssr5,2) <= 0)",
+"tips":"第11栏[本期扣除额]【{{ROUND($..flzlForm.bqkce5,2)}}】应小于或等于第9栏[期初余额]+ 第10栏[本期发生额]【{{ROUND($..flzlForm.bqfse5,2)}}+{{ROUND($..flzlForm.qcye5,2)}}】之和，且第11栏[本期扣除额]【{{ROUND($..flzlForm.bqkce5,2)}}】应小于等于第13栏 [全部含税收入（适用5%征收率）]【{{ROUND($..flzlForm.ysfwxsqbhssr5,2)}}】"
 },
 {"id":"06100101020203005",
 "type":"13",
@@ -958,121 +902,32 @@
 {"id":"06100101020201005",
 "type":"01",
 "desc":"",
-"formula":"$..flzlForm.qmye5=$..flzlForm.qcye5+$..flzlForm.bqfse5-$..flzlForm.bqkce5",
+"formula":"$..flzlForm.qmye5=ROUND($..flzlForm.qcye5+$..flzlForm.bqfse5-$..flzlForm.bqkce5,2)",
+"tips":""
+},
+{"id":"06100101020203006",
+"type":"13",
+"desc":"",
+"formula":"$..zzsxgmsbInitData.ysfwRdzg == 'N'",
+"target": "$..flzlForm.ysfwxsqbhssr5:readonly;$..flzlForm.ysfwxsqbhssr5:background-color=#f1edee;",
 "tips":""
 },
 {"id":"06100101020201006",
 "type":"01",
 "desc":"第14栏'本期扣除额'=第11栏'本期扣除额'。",
-"formula":"$..flzlForm.ysfwxsbqkce5=$..flzlForm.bqkce5",
+"formula":"$..flzlForm.ysfwxsbqkce5=ROUND($..flzlForm.bqkce5,2)",
 "tips":""
 },
 {"id":"06100101020201007",
 "type":"01",
 "desc":"第15栏'含税销售额'=第13栏'全部含税收入（适用5%征收率）'-第14栏'本期扣除额'。",
-"formula":"$..flzlForm.ysfwxshsxse5=$..flzlForm.ysfwxsqbhssr5-$..flzlForm.ysfwxsbqkce5",
+"formula":"$..flzlForm.ysfwxshsxse5=ROUND($..flzlForm.ysfwxsqbhssr5-$..flzlForm.ysfwxsbqkce5,2)",
 "tips":""
 },
 {"id":"06100101020201008",
 "type":"01",
 "desc":"第16栏'不含税销售额'=第15栏'含税销售额'÷1.05，与《增值税纳税申报表（小规模纳税人适用）》第4栏'应征增值税不含税销售额（5%征收率）''本期数''服务、不动产和无形资产'栏数据一致。",
-"formula":"$..flzlForm.ysfwxsbhsxse5=$..flzlForm.ysfwxshsxse5/1.05",
-"tips":""
-},
-{"id":"06100101020310001",
-"type":"10",
-"desc":"",
-"formula":"",
-"tips":""
-},
-{"id":"06100101020310002",
-"type":"10",
-"desc":"",
-"formula":"",
-"tips":""
-},
-{"id":"06100101020310003",
-"type":"10",
-"desc":"",
-"formula":"",
-"tips":""
-},
-{"id":"06100101020310004",
-"type":"10",
-"desc":"",
-"formula":"",
-"tips":""
-},
-{"id":"06100101020310005",
-"type":"",
-"desc":"",
-"formula":"",
-"tips":""
-},
-{"id":"06100101020310006",
-"type":"10",
-"desc":"",
-"formula":"",
-"tips":""
-},
-{"id":"06100101020301001",
-"type":"01",
-"desc":"",
-"formula":"",
-"tips":""
-},
-{"id":"06100101020302001",
-"type":"02",
-"desc":"",
-"formula":"",
-"tips":"本期实际抵减税额应小于或等于本期应抵减税额"
-},
-{"id":"06100101020302002",
-"type":"02",
-"desc":"",
-"formula":"",
-"tips":"本期实际抵减税额不能大于主表本期应纳税额"
-},
-{"id":"06100101020301002",
-"type":"01",
-"desc":"",
-"formula":"",
-"tips":""
-},
-{"id":"06100101020310007",
-"type":"",
-"desc":"",
-"formula":"",
-"tips":""
-},
-{"id":"06100101020310008",
-"type":"10",
-"desc":"",
-"formula":"",
-"tips":""
-},
-{"id":"06100101020301003",
-"type":"01",
-"desc":"",
-"formula":"",
-"tips":""
-},
-{"id":"06100101020302003",
-"type":"02",
-"desc":"",
-"formula":"",
-"tips":"分支机构预征缴纳税款本期实际抵减税额应小于等于分支机构预征缴纳税款本期应抵减税额"
-},
-{"id":"06100101020302004",
-"type":"02",
-"desc":"",
-"formula":"",
-"tips":"本期实际抵减税额不能大于主表本期应纳税额"
-},
-{"id":"06100101020301004",
-"type":"01",
-"desc":"",
-"formula":"",
+"formula":"$..flzlForm.ysfwxsbhsxse5=ROUND($..flzlForm.ysfwxshsxse5/1.05,2)",
 "tips":""
 },
 {"id":"06100101020510001",
@@ -1102,49 +957,56 @@
 {"id":"06100101020502001",
 "type":"02",
 "desc":"",
-"formula":"($..jdclscqyxsmxbGridlb[#].xsjg > 0) && ($..jdclscqyxsmxbGridlb[#].xsdxmc == '')",
-"tips":"销售对象名称不能为空"
+"formula":"(($..jdclscqyxsmxbGridlb[#].ghfnsrrbh != '' || $..jdclscqyxsmxbGridlb[#].cpxh1 != '' || $..jdclscqyxsmxbGridlb[#].clsbdm != '' || ($..jdclscqyxsmxbGridlb[#].xsjg) != 0) && ($..jdclscqyxsmxbGridlb[#].xsdxmc != '')) || ($..jdclscqyxsmxbGridlb[#].ghfnsrrbh == '' && $..jdclscqyxsmxbGridlb[#].cpxh1 == '' && $..jdclscqyxsmxbGridlb[#].clsbdm == '' && ($..jdclscqyxsmxbGridlb[#].xsjg) == 0)",
+"target": "$..jdclscqyxsmxbGridlb[#].xsdxmc",
+"tips":"[销售对象名称]不能为空!"
 },
 {"id":"06100101020502002",
 "type":"02",
 "desc":"",
-"formula":"($..jdclscqyxsmxbGridlb[#].ghfnsrrbh < 15) && len($..jdclscqyxsmxbGridlb[#].ghfnsrrbh > 20)",
-"tips":"购货方纳税人识别号应该为15~20位字符"
+"formula":"($..jdclscqyxsmxbGridlb[#].ghfnsrrbh != '' && ((($..jdclscqyxsmxbGridlb[#].ghfnsrrbh).length >= 15) && (($..jdclscqyxsmxbGridlb[#].ghfnsrrbh).length <= 20))) || $..jdclscqyxsmxbGridlb[#].ghfnsrrbh == ''",
+"target": "$..jdclscqyxsmxbGridlb[#].ghfnsrrbh",
+"tips":"[购货方纳税人识别号]应该为15~20位字符!"
 },
 {"id":"06100101020502003",
 "type":"02",
 "desc":"",
-"formula":"($..jdclscqyxsmxbGridlb[#].xsjg > 0) && ($..jdclscqyxsmxbGridlb[#].ghfnsrrbh == '')",
-"tips":"销售价格大于0时，购货方纳税人识别号不能为空"
+"formula":"(($..jdclscqyxsmxbGridlb[#].xsdxmc != '' || $..jdclscqyxsmxbGridlb[#].cpxh1 != '' || $..jdclscqyxsmxbGridlb[#].clsbdm != '' || ($..jdclscqyxsmxbGridlb[#].xsjg) != 0) && ($..jdclscqyxsmxbGridlb[#].ghfnsrrbh != '')) || ($..jdclscqyxsmxbGridlb[#].xsdxmc == '' && $..jdclscqyxsmxbGridlb[#].cpxh1 == '' && $..jdclscqyxsmxbGridlb[#].clsbdm == '' && ($..jdclscqyxsmxbGridlb[#].xsjg) == 0)",
+"target": "$..jdclscqyxsmxbGridlb[#].ghfnsrrbh",
+"tips":"[购货方纳税人识别号]不能为空!"
 },
 {"id":"06100101020502004",
 "type":"02",
 "desc":"",
-"formula":"($..jdclscqyxsmxbGridlb[#].xsjg > 0) && ($..jdclscqyxsmxbGridlb[#].cpxh1 == '')",
-"tips":"销售价格大于0时，厂牌型号不能为空"
+"formula":"(($..jdclscqyxsmxbGridlb[#].xsdxmc != '' || $..jdclscqyxsmxbGridlb[#].ghfnsrrbh != '' || $..jdclscqyxsmxbGridlb[#].clsbdm != '' || ($..jdclscqyxsmxbGridlb[#].xsjg) != 0) && ($..jdclscqyxsmxbGridlb[#].cpxh1 != '')) || ($..jdclscqyxsmxbGridlb[#].xsdxmc == '' && $..jdclscqyxsmxbGridlb[#].ghfnsrrbh == '' && $..jdclscqyxsmxbGridlb[#].clsbdm == '' && ($..jdclscqyxsmxbGridlb[#].xsjg) == 0)",
+"target": "$..jdclscqyxsmxbGridlb[#].cpxh1",
+"tips":"[厂牌型号]不能为空!"
 },
 {"id":"06100101020502005",
 "type":"02",
 "desc":"",
-"formula":"($..jdclscqyxsmxbGridlb[#].xsjg > 0) && ($..jdclscqyxsmxbGridlb[#].clsbdm == '')",
-"tips":"销售价格大于0时，车辆识别代码（车架号码）不能为空"
+"formula":"(($..jdclscqyxsmxbGridlb[#].xsdxmc != '' || $..jdclscqyxsmxbGridlb[#].ghfnsrrbh != '' || $..jdclscqyxsmxbGridlb[#].cpxh1 != '' || ($..jdclscqyxsmxbGridlb[#].xsjg) != 0) && ($..jdclscqyxsmxbGridlb[#].clsbdm != '')) || ($..jdclscqyxsmxbGridlb[#].xsdxmc == '' && $..jdclscqyxsmxbGridlb[#].ghfnsrrbh == '' && $..jdclscqyxsmxbGridlb[#].cpxh1 == '' && ($..jdclscqyxsmxbGridlb[#].xsjg) == 0)",
+"target": "$..jdclscqyxsmxbGridlb[#].clsbdm",
+"tips":"[车辆识别代码（车架号码）]不能为空!"
 },
 {"id":"06100101020502006",
 "type":"02",
 "desc":"",
-"formula":"($..jdclscqyxsmxbGridlb[#].xsjg > 0) && len($..jdclscqyxsmxbGridlb[#].clsbdm != 17)",
-"tips":"车辆识别代码（车架号码）应该为17位代码"
+"formula":"($..jdclscqyxsmxbGridlb[#].clsbdm != '' && (($..jdclscqyxsmxbGridlb[#].clsbdm).length == 17)) || $..jdclscqyxsmxbGridlb[#].clsbdm == ''",
+"target": "$..jdclscqyxsmxbGridlb[#].clsbdm",
+"tips":"[车辆识别代码（车架号码）]应该为17位代码!"
 },
 {"id":"06100101020502007",
 "type":"02",
 "desc":"",
-"formula":"$..jdclscqyxsmxbGridlb[#].xsjg < 0",
-"tips":"不能为负数"
+"formula":"$..jdclscqyxsmxbGridlb[#].xsjg >= 0",
+"target": "$..jdclscqyxsmxbGridlb[#].xsjg",
+"tips":"[销售价格]不能为负!"
 },
 {"id":"06100101020501001",
 "type":"01",
 "desc":"",
-"formula":"$..jdcljxqyxsmxbGrid.xsjghj=SUM($..jdclscqyxsmxbGridlb[*].xsjg)",
+"formula":"$..jdcljxqyxsmxbGrid.xsjghj=ROUND(SUM($..jdclscqyxsmxbGridlb[*].xsjg),2)",
 "tips":""
 },
 {"id":"06100101020610001",
@@ -1174,61 +1036,70 @@
 {"id":"06100101020602001",
 "type":"02",
 "desc":"",
-"formula":"($..jdcxstyfpqdGridlb[#].jfhjje > 0) && ($..jdcxstyfpqdGridlb[#].fpDm == '')",
-"tips":"价费合计金额大于0时，发票代码不能为空"
+"formula":"(($..jdcxstyfpqdGridlb[#].fphm != '' || $..jdcxstyfpqdGridlb[#].scqymc != '' || $..jdcxstyfpqdGridlb[#].cpxh1 != ''|| $..jdcxstyfpqdGridlb[#].clsbdm !='' || $..jdcxstyfpqdGridlb[#].jfhjje != 0) && ($..jdcxstyfpqdGridlb[#].fpDm != '')) || ($..jdcxstyfpqdGridlb[#].fphm == '' && $..jdcxstyfpqdGridlb[#].scqymc == '' && $..jdcxstyfpqdGridlb[#].cpxh1 == '' && $..jdcxstyfpqdGridlb[#].clsbdm =='' && $..jdcxstyfpqdGridlb[#].jfhjje == 0)",
+"target": "$..jdcxstyfpqdGridlb[#].fpDm",
+"tips":"[发票代码]不能为空!"
 },
 {"id":"06100101020602002",
 "type":"02",
 "desc":"",
-"formula":"($..jdcxstyfpqdGridlb[#].fpDm > 0) && len($..jdcxstyfpqdGridlb[#].fpDm != 12)",
-"tips":"发票代码应该为12位代码"
+"formula":"(($..jdcxstyfpqdGridlb[#].fpDm != '') && (($..jdcxstyfpqdGridlb[#].fpDm).length == 12)) || ($..jdcxstyfpqdGridlb[#].fpDm == '')",
+"target": "$..jdcxstyfpqdGridlb[#].fpDm",
+"tips":"[发票代码]应该为12位代码!"
 },
 {"id":"06100101020602003",
 "type":"02",
 "desc":"",
-"formula":"($..jdcxstyfpqdGridlb[#].jfhjje > 0) && ($..jdcxstyfpqdGridlb[#].fphm == '')",
-"tips":"价费合计金额大于0时，发票号码不能为空"
+"formula":"(($..jdcxstyfpqdGridlb[#].fpDm != '' || $..jdcxstyfpqdGridlb[#].scqymc != '' || $..jdcxstyfpqdGridlb[#].cpxh1 != ''|| $..jdcxstyfpqdGridlb[#].clsbdm !='' || $..jdcxstyfpqdGridlb[#].jfhjje != 0) && ($..jdcxstyfpqdGridlb[#].fphm != '')) || ($..jdcxstyfpqdGridlb[#].fpDm == '' && $..jdcxstyfpqdGridlb[#].scqymc == '' && $..jdcxstyfpqdGridlb[#].cpxh1 == '' && $..jdcxstyfpqdGridlb[#].clsbdm =='' && $..jdcxstyfpqdGridlb[#].jfhjje == 0)",
+"target": "$..jdcxstyfpqdGridlb[#].fphm",
+"tips":"[发票号码]不能为空!"
 },
 {"id":"06100101020602004",
 "type":"02",
 "desc":"",
-"formula":"($..jdcxstyfpqdGridlb[#].fphm > 0) && len($..jdcxstyfpqdGridlb[#].fphm != 8)",
-"tips":"发票号码应该为8位号码"
+"formula":"(($..jdcxstyfpqdGridlb[#].fphm != '') && (($..jdcxstyfpqdGridlb[#].fphm).length == 8)) || $..jdcxstyfpqdGridlb[#].fphm ==''",
+"target": "$..jdcxstyfpqdGridlb[#].fphm",
+"tips":"[发票号码]应该为8位号码!"
 },
 {"id":"06100101020602005",
 "type":"02",
 "desc":"",
-"formula":"($..jdcxstyfpqdGridlb[#].jfhjje > 0) && ($..jdcxstyfpqdGridlb[#].scqymc == '')",
-"tips":"价费合计金额大于0时，生产企业名称不能为空"
+"formula":"(($..jdcxstyfpqdGridlb[#].fpDm != '' || $..jdcxstyfpqdGridlb[#].fphm != '' || $..jdcxstyfpqdGridlb[#].cpxh1 != ''|| $..jdcxstyfpqdGridlb[#].clsbdm !='' || $..jdcxstyfpqdGridlb[#].jfhjje != 0) && ($..jdcxstyfpqdGridlb[#].scqymc != '')) || ($..jdcxstyfpqdGridlb[#].fpDm == '' && $..jdcxstyfpqdGridlb[#].fphm == 0 && $..jdcxstyfpqdGridlb[#].cpxh1 == '' && $..jdcxstyfpqdGridlb[#].clsbdm =='' && $..jdcxstyfpqdGridlb[#].jfhjje == 0)",
+"target": "$..jdcxstyfpqdGridlb[#].scqymc",
+"tips":"[生产企业名称]不能为空!"
 },
 {"id":"06100101020602006",
 "type":"02",
 "desc":"",
-"formula":"($..jdcxstyfpqdGridlb[#].jfhjje > 0) && ($..jdcxstyfpqdGridlb[#].cpxh1 == '')",
-"tips":"价费合计金额大于0时，厂牌型号不能为空"
+"formula":"(($..jdcxstyfpqdGridlb[#].fpDm != '' || $..jdcxstyfpqdGridlb[#].fphm != '' || $..jdcxstyfpqdGridlb[#].scqymc != ''|| $..jdcxstyfpqdGridlb[#].clsbdm !='' || $..jdcxstyfpqdGridlb[#].jfhjje != 0) && ($..jdcxstyfpqdGridlb[#].cpxh1 != '' )) || ($..jdcxstyfpqdGridlb[#].fpDm == '' && $..jdcxstyfpqdGridlb[#].fphm == '' && $..jdcxstyfpqdGridlb[#].scqymc == '' && $..jdcxstyfpqdGridlb[#].clsbdm =='' && $..jdcxstyfpqdGridlb[#].jfhjje == 0)",
+"target": "$..jdcxstyfpqdGridlb[#].cpxh1",
+"tips":"[厂牌型号]不能为空!"
 },
 {"id":"06100101020602007",
 "type":"02",
 "desc":"",
-"formula":"($..jdcxstyfpqdGridlb[#].jfhjje > 0) && ($..jdcxstyfpqdGridlb[#].clsbdm == '')",
-"tips":"价费合计金额大于0时，车辆识别代码（车架号码）不能为空"
+"formula":"(($..jdcxstyfpqdGridlb[#].fpDm != '' || $..jdcxstyfpqdGridlb[#].fphm != '' || $..jdcxstyfpqdGridlb[#].scqymc != ''|| $..jdcxstyfpqdGridlb[#].cpxh1 !='' || $..jdcxstyfpqdGridlb[#].jfhjje != 0) && ($..jdcxstyfpqdGridlb[#].clsbdm != '' )) || ($..jdcxstyfpqdGridlb[#].fpDm == '' && $..jdcxstyfpqdGridlb[#].fphm == '' && $..jdcxstyfpqdGridlb[#].scqymc == '' && $..jdcxstyfpqdGridlb[#].cpxh1 =='' && $..jdcxstyfpqdGridlb[#].jfhjje == 0)",
+"target": "$..jdcxstyfpqdGridlb[#].clsbdm",
+"tips":"[车辆识别代码（车架号码）]不能为空!"
 },
 {"id":"06100101020602008",
 "type":"02",
 "desc":"",
-"formula":"($..jdcxstyfpqdGridlb[#].clsbdm > 0) && len($..jdcxstyfpqdGridlb[#].clsbdm != 17)",
-"tips":"应该为17位代码"
+"formula":"(($..jdcxstyfpqdGridlb[#].clsbdm != '') && (($..jdcxstyfpqdGridlb[#].clsbdm).length == 17)) || $..jdcxstyfpqdGridlb[#].clsbdm == ''",
+"target": "$..jdcxstyfpqdGridlb[#].clsbdm",
+"tips":"[车辆识别代码（车架号码）]应该为17位代码!"
 },
 {"id":"06100101020602009",
 "type":"02",
 "desc":"",
-"formula":"$..jdcxstyfpqdGridlb[#].jfhjje < 0",
-"tips":"不能为负数"
+"formula":"$..jdcxstyfpqdGridlb[#].jfhjje >= 0",
+"target": "$..jdcxstyfpqdGridlb[#].jfhjje",
+"tips":"[价费合计金额]不能为负!"
 },
 {"id":"06100101020601001",
 "type":"01",
 "desc":"",
-"formula":"$..jdcxstyfpqdGrid.jfhjjehj=SUM($..jdcxstyfpqdGridlb[*].jfhjje)",
+"formula":"$..jdcxstyfpqdGrid.jfhjjehj=ROUND(SUM($..jdcxstyfpqdGridlb[*].jfhjje),2)",
 "tips":""
 },
 {"id":"06100101020710001",
@@ -1265,13 +1136,13 @@
 "type":"",
 "desc":"",
 "formula":"",
-"tips":"不能为空"
+"tips":"不能为空!"
 },
 {"id":"06100101020702002",
 "type":"",
 "desc":"",
 "formula":"",
-"tips":"不能为空"
+"tips":"不能为空!"
 },
 {"id":"06100101020710006",
 "type":"10",
@@ -1306,85 +1177,85 @@
 {"id":"06100101020702003",
 "type":"02",
 "desc":"",
-"formula":"$..xxGridlb[#].xsdl < 0",
-"tips":"不能为负数"
+"formula":"ROUND($..xxGridlb[#].xsdl,2) >= 0",
+"tips":"[销售电量（上网电量）]不能为负!"
 },
 {"id":"06100101020702004",
 "type":"02",
 "desc":"",
-"formula":"$..xxGridlb[#].dj2 < 0",
-"tips":"不能为负数"
+"formula":"ROUND($..xxGridlb[#].dj2,2) >= 0",
+"tips":"[电价]不能为负!"
 },
 {"id":"06100101020701001",
 "type":"01",
 "desc":"",
-"formula":"$..xxGridlb[#].sdsr=$..xxGridlb[#].xsdl*$..xxGridlb[#].dj2",
+"formula":"$..xxGridlb[#].sdsr=ROUND($..xxGridlb[#].xsdl*$..xxGridlb[#].dj2,2)",
 "tips":""
 },
 {"id":"06100101020702005",
 "type":"02",
 "desc":"",
-"formula":"$..xxGridlb[#].bzsdjwfy < 0",
-"tips":"不能为负数"
+"formula":"ROUND($..xxGridlb[#].bzsdjwfy,2) >= 0",
+"tips":"[不征税的价外费用]不能为负!"
 },
 {"id":"06100101020702006",
 "type":"02",
 "desc":"",
-"formula":"$..xxGridlb[#].ysjwfy < 0",
-"tips":"不能为负数"
+"formula":"ROUND($..xxGridlb[#].ysjwfy,2) >= 0",
+"tips":"[应税价外费用]不能为负!"
 },
 {"id":"06100101020702007",
 "type":"02",
 "desc":"",
-"formula":"$..jxGridlb[#].bqfsjx < 0",
-"tips":"不能为负数"
+"formula":"ROUND($..jxGridlb[#].bqfsjx,2) >= 0",
+"tips":"[本期发生进项]不能为负!"
 },
 {"id":"06100101020702008",
 "type":"02",
 "desc":"",
-"formula":"$..jxGridlb[#].mshwyjxse < 0",
-"tips":"不能为负数"
+"formula":"ROUND($..jxGridlb[#].mshwyjxse,2) >= 0",
+"tips":"[免税货物用]不能为负!"
 },
 {"id":"06100101020702009",
 "type":"02",
 "desc":"",
-"formula":"$..jxGridlb[#].fzcssjxse < 0",
-"tips":"不能为负数"
+"formula":"ROUND($..jxGridlb[#].fzcssjxse,2) >= 0",
+"tips":"[非正常损失]不能为负!"
 },
 {"id":"06100101020702010",
 "type":"02",
 "desc":"",
-"formula":"$..jxGridlb[#].zrjxse < 0",
-"tips":"不能为负数"
+"formula":"ROUND($..jxGridlb[#].zrjxse,2) >= 0",
+"tips":"[折让]不能为负!"
 },
 {"id":"06100101020701002",
 "type":"01",
 "desc":"",
-"formula":"$..jxGridlb[#].bqsjdkjxse=$..jxGridlb[#].bqfsjx-$..jxGridlb[#].mshwyjxse-$..jxGridlb[#].fzcssjxse-$..jxGridlb[#].zrjxse",
+"formula":"$..jxGridlb[#].bqsjdkjxse=ROUND($..jxGridlb[#].bqfsjx-$..jxGridlb[#].mshwyjxse-$..jxGridlb[#].fzcssjxse-$..jxGridlb[#].zrjxse,2)",
 "tips":""
 },
 {"id":"06100101020702011",
 "type":"02",
 "desc":"",
-"formula":"$..skzsForm.bqyjzzs1 < 0",
-"tips":"不能为负数"
+"formula":"ROUND($..skzsForm.bqyjzzs1,2) >= 0",
+"tips":"[本期应缴增值税]不能为负!"
 },
 {"id":"06100101020702012",
 "type":"02",
 "desc":"",
-"formula":"$..skzsForm.bqyjzzshcbsk < 0",
-"tips":"不能为负数"
+"formula":"ROUND($..skzsForm.bqyjzzshcbsk,2) >= 0",
+"tips":"[本期已交增值税（含查补税款）]不能为负!"
 },
 {"id":"06100101020702013",
 "type":"02",
 "desc":"",
-"formula":"$..skzsForm.bqqjzzs < 0",
-"tips":"不能为负数"
+"formula":"ROUND($..skzsForm.bqqjzzs,2) >= 0",
+"tips":"[本期欠缴增值税]不能为负!"
 },
 {"id":"06100101020701003",
 "type":"01",
 "desc":"",
-"formula":"$..skzsForm.bnljjnzzs=$..skzsForm.bqyjzzshcbsk-$..skzsForm.bqqjzzs",
+"formula":"$..skzsForm.bnljjnzzs=ROUND($..skzsForm.bqyjzzshcbsk-$..skzsForm.bqqjzzs,2)",
 "tips":""
 },
 {"id":"06100101020810001",
@@ -1418,195 +1289,585 @@
 "tips":""
 },
 {"id":"06100101020801001",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsjmssbmxbjsxmGrid.qcyehj=SUM($..zzsjmssbmxbjsxmGridlbVO[*].qcye)",
+"formula":"$..zzsjmssbmxbjsxmGrid.qcyehj=ROUND(SUM($..zzsjmssbmxbjsxmGridlbVO[*].qcye),2)",
 "tips":""
 },
 {"id":"06100101020801002",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsjmssbmxbjsxmGrid.bqfsehj=SUM($..zzsjmssbmxbjsxmGridlbVO[*].bqfse)",
+"formula":"$..zzsjmssbmxbjsxmGrid.bqfsehj=ROUND(SUM($..zzsjmssbmxbjsxmGridlbVO[*].bqfse),2)",
 "tips":""
 },
 {"id":"06100101020801003",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsjmssbmxbjsxmGrid.bqydjsehj=SUM($..zzsjmssbmxbjsxmGridlbVO[*].bqydjse)",
+"formula":"$..zzsjmssbmxbjsxmGrid.bqydjsehj=ROUND(SUM($..zzsjmssbmxbjsxmGridlbVO[*].bqydjse),2)",
 "tips":""
 },
 {"id":"06100101020801004",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsjmssbmxbjsxmGrid.bqsjdjsehj=SUM($..zzsjmssbmxbjsxmGridlbVO[*].bqsjdjse)",
+"formula":"$..zzsjmssbmxbjsxmGrid.bqsjdjsehj=ROUND(SUM($..zzsjmssbmxbjsxmGridlbVO[*].bqsjdjse),2)",
 "tips":""
 },
 {"id":"06100101020802001",
 "type":"02",
 "desc":"",
-"formula":"$..zzsjmssbmxbjsxmGrid.bqsjdjsehj-$..zzsxgmGrid.zzsxgmGridlb[0].bqynsejze-$..zzsxgmGrid.zzsxgmGridlb[1].bqynsejze != 0",
-"tips":"应等于主表第16行“货物及劳务本期应纳税额减征额本期数+服务、不动产和无形资产本期应纳税额减征额本期数”"
+"formula":"ROUND($..zzsjmssbmxbjsxmGrid.bqsjdjsehj-$..zzsxgmGrid.zzsxgmGridlb[0].bqynsejze-$..zzsxgmGrid.zzsxgmGridlb[1].bqynsejze,2) == 0",
+"tips":"主表第16栏第1列【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[0].bqynsejze,2)}}】+第2列【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[1].bqynsejze,2)}}】应等于附表《增值减免税申报明细表》[本期实际抵减税额]的合计【{{ROUND($..zzsjmssbmxbjsxmGrid.bqsjdjsehj,2)}}】"
 },
 {"id":"06100101020801005",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsjmssbmxbjsxmGrid.qmyehj=SUM($..zzsjmssbmxbjsxmGridlbVO[*].qmye)",
+"formula":"$..zzsjmssbmxbjsxmGrid.qmyehj=ROUND(SUM($..zzsjmssbmxbjsxmGridlbVO[*].qmye),2)",
 "tips":""
 },
 {"id":"06100101020802002",
 "type":"02",
 "desc":"",
-"formula":"$..zzsjmssbmxbjsxmGridlbVO[#].qcye < 0",
-"tips":"期初余额不能小于0"
+"formula":"ROUND($..zzsjmssbmxbjsxmGridlbVO[#].qcye,2) >= 0",
+"tips":"[期初余额]不能为负!"
 },
 {"id":"06100101020802003",
 "type":"02",
 "desc":"",
-"formula":"($..zzsjmssbmxbjsxmGridlbVO[#].qcye > 0) && ($..zzsjmssbmxbjsxmGridlbVO[#].hmc == '')",
-"tips":"期初余额大于零时，减税性质不能为空"
+"formula":"",
+"tips":""
 },
 {"id":"06100101020802004",
 "type":"02",
 "desc":"",
-"formula":"$..zzsjmssbmxbjsxmGridlbVO[#].bqfse < 0",
-"tips":"本期发生额不能小于0"
+"formula":"ROUND($..zzsjmssbmxbjsxmGridlbVO[#].bqfse,2) >= 0",
+"tips":"[本期发生额]不能为负!"
 },
 {"id":"06100101020802005",
 "type":"02",
 "desc":"",
-"formula":"($..zzsjmssbmxbjsxmGridlbVO[#].bqfse > 0) && ($..zzsjmssbmxbjsxmGridlbVO[#].hmc == '')",
-"tips":"本期发生额大于零时，减税性质不能为空"
+"formula":"",
+"tips":""
 },
-{"id":"06100101020802006",
+{"id":"06100101020802009",
 "type":"02",
 "desc":"",
-"formula":"($..zzsjmssbmxbjsxmGridlbVO[#].bqydjse > 0) && ($..zzsjmssbmxbjsxmGridlbVO[#].hmc == '')",
-"tips":"本期实际抵减税额大于零时，减税性质不能为空"
+"formula":"",
+"tips":""
 },
 {"id":"06100101020802007",
 "type":"02",
 "desc":"",
-"formula":"$..zzsjmssbmxbjsxmGridlbVO[#].bqydjse < 0",
-"tips":"本期应抵减税额不能小于0"
+"formula":"ROUND($..zzsjmssbmxbjsxmGridlbVO[#].bqydjse,2) >= 0",
+"tips":"[本期应抵减税额]不能为负!"
 },
 {"id":"06100101020801006",
 "type":"01",
 "desc":"",
-"formula":"$..zzsjmssbmxbjsxmGridlbVO[#].bqydjse=$..zzsjmssbmxbjsxmGridlbVO[#].qcye+$..zzsjmssbmxbjsxmGridlbVO[#].bqfse",
+"formula":"$..zzsjmssbmxbjsxmGridlbVO[#].bqydjse=ROUND($..zzsjmssbmxbjsxmGridlbVO[#].qcye+$..zzsjmssbmxbjsxmGridlbVO[#].bqfse,2)",
 "tips":""
 },
 {"id":"06100101020802008",
 "type":"02",
 "desc":"",
-"formula":"$..zzsjmssbmxbjsxmGridlbVO[#].bqsjdjse > $..zzsjmssbmxbjsxmGridlbVO[#].bqydjse",
-"tips":"本期实际抵减税额不能大于本期应抵减税额"
-},
-{"id":"06100101020802009",
-"type":"02",
-"desc":"",
-"formula":"($..zzsjmssbmxbjsxmGridlbVO[#].bqsjdjse > 0) && ($..zzsjmssbmxbjsxmGridlbVO[#].hmc == '')",
-"tips":"本期实际抵减税额大于零时，减税性质不能为空"
+"formula":"ROUND($..zzsjmssbmxbjsxmGridlbVO[#].bqsjdjse,2) <= ROUND($..zzsjmssbmxbjsxmGridlbVO[#].bqydjse,2)",
+"tips":"[本期实际抵减税额]不能大于[本期应抵减税额]"
 },
 {"id":"06100101020801007",
 "type":"01",
 "desc":"",
-"formula":"$..zzsjmssbmxbjsxmGridlbVO[#].qmye=$..zzsjmssbmxbjsxmGridlbVO[#].bqydjse-$..zzsjmssbmxbjsxmGridlbVO[#].bqsjdjse",
+"formula":"$..zzsjmssbmxbjsxmGridlbVO[#].qmye=ROUND($..zzsjmssbmxbjsxmGridlbVO[#].bqydjse-$..zzsjmssbmxbjsxmGridlbVO[#].bqsjdjse,2)",
 "tips":""
 },
 {"id":"06100101020801008",
 "type":"11",
 "desc":"",
-"formula":"$..zzsjmssbmxbmsxmGrid.mzzzsxmxsehj=SUM($..zzsjmssbmxbmsxmGridlbVO[*].mzzzsxmxse)",
+"formula":"$..zzsjmssbmxbmsxmGrid.mzzzsxmxsehj=ROUND(SUM($..zzsjmssbmxbmsxmGridlbVO[*].mzzzsxmxse),2)",
 "tips":""
 },
 {"id":"06100101020802010",
 "type":"02",
 "desc":"",
-"formula":"$..zzsjmssbmxbmsxmGrid.mzzzsxmxsehj-$..zzsxgmGrid.zzsxgmGridlb[0].qtmsxse-$..zzsxgmGrid.zzsxgmGridlb[1].qtmsxse != 0",
-"tips":"《增值税减免税申报明细表》附表免征增值税项目销售额合计应等于主表第12行“货物及劳务其他免税销售额本期数+服务、不动产和无形资产其他免税销售额本期数”"
+"formula":"ROUND($..zzsjmssbmxbmsxmGrid.mzzzsxmxsehj-$..zzsxgmGrid.zzsxgmGridlb[0].qtmsxse-$..zzsxgmGrid.zzsxgmGridlb[1].qtmsxse,2) == 0",
+"tips":"主表第12栏第1列【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[0].qtmsxse,2)}}】+第2列【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[1].qtmsxse,2)}}】本期数 应等于 附表《减免税申报明细表》第1列[免征增值税项目销售额]【{{ROUND($..zzsjmssbmxbmsxmGrid.mzzzsxmxsehj,2)}}】的合计"
 },
 {"id":"06100101020801009",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsjmssbmxbmsxmGrid.bqsjkcjehj=SUM($..zzsjmssbmxbmsxmGridlbVO[*].bqsjkcje)",
+"formula":"$..zzsjmssbmxbmsxmGrid.bqsjkcjehj=ROUND(SUM($..zzsjmssbmxbmsxmGridlbVO[*].bqsjkcje),2)",
 "tips":""
 },
 {"id":"06100101020801010",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsjmssbmxbmsxmGrid.kchmsxsehj=SUM($..zzsjmssbmxbmsxmGridlbVO[*].kchmsxse)",
+"formula":"$..zzsjmssbmxbmsxmGrid.kchmsxsehj=ROUND(SUM($..zzsjmssbmxbmsxmGridlbVO[*].kchmsxse),2)",
 "tips":""
 },
 {"id":"06100101020801011",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsjmssbmxbmsxmGrid.msxsedyjxsehj=SUM($..zzsjmssbmxbmsxmGridlbVO[*].msxsedyjxse)",
+"formula":"$..zzsjmssbmxbmsxmGrid.msxsedyjxsehj=ROUND(SUM($..zzsjmssbmxbmsxmGridlbVO[*].msxsedyjxse),2)",
 "tips":""
 },
 {"id":"06100101020801012",
-"type":"01",
+"type":"11",
 "desc":"",
-"formula":"$..zzsjmssbmxbmsxmGrid.msehj=SUM($..zzsjmssbmxbmsxmGridlbVO[*].mse)",
+"formula":"$..zzsjmssbmxbmsxmGrid.msehj=ROUND(SUM($..zzsjmssbmxbmsxmGridlbVO[*].mse),2)",
 "tips":""
 },
 {"id":"06100101020802011",
 "type":"02",
 "desc":"",
-"formula":"$..zzsjmssbmxbmsxmGridlbVO[#].mzzzsxmxse < 0",
-"tips":"免征增值税项目销售额不能小于0"
+"formula":"ROUND($..zzsjmssbmxbmsxmGridlbVO[#].mzzzsxmxse,2) >= 0",
+"tips":"[免征增值税项目销售额]不能为负!"
 },
 {"id":"06100101020802012",
 "type":"02",
 "desc":"",
-"formula":"($..zzsjmssbmxbmsxmGridlbVO[#].mzzzsxmxse > 0) && ($..zzsjmssbmxbmsxmGridlbVO[#].hmc == '')",
-"tips":"免征增值税项目销售额大于零时，免税性质不能为空"
+"formula":"",
+"tips":""
 },
 {"id":"06100101020802013",
 "type":"02",
 "desc":"",
-"formula":"$..zzsjmssbmxbmsxmGridlbVO[#].bqsjkcje < 0",
-"tips":"免税销售额扣除项目本期实际扣除金额不能小于0"
+"formula":"ROUND($..zzsjmssbmxbmsxmGridlbVO[#].bqsjkcje,2) >= 0",
+"tips":"[免税销售额扣除项目本期实际扣除金额]不能为负!"
 },
 {"id":"06100101020802014",
 "type":"02",
 "desc":"",
-"formula":"($..zzsjmssbmxbmsxmGridlbVO[#].bqsjkcje > 0) && ($..zzsjmssbmxbmsxmGridlbVO[#].hmc == '')",
-"tips":"免税销售额扣除项目本期实际扣除金额大于零时，免税性质不能为空"
+"formula":"",
+"tips":""
 },
 {"id":"06100101020801013",
 "type":"01",
 "desc":"",
-"formula":"$..zzsjmssbmxbmsxmGridlbVO[#].kchmsxse=$..zzsjmssbmxbmsxmGridlbVO[#].mzzzsxmxse-$..zzsjmssbmxbmsxmGridlbVO[#].bqsjkcje",
+"formula":"$..zzsjmssbmxbmsxmGridlbVO[#].kchmsxse=ROUND($..zzsjmssbmxbmsxmGridlbVO[#].mzzzsxmxse-$..zzsjmssbmxbmsxmGridlbVO[#].bqsjkcje,2)",
 "tips":""
 },
 {"id":"06100101020802015",
 "type":"02",
 "desc":"",
-"formula":"$..zzsjmssbmxbmsxmGridlbVO[#].kchmsxse < 0",
-"tips":"扣除后免税销售额不能小于0"
-},
-{"id":"06100101020802016",
-"type":"02",
-"desc":"",
-"formula":"($..zzsjmssbmxbmsxmGridlbVO[#].kchmsxse > 0) && ($..zzsjmssbmxbmsxmGridlbVO[#].hmc == '')",
-"tips":"扣除后免税销售额大于零时，免税性质不能为空"
+"formula":"ROUND($..zzsjmssbmxbmsxmGridlbVO[#].kchmsxse,2) >= 0",
+"tips":"[扣除后免税销售额]不能为负!"
 },
 {"id":"06100101020802017",
 "type":"02",
 "desc":"",
-"formula":"$..zzsjmssbmxbmsxmGridlbVO[#].msxsedyjxse < 0",
-"tips":"免税销售额对应的进项税额不能小于0"
+"formula":"ROUND($..zzsjmssbmxbmsxmGridlbVO[#].msxsedyjxse,2) >= 0",
+"tips":"[免税销售额对应的进项税额]不能为负!"
 },
 {"id":"06100101020802018",
 "type":"02",
 "desc":"",
-"formula":"($..zzsjmssbmxbmsxmGridlbVO[#].msxsedyjxse > 0) && ($..zzsjmssbmxbmsxmGridlbVO[#].hmc == '')",
-"tips":"免税销售额对应的进项税额大于零时，免税性质不能为空"
+"formula":"",
+"tips":""
 },
 {"id":"06100101020801014",
 "type":"01",
 "desc":"",
-"formula":"$..zzsjmssbmxbmsxmGridlbVO[#].mse=$..zzsjmssbmxbmsxmGridlbVO[#].kchmsxse*$..zzsxgmsbInitData.zsl",
+"formula":"$..zzsjmssbmxbmsxmGridlbVO[#].mse=ROUND($..zzsjmssbmxbmsxmGridlbVO[#].kchmsxse*$..zzsxgmsbInitData.zsl,2)",
+"tips":""
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"!((ROUND($..zzsxgmGridlb[0].skqjkjdptfpbhsxse,2) >0) && (ROUND($..zzsxgmGridlb[0].yzzzsbhsxse + $..zzsxgmGridlb[0].xssygdysgdzcbhsxse + $..zzsxgmGridlb[0].msxse + $..zzsxgmGridlb[0].ckmsxse,2) <= ROUND($..zzsxgmsbInitData.zzsxgmnsrQzd,2)))",
+"target": "$..zzsxgmGridlb[0].skqjkjdptfpbhsxse",
+"tips":"未达到起征点，不能填报第3栏第1列【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[0].skqjkjdptfpbhsxse,2)}}】本期数"
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"!((ROUND($..zzsxgmGridlb[0].swjgdkdzzszyfpbhsxse,2) == 0) && (ROUND($..zzsxgmGridlb[0].yzzzsbhsxse,2) > 0) && (ROUND($..zzsxgmGridlb[0].yzzzsbhsxse + $..zzsxgmGridlb[0].xssygdysgdzcbhsxse + $..zzsxgmGridlb[0].msxse + $..zzsxgmGridlb[0].ckmsxse,2) <= ROUND($..zzsxgmsbInitData.zzsxgmnsrQzd,2)))",
+"target": "$..zzsxgmGridlb[0].yzzzsbhsxse",
+"tips":"未达到起征点,且未代开发票，不能填报第1栏第1列【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[0].yzzzsbhsxse,2)}}】本期数"
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"!((ROUND($..zzsxgmGridlb[0].xssygdysgdzcbhsxse,2) >0) && (ROUND($..zzsxgmGridlb[0].yzzzsbhsxse + $..zzsxgmGridlb[0].xssygdysgdzcbhsxse + $..zzsxgmGridlb[0].msxse + $..zzsxgmGridlb[0].ckmsxse,2) <= ROUND($..zzsxgmsbInitData.zzsxgmnsrQzd,2)))",
+"target": "$..zzsxgmGridlb[0].xssygdysgdzcbhsxse",
+"tips":"未达到起征点，不能填报第7栏第1列【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[0].xssygdysgdzcbhsxse,2)}}】本期数"
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"!(ROUND(($..zzsxgmGridlb[0].xwqymsxse>0),2) && (ROUND($..zzsxgmGridlb[0].yzzzsbhsxse + $..zzsxgmGridlb[0].xssygdysgdzcbhsxse + $..zzsxgmGridlb[0].msxse + $..zzsxgmGridlb[0].ckmsxse,2) > ROUND($..zzsxgmsbInitData.zzsxgmnsrQzd,2)))",
+"target": "$..zzsxgmGridlb[0].xwqymsxse",
+"tips":"已达起征点，不能填报第10栏第1列【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[0].xwqymsxse,2)}}】本期数。"
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"!(ROUND(($..zzsxgmGridlb[0].wdqzdxse >0),2) && (ROUND($..zzsxgmGridlb[0].yzzzsbhsxse + $..zzsxgmGridlb[0].xssygdysgdzcbhsxse + $..zzsxgmGridlb[0].msxse + $..zzsxgmGridlb[0].ckmsxse,2) > ROUND($..zzsxgmsbInitData.zzsxgmnsrQzd,2)))",
+"target": "$..zzsxgmGridlb[0].wdqzdxse",
+"tips":"已达起征点，不能填报第11栏第1列【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[0].wdqzdxse,2)}}】本期数。"
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"!((ROUND($..zzsxgmGridlb[1].skqjkjdptfpbhsxse,2) > 0) && ( xgmCezsqzd($..zzsxgmflzl.flzlForm.bqfse,$..zzsxgmflzl.flzlForm.bqkce,$..zzsxgmflzl.flzlForm.ysfwxsqbhssr,$..zzsxgmflzl.flzlForm.bqfse5,$..zzsxgmflzl.flzlForm.bqkce5,$..zzsxgmflzl.flzlForm.ysfwxsqbhssr5,$..zzsxgmGridlb[1].yzzzsbhsxse,$..zzsxgmGridlb[1].xsczbdcbhsxse,$..zzsxgmGridlb[1].msxse,$..zzsxgmGridlb[1].ckmsxse) <= $..zzsxgmsbInitData.zzsxgmnsrYsfwQzd))",
+"target": "$..zzsxgmGridlb[1].skqjkjdptfpbhsxse",
+"tips":"未达到起征点，不能填报第3栏第2列【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[1].skqjkjdptfpbhsxse,2)}}】本期数"
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"!((ROUND($..zzsxgmGridlb[1].swjgdkdzzszyfpbhsxse,2) == 0) && (ROUND($..zzsxgmGridlb[1].yzzzsbhsxse,2) > 0) && (xgmCezsqzd($..zzsxgmflzl.flzlForm.bqfse,$..zzsxgmflzl.flzlForm.bqkce,$..zzsxgmflzl.flzlForm.ysfwxsqbhssr,$..zzsxgmflzl.flzlForm.bqfse5,$..zzsxgmflzl.flzlForm.bqkce5,$..zzsxgmflzl.flzlForm.ysfwxsqbhssr5,$..zzsxgmGridlb[1].yzzzsbhsxse,$..zzsxgmGridlb[1].xsczbdcbhsxse,$..zzsxgmGridlb[1].msxse,$..zzsxgmGridlb[1].ckmsxse) <= $..zzsxgmsbInitData.zzsxgmnsrYsfwQzd))",
+"target": "$..zzsxgmGridlb[1].yzzzsbhsxse",
+"tips":"未达到起征点,且未代开发票，不能填报第1栏第2列【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[1].yzzzsbhsxse,2)}}】本期数"
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"!((ROUND($..zzsxgmGridlb[1].swjgdkdzzszyfpbhsxse1,2) == 0) && (ROUND($..zzsxgmGridlb[1].xsczbdcbhsxse,2) > 0) && (xgmCezsqzd($..zzsxgmflzl.flzlForm.bqfse,$..zzsxgmflzl.flzlForm.bqkce,$..zzsxgmflzl.flzlForm.ysfwxsqbhssr,$..zzsxgmflzl.flzlForm.bqfse5,$..zzsxgmflzl.flzlForm.bqkce5,$..zzsxgmflzl.flzlForm.ysfwxsqbhssr5,$..zzsxgmGridlb[1].yzzzsbhsxse,$..zzsxgmGridlb[1].xsczbdcbhsxse,$..zzsxgmGridlb[1].msxse,$..zzsxgmGridlb[1].ckmsxse) <= $..zzsxgmsbInitData.zzsxgmnsrYsfwQzd))",
+"target": "$..zzsxgmGridlb[1].xsczbdcbhsxse",
+"tips":"未达到起征点，不能填报第4栏第2列【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[1].xsczbdcbhsxse,2)}}】本期数"
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"!((ROUND($..zzsxgmGridlb[1].xwqymsxse,2) > 0) && (xgmCezsqzd($..zzsxgmflzl.flzlForm.bqfse,$..zzsxgmflzl.flzlForm.bqkce,$..zzsxgmflzl.flzlForm.ysfwxsqbhssr,$..zzsxgmflzl.flzlForm.bqfse5,$..zzsxgmflzl.flzlForm.bqkce5,$..zzsxgmflzl.flzlForm.ysfwxsqbhssr5,$..zzsxgmGridlb[1].yzzzsbhsxse,$..zzsxgmGridlb[1].xsczbdcbhsxse,$..zzsxgmGridlb[1].msxse,$..zzsxgmGridlb[1].ckmsxse) > $..zzsxgmsbInitData.zzsxgmnsrYsfwQzd))",
+"target": "$..zzsxgmGridlb[1].xwqymsxse",
+"tips":"已达起征点，不能填报第10栏第2列【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[1].xwqymsxse,2)}}】本期数。"
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"!((ROUND($..zzsxgmGridlb[1].wdqzdxse,2) > 0) && (xgmCezsqzd($..zzsxgmflzl.flzlForm.bqfse,$..zzsxgmflzl.flzlForm.bqkce,$..zzsxgmflzl.flzlForm.ysfwxsqbhssr,$..zzsxgmflzl.flzlForm.bqfse5,$..zzsxgmflzl.flzlForm.bqkce5,$..zzsxgmflzl.flzlForm.ysfwxsqbhssr5,$..zzsxgmGridlb[1].yzzzsbhsxse,$..zzsxgmGridlb[1].xsczbdcbhsxse,$..zzsxgmGridlb[1].msxse,$..zzsxgmGridlb[1].ckmsxse) > $..zzsxgmsbInitData.zzsxgmnsrYsfwQzd))",
+"target": "$..zzsxgmGridlb[1].wdqzdxse",
+"tips":"已达起征点，不能填报第11栏第2列【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[1].wdqzdxse,2)}}】本期数。"
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"($..fwbdchwxzckcxmqdGridlb[#].pzzl!=001) || $..fwbdchwxzckcxmqdGridlb[#].kpfnsrsbh !=''",
+"tips":"当第3列[凭证种类]为【发票】的，该栏必须填写[开票方纳税人识别号]"
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"($..fwbdchwxzckcxmqdGridlb[#].ysxwmc!=01) || ($..fwbdchwxzckcxmqdGridlb[#].pzzl == 004)",
+"tips":"[应税行为名称]为“经纪代理服务”或“一般计税的销售房地产项目”，[凭证种类]只能为【财政票据】"
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"($..fwbdchwxzckcxmqdGridlb[#].ysxwmc!=07) || ($..fwbdchwxzckcxmqdGridlb[#].pzzl == 004)",
+"tips":"[应税行为名称]为【经纪代理服务】或【一般计税的销售房地产项目】，[凭证种类]只能为【财政票据】"
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"$..fwbdchwxzckcxmqdGridlb[#].pzzl != 001 || ($..fwbdchwxzckcxmqdGridlb[#].fpdm != '')",
+"tips":"[凭证种类]为“发票”的，则[发票代码]为必填"
+},
+{"id":"",
+"type":"11",
+"desc":"",
+"formula":"$..fwbdchwxzckcxmqdGrid.jeHj=ROUND(SUM($..fwbdchwxzckcxmqdGridlb[*].je),2)",
+"tips":""
+},
+{"id":"",
+"type":"10",
+"desc":"",
+"formula":"$..fwbdchwxzckcxmqd.sbbhead.skssqz=$..sssq.rqZ",
+"tips":""
+},
+{"id":"",
+"type":"10",
+"desc":"",
+"formula":"$..fwbdchwxzckcxmqd.sbbhead.nsrsbh=$..nsrjbxx.nsrsbh",
+"tips":""
+},
+{"id":"",
+"type":"10",
+"desc":"",
+"formula":"$..fwbdchwxzckcxmqd.sbbhead.nsrmc=$..nsrjbxx.nsrmc",
+"tips":""
+},
+{"id":"",
+"type":"10",
+"desc":"",
+"formula":"$..fwbdchwxzckcxmqd.sbbhead.swjgMc=$..nsrjbxx.swjgMc",
+"tips":""
+},
+{"id":"",
+"type":"10",
+"desc":"",
+"formula":"$..fwbdchwxzckcxmqd.sbbhead.swjgMc=$..nsrjbxx.swjgMc",
+"tips":""
+},
+{"id":"",
+"type":"10",
+"desc":"",
+"formula":"$..fwbdchwxzckcxmqd.sbbhead.swjgDm=$..nsrjbxx.swjgDm",
+"tips":""
+},
+{
+  "id": "06100101013800013",
+  "type": "02",
+  "desc": "",
+  "formula": "($..fwbdchwxzckcxmqdGridlb[#].ysxwmc=='09'&&$..fwbdchwxzckcxmqdGridlb[#].kpfnsrsbh==''&&$..fwbdchwxzckcxmqdGridlb[#].kpfdwmc==''&&($..fwbdchwxzckcxmqdGridlb[#].pzzl==''||$..fwbdchwxzckcxmqdGridlb[#].pzzl==null)&&$..fwbdchwxzckcxmqdGridlb[#].fpdm==''&&$..fwbdchwxzckcxmqdGridlb[#].fphm=='') || $..fwbdchwxzckcxmqdGridlb[#].ysxwmc!='09'",
+  "tips": "当[应税行为名称]为“金融商品转让”时，第1-5列不允许填写! "
+},
+{"id":"",
+"type":"13",
+"desc":"",
+"formula":"1",
+"target": "$..zzsjmssbmxbmsxmGrid.ckmzzzsxmxse:readonly;$..zzsjmssbmxbmsxmGrid.ckmzzzsxmxse:background-color=#f1edee;",
+"tips":""
+},
+{"id":"",
+"type":"13",
+"desc":"",
+"formula":"1",
+"target": "$..zzsjmssbmxbmsxmGrid.kjmzzzsxmxse:readonly;$..zzsjmssbmxbmsxmGrid.kjmzzzsxmxse:background-color=#f1edee;",
+"tips":""
+},
+{"id":"",
+"type":"01",
+"desc":"",
+"formula":"$..zzsxgmGridlb[1].yzzzsbhsxse=IF(($..flzlForm.bqfse+$..flzlForm.bqkce+$..flzlForm.ysfwxsqbhssr+$..flzlForm.bqfse5+$..flzlForm.bqkce5+$..flzlForm.ysfwxsqbhssr5) > 0,ROUND($..flzlForm.ysfwxsbhsxse,2),0)",
+"tips":""
+},
+{"id":"",
+"type":"03",
+"desc":"",
+"formula":"($..flzlForm.ysfwxsbhsxse) > 0 ",
+"target": "$..zzsxgmGridlb[1].yzzzsbhsxse:readonly;$..zzsxgmGridlb[1].yzzzsbhsxse:background-color=#f1edee;",
+"tips":""
+},
+
+{"id":"",
+  "type":"21",
+  "desc":"剔除增值税减免税申报明细表(减税项目)，多余的行",
+  "formula":"delBranch();",
+  "tips":""
+},
+{"id":"",
+  "type":"21",
+  "desc":"增值税减免税申报明细表(减税项目)--插入合计行到动态行第一行",
+  "formula":"(function() { if((formData.zzssyyxgmnsrySbSbbdxxVO.zzsjmssbmxb.zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO).length>0){(formData.zzssyyxgmnsrySbSbbdxxVO.zzsjmssbmxb.zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO).splice(0,0,{'ewbhxh':1,'hmc':'合计','qcye':$..zzsjmssbmxbjsxmGrid.qcyehj,'bqfse':$..zzsjmssbmxbjsxmGrid.bqfsehj,'bqydjse':$..zzsjmssbmxbjsxmGrid.bqydjsehj,'bqsjdjse':$..zzsjmssbmxbjsxmGrid.bqsjdjsehj,'qmye':$..zzsjmssbmxbjsxmGrid.qmyehj});} })(); ",
+  "tips":""
+},
+{"id":"",
+  "type":"10",
+  "desc":"增值税减免税申报明细表(免税项目)--插入合计行等到动态行",
+  "formula":"$..zzsjmssbmxbmsxmGrid.ckmzzzsxmxse = 0",
+  "tips":""
+},
+{"id":"",
+  "type":"10",
+  "desc":"增值税减免税申报明细表(免税项目)--插入合计行等到动态行",
+  "formula":"$..zzsjmssbmxbmsxmGrid.kjmzzzsxmxse = 0",
+  "tips":""
+},
+
+{"id":"",
+  "type":"21",
+  "desc":"增值税减免税申报明细表(免税项目)--插入合计行等到动态行",
+  "formula":"(function() { if((formData.zzssyyxgmnsrySbSbbdxxVO.zzsjmssbmxb.zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO).length>0){(formData.zzssyyxgmnsrySbSbbdxxVO.zzsjmssbmxb.zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO).splice(0,0,{'ewbhxh':1,'hmc':'合计','mzzzsxmxse':$..zzsjmssbmxbmsxmGrid.mzzzsxmxsehj,'bqsjkcje':$..zzsjmssbmxbmsxmGrid.bqsjkcjehj,'kchmsxse':$..zzsjmssbmxbmsxmGrid.kchmsxsehj,'msxsedyjxse':$..zzsjmssbmxbmsxmGrid.msxsedyjxsehj,'mse':$..zzsjmssbmxbmsxmGrid.msehj},{'ewbhxh':2,'hmc':'出口免税','mzzzsxmxse':$..zzsjmssbmxbmsxmGrid.ckmzzzsxmxse,'bqsjkcje':0,'kchmsxse':0,'msxsedyjxse':0,'mse':0},{'ewbhxh':3,'hmc':'其中:跨境服务','mzzzsxmxse':$..zzsjmssbmxbmsxmGrid.kjmzzzsxmxse,'bqsjkcje':0,'kchmsxse':0,'msxsedyjxse':0,'mse':0});} })();",
+  "tips":""
+},
+{
+  "id": "",
+  "type": "02",
+  "desc": "",
+  "formula": "(ROUND($..zzsxgmGrid.zzsxgmGridlb[0].xwqymsxse*0.03,2)<=($..zzsxgmGrid.zzsxgmGridlb[0].xwqymse)) && (ROUND($..zzsxgmGrid.zzsxgmGridlb[0].xwqymsxse*0.05,2)>=($..zzsxgmGrid.zzsxgmGridlb[0].xwqymse))",
+  "target": "$..zzsxgmGrid.zzsxgmGridlb[0].xwqymse",
+  "tips": "第18栏第1列【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[0].xwqymse,2)}}】应大于或者等于第10栏[小微企业免税销售额]【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[0].xwqymsxse,2)}}*0.03】并且小于或者等于等于第10栏[小微企业免税销售额]【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[0].xwqymsxse,2)}}*0.05】"
+},
+{
+  "id": "",
+  "type": "02",
+  "desc": "",
+  "formula": "(ROUND($..zzsxgmGrid.zzsxgmGridlb[1].xwqymsxse*0.03,2)<=$..zzsxgmGrid.zzsxgmGridlb[1].xwqymse) && (ROUND($..zzsxgmGrid.zzsxgmGridlb[1].xwqymsxse*0.05,2)>=$..zzsxgmGrid.zzsxgmGridlb[1].xwqymse)",
+  "target": "$..zzsxgmGrid.zzsxgmGridlb[1].xwqymse",
+  "tips": "第18栏第2列【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[1].xwqymse,2)}}】应大于或者等于第10栏[小微企业免税销售额]【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[1].xwqymsxse,2)}}*0.03】并且小于或者等于等于第10栏[小微企业免税销售额]【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[1].xwqymsxse,2)}}*0.05】"
+},
+{
+  "id": "",
+  "type": "02",
+  "desc": "",
+  "formula": "(ROUND($..zzsxgmGrid.zzsxgmGridlb[0].wdqzdxse*0.03,2)<=$..zzsxgmGrid.zzsxgmGridlb[0].wdqzdmse) && (ROUND($..zzsxgmGrid.zzsxgmGridlb[0].wdqzdxse*0.05,2)>=$..zzsxgmGrid.zzsxgmGridlb[0].wdqzdmse)",
+  "target": "$..zzsxgmGrid.zzsxgmGridlb[0].wdqzdmse",
+  "tips": "第19栏第1列【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[0].wdqzdmse,2)}}】应大于或者等于第11栏[未达起征点销售额]【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[0].wdqzdxse,2)}}*0.03】并且小于或者等于等于第11栏[未达起征点销售额]【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[0].wdqzdxse,2)}}*0.05】"
+},
+{
+  "id": "",
+  "type": "02",
+  "desc": "",
+  "target": "$..zzsxgmGrid.zzsxgmGridlb[1].wdqzdmse",
+  "formula": "(ROUND($..zzsxgmGrid.zzsxgmGridlb[1].wdqzdxse*0.03,2)<=$..zzsxgmGrid.zzsxgmGridlb[1].wdqzdmse) && (ROUND($..zzsxgmGrid.zzsxgmGridlb[1].wdqzdxse*0.05,2)>=$..zzsxgmGrid.zzsxgmGridlb[1].wdqzdmse)",
+  "tips": "第19栏第2列【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[1].wdqzdmse,2)}}】应大于或者等于第11栏[未达起征点销售额]【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[1].wdqzdxse,2)}}*0.03】并且小于或者等于等于第11栏[未达起征点销售额]【{{ROUND($..zzsxgmGrid.zzsxgmGridlb[1].wdqzdxse,2)}}*0.05】"
+},
+
+
+{"id":"",
+"type":"11",
+"desc":"",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].skqjkjdptfpbhsxse2=ROUND($..zzsxgmGrid.zzsxgmGridlb[1].skqjkjdptfpbhsxse2+$..zzsxgmsbInitData.skqjkjdptfpbhsxse2bnlj2,2)",
+"tips":""
+},
+{"id":"",
+"type":"11",
+"desc":"",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].swjgdkdzzszyfpbhsxse1=ROUND($..zzsxgmGrid.zzsxgmGridlb[1].swjgdkdzzszyfpbhsxse1+$..zzsxgmsbInitData.swjgdkdzzszyfpbhsxse1bnlj2,2)",
+"tips":""
+},
+{"id":"",
+"type":"11",
+"desc":"",
+"formula":"$..zzsxgmGrid.zzsxgmGridlb[3].xsczbdcbhsxse=ROUND($..zzsxgmGrid.zzsxgmGridlb[1].xsczbdcbhsxse+$..zzsxgmsbInitData.xsczbdcbhsxsebnlj2,2)",
+"tips":""
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"ROUND($..skzsForm.bnljjnzzs,2) >= 0",
+"tips":"[本年累计缴纳增值税]不能为负!"
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"ROUND($..jxGridlb[#].bqsjdkjxse,2) >= 0",
+"tips":"[本期实际抵扣进项]不能为负!"
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"ROUND($..fwbdchwxzckcxmqdGrid.jeHj,2)==ROUND($..flzlForm.bqfse+$..flzlForm.bqfse5,2)",
+"tips":"《增值税纳税申报表（适用于增值税小规模纳税人）附列资料》第2栏[本期发生额]【{{ROUND($..flzlForm.bqfse,2)}}】+第10栏[本期发生额]【{{ROUND($..flzlForm.bqfse5,2)}}】应等于附表《服务、不动产和无形资产扣除项目清单》第7列[金额]的合计【{{ROUND($..fwbdchwxzckcxmqdGrid.jeHj,2)}}】"
+},
+{"id":"",
+"type":"12",
+"desc":"",
+"formula":"$..skzsForm.slsdljt != ''",
+"tips":"[所隶属电力集团]不能为空!"
+},
+{"id":"",
+"type":"12",
+"desc":"",
+"formula":"($..skzsForm.qylxbz != null) && ($..skzsForm.qylxbz != '')",
+"tips":"[企业类型]不能为空!"
+},
+
+{"id":"",
+"type":"13",
+"desc":"",
+"formula":"$..zzsxgmsbInitData.ysfwRdzg=='N'",
+"target": "$..zzsxgmGrid.zzsxgmGridlb[1].xsczbdcbhsxse:readonly;$..zzsxgmGrid.zzsxgmGridlb[1].xsczbdcbhsxse:background-color=#f1edee;",
+"tips":""
+},
+{"id":"",
+"type":"13",
+"desc":"",
+"formula":"$..zzsxgmsbInitData.ysfwRdzg=='N'",
+"target": "$..zzsxgmGrid.zzsxgmGridlb[1].bqynsejze:readonly;$..zzsxgmGrid.zzsxgmGridlb[1].bqynsejze:background-color=#f1edee;",
+"tips":""
+},
+{"id":"",
+"type":"13",
+"desc":"",
+"formula":"$..zzsxgmsbInitData.ysfwRdzg=='N'",
+"target": "$..zzsxgmGrid.zzsxgmGridlb[1].xwqymse:readonly;$..zzsxgmGrid.zzsxgmGridlb[1].xwqymse:background-color=#f1edee;",
+"tips":""
+},
+{"id":"",
+"type":"13",
+"desc":"",
+"formula":"$..zzsxgmsbInitData.ysfwRdzg=='N'",
+"target": "$..zzsxgmGrid.zzsxgmGridlb[1].wdqzdmse:readonly;$..zzsxgmGrid.zzsxgmGridlb[1].wdqzdmse:background-color=#f1edee;",
+"tips":""
+},
+{"id":"",
+"type":"13",
+"desc":"",
+"formula":"$..zzsxgmsbInitData.ysfwRdzg=='N'",
+"target": "$..zzsxgmGrid.zzsxgmGridlb[1].bqyjse1:readonly;$..zzsxgmGrid.zzsxgmGridlb[1].bqyjse1:background-color=#f1edee;",
+"tips":""
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"ROUND($..zzsjmssbmxbjsxmGridlbVO[#].bqsjdjse,2) >= 0",
+"tips":"[本期实际抵减税额]不能为负!"
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"(($..fwbdchwxzckcxmqdGridlb[#].pzzl == '001') && $..fwbdchwxzckcxmqdGridlb[#].fphm != '') || ($..fwbdchwxzckcxmqdGridlb[#].pzzl != '001')",
+"tips":"[凭证种类]为“发票”的，则[发票号码]为必填"
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"($..zzsjmssbmxbjsxmGridlbVO[#].qcye > 0 && $..zzsjmssbmxbjsxmGridlbVO[#].hmc != '' && $..zzsjmssbmxbjsxmGridlbVO[#].hmc != null) || $..zzsjmssbmxbjsxmGridlbVO[#].qcye <= 0",
+"tips":"[期初余额]大于零时，[减税性质代码及名称]不能为空!"
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"($..zzsjmssbmxbjsxmGridlbVO[#].bqfse > 0 && $..zzsjmssbmxbjsxmGridlbVO[#].hmc != '' && $..zzsjmssbmxbjsxmGridlbVO[#].hmc != null) || $..zzsjmssbmxbjsxmGridlbVO[#].bqfse <= 0",
+"tips":"[本期发生额]大于零时，[减税性质代码及名称]不能为空!"
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"($..zzsjmssbmxbjsxmGridlbVO[#].bqsjdjse > 0 && $..zzsjmssbmxbjsxmGridlbVO[#].hmc != '' && $..zzsjmssbmxbjsxmGridlbVO[#].hmc != null) || $..zzsjmssbmxbjsxmGridlbVO[#].bqsjdjse <= 0",
+"tips":"[本期实际抵减税额]大于零时，[减税性质代码及名称]不能为空!"
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"($..zzsjmssbmxbmsxmGridlbVO[#].mzzzsxmxse > 0 && $..zzsjmssbmxbmsxmGridlbVO[#].hmc != '' && $..zzsjmssbmxbmsxmGridlbVO[#].hmc != null) || $..zzsjmssbmxbmsxmGridlbVO[#].mzzzsxmxse <= 0",
+"tips":"[免征增值税项目销售额]大于零时，[免税性质代码及名称]不能为空!"
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"($..zzsjmssbmxbmsxmGridlbVO[#].bqsjkcje > 0 && $..zzsjmssbmxbmsxmGridlbVO[#].hmc != '' && $..zzsjmssbmxbmsxmGridlbVO[#].hmc != null) || $..zzsjmssbmxbmsxmGridlbVO[#].bqsjkcje <= 0",
+"tips":"[免税销售额扣除项目本期实际扣除金额]大于零时，[免税性质代码及名称]不能为空!"
+},
+{"id":"",
+"type":"02",
+"desc":"",
+"formula":"($..zzsjmssbmxbmsxmGridlbVO[#].msxsedyjxse > 0 && $..zzsjmssbmxbmsxmGridlbVO[#].hmc != '' && $..zzsjmssbmxbmsxmGridlbVO[#].hmc != null) || $..zzsjmssbmxbmsxmGridlbVO[#].msxsedyjxse <= 0",
+"tips":"[免税销售额对应的进项税额]大于零时，[免税性质代码及名称]不能为空!"
+},
+{"id":"",
+"type":"13",
+"desc":"",
+"formula":"$..zzsxgmsbInitData.ysfwRdzg=='N'",
+"target": "$..zzsxgmGrid.zzsxgmGridlb[1].swjgdkdzzszyfpbhsxse:readonly;$..zzsxgmGrid.zzsxgmGridlb[1].swjgdkdzzszyfpbhsxse:background-color=#f1edee;",
+"tips":""
+},
+{"id":"",
+"type":"13",
+"desc":"",
+"formula":"$..zzsxgmsbInitData.yshwjlwRdzg=='N'",
+"target": "$..zzsxgmGrid.zzsxgmGridlb[0].swjgdkdzzszyfpbhsxse:readonly;$..zzsxgmGrid.zzsxgmGridlb[0].swjgdkdzzszyfpbhsxse:background-color=#f1edee;",
+"tips":""
+},
+{"id":"",
+"type":"13",
+"desc":"",
+"formula":"$..zzsxgmsbInitData.yshwjlwRdzg=='N'",
+"target": "$..zzsxgmGrid.zzsxgmGridlb[0].bqynsejze:readonly;$..zzsxgmGrid.zzsxgmGridlb[0].bqynsejze:background-color=#f1edee;",
+"tips":""
+},
+{"id":"",
+"type":"13",
+"desc":"",
+"formula":"$..zzsxgmsbInitData.yshwjlwRdzg=='N'",
+"target": "$..zzsxgmGrid.zzsxgmGridlb[0].bqyjse1:readonly;$..zzsxgmGrid.zzsxgmGridlb[0].bqyjse1:background-color=#f1edee;",
+"tips":""
+},
+{"id":"",
+"type":"10",
+"desc":"",
+"formula":"if($..zzsxgmsbInitData.ysfwRdzg == 'N') {delete formData.zzssyyxgmnsrySbSbbdxxVO.fwbdchwxzckcxmqd.fwbdchwxzckcxmqdGrid.fwbdchwxzckcxmqdGridlb}",
 "tips":""
 }
 ]

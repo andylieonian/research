@@ -139,7 +139,12 @@ function FormulaEngine(){
                     throw "Initialize basename's object illegal [" + newBasename + "]: " + ex;
                 }
                 this.basename = newBasename;
+                // 根据服务端返回执行初始化标识最终决定是否执行初始化
+                if(!flagExecuteInitial) {
+                    flagDoInitial = false;
+                }
             }
+
             // Init the FSjpath
             this.jp.initialize(eval(this.basename));
             // Initial:
@@ -347,14 +352,17 @@ function FormulaEngine(){
             var idxVariable2NoPassFull = this.idxVariable2NoPass;
             var idx = (/\[\d+\]/.exec(jpath))[0];
             var var2NoPass = this.idxVariable2NoPass[jpath];
-            $.each(var2NoPass, function(id, FormulaObject){
-                $.each(FormulaObject.lstVariables, function(id, lstVariable){
-                    lstVariable = lstVariable.replace(/\[\#\]/g, idx);
-                    if(idxVariable2NoPassFull[lstVariable]) {
-                        delete idxVariable2NoPassFull[lstVariable];
-                    }
+            if(var2NoPass){
+                $.each(var2NoPass, function(id, FormulaObject){
+                    $.each(FormulaObject.lstVariables, function(id, lstVariable){
+                        lstVariable = lstVariable.replace(/\[\#\]/g, idx);
+                        if(idxVariable2NoPassFull[lstVariable]) {
+                            delete idxVariable2NoPassFull[lstVariable];
+                        }
+                    });
                 });
-            });
+            }
+
             this.idxVariable2NoPass = idxVariable2NoPassFull;
         }
 

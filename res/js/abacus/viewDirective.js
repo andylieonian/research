@@ -658,9 +658,9 @@ function ngDirectives(gobal, viewApp){
 
 	/**
      * 自定义输入地址控件指令
-     * <input type="text" select-address p="p" c="c" a="a" d="d" placeholder="请选择所在地" ng-model="xxx" />
+     * <input type="text" ng-select-address p="p" c="c" a="a" d="d" placeholder="请选择所在地" ng-model="xxx" />
      */
-    viewApp.directive('selectAddress', function($http, $q, $compile) {
+    viewApp.directive('ngSelectAddress', function($http, $q, $compile) {
         var cityURL, delay, templateURL;
         delay = $q.defer();
         templateURL = '../../res/js/lib/address/address.html';
@@ -857,6 +857,144 @@ function ngDirectives(gobal, viewApp){
                 }});        	
             }
     	}
+    });
+
+	/**
+     * 封装select2自定义指令，支持ipnut和select两种输入组件，具备静态查询和动态查询功能
+     * @param {scope} ng-model 选中的ID
+     * @param {scope} select2-model 选中的详细内容
+     * @param {scope} config 自定义配置
+     * @param {String} [query] 内置的配置 (怎么也还得默认一个config)
+     * @example
+     * <input ng-select-query ng-model="a" select-model="b" config-url="select2.config" type="text" placeholder="占位符" />
+     * <input ng-select-query ng-model="a" select-model="b" config-url="default" query="testQuery" type="text" placeholder="占位符" />
+     * <select ng-select-query ng-model="b" class="form-control"></select>
+     */
+    viewApp.directive('ngSelectQuery', function ($http, selectQuery, select2Config) {
+        return {
+            restrict: 'A',
+            scope: {
+                config: '=',
+                ngModel: '=',
+                select2Model: '='
+            },
+            link: function (scope, element, attrs) {
+                // 初始化
+                var tagName = element[0].tagName,
+                    config = {
+                        allowClear: true,
+                        multiple: !!attrs.multiple,
+                        placeholder: attrs.placeholder || ' '   // 修复不出现删除按钮的情况
+                    };
+
+                // 生成select
+                if(tagName === 'SELECT') {
+                    // 初始化
+                    var $element = $(element);
+                    delete config.multiple;
+
+                    $element
+                        //.prepend('<option value=""></option>')
+                        //.val('')
+                        .select2(config);
+
+                    // model - view
+                    scope.$watch('ngModel', function (newVal) {
+                        setTimeout(function () {
+                            //$element.find('[value^="?"]').remove();    // 清除错误的数据
+                            $element.select2('val', newVal);
+                        },0);
+                    }, true);
+                }
+
+                // 处理input
+                if(tagName === 'INPUT') {
+                    // 初始化
+                    var $element = $(element);
+
+                    // 获取内置配置
+                    if(attrs.query) {
+                        scope.config = selectQuery[attrs.query]();
+                    }
+                    
+                    if(attrs.configUrl) {
+                        scope.config = {
+                        	data: [{id:1,text:'11111'},{id:2,text:'duplicate'},{id:3,text:'invalid'},{id:4,text:'wontfix'}],
+                    		placeholder: '原始数据'
+                    	};
+                        $.get(attrs.configUrl).success(function(data){
+                        	scope.config = eval("("+data+")");
+                        	scope.$apply();
+                        }).error(function(){
+                			
+                			alert("错误");
+                			
+                	   });
+                    }
+
+                    // 动态生成select2
+                    scope.$watch('config', function () {
+                        angular.extend(config, scope.config);
+                        $element.select2('destroy').select2(config);
+                    }, true);
+
+                    // view - model
+                    $element.on('change', function () {
+                        scope.$apply(function () {
+                            scope.select2Model = $element.select2('data');
+                        });
+                    });
+
+                    // model - view
+                    scope.$watch('selectModel', function (newVal) {
+                        $element.select2('data', newVal);
+                    }, true);
+
+                    // model - view
+                    scope.$watch('ngModel', function (newVal) {
+                        // 跳过ajax方式以及多选情况
+                        if(config.ajax || config.multiple) { return false }
+
+                        $element.select2('val', newVal);
+                    }, true);
+                }
+            }
+        }
+    });
+
+    /**
+     * select2 内置查询功能
+     */
+    viewApp.factory('selectQuery', function ($timeout) {
+        return {
+            testQuery: function () {
+                var config = {
+                    minimumInputLength: 1,
+                    ajax: {
+                        url: "/sxbl/query.do",
+                        dataType: 'jsonp',
+                        data: function (term) {
+                            return {
+                                q: term,
+                                page_limit: 10,
+                                apikey: "ju6z9mjyajq2djue3gbvv26t"
+                            };
+                        },
+                        results: function (data, page) {
+                            return {results: data.movies};
+                        }
+                    },
+                    formatResult: function (data) {
+                        return data.title;
+                    },
+                    formatSelection: function (data) {
+                        return data.title;
+                    }
+                };
+
+                return config;
+            }
+        }
     });
 
     viewApp.filter("lztFilter",[function(){

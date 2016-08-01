@@ -7,12 +7,15 @@
 </head>
 <body>
 <div style="width:96%; margin:auto;" id="viewCtrlId" ng-controller="viewCtrl">
+<ng-codetable url="nf_dm_sb_zzs_jsxzdm.json" name="jsxzdmCT" node="" dm="root.dm" mc="root.mc"></ng-codetable>
+<ng-codetable url="nf_dm_sb_zzs_msxzdm.json" name="msxzdmCT" node="" dm="root.dm" mc="root.mc"></ng-codetable>
+<ng-codetable url="dm_zzs_sysl.json" name="syslCT" node="" dm="root.dm" mc="root.mc"></ng-codetable>
 <div class="NewTableHead" ng-jprefix="qcs.initData.zzsxgmsbInitData.sssq">
      <h1>增值税减免税申报明细表</h1>
     <li class="dateTxt">税款所属期
-	    <input type="text" datatype="date" jflag="1" readonly="true" style="width:100px; height:20px;" ng-model="sssq.rqQ" class="topInput"> 
+	    <input type="text" datatype="date" readonly="true" style="width:100px; height:20px;" ng-model="sssq.rqQ" class="topInput"> 
 	   	至
-	   	<input type="text" datatype="date" jflag="1" readonly="true" style="width:100px; height:20px;" ng-model="sssq.rqZ" class="topInput"> 
+	   	<input type="text" datatype="date" readonly="true" style="width:100px; height:20px;" ng-model="sssq.rqZ" class="topInput"> 
    	</li>
 </div>
 
@@ -36,9 +39,9 @@
 </div>
 
 <div class="NewTableMain">
-<table width="100%" border="0" cellspacing="1" cellpadding="0"  class = "zzssyyxgmnsrySbSbbdxxVO.zzsjmssbmxb.jsxmGrid">
+<table width="100%" border="0" cellspacing="1" cellpadding="0" ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.zzsjmssbmxb.zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO">
     <tr>
-      <td colspan="8" align="center" class="title01"><strong>一、减税项目</strong></td>
+      <td colspan="9" align="center" class="title01"><strong>一、减税项目</strong></td>
     </tr>
     <tr>
       <td colspan="2" rowspan="2" align="center" class="title01" style="width:30%;">减税性质代码及名称</td>
@@ -48,6 +51,7 @@
       <td align="center" class="title01">本期应抵减税额</td>
       <td align="center" class="title01">本期实际抵减税额</td>
       <td align="center" class="title01">期末余额</td>
+      <td  rowspan="3" width="110" align="center" class="title01">操作</td>
     </tr>
     <tr>
       <td align="center" class="title01">1</td>
@@ -59,94 +63,33 @@
     <tr ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.zzsjmssbmxb.zzsjmssbmxbjsxmGrid">
       <td colspan="2" align="center" class="title01">合计</td>
       <td align="center" class="title01"></td>
-      <td class="read right"><input jflag="1" readonly="true" type="text" datatype="number" ng-model="zzsjmssbmxbjsxmGrid.qcyehj"></td>
-      <td class="read right"><input jflag="1" readonly="true" type="text" datatype="number" ng-model="zzsjmssbmxbjsxmGrid.bqfsehj"></td>
-      <td class="read right"><input jflag="1" readonly="true" type="text" datatype="number" ng-model="zzsjmssbmxbjsxmGrid.bqydjsehj"></td>
-      <td class="read right"><input jflag="1" readonly="true"  type="text" datatype="number" ng-model="zzsjmssbmxbjsxmGrid.bqsjdjsehj"></td>
-      <td class="read right"><input jflag="1" readonly="true" type="text" datatype="number" ng-model="zzsjmssbmxbjsxmGrid.qmyehj"></td>
+      <td class="read right"><input readonly="true" type="text" ng-datatype="number" ng-model="zzsjmssbmxbjsxmGrid.qcyehj"></td>
+      <td class="read right"><input readonly="true" type="text" ng-datatype="number" ng-model="zzsjmssbmxbjsxmGrid.bqfsehj"></td>
+      <td class="read right"><input readonly="true" type="text" ng-datatype="number" ng-model="zzsjmssbmxbjsxmGrid.bqydjsehj"></td>
+      <td class="read right"><input readonly="true" type="text" ng-datatype="number" ng-model="zzsjmssbmxbjsxmGrid.bqsjdjsehj"></td>
+      <td class="read right"><input readonly="true" type="text" ng-datatype="number" ng-model="zzsjmssbmxbjsxmGrid.qmyehj"></td>
     </tr>
-      <tr ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.zzsjmssbmxb.zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO">
-        <td  colspan="2" >
-        	<select mode="mix" jflag="1" ng-model="zzsjmssbmxbjsxmGridlbVO.hmc" xpath="../xml/nf_dm_sb_zzs_jsxzdm.xml" zpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.dmmc">
-			</select>
-		</td>
-	  <td align="center" class="title01"></td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" ng-model="zzsjmssbmxbjsxmGridlbVO.qcye"></td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" ng-model="zzsjmssbmxbjsxmGridlbVO.bqfse"></td>
-      <td class="read right"><input jflag="1" readonly="true" type="text" datatype="number" ng-model="zzsjmssbmxbjsxmGridlbVO.bqydjse"></td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" ng-model="zzsjmssbmxbjsxmGridlbVO.bqsjdjse"></td>
-      <td class="read right"><input jflag="1" readonly="true" type="text" datatype="number" ng-model="zzsjmssbmxbjsxmGridlbVO.qmye"></td>
-      </tr>
-     <!--  
-     <tr>
-        <td  colspan="2" >
-        	<select mode="mix" jflag="1" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.hmc" xpath="../xml/nf_dm_sb_zzs_jsxzdm.xml" zpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.dmmc">
-			</select>
-		</td>
-		
-	  <td align="center" class="title01"></td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.qcye"></td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.bqfse"></td>
-      <td class="read right"><input jflag="1" readonly="true" type="text" datatype="number" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.bqydjse"></td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.bqsjdjse"></td>
-      <td class="read right"><input jflag="1" readonly="true" type="text" datatype="number" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.qmye"></td>
-      </tr>
-     <tr >
-        <td  colspan="1" >
-        	<select mode="mix" jflag="1" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.hmc" xpath="../xml/nf_dm_sb_zzs_jsxzdm.xml" zpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.dmmc">
-			</select>
-			<input jflag="1"  type="text" datatype="string" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.hmc">
-			</td>
-	  <td align="center" class="title01">3</td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.qcye"></td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.bqfse"></td>
-      <td class="read right"><input jflag="1" readonly="true" type="text" datatype="number" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.bqydjse"></td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.bqsjdjse"></td>
-      <td class="read right"><input jflag="1" readonly="true" type="text" datatype="number" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.qmye"></td>
-      </tr>
-       <tr group="1">
-        <td  colspan="1" >
-        	<select mode="mix" jflag="1" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.hmc" xpath="../xml/nf_dm_sb_zzs_jsxzdm.xml" zpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.dmmc">
-			</select>
-			<input jflag="1"  type="text" datatype="string" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.hmc">
-			</td>
-	  <td align="center" class="title01">4</td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.qcye"></td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.bqfse"></td>
-      <td class="read right"><input jflag="1" readonly="true" type="text" datatype="number" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.bqydjse"></td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.bqsjdjse"></td>
-      <td class="read right"><input jflag="1" readonly="true" type="text" datatype="number" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.qmye"></td>
-      </tr>
-      <tr group="1">
-        <td  colspan="1" >
-        	<select mode="mix" jflag="1" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.hmc" xpath="../xml/nf_dm_sb_zzs_jsxzdm.xml" zpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.dmmc">
-			</select>
-			<input jflag="1"  type="text" datatype="string" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.hmc">
-	  <td align="center" class="title01">5</td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.qcye"></td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.bqfse"></td>
-      <td class="read right"><input jflag="1" readonly="true" type="text" datatype="number" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.bqydjse"></td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.bqsjdjse"></td>
-      <td class="read right"><input jflag="1" readonly="true" type="text" datatype="number" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.qmye"></td>
-      </tr>
-     <tr group="1">
-       <td  colspan="1" >
-       		<select mode="mix" jflag="1" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.hmc" xpath="../xml/nf_dm_sb_zzs_jsxzdm.xml" zpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.dmmc">
-			</select>
-			<input jflag="1"  type="text" datatype="string" jpath="zzsjmssbmxbjsxmGrid.zzsjmssbmxbjsxmGridlbVO.hmc">
-			</td>
-      <td align="center" class="title01">6</td>
-      <td class="edit right"><input jflag="1" datatype="number" jpath="" name="textfield" type="text" id="textfield" value="0.00"></td>
-      <td class="edit right"><input jflag="1" datatype="number" jpath="" name="textfield" type="text" id="textfield" value="0.00"></td>
-      <td class="read right"><input jflag="1" datatype="number" jpath="" name="textfield" type="text" id="textfield" value="0.00" readonly></td>
-      <td class="edit right"><input jflag="1" datatype="number" jpath="" name="textfield" type="text" id="textfield" value="0.00"></td>
-      <td class="read right"><input jflag="1" datatype="number" jpath="" name="textfield" type="text" id="textfield" value="0.00" readonly></td>
-      </tr> -->
-    </table>
-    <table width="100%" border="0" cellspacing="1"  cellpadding="0"    class = "zzssyyxgmnsrySbSbbdxxVO.zzsjmssbmxb.msxmGrid">
     
+     <tr ng-repeat="p in zzsjmssbmxbjsxmGridlbVO track by $index" ng-repeat-init="zzsjmssbmxbjsxmGridlbVO"
+        default-value='{"ewbhxh":"","hmc":"","qcye":0.00,"bqfse":0.00,"bqydjse":0.00,"bqsjdjse":0.00,"qmye":0.00}'>
+      <td colspan="2"><select ng-model="p.hmc" ng-options="key as value for (key,value) in CT.jsxzdmCT"><option value=""></option></select><input ng-model="p.dmmc" ng-value="p.dmmc=CT.jsxzdmCT[p.hmc]" style="display:none"></td>
+      <td align="center" class="title01" ng-bind="$index+1"><input type="text" ng-bind="p.ewbhxh=$index+2" style="display:none"></td>        	  
+      <td class="edit right"><input  type="text" ng-datatype="number" ng-model="p.qcye"></td>
+      <td class="edit right"><input  type="text" ng-datatype="number" ng-model="p.bqfse"></td>
+      <td class="read right"><input  readonly="true" type="text" ng-datatype="number" ng-model="p.bqydjse"></td>
+      <td class="edit right"><input  type="text" ng-datatype="number" ng-model="p.bqsjdjse"></td>
+      <td class="read right"><input  readonly="true" type="text" ng-datatype="number" ng-model="p.qmye"></td>
+      <td  align="center" >   
+	      <div class="sbtnbox">     
+		    <a class="sbtn sbtn01"  ng-href="#"  ng-click="add()">增加</a>&nbsp;&nbsp;&nbsp;
+		    <a class="sbtn sbtn03" ng-if="$index!=0"   ng-href="#"  ng-click="del($index)">删除</a>
+	      </div>
+	   </td>      
+      </tr>    
+    </table>
+    <table width="100%" border="0" cellspacing="1"  cellpadding="0">
     <tr>
-      <td colspan="8" align="center" class="title01"><strong>二、免税项目</strong></td>
+      <td colspan="9" align="center" class="title01"><strong>二、免税项目</strong></td>
     </tr>
     <tr>
       <td colspan="2" rowspan="2" align="center" class="title01" style="width:30%;">免税性质代码及名称</td>
@@ -159,6 +102,7 @@
       <td align="center" class="title01">免税销售额对应的<br>
         进项税额</td>
       <td align="center" class="title01">免税额</td>
+      <td width="110" rowspan="5"  align="center" class="title01">操作</td>
     </tr>
     <tr>
       <td align="center" class="title01">1</td>
@@ -170,97 +114,50 @@
     <tr ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.zzsjmssbmxb.zzsjmssbmxbmsxmGrid">
       <td colspan="2" align="center" class="title01">合  计</td>
       <td align="center" class="title01"></td>
-      <td class="read right"><input jflag="1" readonly="true" type="text" datatype="number" ng-model="zzsjmssbmxbmsxmGrid.mzzzsxmxsehj"></td>
-      <td class="read right"><input jflag="1" readonly="true" type="text" datatype="number" ng-model="zzsjmssbmxbmsxmGrid.bqsjkcjehj"></td>
-      <td class="read right"><input jflag="1" readonly="true" type="text" datatype="number" ng-model="zzsjmssbmxbmsxmGrid.kchmsxsehj"></td>
-      <td class="read right"><input jflag="1" readonly="true" type="text" datatype="number" ng-model="zzsjmssbmxbmsxmGrid.msxsedyjxsehj"></td>
-      <td class="read right"><input jflag="1" readonly="true" type="text" datatype="number" ng-model="zzsjmssbmxbmsxmGrid.msehj"></td>
+      <td class="read right"><input readonly="true" type="text" ng-datatype="number" ng-model="zzsjmssbmxbmsxmGrid.mzzzsxmxsehj"></td>
+      <td class="read right"><input readonly="true" type="text" ng-datatype="number" ng-model="zzsjmssbmxbmsxmGrid.bqsjkcjehj"></td>
+      <td class="read right"><input readonly="true" type="text" ng-datatype="number" ng-model="zzsjmssbmxbmsxmGrid.kchmsxsehj"></td>
+      <td class="read right"><input readonly="true" type="text" ng-datatype="number" ng-model="zzsjmssbmxbmsxmGrid.msxsedyjxsehj"></td>
+      <td class="read right"><input readonly="true" type="text" ng-datatype="number" ng-model="zzsjmssbmxbmsxmGrid.msehj"></td>
       </tr>
-    <tr ng-jprefix="zzsjmssbmxbmsxmGrid">
+    <tr ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.zzsjmssbmxb.zzsjmssbmxbmsxmGrid">    
       <td colspan="2" align="center" class="title01">出口免税</td>
       <td align="center" class="title01"></td>
-      <td class="read right"><input jflag="1"  type="text" datatype="number" ng-model="zzsjmssbmxbmsxmGrid.ckms" readonly="true"></td>
-      <td class="read mid"><input jflag="1"  type="text" datatype="number" ng-model="" value="--"  readonly="true"></td> 
-      <td class="read mid"><input jflag="1"  type="text" datatype="number" ng-model="" value="--"  readonly="true"></td>
-      <td class="read mid"><input jflag="1"  type="text" datatype="number" ng-model="" value="--"  readonly="true"></td>
-      <td class="read mid"><input jflag="1"  type="text" datatype="number" ng-model="" value="--"  readonly="true"></td>
+      <td class="read right"><input  type="text" ng-datatype="number" ng-model="zzsjmssbmxbmsxmGrid.ckmzzzsxmxse" readonly="true"></td>
+      <td class="read mid"><input  type="text"  value="--"  readonly="true"></td> 
+      <td class="read mid"><input  type="text"  value="--"  readonly="true"></td>
+      <td class="read mid"><input  type="text"  value="--"  readonly="true"></td>
+      <td class="read mid"><input  type="text"  value="--"  readonly="true"></td>
       </tr>
-          <tr ng-jprefix="zzsjmssbmxbmsxmGrid">
+     <tr ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.zzsjmssbmxb.zzsjmssbmxbmsxmGrid">
       <td colspan="2" align="center" class="title01">其中:跨境服务</td>
       <td align="center" class="title01"></td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" ng-model="zzsjmssbmxbmsxmGrid.kjfw"></td>
-      <td class="read mid"><input jflag="1"  type="text" datatype="number" ng-model="" value="--"  readonly="true"></td> 
-      <td class="read mid"><input jflag="1"  type="text" datatype="number" ng-model="" value="--"  readonly="true"></td>
-      <td class="read mid"><input jflag="1"  type="text" datatype="number" ng-model="" value="--"  readonly="true"></td>
-      <td class="read mid"><input jflag="1"  type="text" datatype="number" ng-model="" value="--"  readonly="true"></td>
+      <td class="edit right"><input  type="text" ng-datatype="number" ng-model="zzsjmssbmxbmsxmGrid.kjmzzzsxmxse"></td>
+      <td class="read mid"><input  type="text"  value="--"  readonly="true"></td> 
+      <td class="read mid"><input  type="text"  value="--"  readonly="true"></td>
+      <td class="read mid"><input  type="text"  value="--"  readonly="true"></td>
+      <td class="read mid"><input  type="text"  value="--"  readonly="true"></td>
       </tr>
-      <tr ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.zzsjmssbmxb.zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO">
-        <td  colspan="2" >
-        	<select mode="mix" jflag="1" ng-model="zzsjmssbmxbmsxmGridlbVO.hmc" xpath="../xml/nf_dm_sb_zzs_msxzdm.xml" zpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.dmmc">
-			</select>
-			</td>
-      <td align="center" class="title01"></td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" ng-model="zzsjmssbmxbmsxmGridlbVO.mzzzsxmxse"></td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" ng-model="zzsjmssbmxbmsxmGridlbVO.bqsjkcje"></td>
-      <td class="read right"><input jflag="1" readonly="true" type="text" datatype="number" ng-model="zzsjmssbmxbmsxmGridlbVO.kchmsxse"></td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" ng-model="zzsjmssbmxbmsxmGridlbVO.msxsedyjxse"></td>
-      <td class="read right"><input jflag="1" readonly="true" type="text" datatype="number" ng-model="zzsjmssbmxbmsxmGridlbVO.mse"></td>
-      </tr>
-       <!--   
-       <tr group="8">
-        <td  colspan="1" >
-        	<select mode="mix" jflag="1" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.hmc" xpath="../xml/nf_dm_sb_zzs_msxzdm.xml" zpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.dmmc">
-			</select>
-			<input jflag="1"  type="text" datatype="string" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.hmc">
-			</td>
-<td align="center" class="title01">10</td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.mzzzsxmxse"></td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.bqsjkcje"></td>
-      <td class="read right"><input jflag="1" readonly="true" type="text" datatype="number" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.kchmsxse"></td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.msxsedyjxse"></td>
-      <td class="edit right"><input jflag="1" readonly="true" type="text" datatype="number" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.mse"></td>
-      </tr>
-     <tr group="8">
-        <td  colspan="1" >
-        	<select mode="mix" jflag="1" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.hmc" xpath="../xml/nf_dm_sb_zzs_msxzdm.xml" zpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.dmmc">
-			</select>
-			<input jflag="1"  type="text" datatype="string" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.hmc">
-			</td>
-	  <td align="center" class="title01">11</td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.mzzzsxmxse"></td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.bqsjkcje"></td>
-      <td class="read right"><input jflag="1" readonly="true" type="text" datatype="number" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.kchmsxse"></td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.msxsedyjxse"></td>
-      <td class="edit right"><input jflag="1" readonly="true" type="text" datatype="number" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.mse"></td>
-      </tr>
-          <tr group="8">
-        <td  colspan="1" >
-        	<select mode="mix" jflag="1" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.hmc" xpath="../xml/nf_dm_sb_zzs_msxzdm.xml" zpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.dmmc">
-			</select>
-			<input jflag="1"  type="text" datatype="string" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.hmc">
-			</td>
-	  <td align="center" class="title01">12</td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.mzzzsxmxse"></td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.bqsjkcje"></td>
-      <td class="read right"><input jflag="1" readonly="true" type="text" datatype="number" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.kchmsxse"></td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.msxsedyjxse"></td>
-      <td class="edit right"><input jflag="1" readonly="true" type="text" datatype="number" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.mse"></td>
-      </tr>
-     <tr group="8">
-        <td  colspan="1" >
-        	<select mode="mix" jflag="1" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.hmc" xpath="../xml/nf_dm_sb_zzs_msxzdm.xml" zpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.dmmc">
-			</select>
-			<input jflag="1"  type="text" datatype="string" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.hmc"></td>
-	  <td align="center" class="title01">13</td>
-      <td class="edit right"><input name="text"  type="text" jflag="1" datatype="number" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.mzzzsxmxse" /></td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.bqsjkcje"></td>
-      <td class="read right"><input jflag="1" readonly="true" type="text" datatype="number" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.kchmsxse"></td>
-      <td class="edit right"><input jflag="1"  type="text" datatype="number" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.msxsedyjxse"></td>
-      <td class="edit right"><input jflag="1" readonly="true" type="text" datatype="number" jpath="zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO.mse"></td>
-      </tr> -->
+      <tr ng-jprefix="zzssyyxgmnsrySbSbbdxxVO.zzsjmssbmxb.zzsjmssbmxbmsxmGrid.zzsjmssbmxbmsxmGridlbVO"></tr> 
+      <tr  ng-repeat="p in zzsjmssbmxbmsxmGridlbVO track by $index"  ng-repeat-init="zzsjmssbmxbmsxmGridlbVO"
+         default-value='{"ewbhxh":"","hmc":"","mzzzsxmxse":0.00,"bqsjkcje":0.00,"kchmsxse":0.00,"msxsedyjxse":0.00,"mse":0.00}'>
+	      <td colspan="2"><select ng-model="p.hmc" ng-options="key as value for (key,value) in CT.msxzdmCT"><option value=""></option></select><input ng-model="p.dmmc" ng-value="p.dmmc=CT.msxzdmCT[p.hmc]" style="display:none"></td>	      
+	      <td align="center" class="title01" ng-bind="$index+1"><input type="text" ng-bind="p.ewbhxh=$index+4" style="display:none"></td>     	     
+	      <td class="edit right"><input type="text" ng-datatype="number" ng-model="p.mzzzsxmxse"></td>
+	      <td class="edit right"><input type="text" ng-datatype="number" ng-model="p.bqsjkcje"></td>
+	      <td class="read right"><input readonly="true" type="text" ng-datatype="number" ng-model="p.kchmsxse"></td>
+	      <td class="edit right"><input type="text" ng-datatype="number" ng-model="p.msxsedyjxse"></td>
+	      <td class="read right"><input readonly="true" type="text" ng-datatype="number" ng-model="p.mse"></td>
+	      <td align="center" >
+		  <div class="sbtnbox"> 
+		     <a class="sbtn sbtn01" ng-href="#"  ng-click="add()">增加</a>&nbsp;&nbsp;&nbsp;
+		     <a class="sbtn sbtn03" ng-if="$index!=0"   ng-href="#"  ng-click="del($index)">删除</a>
+	     </div>
+	     </td>
+      </tr> 
+      <tr ng-render-finish=""></tr>     
   </table>
 </div>
-
 </div>
 </body>
 </html>
